@@ -2,7 +2,7 @@
 title: xP&A CX Marketing Planning - Allocate Activity Costs Across Multiple Periods
 description: This tutorial will show you how to extend the activity spend logic in order to allocate activity costs across multiple periods in a date range specified by a start and end date.
 author_name: Simon Kranig
-author_profile: https://people.sap.com/simon.kranig
+author_profile: https://github.com/kranig
 auto_validation: false
 time: 60
 keywords: xP&A, marketing planning, data actions
