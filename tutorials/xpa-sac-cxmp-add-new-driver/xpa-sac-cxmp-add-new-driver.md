@@ -2,7 +2,7 @@
 title: xP&A CX Commercial Planning - Add a new Driver
 description: This tutorial provides a detailed instruction on how to add a new driver and embed it into the relevant stories.
 author_name: Rudolf Lindt
-author_profile: https://people.sap.com/rudolf.lindt
+author_profile: https://github.com/RudolfLindt93
 auto_validation: false
 keywords: xP&A, Customization, Analytics Designer, Commercial Planning, Portfolio Planning, Demand Planning, Marketing Planning, Campaign Planning, Budget Planning
 time: 30
