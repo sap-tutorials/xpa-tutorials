@@ -2,7 +2,7 @@
 title: xP&A Commercial Planning (Marketing) - Add a new Version
 description: This tutorial provides information on how to add a new version and use it inside the different applications.
 author_name: Hendrik Grobbel
-author_profile: https://people.sap.com/hendrik.grobbel
+author_profile: https://github.com/HeGro
 auto_validation: false
 keywords: xP&A, Marketing Planning, Version
 time: 30
