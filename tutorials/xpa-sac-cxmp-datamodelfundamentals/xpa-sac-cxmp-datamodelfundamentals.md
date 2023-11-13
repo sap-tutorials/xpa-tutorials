@@ -7,7 +7,7 @@ auto_validation: false
 keywords: xP&A, Commercial Planning, Portfolio Planning, Marketing Planning, Demand Planning, Budget Planning, List Price Planning
 time: 30
 primary_tag: software-product>sap-analytics-cloud
-tags: [ tutorial>beginner, software-product-function>sap-analytics-cloud\,-analytics-designer]
+tags: [ tutorial>beginner, software-product-function>sap-analytics-cloud--analytics-designer]
 parser: v2
 ---
 

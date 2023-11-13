@@ -7,7 +7,7 @@ auto_validation: false
 keywords: xP&A, Get To Know, Overview, Commercial Planning, Portfolio Planning, Price Planning, Price Analysis
 time: 45
 primary_tag: software-product>sap-analytics-cloud
-tags: [ tutorial>beginner, software-product-function>sap-analytics-cloud\,-analytics-designer]
+tags: [ tutorial>beginner, software-product-function>sap-analytics-cloud--analytics-designer]
 parser: v2
 ---
 

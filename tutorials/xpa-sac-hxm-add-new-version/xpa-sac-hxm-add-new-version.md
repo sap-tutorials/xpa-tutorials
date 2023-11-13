@@ -6,7 +6,7 @@ author_profile: https://people.sap.com/rudolf.lindt
 auto_validation: true
 time: 20
 keywords: xP&A, version
-tags: [ tutorial>beginner, software-product-function>sap-analytics-cloud\,-analytics-designer]
+tags: [ tutorial>beginner, software-product-function>sap-analytics-cloud--analytics-designer]
 primary_tag: software-product>sap-analytics-cloud
 parser: v2
 ---
