@@ -2,7 +2,7 @@
 title: xP&A CX Commercial Planning - Data Integration
 description: This tutorial will show you how set up the SAP Cloud Integration Flows to exchange demand quantities between SAP Analytics Cloud and SAP Integrated Business Planning. 
 author_name: Boris von Chrzanowski
-author_profile: https://people.sap.com/boris.von.chrzanowski  
+author_profile: https://github.com/borisvonchrzanowski
 auto_validation: false
 time: 60
 keywords: xP&A, write back
