@@ -7,7 +7,7 @@ primary_tag: software-product>sap-analytics-cloud
 ---
 
 # Get to know the Operational Workforce Planning Content
-<!-- description --> Run through the content to get to know the standard workflow as well as the capabilities of the content. Please find the detailed documentation in [SAP Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/21868089d6ae4c5ab55f599c691726be/7032f23e00b34a7ab6d79af20a8792a7.html?locale=en-US) and [User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html?locale=en-US). More general information around the topic xP&A as well as Videos showing the content can be found here on the [Community page](https://community.sap.com/topics/cloud-analytics/planning/content)
+<!-- description --> Run through the content to get to know the standard workflow as well as the capabilities of the content. Please find the detailed documentation in [SAP Help](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/21868089d6ae4c5ab55f599c691726be/7032f23e00b34a7ab6d79af20a8792a7.html?locale=en-US) and [User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html?locale=en-US). More general information around the topic xP&A as well as Videos showing the content can be found here on the [Community page](https://community.sap.com/topics/cloud-analytics/planning/content) 
 
 ## Prerequisites
  * [SAP Analytics Cloud Test or Demo Tenant](https://partneredge.sap.com/en/library/education/products/analytics/cfa/sell/e_ta_cfa_demo.html)

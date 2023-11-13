@@ -7,7 +7,7 @@ auto_validation: false
 keywords: xP&A, Sales Planning, Spend Type
 time: 30
 primary_tag: software-product>sap-analytics-cloud
-tags: [ tutorial>beginner, software-product-function>sap-analytics-cloud\,-analytics-designer]
+tags: [ tutorial>beginner, software-product-function>sap-analytics-cloud--analytics-designer]
 parser: v2
 ---
 

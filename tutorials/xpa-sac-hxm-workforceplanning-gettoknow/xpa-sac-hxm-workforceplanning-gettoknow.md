@@ -7,7 +7,7 @@ auto_validation: false
 keywords: xP&A, Get To Know, Overview, Workforce Planning
 time: 120
 primary_tag: software-product>sap-analytics-cloud
-tags: [ tutorial>beginner, software-product>sap-successfactors-hxm-suite, software-product-function>sap-analytics-cloud\,-analytics-designer]
+tags: [ tutorial>beginner, software-product>sap-successfactors-hxm-suite, software-product-function>sap-analytics-cloud--analytics-designer]
 parser: v2
 ---
 
@@ -16,7 +16,7 @@ parser: v2
 - You have installed the **SAP Human Experience Management (HXM) Workforce Planning content** in an SAP Analytics Cloud tenant. Reference: [Business Content Installation Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/078868f57f3346a98c3233207bd211c7.html), [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html)
 
 ## You will learn
-- all basics of the Human Experience Management (HXM) Operational Workforce Planning content package for SAP Analytics Cloud
+- all basics of the Human Experience Management (HXM) Operational Workforce Planning content package for SAP Analytics Cloud 
 - how to define the plan horizon, the reference period for the seeding algorithms and the dimensions you want to plan on (step 5)
 - how to set up central cost parameters, how to prepare your data for the planning process and how to pre-populate different planning versions using the **Application Configuration** planning application (step 6)
 - how to enter your planning assumptions on an aggregated level for internal and external workforce by using the **Aggregated Planning** planning application (steps 7 and 8)

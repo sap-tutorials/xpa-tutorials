@@ -7,7 +7,7 @@ auto_validation: false
 keywords: xP&A, Get To Know, Overview, Commercial Planning, Marketing Planning, Portfolio Planning, Price Planning, Demand Planning, Campaign Planning
 time: 120
 primary_tag: software-product>sap-analytics-cloud
-tags: [ tutorial>beginner, software-product>sap-successfactors-hxm-suite, software-product-function>sap-analytics-cloud\,-analytics-designer]
+tags: [ tutorial>beginner, software-product>sap-successfactors-hxm-suite, software-product-function>sap-analytics-cloud--analytics-designer]
 parser: v2
 ---
 

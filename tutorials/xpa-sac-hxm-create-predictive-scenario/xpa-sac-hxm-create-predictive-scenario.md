@@ -6,8 +6,8 @@ author_profile: https://people.sap.com/rudolf.lindt
 auto_validation: true
 time: 30
 keywords: xP&A, smart predict, Predictive Scenario, time series forecast
-tags: [ tutorial>intermediate, software-product-function>sap-analytics-cloud\,-analytics-designer]
-primary_tag: software-product-function>sap-analytics-cloud\,-analytics-designer
+tags: [ tutorial>intermediate, software-product-function>sap-analytics-cloud--analytics-designer]
+primary_tag: software-product-function>sap-analytics-cloud--analytics-designer
 parser: v2
 ---
 
