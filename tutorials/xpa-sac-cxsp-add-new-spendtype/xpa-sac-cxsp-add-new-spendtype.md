@@ -1,5 +1,5 @@
 ---
-title: xP&A Commercial Planning (Sales) - Add a new Spend Type
+title: xP&A CX Commercial Planning (Sales) - Add a new Spend Type
 description: This tutorial provides information on how to add a new spend type and use it inside the different applications.
 author_name: Hendrik Grobbel
 author_profile: https://people.sap.com/hendrik.grobbel

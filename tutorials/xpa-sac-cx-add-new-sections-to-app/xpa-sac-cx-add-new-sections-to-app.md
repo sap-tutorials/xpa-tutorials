@@ -1,5 +1,5 @@
 ---
-title: xP&A Commercial Planning - Add additional sections to a story
+title: xP&A CX Commercial Planning - Add additional sections to a story
 description: This tutorial will explain how you can add additional sections to your story in accordance with the theme used.
 author_name: Rudolf Lindt
 author_profile: https://people.sap.com/rudolf.lindt

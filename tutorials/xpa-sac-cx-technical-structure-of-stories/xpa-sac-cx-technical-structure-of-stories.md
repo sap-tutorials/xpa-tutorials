@@ -1,5 +1,5 @@
 ---
-title: xP&A Commercial Planning - Understanding the technical structure of Stories
+title: xP&A CX Commercial Planning - Understanding the technical structure of Stories
 description: This tutorial will explain to you the technical structure of each story so you can easily customize your content.
 author_name: Rudolf Lindt
 author_profile: https://people.sap.com/rudolf.lindt
