@@ -2,7 +2,7 @@
 title: xP&A CX Commercial Planning - Add a new Driver
 description: This tutorial provides a detailed instruction on how to add a new driver and embed it into the relevant stories.
 author_name: Rudolf Lindt
-author_profile: https://github.com/RudolfLindt93
+author_profile: https://people.sap.com/rudolf.lindt
 auto_validation: false
 keywords: xP&A, Customization, Analytics Designer, Commercial Planning, Portfolio Planning, Demand Planning, Marketing Planning, Campaign Planning, Budget Planning
 time: 30
@@ -137,7 +137,6 @@ If you want to customize the content and adjust it according to your own busines
 - [xP&A Commercial Planning - Customize Default Settings](xpa-sac-cx-customize-default-settings)
 - [xP&A Commercial Planning - Customize Table Settings Dialogue](xpa-sac-cx-customize-table-settings-dialogue)
 - [xP&A Commercial Planning (Marketing) - Add a new Version](xpa-sac-cxmp-add-new-version)
-- [xP&A Commercial Planning (Marketing) - Extend campaign and activity attributes](xpa-sac-cxmp-add-new-attributes)
 - [xP&A Commercial Planning (Marketing) - Extend activity spend dates](xpa-sac-cxmp-extend-activity-dates)
 - [xP&A Commercial Planning (Sales) - Add a new Version](xpa-sac-cxsp-add-new-version)
 - [xP&A Commercial Planning (Sales) - Add a new Tactic](xpa-sac-cxsp-add-new-tactic)
