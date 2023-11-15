@@ -1,5 +1,5 @@
 ---
-title: xP&A - Manage data loads for xP&A Commercial Planning
+title: xP&A CX Commercial Planning - Manage data loads for xP&A Commercial Planning
 description: This tutorial will show you how to set up data loads from and into Sales and Marketing Planning in SAP Analytics Cloud
 author_name: Simon Kranig
 author_profile: https://people.sap.com/simon.kranig  

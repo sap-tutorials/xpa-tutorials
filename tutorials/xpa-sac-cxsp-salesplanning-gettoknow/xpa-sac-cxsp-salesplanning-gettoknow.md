@@ -1,5 +1,5 @@
 ---
-title: xP&A Commercial Planning - Get to know the Sales Planning module
+title: xP&A CX Commercial Planning - Get to know the Sales Planning module
 description: This tutorial will provide you with an overview and run through of the content in order for you to get familiar with the standard workflow as well as the capabilities of the content.
 author_name: Hendrik Grobbel
 author_profile: https://people.sap.com/hendrik.grobbel
