@@ -150,11 +150,11 @@ You need to make some adjustments in order for the applications to initialize al
 
          <!-- border; size:540px -->![analytic_application](pageFilter_Version.png)
 
-      4. Select one of the references `Script for Event "PageFilers_Update: ..."`. In line 9 of the `ActionScripts.PageFilers_Update`-script replace the first element of the array with your newly created version:
+      4. Select one of the references `Script for Event "PageFilters_Update: ..."`. In line 9 of the `ActionScripts.PageFilters_Update`-script replace the first element of the array with your newly created version:
 
             pageFilter_Version[0] = "Baseline";
 
-         <!-- border; size:540px -->![analytic_application](pageFilers_Update.png)
+         <!-- border; size:540px -->![analytic_application](pageFilters_Update.png)
 
          The first entry in the variable array `pageFilter_Version` is used for publishing and reverting data. However, it is not used to set the version filter to the planning table and charts and the variances for the charts. You change this in the next steps.
 
