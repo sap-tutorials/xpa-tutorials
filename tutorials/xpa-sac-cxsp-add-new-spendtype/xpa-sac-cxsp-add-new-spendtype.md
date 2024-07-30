@@ -38,7 +38,7 @@ In the first step, it is necessary to add a new member to the `SpendType` dimens
 
     <!-- border; size:540px -->![model](search-model.png)
 
-2. Either click on `SpendType` or on the button **Navigate to Dimension**
+2. Open the `SpendType` dimension.
 
     <!-- border; size:540px -->![model](spendType-dimension.png)
 
@@ -64,7 +64,7 @@ In the next step the **Sales Planning Admin Page** (`SAP_SD_SalesPlanning_AdminP
 
     <!-- border; size:540px -->![canvas_story](edit-input-control.png)
 
-3. Toggle to **Show unbooked members**.  Select your newly added Spend Type `Premium`. Click on **OK**.
+3. Click on **Settings**. In the members display settings, and select **All Members** in the **Available Members** drop down. Then select your newly added Spend Type `Premium`. Click on **OK**.
 
     <!-- border; size:540px -->![canvas_story](add-premium.png)
 
@@ -86,7 +86,7 @@ In the next step the **Sales Planning Admin Page** (`SAP_SD_SalesPlanning_AdminP
     |--------------|-----------------------|
     | `SpendType`  | Premium               |
     | `Tactic`     | Price                 |
-    | `GL Account` | Sales Deductions      |
+    | `GL Account` | Sales Discount - Domestic |
 
 7. Click on **Confirm** to publish your change.
 
@@ -102,7 +102,7 @@ Now, you are going to learn the different ways how your `SpendType` is treated i
 
 1. In the SAP Analytics Cloud Menu, navigate to the **Files** section.
 
-2. Search for the affected data action `SAP_SD_IM_ActualActivityP&LCalculation` and open it.
+2. Search for the affected data action `SAP_SD_IM_SalesPlanning_ActualActivityP&LCalculation` and open it.
 
     <!-- border; size:540px -->![canvas_story](search-data-action.png)
 
@@ -116,9 +116,9 @@ Now, you are going to learn the different ways how your `SpendType` is treated i
     |--------------|-----------------------|
     | 1-4          | Sets the configuration definition for the advanced formula like hierarchy and time zone. |
     | 5-21         | Sets the member set for the data action. The data action operates on the previous year, amount, sales deductions (FPA1/023) and by parameter given activity. |
-    | 22-39        | This step only fires based on the `Base_Account/Measure (Sales Planning)` of your `SpendType`, in this case `PRICE` (**line 22**). It adds the quantity (**line 27-29**) and prorated baseline quantity (**line 31-33**) for the booked drivers, which you defined in the mapping table of the **Sales Planning Admin Page** (`SAP_SD_SalesPlanning_AdminPage`). The sum of it is multiplied with the spend input of the given sales activity (**line 36**), which you enter in the pop-up, whenever you edit or create an activity in the story **Sales Activity Planning** (`SAP_SD_SalesActivityPlanning`). |
+    | 24-40        | This step only fires based on the `Base_Account/Measure (Sales Planning)` of your `SpendType`, in this case `PRICE`. It adds the quantity and prorated baseline quantity for the booked drivers, which you defined in the mapping table of the **Sales Planning Admin Page** (`SAP_SD_SalesPlanning_AdminPage`). The sum of it is multiplied with the spend input of the given sales activity, which you enter in the pop-up, whenever you edit or create an activity in the story **Sales Activity Planning** (`SAP_SD_SalesActivityPlanning`). |
 
-    That means, if you create a new sales activity with `SpendType` `Premium` and an `Spend Input` of `12`, this step would sum the quantities and multiply it with 12 to get the incremental spend rate. Because previously we defined that the `SpendType Premium` has `PRICE` as the `Base_Account/Measure (Sales Planning)`. So **line 22** is **true**.
+    That means, if you create a new sales activity with `SpendType` `Premium` and an `Spend Input` of `12`, this step would sum the quantities and multiply it with 12 to get the incremental spend rate. Because previously we defined that the `SpendType Premium` has `PRICE` as the `Base_Account/Measure (Sales Planning)`. So **line 24** is **true**.
 
 4. Click on the last three steps and compare them.
 
@@ -126,7 +126,7 @@ Now, you are going to learn the different ways how your `SpendType` is treated i
     - `Calculate Incremental Spend - Lumpsum`
     - `Calculate Incremental Spend - Percentage`
 
-    The first 19 lines are the same in each step. The data action steps differ in the last part. They distinguish between the `Base_Account/Measure (Sales Planning)` of the `SpendType`. The `SpendType` has currently three different base accounts:
+    The first 23 lines are the same in each step. The data action steps differ in the last part. They distinguish between the `Base_Account/Measure (Sales Planning)` of the `SpendType`. The `SpendType` has currently three different base accounts:
 
     <!-- border; size:540px -->![canvas_story](spendType-baseAccount.png)
 
@@ -134,7 +134,7 @@ Now, you are going to learn the different ways how your `SpendType` is treated i
     - `AMOUNT`
     - `PRICE`
 
-    If you want to add a fourth `Base_Account/Measure (Sales Planning)`, you would need to add another step at the end of the data action `SAP_SD_IM_ActualActivityP&LCalculation`. The step would follow the same pattern like the others you just looked at.
+    If you want to add a fourth `Base_Account/Measure (Sales Planning)`, you would need to add another step at the end of the data action `SAP_SD_IM_SalesPlanning_ActualActivityP&LCalculation`. The step would follow the same pattern like the others you just looked at.
 
 ### Adjust Planning Applications
 
@@ -192,5 +192,28 @@ You need to incorporate the option to select your new `SpendType Premium` whenev
 ### Final Remarks
 
 Congratulations! You have now successfully created a new `SpendType` and embedded it into the planning applications and stories!
+
+If you want to learn more about the other modules of this content package, check out the following tutorials:
+
+- [xP&A Commercial Planning - Get to know the Marketing Planning module](xpa-sac-cxmp-marketingplanning-gettoknow)
+- [xP&A Commercial Planning - Get to know the Sales Planning module](xpa-sac-cxsp-salesplanning-gettoknow)
+- [xP&A Commercial Planning - Get to know the Portfolio Planning module](xpa-sac-cxpp-portfolioplanning-gettoknow)
+
+
+If you want to customize the content and adjust it according to your own business requirements, the following resources might be helpful:
+
+- [xP&A Commercial Planning - Introduction to the Data Model](xpa-sac-cxmp-datamodelfundamentals)
+- [xP&A Commercial Planning - Understanding the technical structure of Stories](xpa-sac-cx-technical-structure-of-stories)
+- [xP&A Commercial Planning - Data Integration](xpa-sac-cx-data-integration-setup)
+- [xP&A Commercial Planning - Manage data loads](xpa-sac-cx-manage-data-loads)
+- [xP&A Commercial Planning - Add additional sections to a story](xpa-sac-cx-add-new-sections-to-app)
+- [xP&A Commercial Planning - Add an additional story to the Navigation Menu](xpa-sac-cx-add-new-story-to-navmenu)
+- [xP&A Commercial Planning - Customize Default Settings](xpa-sac-cx-customize-default-settings)
+- [xP&A Commercial Planning - Customize Table Settings Dialogue](xpa-sac-cx-customize-table-settings-dialogue)
+- [xP&A Commercial Planning (Marketing) - Add a new Driver](xpa-sac-cxmp-add-new-driver)
+- [xP&A Commercial Planning (Marketing) - Add a new Version](xpa-sac-cxmp-add-new-version)
+- [xP&A Commercial Planning (Marketing) - Extend activity spend dates](xpa-sac-cxmp-extend-activity-dates)
+- [xP&A Commercial Planning (Sales) - Add a new Version](xpa-sac-cxsp-add-new-version)
+- [xP&A Commercial Planning (Sales) - Add a new Tactic](xpa-sac-cxsp-add-new-tactic)
 
 Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content?source=social-Global-SAP+Analytics-YOUTUBE-SalesCampaign-Analytics-Analytics-spr-5330779922).

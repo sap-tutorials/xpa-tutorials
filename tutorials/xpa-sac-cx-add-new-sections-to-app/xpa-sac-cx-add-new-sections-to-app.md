@@ -2,7 +2,7 @@
 title: xP&A CX Commercial Planning - Add additional sections to a story
 description: This tutorial will explain how you can add additional sections to your story in accordance with the theme used.
 author_name: Rudolf Lindt
-author_profile: https://people.sap.com/rudolf.lindt
+author_profile: https://github.com/RudolfLindt93
 auto_validation: false
 keywords: xP&A, Customization, Analytics Designer, Commercial Planning, Portfolio Planning, Demand Planning, Marketing Planning, Campaign Planning, Budget Planning
 time: 30
@@ -25,7 +25,9 @@ Now that you have successfully gone through the introduction tutorials and under
 
 Here you will learn how to add additional sections to your stories in accordance with the UI. 
 
-In case you have any questions or require further support, please use the [SAP Blog question form](https://answers.sap.com/questions/ask.html?primaryTagId=bcbf0782-ce74-43b8-b695-dafd7c1ff1c1&additionalTagId=67838200100800006884&additionalTagId=819703369010316911100650199149950&topics=commercial%20planning) to reach out to us.
+In case you have any questions or require further support, please use the [SAP Question Form](https://community.sap.com/t5/forums/postpage/choose-node/true/product-id/bcbf0782-ce74-43b8-b695-dafd7c1ff1c1/board-id/technology-questions).
+
+If you have a specific request to our team in regards to the business content, you may also submit a request using the [SAP Influence Platform](https://influence.sap.com/sap/ino/#/idea-create?campaign=884&title=Extended%20Planning%20and%20Analysis%3A%20content&tags=Extended%20Planning%20and%20Analysis&RespList=cust.ino.config.SAP_ANALYTICS_CLOUD_SAP_DIGITAL_BOARDROOM.BIZ_CONTENT).
 
 If you are interested in more xP&A topics, related business content packages, or videos showing the content in action, feel free to check out our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).
 
@@ -34,17 +36,19 @@ If you are interested in more xP&A topics, related business content packages, or
 For demonstration purposes, we will take a look at the **List Price Analysis** (`SAP_MKT_PortfolioPlanning_ListPriceAnalysis`) story.
 The basic idea can be applied to any story which is part of the **Commercial Planning** business content package.
 
-1. Open the story in which you want to add a new section in edit mode. 
-    - As mentioned, in this example the **List Price Analysis** (`SAP_MKT_PortfolioPlanning_ListPriceAnalysis`) story is opened.
-    - As you can see the story already has three sections, which are the **Trend Analysis** section, the **Average List Price** section and the **Data Quality** section.
+Open the story in which you want to add a new section in edit mode. 
+- As mentioned, in this example the **List Price Analysis** (`SAP_MKT_PortfolioPlanning_ListPriceAnalysis`) story is opened.
+- As you can see the story already has three sections, which are the **Trend Analysis** section, the **Average List Price** section and the **Data Quality** section.
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/0.png)
+<!-- border; size:540px -->![xp&A Commercial Planning](1/0.png)
 
-2. Open the **Left Side Panel** and switch to the **Outline** tab. 
+### Modify Layout
+
+1. Open the **Left Side Panel** and switch to the **Outline** tab. 
 
     <!-- border; size:540px -->![xp&A Commercial Planning](1/1.png)
 
-3. Drill down to the **CONTENT** panel of the story page and look for panel groups called `p2_pnl_section1_lyt`, `p2_pnl_section2_lyt` and `p2_pnl_section3_lyt`.
+2. Drill down to the **CONTENT** panel of the story page and look for panel groups called `p2_pnl_section1_lyt`, `p2_pnl_section2_lyt` and `p2_pnl_section3_lyt`.
    
     <!-- border; size:540px -->![xp&A Commercial Planning](1/2.png)
 
@@ -57,7 +61,7 @@ The basic idea can be applied to any story which is part of the **Commercial Pla
     >
     If the story you are customizing has less panels per default, there will be less containers consequently.
   
-4. Click on one of those containers and duplicate it. 
+3. Click on one of those containers and duplicate it. 
 
     <!-- border; size:540px -->![xp&A Commercial Planning](1/3.png)
 
@@ -65,14 +69,14 @@ The basic idea can be applied to any story which is part of the **Commercial Pla
     - Building it from scratch would be way too time consuming - so let us just copy an existing container and modify it afterwards. 
     - In this example, we will simply make a copy of `p2_pnl_section3_lyt`. Of course you can take any other container as baseline as well.
 
-5. Rename the new panel to `p2_pnl_section4_lyt`.
+4. Rename the new panel to `p2_pnl_section4_lyt`.
     - According to the naming convention used, rename the new panel from the auto-generated name (which in this instance is `Panel_1`) to `p2_pnl_section4_lyt` by double clicking on the panel name in the **Outline**.
   
     <!-- border; size:540px -->![xp&A Commercial Planning](1/4.png)
 
     - It is generally recommended to also rename the widgets and panels inside this container according to the naming convention too, as all duplicated elements have the default naming now. However, for the purpose of efficiency, the rest of this tutorial assumes that the widgets and panels inside this container are left with their default names.
 
-6. Define the height of the panel.
+5. Define the height of the panel.
     - Click on the new parent panel `p2_pnl_section4_lyt` in the **Left Side Panel** and open the **Right Side Panel** afterwards. 
     - Now define a fixed height for the panel.
     - This will be the height of the panel when you open the story. Depending on how many widgets you want to place there, you may want to increase or decrease your pixels.
@@ -86,7 +90,7 @@ The basic idea can be applied to any story which is part of the **Commercial Pla
     - The duplicated container inherits the properties of its origin, so depending on which panel you chose as baseline, you might see different values. 
     - As for demonstration purposes the container `p2_pnl_section3_lyt` was duplicated, the original pixel height is set to `550 px`.
 
-7. Adjust the layout scripts of the **Expand Buttons** or respectively **Collapse Buttons** in each available section.
+6. Adjust the layout scripts of the **Expand Buttons** or respectively **Collapse Buttons** in each available section.
     - Now it gets a little more technical.
     - As you have learned in the introduction tutorials, each section has a button on the top-right corner to either expand a section to full screen or to exit the full screen mode and return to default view. 
     - Each of these buttons calls a tiny script which changes the layout accordingly. As we have a new section now, we need to adjust all scripts of each button to take into consideration the new panel as well. 
@@ -185,7 +189,7 @@ The basic idea can be applied to any story which is part of the **Commercial Pla
     layoutScripts.resizePanelsMulti(toggleVisibilityPanels, p2_pnl_section3_lyt, this );
     ```
 
-8.  Adjust the resizing script for the containers
+7.  Adjust the resizing script for the containers
     - The next thing you have to do is to adjust the resizing script for the containers once you leave the full screen mode and go back to default view. 
     - In the **Left Side Panel**, look for the script `resizePanelsMulti`. 
     - Now extend the if-else block with a new else-if condition, targeting the new section.
@@ -207,7 +211,7 @@ The basic idea can be applied to any story which is part of the **Commercial Pla
     >
     - The amount of conditional checks in this script depends on how many containers or respectively sections you have. 
 
-9.  Adjust the `onClick` script of the **Hide** or respectively **Unhide** button located on the top-left corner of the new section.
+8.  Adjust the `onClick` script of the **Hide** or respectively **Unhide** button located on the top-left corner of the new section.
 
     >INFORMATION:
     >
@@ -249,7 +253,7 @@ The basic idea can be applied to any story which is part of the **Commercial Pla
 
     The last argument is a script, in which you need to pass another argument specifying the pixel height of the parent container, which we set to `700`. 
 
-10. Save your story.
+9.  Save your story.
 
 
 ### Final Remarks

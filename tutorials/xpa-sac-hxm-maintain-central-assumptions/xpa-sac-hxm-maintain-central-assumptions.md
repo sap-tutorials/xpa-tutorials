@@ -1,8 +1,8 @@
 ---
-title: xP&A HXM Workforce Planning - Create and Upload Central Assumptions
+title: xP&A Operational Workforce Planning - Create and Upload Central Assumptions
 description: This tutorial provides guidance on how to create and upload Central Assumptions.
 author_name: Rudolf Lindt
-author_profile: https://people.sap.com/rudolf.lindt
+author_profile: https://github.com/RudolfLindt93
 auto_validation: true
 time: 60
 keywords: xP&A, central assumptions
@@ -12,11 +12,20 @@ parser: v2
 ---
 
 ## Prerequisites
-- You are familiar with the **SAP Human Experience Management (HXM) Workforce Planning content** from the xP&A Business Content Suite. Reference: [Getting Started tutorial](xpa-sac-hxm-workforceplanning-gettoknow)
-- You have installed the **SAP Human Experience Management (HXM) Workforce Planning content** in an SAP Analytics Cloud tenant. Reference: [Business Content Installation Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/078868f57f3346a98c3233207bd211c7.html), [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html)  
+- You are familiar with the **xP&A - Operational Workforce Planning** content from the xP&A Business Content Suite. Reference: [Getting Started tutorial](xpa-sac-hxm-workforceplanning-gettoknow)
+- You have installed the **xP&A - Operational Workforce Planning** content in an SAP Analytics Cloud tenant. Reference: [Business Content Installation Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/078868f57f3346a98c3233207bd211c7.html), [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html)  
+
+## Intro
+In this tutorial you will learn how create and upload central assumptions to your story.
+
+In case you have any questions or require further support, please use the [SAP Question Form](https://community.sap.com/t5/forums/postpage/choose-node/true/product-id/bcbf0782-ce74-43b8-b695-dafd7c1ff1c1/board-id/technology-questions).
+
+If you have a specific request to our team in regards to the business content, you may also submit a request using the [SAP Influence Platform](https://influence.sap.com/sap/ino/#/idea-create?campaign=884&title=Extended%20Planning%20and%20Analysis%3A%20content&tags=Extended%20Planning%20and%20Analysis&RespList=cust.ino.config.SAP_ANALYTICS_CLOUD_SAP_DIGITAL_BOARDROOM.BIZ_CONTENT).
+
+If you are interested in more xP&A topics, related business content packages, or videos showing the content in action, feel free to check out our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).
 
 ## You will learn
-- The meaning of the term **Central Assumptions** and the use of Central Assumptions in the context of the HXM Operational Workforce Planning content package for SAP Analytics Cloud
+- The meaning of the term **Central Assumptions** and the use of Central Assumptions in the context of the xP&A Operational Workforce Planning content package for SAP Analytics Cloud
 - How to upload Central Assumptions manually using Microsoft (MS) Excel as a data source (works with any other data source as well)
 - This includes...
   -creating the template for your data entry
@@ -25,20 +34,20 @@ parser: v2
 
 
 ### Understanding the term Central Assumptions
-In the scope of the [Human Resources - HXM Operational Workforce Planning Content Package for SAP Analytics Cloud](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html), the term **Central Assumptions** describes different headcount related cost parameters which are used for various cost calculations that are made throughout the whole planning process.
+In the scope of the [xP&A Operational Workforce Planning Content Package for SAP Analytics Cloud](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html), the term **Central Assumptions** describes different headcount related cost parameters which are used for various cost calculations that are made throughout the whole planning process.
 
 All of these cost parameters are centrally maintained on a high aggregation level and serve as a rough indicator for expected per headcount costs.
 
-In the context of the [Human Resources - HXM Operational Workforce Planning Content Package for SAP Analytics Cloud](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html), these aggregation levels are known as **Plan Levels**. Find out more about the meaning of the term **Plan Level** in **step 1** of the [xP&A HXM Workforce Planning - Add a new Plan Level](xpa-sac-hxm-add-plan-level) tutorial.
+In the context of the [xP&A Operational Workforce Planning Content Package for SAP Analytics Cloud](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html), these aggregation levels are known as **Plan Levels**. Find out more about the meaning of the term **Plan Level** in **step 1** of the [xP&A Operational Workforce Planning - Add a new Plan Level](xpa-sac-hxm-add-plan-level) tutorial.
 
 Maintaining Central Assumptions has the benefit to make precise estimations about cost positions which exceed ordinary headcount related costs such as the base salaries. Such cost positions can for instance be insurance costs, company car costs, IT hardware costs etc.
 
 ### Prepare Central Assumption Template
-In the first step, it is necessary to create a Central Assumptions template with the help of MS Excel.
+In the first step, it is necessary to create a Central Assumptions template with the help of Microsoft Excel.
 
 >INFORMATION:
 >
-- You can use any other data source than MS Excel as well
+- You can use any other data source than Microsoft Excel as well
 - The layout of the template and the general functionality of the import job remain the same, independent of which data source you choose to use
 
 1. Open a blank `.xlsx` file.
@@ -243,7 +252,7 @@ Your final picture should look as follows:
 ### Import External File
 Now that you have created and populated the Central Assumption file, it is necessary to upload the data into the SAC data model via an import job.
 
-1. Open the SAC menu, navigate to the **Modeler** section and open the `SAP__HR_BPL_IM_WORKFORCE` data model.
+1. Open the SAC menu and open the `SAP__HR_BPL_IM_WORKFORCE` data model.
 
 2. Change the **workspace** via the dropdown window and select **Data Management**.
 
@@ -321,19 +330,11 @@ Now you want to use this period as a reference for your planning year 2021 and c
 
       <!-- border; size:540px -->![canvas_story](canvas-story.png)
 
-    - Click on the **Text** icon or any other icon in order to create a blank story
-
-      <!-- border; size:540px -->![canvas_story](text-icon.png)
-
-    - Add a planning trigger to the story. Choose **Data Action Trigger** from the selection
+    - Add a **Data Action Trigger** to the canvas.
 
       <!-- border; size:250px -->![canvas_story](planning-trigger.png)
 
-      <!-- border; size:250px -->![canvas_story](data-action-trigger.png)
-
     - In the menu on the right-hand side of the screen, choose your newly created data action to embed it into the trigger and specify the target version you want the results to be written on. As in this example, Central Assumptions are maintained on the version `public.Aggregated_Plan`, this version must be specified
-
-      <!-- border; size:250px -->![canvas_story](data-action-selection.png)
 
     - Execute the Data Action by pressing the trigger in your story
 
@@ -350,7 +351,19 @@ Now you want to use this period as a reference for your planning year 2021 and c
 >
 - Using this Data Action implies that you adjust your Version property `Reference Period for Seeding` to match the data value you have entered in the `DATEMONTH` of your MS Excel template.
 
-
+### Final Remarks
 Congratulations! You have now imported your Central Assumptions from an MS Excel template into the relevant planning periods for your desired Version(s) and Plan Level(s).
 
-Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content?source=social-Global-SAP+Analytics-YOUTUBE-MarketingCampaign-Analytics-Analytics-spr-5330779922).
+If you want to learn more about the **SAP xP&A Operational Workforce Planning** content package, customize the content and adjust it according to your own business requirements, the following resources might be helpful:
+
+- [xP&A Operational Workforce Planning - Get to know the Operational Workforce Planning Content](xpa-sac-hxm-workforceplanning-gettoknow)
+- [xP&A Operational Workforce Planning - Create and Upload Central Assumptions](xpa-sac-hxm-maintain-central-assumptions)
+- [xP&A Operational Workforce Planning - Add a new Plan Level](xpa-sac-hxm-add-plan-level)
+- [xP&A Operational Workforce Planning - Add a new Cost Type](xpa-sac-hxm-add-cost-type)
+- [xP&A Operational Workforce Planning - Add a new Version](xpa-sac-hxm-add-new-version)
+- [xP&A Operational Workforce Planning - Create Predictive Scenario](xpa-sac-hxm-create-predictive-scenario)
+- [xP&A Operational Workforce Planning - Write back plan positions to SAP SuccessFactors](xpa-sac-hxm-successfactors-writeback)
+
+If you want to get an overview of the entire xP&A Operational Workforce Planning content package, make sure to check out the [Mission](https://developers.sap.com/mission.hxm-workforce-planning.html).
+
+Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).

@@ -2,7 +2,7 @@
 title: xP&A CX Commercial Planning - Customize Table Settings Dialogue
 description: This tutorial will explain to you how to customize the table settings dialogue and add new measures to the selection.
 author_name: Rudolf Lindt
-author_profile: https://people.sap.com/rudolf.lindt
+author_profile: https://github.com/RudolfLindt93
 auto_validation: false
 keywords: xP&A, Customization, Analytics Designer, Commercial Planning, Portfolio Planning, Demand Planning, Marketing Planning, Campaign Planning, Budget Planning
 time: 20
@@ -31,7 +31,9 @@ This tutorial provides information on how to change the default selection for th
 
 As presented in the introduction tutorials, this dialogue can be called by using the **Table Settings** button and provides a set of measures to be displayed in your planning table. In particular you will now learn how to add or remove measures from the selection. 
 
-In case you have any questions or require further support, please use to the [SAP Blog question form](https://answers.sap.com/questions/ask.html?primaryTagId=bcbf0782-ce74-43b8-b695-dafd7c1ff1c1&additionalTagId=67838200100800006884&additionalTagId=819703369010316911100650199149950&topics=commercial%20planning) to reach out to us.
+In case you have any questions or require further support, please use the [SAP Question Form](https://community.sap.com/t5/forums/postpage/choose-node/true/product-id/bcbf0782-ce74-43b8-b695-dafd7c1ff1c1/board-id/technology-questions).
+
+If you have a specific request to our team in regards to the business content, you may also submit a request using the [SAP Influence Platform](https://influence.sap.com/sap/ino/#/idea-create?campaign=884&title=Extended%20Planning%20and%20Analysis%3A%20content&tags=Extended%20Planning%20and%20Analysis&RespList=cust.ino.config.SAP_ANALYTICS_CLOUD_SAP_DIGITAL_BOARDROOM.BIZ_CONTENT).
 
 If you are interested in more xP&A topics, related business content packages, or videos showing the content in action, feel free to check out our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).
 
@@ -39,7 +41,7 @@ If you are interested in more xP&A topics, related business content packages, or
 ### Extend Selection
 In this step you will learn how to add new measures to the table settings dialogue.
 
-1. Open the the story in which you want to edit the table settings dialogue in **edit mode**. In this example, we will use the List Price Planning story (SAP_MKT_PortfolioPlanning_ListPricePlanning).
+1. Open the the story in which you want to edit the table settings dialogue in **edit mode**. In this example, we will use the List Price Planning story (`SAP_MKT_PortfolioPlanning_ListPricePlanning`).
 
 2. Open the **Left Side Panel**, go to the **Outline** tab and edit the `onInitialization` script of the story object.
    
@@ -167,7 +169,6 @@ If you want to customize the content and adjust it according to your own busines
 - [xP&A Commercial Planning - Customize Default Settings](xpa-sac-cx-customize-default-settings)
 - [xP&A Commercial Planning (Marketing) - Add a new Driver](xpa-sac-cxmp-add-new-driver)
 - [xP&A Commercial Planning (Marketing) - Add a new Version](xpa-sac-cxmp-add-new-version)
-- [xP&A Commercial Planning (Marketing) - Extend campaign and activity attributes](xpa-sac-cxmp-add-new-attributes)
 - [xP&A Commercial Planning (Marketing) - Extend activity spend dates](xpa-sac-cxmp-extend-activity-dates)
 - [xP&A Commercial Planning (Sales) - Add a new Version](xpa-sac-cxsp-add-new-version)
 - [xP&A Commercial Planning (Sales) - Add a new Tactic](xpa-sac-cxsp-add-new-tactic)

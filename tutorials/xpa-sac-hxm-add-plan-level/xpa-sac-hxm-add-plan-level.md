@@ -1,8 +1,8 @@
 ---
-title: xP&A HXM Workforce Planning - Add a new Plan Level
+title: xP&A Operational Workforce Planning - Add a new Plan Level
 description: This tutorial provides information about how to add a new Plan Level.
 author_name: Rudolf Lindt
-author_profile: https://people.sap.com/rudolf.lindt
+author_profile: https://github.com/RudolfLindt93
 auto_validation: true
 time: 20
 keywords: xP&A, plan level
@@ -12,19 +12,28 @@ parser: v2
 ---
 
 ## Prerequisites
-- You are familiar with the **SAP Human Experience Management (HXM) Workforce Planning content** from the xP&A Business Content Suite. Reference: [Getting Started tutorial](xpa-sac-hxm-workforceplanning-gettoknow)
-- You have installed the **SAP Human Experience Management (HXM) Workforce Planning content** in an SAP Analytics Cloud tenant. Reference: [Business Content Installation Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/078868f57f3346a98c3233207bd211c7.html), [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html)  
+- You are familiar with the You are familiar with the **xP&A - Operational Workforce Planning** content from the xP&A Business Content Suite. Reference: [Getting Started tutorial](xpa-sac-hxm-workforceplanning-gettoknow)
+- You have installed the You are familiar with the **xP&A - Operational Workforce Planning** content in an SAP Analytics Cloud tenant. Reference: [Business Content Installation Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/078868f57f3346a98c3233207bd211c7.html), [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html)  
 
 ## You will learn
-- The meaning of the term **Plan Level** in the context of the HXM Operational Workforce Planning Content Package for SAP Analytics Cloud
+- The meaning of the term **Plan Level** in the context of the xP&A Operational Workforce Planning Content Package for SAP Analytics Cloud
 - Which steps are required in order to add a new Plan Level  
 - This includes...
   -modifying dimensions in the data model
   -adjusting all affected Data Actions
   -maintaining cost parameters for the new Plan Level
 
+## Intro
+In this tutorial you will learn how to create and add a new Plan Level.
+
+In case you have any questions or require further support, please use the [SAP Question Form](https://community.sap.com/t5/forums/postpage/choose-node/true/product-id/bcbf0782-ce74-43b8-b695-dafd7c1ff1c1/board-id/technology-questions).
+
+If you have a specific request to our team in regards to the business content, you may also submit a request using the [SAP Influence Platform](https://influence.sap.com/sap/ino/#/idea-create?campaign=884&title=Extended%20Planning%20and%20Analysis%3A%20content&tags=Extended%20Planning%20and%20Analysis&RespList=cust.ino.config.SAP_ANALYTICS_CLOUD_SAP_DIGITAL_BOARDROOM.BIZ_CONTENT).
+
+If you are interested in more xP&A topics, related business content packages, or videos showing the content in action, feel free to check out our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).
+
 ### Understanding the term Plan Level
-In the scope of the [Human Resources - HXM Operational Workforce Planning Content Package for SAP Analytics Cloud](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html), the term **Plan Level** describes the high level point of view which is used by the planner for the planning activities.
+In the scope of the [xP&A - Operational Workforce Planning Content Package for SAP Analytics Cloud](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html), the term **Plan Level** describes the high level point of view which is used by the planner for the planning activities.
 
 Per default, the content package comes with five pre-defined Plan Levels.
 
@@ -47,7 +56,7 @@ In the first step, it is necessary to add a new member to the `Plan_Level` dimen
 
     <!-- border; size:540px -->![Data_Model](data-model.png)
 
-3. Click on the dimension `Plan_Level`.
+3. Open the dimension `Plan_Level`.
 
     <!-- border; size:540px -->![Select_Plan_Level_Dim](plan-level-dim.png)
 
@@ -73,7 +82,7 @@ In the first step, it is necessary to add a new member to the `Plan_Level` dimen
 
       - This whitelist can be found in every single planning application of this content package and also must be maintained in each application of this content package in case of changes.
 
-      - In order to check the whitelist, open any planning application in **edit mode** and enter the `onInitialization` script.
+      - In order to check the whitelist, open any planning story in **edit mode** and enter the `onInitialization` script.
 
         <!-- border; size:540px -->![Whitelist](whitelist.png)
 
@@ -105,7 +114,7 @@ By doing this, your planning applications will automatically initialize all plan
 ### Adjust Data Actions
 In the next step, all affected Data Actions must be adjusted in order to make calculations for the new Plan Level `PL6`work.
 
-1. Navigate to the **Data Action** menu and open the Data Action `SAP__HR_BPL_IM_INITIALIZE_PLAN_WITH_AGGREGATION`.
+1. Navigate to the **Data Action** folder and open the Data Action `SAP__HR_BPL_IM_INITIALIZE_PLAN_WITH_AGGREGATION`.
 
     <!-- border; size:540px -->![Data_Action_Menu](data-action-menu.png)
 
@@ -197,14 +206,21 @@ In the next step, all affected Data Actions must be adjusted in order to make ca
 ### Maintain Central Assumptions for new Plan Level
 Lastly you need to maintain Central Assumptions for the Plan Level `PL6`.
 
-Here you can access the tutorial [xP&A HXM Workforce Planning - Create and Upload Central Assumptions](xpa-sac-hxm-maintain-central-assumptions) in order to learn how to upload and maintain Central Assumptions.
+Here you can access the tutorial [xP&A Operational Workforce Planning - Create and Upload Central Assumptions](xpa-sac-hxm-maintain-central-assumptions) in order to learn how to upload and maintain Central Assumptions.
 
+### Final Remarks
 Congratulations! You have now added a new planning point of view to your workforce planning solution by extending the Plan Level dimension.
 
-Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content?source=social-Global-SAP+Analytics-YOUTUBE-MarketingCampaign-Analytics-Analytics-spr-5330779922).
+If you want to learn more about the **SAP xP&A Operational Workforce Planning** content package, customize the content and adjust it according to your own business requirements, the following resources might be helpful:
 
+- [xP&A Operational Workforce Planning - Get to know the Operational Workforce Planning Content](xpa-sac-hxm-workforceplanning-gettoknow)
+- [xP&A Operational Workforce Planning - Create and Upload Central Assumptions](xpa-sac-hxm-maintain-central-assumptions)
+- [xP&A Operational Workforce Planning - Add a new Plan Level](xpa-sac-hxm-add-plan-level)
+- [xP&A Operational Workforce Planning - Add a new Cost Type](xpa-sac-hxm-add-cost-type)
+- [xP&A Operational Workforce Planning - Add a new Version](xpa-sac-hxm-add-new-version)
+- [xP&A Operational Workforce Planning - Create Predictive Scenario](xpa-sac-hxm-create-predictive-scenario)
+- [xP&A Operational Workforce Planning - Write back plan positions to SAP SuccessFactors](xpa-sac-hxm-successfactors-writeback)
 
+If you want to get an overview of the entire xP&A Operational Workforce Planning content package, make sure to check out the [Mission](https://developers.sap.com/mission.hxm-workforce-planning.html).
 
-
-
----
+Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).

@@ -2,7 +2,7 @@
 title: xP&A CX Commercial Planning - Understanding the technical structure of Stories
 description: This tutorial will explain to you the technical structure of each story so you can easily customize your content.
 author_name: Rudolf Lindt
-author_profile: https://people.sap.com/rudolf.lindt
+author_profile: https://github.com/RudolfLindt93
 auto_validation: false
 keywords: xP&A, Customization, Analytics Designer, Commercial Planning, Portfolio Planning, Demand Planning, Marketing Planning, Campaign Planning, Budget Planning
 time: 30
@@ -30,7 +30,9 @@ Now that you have successfully gone through the introduction tutorials and know 
 
 Before you do that though, it is highly recommended to go through this tutorial in order to understand how the stories are structured and how the objects are used in the standard content. 
 
-In case you have any questions or require further support, please use the [SAP Blog question form](https://answers.sap.com/questions/ask.html?primaryTagId=bcbf0782-ce74-43b8-b695-dafd7c1ff1c1&additionalTagId=67838200100800006884&additionalTagId=819703369010316911100650199149950&topics=commercial%20planning) to reach out to us.
+In case you have any questions or require further support, please use the [SAP Question Form](https://community.sap.com/t5/forums/postpage/choose-node/true/product-id/bcbf0782-ce74-43b8-b695-dafd7c1ff1c1/board-id/technology-questions).
+
+If you have a specific request to our team in regards to the business content, you may also submit a request using the [SAP Influence Platform](https://influence.sap.com/sap/ino/#/idea-create?campaign=884&title=Extended%20Planning%20and%20Analysis%3A%20content&tags=Extended%20Planning%20and%20Analysis&RespList=cust.ino.config.SAP_ANALYTICS_CLOUD_SAP_DIGITAL_BOARDROOM.BIZ_CONTENT).
 
 If you are interested in more xP&A topics, related business content packages, or videos showing the content in action, feel free to check out our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).
 
@@ -55,16 +57,11 @@ The `ShellBar` section is where the shell bar on the top is configured. All of t
   
 <!-- border; size:540px -->![xp&A Commercial Planning](1/2.png)
 
-The `FilterPanel` section is where the filter panel or respectively left-side panel is configured. As this component is used across all planning and reporting stories as well, it deserves to have an own container outside the **CONTENT** section.
+The `pnl_LeftSidePanel` section is where the left-side panel is configured. As this component is used across all planning and reporting stories as well, it deserves to have an own container outside the **CONTENT** section.
   
 <!-- border; size:540px -->![xp&A Commercial Planning](1/3.png)
 
-In the **Marketing Demand Planning** story, the `FilterPanel` is replaced with a container called `pnl_LeftSidePanel`, which on the other hand contains the `FilterPanel` among other panels as a sub-container. This is because this particular story provides multiple panels which are UI-wise similar to the `FilterPanel`. Thus all those panels are clustered under a parent container.
-  
-<!-- border; size:540px -->![xp&A Commercial Planning](1/31.png)
-
-The `MainNavigation` section is where the navigation menu is configured. 
-Similar to the `ShellBar` section and the `FilterPanel` section, this component is also used across almost all stories of this content package.
+The `MainNavMenu` section is where the navigation menu is configured. Other than the other sections, the `MainNavMenu` section is a composite object which is configured outside the story as this component is used across almost all stories of this content package. 
   
 <!-- border; size:540px -->![xp&A Commercial Planning](1/4.png)
 

@@ -98,7 +98,7 @@ Now that you created your new version, you can make a couple of adjustments whic
 
     <!-- border; size:540px -->![Data_Model](data-model.png)
 
-3. Click on the dimension `Version` or on the **Navigate to Dimension**-button.
+3. Open the `Version` dimension.
 
     <!-- border; size:540px -->![Version_Dim](version-dim.png)
 
@@ -152,7 +152,7 @@ You need to make some adjustments in order for the applications to initialize al
 
       4. Select one of the references `Script for Event "PageFilters_Update: ..."`. In line 9 of the `ActionScripts.PageFilters_Update`-script replace the first element of the array with your newly created version:
 
-            pageFilter_Version[0] = "Baseline";
+            `pageFilter_Version[0] = "Baseline"`;
 
          <!-- border; size:540px -->![analytic_application](pageFilters_Update.png)
 
@@ -211,7 +211,7 @@ You need to make some adjustments in order for the applications to initialize al
 
 3. Adjust Version in Data Actions
 
-    You learn how to set the new version in data action `SAP_SD_IM_ActualActivityP&LCalculation`. The baseline activity costs of goods sold and the incremental costs of good sold are calculated on the `Plan` version. Without the change in the data action, any change made on your `Baseline` version will not effect the calculated COGS. Hence, you need to change it to your new version.
+    You learn how to set the new version in data action `SAP_SD_IM_SalesPlanning_ActualActivityP&LCalculation`. The baseline activity costs of goods sold and the incremental costs of good sold are calculated on the `Plan` version. Without the change in the data action, any change made on your `Baseline` version will not effect the calculated COGS. Hence, you need to change it to your new version.
 
     >INFORMATION:
     >
@@ -219,11 +219,11 @@ You need to make some adjustments in order for the applications to initialize al
 
       1. In the SAP Analytics Cloud Menu, navigate to the **Files** section.
 
-      2. Search for the affected data action `SAP_SD_IM_ActualActivityP&LCalculation` and open it.
+      2. Search for the affected data action `SAP_SD_IM_SalesPlanning_ActualActivityP&LCalculation` and open it.
 
          <!-- border; size:540px -->![analytic_application](search-application-3.png)
 
-      3. Click on the step `Compute Baseline Activity COGS`. Search for the previous version `Plan` and replace it in the data action on line 25 with the new version `Baseline`.
+      3. Click on the step `Compute Baseline Activity COGS`. Search for the previous version `Plan` and replace it in the data action on line 26 with the new version `Baseline`.
 
          <!-- border; size:540px -->![analytic_application](data-action-version-1.png)
 
@@ -236,5 +236,27 @@ You need to make some adjustments in order for the applications to initialize al
 ### Final Remarks
 
 Congratulations! You have now successfully created a new version and embedded it into the planning applications and stories!
+
+If you want to learn more about the other modules of this content package, check out the following tutorials:
+
+- [xP&A Commercial Planning - Get to know the Marketing Planning module](xpa-sac-cxmp-marketingplanning-gettoknow)
+- [xP&A Commercial Planning - Get to know the Sales Planning module](xpa-sac-cxsp-salesplanning-gettoknow)
+- [xP&A Commercial Planning - Get to know the Portfolio Planning module](xpa-sac-cxpp-portfolioplanning-gettoknow)
+
+If you want to customize the content and adjust it according to your own business requirements, the following resources might be helpful:
+
+- [xP&A Commercial Planning - Introduction to the Data Model](xpa-sac-cxmp-datamodelfundamentals)
+- [xP&A Commercial Planning - Understanding the technical structure of Stories](xpa-sac-cx-technical-structure-of-stories)
+- [xP&A Commercial Planning - Data Integration](xpa-sac-cx-data-integration-setup)
+- [xP&A Commercial Planning - Manage data loads](xpa-sac-cx-manage-data-loads)
+- [xP&A Commercial Planning - Add additional sections to a story](xpa-sac-cx-add-new-sections-to-app)
+- [xP&A Commercial Planning - Add an additional story to the Navigation Menu](xpa-sac-cx-add-new-story-to-navmenu)
+- [xP&A Commercial Planning - Customize Default Settings](xpa-sac-cx-customize-default-settings)
+- [xP&A Commercial Planning - Customize Table Settings Dialogue](xpa-sac-cx-customize-table-settings-dialogue)
+- [xP&A Commercial Planning (Marketing) - Add a new Driver](xpa-sac-cxmp-add-new-driver)
+- [xP&A Commercial Planning (Marketing) - Add a new Version](xpa-sac-cxmp-add-new-version)
+- [xP&A Commercial Planning (Marketing) - Extend activity spend dates](xpa-sac-cxmp-extend-activity-dates)
+- [xP&A Commercial Planning (Sales) - Add a new Spend Type](xpa-sac-cxsp-add-new-spendtype)
+- [xP&A Commercial Planning (Sales) - Add a new Tactic](xpa-sac-cxsp-add-new-tactic)
 
 Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).

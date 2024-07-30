@@ -1,8 +1,8 @@
 ---
-title: xP&A HXM Workforce Planning - Add a new Version
+title: xP&A Operational Workforce Planning - Add a new Version
 description: This tutorial provides information on how to add a new version and use it inside the different applications.
 author_name: Rudolf Lindt
-author_profile: https://people.sap.com/rudolf.lindt
+author_profile: https://github.com/RudolfLindt93
 auto_validation: true
 time: 20
 keywords: xP&A, version
@@ -12,8 +12,8 @@ parser: v2
 ---
 
 ## Prerequisites
-- You are familiar with the **SAP Human Experience Management (HXM) Workforce Planning content** from the xP&A Business Content Suite. Reference: [Getting Started tutorial](xpa-sac-hxm-workforceplanning-gettoknow)
-- You have installed the **SAP Human Experience Management (HXM) Workforce Planning content** in an SAP Analytics Cloud tenant. Reference: [Business Content Installation Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/078868f57f3346a98c3233207bd211c7.html), [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html)  
+- You are familiar with the **xP&A - Operational Workforce Planning** content from the xP&A Business Content Suite. Reference: [Getting Started tutorial](xpa-sac-hxm-workforceplanning-gettoknow)
+- You have installed the **xP&A - Operational Workforce Planning** content in an SAP Analytics Cloud tenant. Reference: [Business Content Installation Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/078868f57f3346a98c3233207bd211c7.html), [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html)  
 
 ## You will learn
 - Which steps are required in order to add and use a new version
@@ -23,9 +23,15 @@ parser: v2
 
 
 ## Intro
-The HXM Workforce Planning content package comes with a number of pre-defined versions which can be used for your planning activities. Nevertheless you might wand to add more versions according to your own business needs. In this case, you would need to adjust the planning applications as well as the reporting stories, so the planning grids and objects initialize with the correct version member.
+The xP&A Operational Workforce Planning content package comes with a number of pre-defined versions which can be used for your planning activities. Nevertheless you might wand to add more versions according to your own business needs. In this case, you would need to adjust the planning applications as well as the reporting stories, so the planning grids and objects initialize with the correct version member.
 
 In this tutorial, you will learn how to add a new version and how to make it available in the planning applications and reporting stories of this content package.
+
+In case you have any questions or require further support, please use the [SAP Question Form](https://community.sap.com/t5/forums/postpage/choose-node/true/product-id/bcbf0782-ce74-43b8-b695-dafd7c1ff1c1/board-id/technology-questions).
+
+If you have a specific request to our team in regards to the business content, you may also submit a request using the [SAP Influence Platform](https://influence.sap.com/sap/ino/#/idea-create?campaign=884&title=Extended%20Planning%20and%20Analysis%3A%20content&tags=Extended%20Planning%20and%20Analysis&RespList=cust.ino.config.SAP_ANALYTICS_CLOUD_SAP_DIGITAL_BOARDROOM.BIZ_CONTENT).
+
+If you are interested in more xP&A topics, related business content packages, or videos showing the content in action, feel free to check out our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).
 
 
 ### Enter Version Management section
@@ -37,7 +43,7 @@ In the first step, it is necessary to add a new member to the `Version` dimensio
 
     <!-- border; size:540px -->![canvas_story](canvas-story.png)
 
-3. Click on the table icon in order to create a story with a table object in it.
+3. Drag and drop a table object onto the canvas board.
 
     <!-- border; size:540px -->![canvas_story](table-object.png)
 
@@ -56,7 +62,6 @@ In the first step, it is necessary to add a new member to the `Version` dimensio
     <!-- border; size:540px -->![canvas_story](version-management.png)
 
 
-
 ### Create new Version
 
 After clicking on the **Version Management** icon, a new section on the right-hand side expands, where all public and private versions are visible. In this step, you will add a new public version to the data model.
@@ -73,13 +78,13 @@ After clicking on the **Version Management** icon, a new section on the right-ha
     - Ensure to choose **Planning** as your version category.
     - Choose one of the options provided for your copy operation. In this example, we will copy all data from the `public.Aggregated_Plan` version to the new version.
 
-      <!-- border; size:250px -->![copy_version](copy-version-2.png)
+      <!-- border; size:540px -->![copy_version](copy-version-2.png)
 
     - Click on **OK** to create the copy.
 
 ### Publish new Version
 
-Now that you created the new version, you need to publish it as it is initially created as a private version.
+Now that you have created the new version, you need to publish it as it is initially created as a private version.
 
 1. Click on the **Publish** icon next to your new version.
 
@@ -100,7 +105,8 @@ Now that you created the new version, you need to publish it as it is initially 
 4. Close your story.
 
     - You may now close your story.
-    - There is no need to save it as it only served as an entry point for the version management section.
+    - There is no need to save it as it only served as an entry point for the version management section. 
+    - Alternatively, you can also just use an existing story of this content package to enter the version management section.
 
 ### Adjust Version Properties
 Now that you created your new version, you can make a couple of adjustments which are relevant for the planning activities. This includes changing the plan horizon or the reference period for instance.
@@ -111,7 +117,7 @@ Now that you created your new version, you can make a couple of adjustments whic
 
     <!-- border; size:540px -->![Data_Model](data-model.png)
 
-3. Click on the dimension `Version`.
+3. Open on the dimension `Version`.
 
     <!-- border; size:540px -->![Version_Dim](version-dim.png)
 
@@ -145,7 +151,7 @@ Now that you created your new version, you can make a couple of adjustments whic
 
       - Only one period can be selected as reference period.
       - The reference period must always be entered in a `YYYYMM` format.
-      - If for instance your define your reference period as `202212` and make use of the pre-seeding functionality provided by the application `SAP__HR_BPL_IM_WFP_CENTRAL_ASSUMPTIONS`, your plan version would be pre-populated with the values from the period `202212`. Those values are copied over to the periods of your defined plan horizon, which in this example ranges from period 1 of the plan year 2023 to period 12 of the plan year 2023 (defined by the properties **Start Period of Planning** and **End Period of Planning**).
+      - If for instance your define your reference period as `202412` and make use of the pre-seeding functionality provided by the story `SAP__HR_BPL_IM_WFP_CENTRAL_ASSUMPTIONS`, your plan version would be pre-populated with the values from the period `202412`. Those values are copied over to the periods of your defined plan horizon, which in this example ranges from period 1 of the plan year 2025 to period 12 of the plan year 2025 (defined by the properties **Start Period of Planning** and **End Period of Planning**).
 
       ³The property **Is Version Visible** indicates whether a version can be initialized by the planning applications or not.
 
@@ -160,14 +166,14 @@ Now that you created your new version, you can make a couple of adjustments whic
       ⁵The property **Plan Level** defines the default Plan Level of the version.
 
       - Each version can only have one Plan Level. The Plan Level must not be changed during the whole planning process. If the Plan Level is changed during the planning process, issues such as duplicated numbers may occur.
-      - The Plan Level specified in this column defines the table structure in the planning applications. Find out more about the term Plan Level and its role in the context of this content package in **step 1** of the tutorial [xP&A HXM Workforce Planning - Add a new Plan Level](xpa-sac-hxm-add-plan-level).
+      - The Plan Level specified in this column defines the table structure in the planning applications. Find out more about the term Plan Level and its role in the context of this content package in **step 1** of the tutorial [xP&A Operational Workforce Planning - Add a new Plan Level](xpa-sac-hxm-add-plan-level).
       - Allowed entries for the column **Plan Level** are only the members maintained in the `Plan_Level` dimension, which per default are `PL1`, `PL2`, `PL3`, `PL4` and `PL5`.
 
 5. Save your changes in case you have done any.
 
 
-### Initialize Objects in Planning Applications with new Version
-Lastly, you need to make some final adjustments in order for the applications to initialize all objects with the new version.
+### Initialize Objects in Stories with new Version
+Lastly, you need to make some final adjustments in order for the stories to initialize all objects with the new version.
 
 In order to do so, there are three possible ways. You can check them out by switching the tabs in this step.
 
@@ -176,24 +182,22 @@ This option provides guidance on how to set the new version as the default versi
 
 1. In the SAP Analytics Cloud Menu, navigate to the **Files** section.
 
-2. Search for the affected application, in which you want the objects to be initialized with new version. In this example, we will look for the `SAP__HR_BPL_IM_WFP_AGGREGATED_INTERNAL` application and open it in **edit mode**.
+2. Search for the affected story in which you want the objects to be initialized with new version. In this example, we will look for the `SAP_HR_BPL_IM_WFP_AGGREGATED_INTERNAL` story and open it in **edit mode**.
 
     <!-- border; size:540px -->![analytic_application](search-application.png)
 
     >INFORMATION:
     >
-    Please note that the procedure is the exact same for any other planning application. Possible applications are where the plan version can be changed are:
+    Please note that the procedure is the exact same for any other stories. Possible applications are where the plan version can be changed are:
     >
-    - `SAP__HR_BPL_IM_WFP_OVERVIEW_PAGE`
-    - `SAP__HR_BPL_IM_WFP_AGGREGATED_INTERNAL`
-    - `SAP__HR_BPL_IM_WFP_AGGREGATED_EXTERNAL`
-    - `SAP__HR_BPL_IM_WFP_CENTRAL_ASSUMPTIONS`
-    - `SAP__HR_BPL_IM_WFP_PREPARE_IFP`
-    - `SAP__HR_BPL_IM_WFP_DETAILED_INTERNAL`
+    - `SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE`
+    - `SAP_HR_BPL_IM_WFP_AGGREGATED_INTERNAL`
+    - `SAP_HR_BPL_IM_WFP_AGGREGATED_EXTERNAL`
+    - `SAP_HR_BPL_IM_WFP_CENTRAL_ASSUMPTIONS`
+    - `SAP_HR_BPL_IM_WFP_PREPARE_IFP`
+    - `SAP_HR_BPL_IM_WFP_DETAILED_INTERNAL`
 
-
-
-3. Scroll down to the **Script Objects** section and click on the script `getCustomizing`.
+3. In the **Outline** section, scroll down to the **Script Objects** and click on the script `getCustomizing`.
 
     <!-- border; size:540px -->![analytic_application](get-customizing.png)
 
@@ -223,29 +227,29 @@ This option provides guidance on how to set the new version as the default versi
 
 
 [OPTION BEGIN [Set Default Parameter]]
-This option provides guidance on how to set the new version as the default version for the initialization of the objects used in the planning applications by providing a default value for the version variable.
+This option provides guidance on how to set the new version as the default version for the initialization of the objects used in the stories by providing a default value for the version variable.
 
 >INFORMATION:
 >
-Please note that this option does not work for the detailed planning application `SAP__HR_BPL_IM_WFP_DETAILED_INTERNAL`. It can only be applied to the following applications:
+Please note that this option does not work for the detailed planning application `SAP_HR_BPL_IM_WFP_DETAILED_INTERNAL`. It can only be applied to the following applications:
 >
-  - `SAP__HR_BPL_IM_WFP_OVERVIEW_PAGE`
-  - `SAP__HR_BPL_IM_WFP_AGGREGATED_INTERNAL`
-  - `SAP__HR_BPL_IM_WFP_AGGREGATED_EXTERNAL`
-  - `SAP__HR_BPL_IM_WFP_CENTRAL_ASSUMPTIONS`
-  - `SAP__HR_BPL_IM_WFP_PREPARE_IFP`
+  - `SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE`
+  - `SAP_HR_BPL_IM_WFP_AGGREGATED_INTERNAL`
+  - `SAP_HR_BPL_IM_WFP_AGGREGATED_EXTERNAL`
+  - `SAP_HR_BPL_IM_WFP_CENTRAL_ASSUMPTIONS`
+  - `SAP_HR_BPL_IM_WFP_PREPARE_IFP`
 
 1. In the SAP Analytics Cloud Menu, navigate to the **Files** section.
 
-2. Search for one of the above mentioned applications. In this example, we will look for the `SAP__HR_BPL_IM_WFP_AGGREGATED_INTERNAL` application and open it in **edit mode**.
+2. Search for one of the above mentioned stories. In this example, we will look for the `SAP_HR_BPL_IM_WFP_AGGREGATED_INTERNAL` story and open it in **edit mode**.
 
     <!-- border; size:540px -->![analytic_application](search-application.png)
 
     >INFORMATION:
     >
-    - Please note that the procedure is the exact same for any other planning application of this content package.
+    - Please note that the procedure is the exact same for any other stories of this content package.
 
-3. Scroll down to the **Script Variables** section and click on the variable `cfg_planVersion`.
+3. In the **Outline** section, scroll down to the **Script Variables** section and click on the variable `cfg_planVersion`.
 
     <!-- border; size:540px -->![analytic_application](cfg-plan-version.png)
 
@@ -269,18 +273,18 @@ This option provides guidance on how to set the new version as the default versi
 
 >INFORMATION:
 >
-Please note that this option does not work for the detailed planning application `SAP__HR_BPL_IM_WFP_DETAILED_INTERNAL`. It can only be applied to the following applications:
+Please note that this option does not work for the detailed planning application `SAP_HR_BPL_IM_WFP_DETAILED_INTERNAL`. It can only be applied to the following applications:
 >
-  - `SAP__HR_BPL_IM_WFP_OVERVIEW_PAGE`
-  - `SAP__HR_BPL_IM_WFP_AGGREGATED_INTERNAL`
-  - `SAP__HR_BPL_IM_WFP_AGGREGATED_EXTERNAL`
-  - `SAP__HR_BPL_IM_WFP_CENTRAL_ASSUMPTIONS`
-  - `SAP__HR_BPL_IM_WFP_PREPARE_IFP`
+  - `SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE`
+  - `SAP_HR_BPL_IM_WFP_AGGREGATED_INTERNAL`
+  - `SAP_HR_BPL_IM_WFP_AGGREGATED_EXTERNAL`
+  - `SAP_HR_BPL_IM_WFP_CENTRAL_ASSUMPTIONS`
+  - `SAP_HR_BPL_IM_WFP_PREPARE_IFP`
 
-1. Generate the link to your planning application.
+1. Generate the link to your story.
 
-    - In order to do so, simply open one of the applications.
-    - You can find the link to the application in your address bar inside your web browser.
+    - In order to do so, simply open one of the stories.
+    - You can find the link to the story in your address bar inside your web browser.
     - Typically, the link looks like this: `https://<YourTenant>/<YourAppID>/`
 
 2. Complement the link with the URL parameter for your new version.
@@ -299,7 +303,7 @@ Please note that this option does not work for the detailed planning application
 3. Open the link.
 
     - Press **Enter** to open the link.
-    - Your planning application now initializes with your new version.
+    - Your story now initializes with your new version.
 
 [OPTION END]
 
@@ -307,19 +311,19 @@ Please note that this option does not work for the detailed planning application
 ### Adjust Version in Story
 Lastly, you need to make the new version available for the filter widgets inside the reporting stories.
 
-1. Head back to the **Files** section in the SAP Analytics Cloud Menu and look for the reporting story `SAP__HR_BPL_IM_WFP_REPORTING`.
+1. Head back to the **Files** section in the SAP Analytics Cloud Menu and look for the reporting story `SAP_HR_BPL_IM_WFP_REPORTING`.
 
     Open the story in edit mode.
 
-    <!-- border; size:250px -->![analytic_application](story-edit-mode.png)
+    <!-- border; size:540px -->![analytic_application](story-edit-mode.png)
 
-2. Edit the input control for the filter widgets under the **Progress Overview** story tab.
+2. Edit the input controls in the **Progress Overview** story tab.
 
-    Click on one of the filter widgets, expand the menu via the `...` icon and click on **Edit Input Control**.
+    Right-click on one of the input controls `Progress_Version1` and `Progress_Version2` and click on **Edit Input Control**.
 
     <!-- border; size:540px -->![analytic_application](edit-input-control.png)
 
-3. Click on the **Values** bar under the **Input Values** section.
+3. Click on the **Values** bar to open the version selection menu.
 
     <!-- border; size:540px -->![analytic_application](input-values-1.png)
 
@@ -329,7 +333,19 @@ Lastly, you need to make the new version available for the filter widgets inside
 
 5. Repeat this exercise for both of the widgets.
 
+### Final Remarks
+Congratulations! You have now successfully created a new version and embedded it into the stories!
 
-Congratulations! You have now successfully created a new version and embedded it into the planning applications and stories!
+If you want to learn more about the **SAP xP&A Operational Workforce Planning** content package, customize the content and adjust it according to your own business requirements, the following resources might be helpful:
 
-Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content?source=social-Global-SAP+Analytics-YOUTUBE-MarketingCampaign-Analytics-Analytics-spr-5330779922).
+- [xP&A Operational Workforce Planning - Get to know the Operational Workforce Planning Content](xpa-sac-hxm-workforceplanning-gettoknow)
+- [xP&A Operational Workforce Planning - Create and Upload Central Assumptions](xpa-sac-hxm-maintain-central-assumptions)
+- [xP&A Operational Workforce Planning - Add a new Plan Level](xpa-sac-hxm-add-plan-level)
+- [xP&A Operational Workforce Planning - Add a new Cost Type](xpa-sac-hxm-add-cost-type)
+- [xP&A Operational Workforce Planning - Add a new Version](xpa-sac-hxm-add-new-version)
+- [xP&A Operational Workforce Planning - Create Predictive Scenario](xpa-sac-hxm-create-predictive-scenario)
+- [xP&A Operational Workforce Planning - Write back plan positions to SAP SuccessFactors](xpa-sac-hxm-successfactors-writeback)
+
+If you want to get an overview of the entire xP&A Operational Workforce Planning content package, make sure to check out the [Mission](https://developers.sap.com/mission.hxm-workforce-planning.html).
+
+Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).

@@ -2,7 +2,7 @@
 title: xP&A CX Commercial Planning - Customize Default Settings
 description: This tutorial explains how you can change and customize your default settings applied on startup of the stories. 
 author_name: Rudolf Lindt
-author_profile: https://people.sap.com/rudolf.lindt
+author_profile: https://github.com/RudolfLindt93
 auto_validation: false
 keywords: xP&A, Customization, Analytics Designer, Commercial Planning, Portfolio Planning, Demand Planning, Marketing Planning, Campaign Planning, Budget Planning
 time: 30
@@ -31,7 +31,9 @@ This tutorial provides information on how to change the default settings of each
 
 Here you will learn how to change the default settings of the planning stories. For demonstration purposes, we will take a look at the **List Price Planning** (`SAP_MKT_PortfolioPlanning_ListPricePlanning`) story and how this is done as the process of changing the default settings is the same for any other story. 
 
-In case you have any questions or require further support, please use to the [SAP Blog question form](https://answers.sap.com/questions/ask.html?primaryTagId=bcbf0782-ce74-43b8-b695-dafd7c1ff1c1&additionalTagId=67838200100800006884&additionalTagId=819703369010316911100650199149950&topics=commercial%20planning) to reach out to us.
+In case you have any questions or require further support, please use the [SAP Question Form](https://community.sap.com/t5/forums/postpage/choose-node/true/product-id/bcbf0782-ce74-43b8-b695-dafd7c1ff1c1/board-id/technology-questions).
+
+If you have a specific request to our team in regards to the business content, you may also submit a request using the [SAP Influence Platform](https://influence.sap.com/sap/ino/#/idea-create?campaign=884&title=Extended%20Planning%20and%20Analysis%3A%20content&tags=Extended%20Planning%20and%20Analysis&RespList=cust.ino.config.SAP_ANALYTICS_CLOUD_SAP_DIGITAL_BOARDROOM.BIZ_CONTENT).
 
 If you are interested in more xP&A topics, related business content packages, or videos showing the content in action, feel free to check out our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).
 
@@ -95,6 +97,11 @@ Select all version you want to be selectable and click on **OK** to apply the ne
 <!-- border; size:540px -->![xp&A Commercial Planning](3/3.png)
 
 This works for any other input control as well in case you notice that some members or nodes are missing.
+
+If a version is not displayed in the selection screen, go to **Settings** on the top-right corner and make sure that you selected all available versions to be displayed.
+
+<!-- border; size:540px -->![xp&A Commercial Planning](3/4.png)
+
 
 ### Change Default Date
 In this step you will learn how to change the default date selection.
@@ -264,7 +271,6 @@ If you want to customize the content and adjust it according to your own busines
 - [xP&A Commercial Planning - Customize Table Settings Dialogue](xpa-sac-cx-customize-table-settings-dialogue)
 - [xP&A Commercial Planning (Marketing) - Add a new Driver](xpa-sac-cxmp-add-new-driver)
 - [xP&A Commercial Planning (Marketing) - Add a new Version](xpa-sac-cxmp-add-new-version)
-- [xP&A Commercial Planning (Marketing) - Extend campaign and activity attributes](xpa-sac-cxmp-add-new-attributes)
 - [xP&A Commercial Planning (Marketing) - Extend activity spend dates](xpa-sac-cxmp-extend-activity-dates)
 - [xP&A Commercial Planning (Sales) - Add a new Version](xpa-sac-cxsp-add-new-version)
 - [xP&A Commercial Planning (Sales) - Add a new Tactic](xpa-sac-cxsp-add-new-tactic)
