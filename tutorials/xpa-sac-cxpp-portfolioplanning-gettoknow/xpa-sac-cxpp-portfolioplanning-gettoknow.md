@@ -2,7 +2,7 @@
 title: xP&A CX Commercial Planning - Get to know the Portfolio Planning module within the Commercial Planning Content part of the xP&A Content Suite
 description: This tutorial will provide you with an overview and run through of the content sub-package in order for you to get familiar with the standard workflow as well as the capabilities of the content.
 author_name: Rudolf Lindt
-author_profile: https://people.sap.com/rudolf.lindt
+author_profile: https://github.com/RudolfLindt93
 auto_validation: false
 keywords: xP&A, Get To Know, Overview, Commercial Planning, Portfolio Planning, Price Planning, Price Analysis
 time: 45
@@ -27,7 +27,9 @@ In this tutorial you will learn all basics about the **Portfolio Planning** modu
 
 A detailed documentation can be found in our [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/b0046d8673b5412cbef7f521cfdfed95.html).
 
-In case you have any questions or require further support, please use the [SAP Blog question form](https://answers.sap.com/questions/ask.html?primaryTagId=bcbf0782-ce74-43b8-b695-dafd7c1ff1c1&additionalTagId=67838200100800006884&additionalTagId=819703369010316911100650199149950&topics=commercial%20planning) to reach out to us.
+In case you have any questions or require further support, please use the [SAP Question Form](https://community.sap.com/t5/forums/postpage/choose-node/true/product-id/bcbf0782-ce74-43b8-b695-dafd7c1ff1c1/board-id/technology-questions).
+
+If you have a specific request to our team in regards to the business content, you may also submit a request using the [SAP Influence Platform](https://influence.sap.com/sap/ino/#/idea-create?campaign=884&title=Extended%20Planning%20and%20Analysis%3A%20content&tags=Extended%20Planning%20and%20Analysis&RespList=cust.ino.config.SAP_ANALYTICS_CLOUD_SAP_DIGITAL_BOARDROOM.BIZ_CONTENT).
 
 If you are interested in more xP&A topics, related business content packages, or videos showing the content in action, feel free to check out our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).
 
@@ -197,16 +199,16 @@ As a last preparation step, it is required to understand the navigation concept 
 
     <!-- border; size:200px -->![xp&A Commercial Planning](4/61.png)
 
-6. **Steps** description field
+6. **Instructions** section
 
     <!-- border; size:540px -->![xp&A Commercial Planning](4/7.png)
 
-    - Such a text field can be found in each planning story of this content package and is located at the top-left corner.
+    - Such a text field can be found in each story of this content package and is located in the left-side panel, indicated by the info icon.
     - This description field serves as a rough guideline and describes the intended user workflow within each of the planning stories.
 
-7. **Filter** panel
+7. **Filter** section
 
-    - This panel can be found in each story apart from the overview pages of this content package and is located on the left-hand side of the screen.
+    - This section can be found in each story apart from the overview pages of this content package and is located in the left-side panel, indicated by the filter icon.
   
     <!-- border; size:540px -->![xp&A Commercial Planning](4/8.png)
 
@@ -223,6 +225,20 @@ As a last preparation step, it is required to understand the navigation concept 
     >
     - Be aware that some widgets are disconnected from the input controls and thus do not take into consideration the settings from the filter panel. 
     - This is because some charts are specifically designed to only show data for one specific version or member of a dimension. 
+
+8. **Help** section
+
+    <!-- border; size:540px -->![xp&A Commercial Planning](4/71.png)
+
+    - This section can be found in each story apart from the overview pages of this content package and is located in the left-side panel, indicated by the question mark icon.
+    - The content help section contains useful links for the user, which for instance redirect you to the official documentation or provide you with contact details so you can get in touch with the developers. 
+
+9. **Comment** section
+
+    <!-- border; size:540px -->![xp&A Commercial Planning](4/90.png)
+    
+    - This section can only be found in each story apart from the overview pages of this content package and is located in the left-side panel.
+    - By clicking on the comment icon, the comment panel is opened where you can leave comments for yourself or the other planners. 
 
 8.  **Distribute Changes** button
 
@@ -761,25 +777,25 @@ If you want to learn more about the other modules of this content package, check
 - [xP&A Commercial Planning - Get to know the Sales Planning module](xpa-sac-cxsp-salesplanning-gettoknow)
 - [xP&A Commercial Planning - Get to know the Marketing Planning module](xpa-sac-cxmp-marketingplanning-gettoknow)
 
-
 If you want to customize the content and adjust it according to your own business requirements, the following resources might be helpful:
 
 - [xP&A Commercial Planning - Introduction to the Data Model](xpa-sac-cxmp-datamodelfundamentals)
-- [xP&A Commercial Planning - Understanding the technical structure of Stories](xpa-sac-cx-technical-structure-of-stories)
+- [xP&A Commercial Planning - Understanding the technical structure of Stories](xpa-sac-cx-technical-structure-stories)
 - [xP&A Commercial Planning - Data Integration](xpa-sac-cx-data-integration-setup)
 - [xP&A Commercial Planning - Manage data loads](xpa-sac-cx-manage-data-loads)
-- [xP&A Commercial Planning - Add additional sections to a story](xpa-sac-cx-add-new-sections-to-app)
-- [xP&A Commercial Planning - Add an additional story to the Navigation Menu](xpa-sac-cx-add-new-story-to-navmenu)
+- [xP&A Commercial Planning - Add additional sections to a story](xpa-sac-cx-add-new-sections)
+- [xP&A Commercial Planning - Add an additional story to the Navigation Menu](xpa-sac-cx-add-story-navmenu)
 - [xP&A Commercial Planning - Customize Default Settings](xpa-sac-cx-customize-default-settings)
-- [xP&A Commercial Planning - Customize Table Settings Dialogue](xpa-sac-cx-customize-table-settings-dialogue)
+- [xP&A Commercial Planning - Customize Table Settings Dialogue](xpa-sac-cx-customize-tablesettings-dialogue)
 - [xP&A Commercial Planning (Marketing) - Add a new Driver](xpa-sac-cxmp-add-new-driver)
 - [xP&A Commercial Planning (Marketing) - Add a new Version](xpa-sac-cxmp-add-new-version)
-- [xP&A Commercial Planning (Marketing) - Extend campaign and activity attributes](xpa-sac-cxmp-add-new-attributes)
 - [xP&A Commercial Planning (Marketing) - Extend activity spend dates](xpa-sac-cxmp-extend-activity-dates)
 - [xP&A Commercial Planning (Sales) - Add a new Version](xpa-sac-cxsp-add-new-version)
 - [xP&A Commercial Planning (Sales) - Add a new Tactic](xpa-sac-cxsp-add-new-tactic)
 - [xP&A Commercial Planning (Sales) - Add a new Spend Type](xpa-sac-cxsp-add-new-spendtype)
 
 If you want to get an overview of the entire xP&A Commercial Planning content package, make sure to check out the Mission.
+
+For the full xP&A experience and to complement the commercial planning process with a dedicated revenue planning process, make sure to check out the [SAP Consensus Net Revenue Planning](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/778ddfa3a6b74c1793804d07fc64de17.html) content package as well! More details about this content package can be found in the [xP&A Consensus Net Revenue - Get to know the Consensus Net Revenue Planning Content part of the xP&A Content Suite](xpa-sac-cnr-gettoknow) introduction tutorial.
 
 Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).

@@ -1,8 +1,8 @@
 ---
-title: xP&A HXM Workforce Planning - Add a new Cost Type
+title: xP&A Operational Workforce Planning - Add a new Cost Type
 description: This tutorial provides information about how to add a new Cost Type
 author_name: Rudolf Lindt
-author_profile: https://people.sap.com/rudolf.lindt
+author_profile: https://github.com/RudolfLindt93
 auto_validation: true
 time: 30
 keywords: xP&A, cost type
@@ -12,21 +12,29 @@ parser: v2
 ---
 
 ## You will learn
-- The meaning of the term **Cost Type** in the context of the HXM Operational Workforce Planning content package for SAP Analytics Cloud
+- The meaning of the term **Cost Type** in the context of the **xP&A - Operational Workforce Planning** content package for SAP Analytics Cloud
 - Which steps are required in order to add a new Cost Type
 - This includes...
     -modifying dimensions in the data model
     -adjusting scripts in the planning applications
     -adjusting all affected Data Actions
 
-## Prerequisites
-- You are familiar with the **SAP Human Experience Management (HXM) Workforce Planning content** from the xP&A Business Content Suite. Reference: [Getting Started tutorial](xpa-sac-hxm-workforceplanning-gettoknow)
-- You have installed the **SAP Human Experience Management (HXM) Workforce Planning content** in an SAP Analytics Cloud tenant. Reference: [Business Content Installation Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/078868f57f3346a98c3233207bd211c7.html), [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html)  
+## Intro
+In this tutorial you will learn how to add a new Cost Type to the application.
 
+In case you have any questions or require further support, please use the [SAP Question Form](https://community.sap.com/t5/forums/postpage/choose-node/true/product-id/bcbf0782-ce74-43b8-b695-dafd7c1ff1c1/board-id/technology-questions).
+
+If you have a specific request to our team in regards to the business content, you may also submit a request using the [SAP Influence Platform](https://influence.sap.com/sap/ino/#/idea-create?campaign=884&title=Extended%20Planning%20and%20Analysis%3A%20content&tags=Extended%20Planning%20and%20Analysis&RespList=cust.ino.config.SAP_ANALYTICS_CLOUD_SAP_DIGITAL_BOARDROOM.BIZ_CONTENT).
+
+If you are interested in more xP&A topics, related business content packages, or videos showing the content in action, feel free to check out our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).
+
+## Prerequisites
+- You are familiar with the **xP&A - Operational Workforce Planning** content from the xP&A Business Content Suite. Reference: [Getting Started tutorial](xpa-sac-hxm-workforceplanning-gettoknow)
+- You have installed the **xP&A - Operational Workforce Planning** content in an SAP Analytics Cloud tenant. Reference: [Business Content Installation Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/078868f57f3346a98c3233207bd211c7.html), [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html)  
 
 
 ### Understanding the term Cost Type
-In the scope of the [Human Resources - HXM Operational Workforce Planning Content Package for SAP Analytics Cloud](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html), the term **Cost Type** is used to categorize a cost-related measure and describe it in more detail. By combining the information of both the measure and the cost type dimension, an account model is created and the planner can analyze the specific sources of incurred costs.
+In the scope of the [Operational Workforce Planning Content Package for SAP Analytics Cloud](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html), the term **Cost Type** is used to categorize a cost-related measure and describe it in more detail. By combining the information of both the measure and the cost type dimension, an account model is created and the planner can analyze the specific sources of incurred costs.
 
 For instance: the content comes with a pre-defined measure which is called `Rate_Absolute`. This measure represents an absolute monthly rate for one headcount (HC). Such an absolute rate can be used to plan travel costs for example. In order to do so, you can simply use the measure `Rate_Absolute` and make your planning assumptions on the cost type `TRAVEL_COSTS`.
 
@@ -41,7 +49,7 @@ In the first step, it is necessary to add a new member to the `SAP_HR_COSTTYPE` 
 
     <!-- border; size:540px -->![Data_Model](data-model.png)
 
-3. Click on the dimension `SAP_HR_COSTTYPE`.
+3. Open the dimension `SAP_HR_COSTTYPE`.
 
     <!-- border; size:540px -->![Select_Cost_Type_Dim](select-costtype-dim.png)
 
@@ -73,7 +81,7 @@ This is necessary not only for the correct initialization of the tables used in 
 
 In this example, you will create a new calculated measure called `CM_TrainingCosts` which restricts the measure `Rate_Absolute` to the cost type `TRAINING_COSTS`.
 
-1. Navigate to the **Calculation Management** menu by either switching the **workspace** on the top left corner via the drop down menu or by navigating back and hitting the **Switch to Calculation Management** button.
+1. Navigate to the **Calculation Management** menu by switching the **Workspace** on the top left corner via the drop down menu.
 
     <!-- border; size:540px -->![Calculation_Management](calculation-management.png)
 
@@ -103,8 +111,8 @@ In this example, you will create a new calculated measure called `CM_TrainingCos
 - If you plan your new cost type to be a percentage rate which applies to the base salary, please use the measure `Rate_Percentage` in your `RESTRICT` formula. In this case, leave the aggregation type blank, set the scale to **Percent** and Decimal Places to **1**.
 
 
-### Adjust Planning Application
-In the next step, the Central Assumptions application must be modified in order for the table to initialize correctly.
+### Adjust Central Assumptions Story
+In the next step, the Central Assumptions (`SAP_HR_BPL_IM_WFP_CENTRAL_ASSUMPTIONS`) story must be modified in order for the table to initialize correctly.
 
 1. Navigate through the file explorer and open the planning application `SAP__HR_BPL_IM_WFP_CENTRAL_ASSUMPTIONS` in **edit mode**.
 
@@ -132,7 +140,7 @@ Additionally, it is necessary to complement the Data Actions with a new calculat
 
 By doing this, you will ensure that whenever a cost calculation takes place, costs for the new cost type will be calculated as well. Such calculations occur in the process of the seeding of the plan versions for instance, or when making your planning assumptions (i.e. changing headcount values) and re-calculating your total costs.
 
-1. In the SAP Analytics Cloud menu, navigate to the **Data Action** section.
+1. In the SAP Analytics Cloud menu, navigate to the **Data Actions** folder inside the `SAP_HR_OWFP_Operational_Workforce_Planning` content folder.
 
     <!-- border; size:540px -->![SAC_Menu](data-action-section.png)
 
@@ -209,11 +217,21 @@ By doing this, you will ensure that whenever a cost calculation takes place, cos
 ### Maintain Central Assumptions for new Cost Type
 Lastly you need to maintain **Central Assumptions** for the new cost type `TRAINING_COSTS`.
 
-Here you can access the tutorial [xP&A HXM Workforce Planning - Create and Upload Central Assumptions](xpa-sac-hxm-maintain-central-assumptions) in order to learn what Central Assumptions are for, how to upload them and how maintain these cost parameters.
+Here you can access the tutorial [xP&A Operational Workforce Planning - Create and Upload Central Assumptions](xpa-sac-hxm-maintain-central-assumptions) in order to learn what Central Assumptions are for, how to upload them and how maintain these cost parameters.
 
-Congratulations! You have now successfully created a new cost type and embedded it into the planning applications and Data Actions.
+### Final Remarks
+Congratulations! You have now successfully created a new cost type and embedded it into the stories and Data Actions.
 
-Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content?source=social-Global-SAP+Analytics-YOUTUBE-MarketingCampaign-Analytics-Analytics-spr-5330779922).
+If you want to learn more about the **SAP xP&A Operational Workforce Planning** content package, customize the content and adjust it according to your own business requirements, the following resources might be helpful:
 
+- [xP&A Operational Workforce Planning - Get to know the Operational Workforce Planning Content](xpa-sac-hxm-workforceplanning-gettoknow)
+- [xP&A Operational Workforce Planning - Create and Upload Central Assumptions](xpa-sac-hxm-maintain-central-assumptions)
+- [xP&A Operational Workforce Planning - Add a new Plan Level](xpa-sac-hxm-add-plan-level)
+- [xP&A Operational Workforce Planning - Add a new Cost Type](xpa-sac-hxm-add-cost-type)
+- [xP&A Operational Workforce Planning - Add a new Version](xpa-sac-hxm-add-new-version)
+- [xP&A Operational Workforce Planning - Create Predictive Scenario](xpa-sac-hxm-create-predictive-scenario)
+- [xP&A Operational Workforce Planning - Write back plan positions to SAP SuccessFactors](xpa-sac-hxm-successfactors-writeback)
 
----
+If you want to get an overview of the entire xP&A Operational Workforce Planning content package, make sure to check out the [Mission](https://developers.sap.com/mission.hxm-workforce-planning.html).
+
+Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).

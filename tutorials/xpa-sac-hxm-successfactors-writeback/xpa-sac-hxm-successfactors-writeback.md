@@ -1,5 +1,5 @@
 ---
-title: xP&A HXM Workforce Planning - Write back plan positions to SAP SuccessFactors
+title: xP&A Operational Workforce Planning - Write back plan positions to SAP SuccessFactors
 description: This tutorial will show you how set up and run the Write Back of planned position in HXM Workforce Planning in SAP Analytics Cloud to position management in SAP SuccessFactors
 author_name: Simon Kranig
 author_profile: https://people.sap.com/simon.kranig  
@@ -20,8 +20,8 @@ parser: v2
 
 ## Prerequisites
 * Have an SAP Analytics Cloud tenant available with Planning enabled and a user with admin rights for it
-* Have the content imported as described in [xP&A HXM Workforce Planning - Get to know the Operational Workforce Planning Content part of the xP&A Business Content Suite](xpa-sac-hxm-workforceplanning-gettoknow)
-* Data model set up / Central Assumptions in place as described in [xP&A HXM Workforce Planning - Create and Upload Central Assumptions](xpa-sac-hxm-maintain-central-assumptions)
+* Have the content imported as described in [xP&A Operational Workforce Planning - Get to know the Operational Workforce Planning Content part of the xP&A Business Content Suite](xpa-sac-hxm-workforceplanning-gettoknow)
+* Data model set up / Central Assumptions in place as described in [xP&A Operational Workforce Planning - Create and Upload Central Assumptions](xpa-sac-hxm-maintain-central-assumptions)
 * You have an account with SAP Business Technology Platform as described in [Get a Free Account on SAP BTP Trial](hcp-create-trial-account).
 * You have enabled Cloud Integration, capability of SAP Integration Suite, as described in [Set Up Integration Suite Trial](cp-starter-isuite-onboard-subscribe).
 * Have access to a SAP SuccessFactors instance
@@ -459,6 +459,22 @@ This has just been a basic example on how to do the transfer for one position, b
 
 Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content?source=social-Global-SAP+Analytics-YOUTUBE-MarketingCampaign-Analytics-Analytics-spr-5330779922).
 
+### Final Remarks
 
+Congratulations! You have now integrated your data back to SAP SuccessFactors successfully.
+
+If you want to learn more about the **SAP xP&A Operational Workforce Planning** content package, customize the content and adjust it according to your own business requirements, the following resources might be helpful:
+
+- [xP&A Operational Workforce Planning - Get to know the Operational Workforce Planning Content](xpa-sac-hxm-workforceplanning-gettoknow)
+- [xP&A Operational Workforce Planning - Create and Upload Central Assumptions](xpa-sac-hxm-maintain-central-assumptions)
+- [xP&A Operational Workforce Planning - Add a new Plan Level](xpa-sac-hxm-add-plan-level)
+- [xP&A Operational Workforce Planning - Add a new Cost Type](xpa-sac-hxm-add-cost-type)
+- [xP&A Operational Workforce Planning - Add a new Version](xpa-sac-hxm-add-new-version)
+- [xP&A Operational Workforce Planning - Create Predictive Scenario](xpa-sac-hxm-create-predictive-scenario)
+- [xP&A Operational Workforce Planning - Write back plan positions to SAP SuccessFactors](xpa-sac-hxm-successfactors-writeback)
+
+If you want to get an overview of the entire xP&A Operational Workforce Planning content package, make sure to check out the [Mission](https://developers.sap.com/mission.hxm-workforce-planning.html).
+
+Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).
 
 ---

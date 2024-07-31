@@ -1,8 +1,8 @@
 ---
-title: xP&A HXM Workforce Planning - Create Predictive Scenario
+title: xP&A Operational Workforce Planning - Create Predictive Scenario
 description: This tutorial provides information about how to create a Predictive Scenario for machine learning based pre-population of plan data
 author_name: Rudolf Lindt
-author_profile: https://people.sap.com/rudolf.lindt
+author_profile: https://github.com/RudolfLindt93
 auto_validation: true
 time: 30
 keywords: xP&A, smart predict, Predictive Scenario, time series forecast
@@ -12,23 +12,30 @@ parser: v2
 ---
 
 ## Prerequisites
-- You are familiar with the **SAP Human Experience Management (HXM) Workforce Planning content** from the xP&A Business Content Suite. Reference: [Getting Started tutorial](xpa-sac-hxm-workforceplanning-gettoknow)
-- You have installed the **SAP Human Experience Management (HXM) Workforce Planning content** in an SAP Analytics Cloud tenant. Reference: [Business Content Installation Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/078868f57f3346a98c3233207bd211c7.html), [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html)  
-
+- You are familiar with the **xP&A - Operational Workforce Planning** content from the xP&A Business Content Suite. Reference: [Getting Started tutorial](xpa-sac-hxm-workforceplanning-gettoknow)
+- You have installed the **xP&A - Operational Workforce Planning** content in an SAP Analytics Cloud tenant. Reference: [Business Content Installation Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/078868f57f3346a98c3233207bd211c7.html), [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html)  
 
 ## You will learn
-- The benefits of using **Smart Predict** capabilities in the context of the HXM Operational Workforce Planning content package for SAP Analytics Cloud
+- The benefits of using **Smart Predict** capabilities in the context of the xP&A Operational Workforce Planning content package for SAP Analytics Cloud
 - Which steps are required in order to make Smart Predict work
 - This includes...
   -creating and setting up Predictive Scenarios
   -embedding Predictive Scenarios into Multi Actions
   -adjusting the planning applications to enable Smart Predict
 
+## Intro
+In this tutorial you will learn how to create and embed a predictive scenario.
+
+In case you have any questions or require further support, please use the [SAP Question Form](https://community.sap.com/t5/forums/postpage/choose-node/true/product-id/bcbf0782-ce74-43b8-b695-dafd7c1ff1c1/board-id/technology-questions).
+
+If you have a specific request to our team in regards to the business content, you may also submit a request using the [SAP Influence Platform](https://influence.sap.com/sap/ino/#/idea-create?campaign=884&title=Extended%20Planning%20and%20Analysis%3A%20content&tags=Extended%20Planning%20and%20Analysis&RespList=cust.ino.config.SAP_ANALYTICS_CLOUD_SAP_DIGITAL_BOARDROOM.BIZ_CONTENT).
+
+If you are interested in more xP&A topics, related business content packages, or videos showing the content in action, feel free to check out our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).
 
 ### Understanding the term Smart Predict
 To quote SAP's official definition, [Smart Predict](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/92a4a76cf6ae454cbf55b73df1cc2f3d/ccf8379080ff443ea20106fb0b95e6e7.html) describes the use of SAP machine learning algorithms to explore relationships in your dataset and build a formula – a Predictive Scenario – to predict future events or trends. Currently, three types of Predictive Scenarios are available in Smart Predict: classification, regression, and time series Predictive Scenarios.
 
-In the context of the [Human Resources - HXM Operational Workforce Planning Content Package for SAP Analytics Cloud](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html), it is possible to make use of the **time series** Predictive Scenario to pre-populate future planning periods with planning values. In contrast to the standard pre-population functionality which is offered, where all values from one single historical period are copied and pasted to the periods of the plan horizon, the machine learning based algorithm is able to detect patterns in historical data and make more precise and realistic assumptions about what the future could look like. This includes mirroring seasonal cycles, upward or downward trends, fluctuations and much more.  
+In the context of the [xP&A Operational Workforce Planning Content Package for SAP Analytics Cloud](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html), it is possible to make use of the **time series** Predictive Scenario to pre-populate future planning periods with planning values. In contrast to the standard pre-population functionality which is offered, where all values from one single historical period are copied and pasted to the periods of the plan horizon, the machine learning based algorithm is able to detect patterns in historical data and make more precise and realistic assumptions about what the future could look like. This includes mirroring seasonal cycles, upward or downward trends, fluctuations and much more.  
 
 In the following exercise, you will learn which steps are required in order to create a time series forecast scenario and how to enable Smart Predict capabilities within your planning applications.
 
@@ -232,27 +239,31 @@ Now that everything has been set up, you need to activate the Smart Predict capa
 
 Per default, Smart Predict is turned off and thus cannot be triggered when pre-populating the plan version.
 
-1. Open the `SAP__HR_BPL_IM_WFP_OVERVIEW_PAGE` application in **edit mode**.
+1. Open the `SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE` story in **edit mode**.
 
-2. On the left-hand side of your development environment, open the script `getCustomizing`
+2. In the **Outline** section on the left-hand side of your development environment, click on the variable `toggleIsPredictiveEnabled`
 
     <!-- border; size:540px -->![Analytic_Application](get-customizing.png)
 
-3. Set the parameter `toggleIsPredictiveEnabled` to `true` as shown in the screenshot and save your changes.
+3. Set the default value to `true` as shown in the screenshot and save your changes.
 
     <!-- border; size:400px -->![Analytic_Application](change-script.png)
+
+    >INFORMATION:
+    >
+    - If you want to disable the option to pre-populate the planning versions using Smart Predict, set the default value to `false`
 
 
 ### Run the Predictive Algorithm and Review Results
 Now that you have set up the Predictive Scenario and activated the Smart Predict capabilities, you can run the predictive algorithm for pre-populating your plan version.
 
-1. Open the `SAP__HR_BPL_IM_WFP_OVERVIEW_PAGE` application.
+1. Open the `SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE` story.
 
     >INFORMATION
     >
-    It is important to open the `SAP__HR_BPL_IM_WFP_OVERVIEW_PAGE` application first instead of directly jumping to the `SAP__HR_BPL_IM_WFP_CENTRAL_ASSUMPTIONS` application as the parameter you changed in the previous step is transmitted via the overview application. If you opened the central assumptions applications directly, smart predict capabilities would not be activated.
+    It is important to open the `SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE` story first instead of directly jumping to the `SAP_HR_BPL_IM_WFP_CENTRAL_ASSUMPTIONS` story as the parameter you changed in the previous step is transmitted via the overview application. If you opened the central assumptions applications directly, smart predict capabilities would not be activated.
 
-2. Enter the **Application Configuration** application.
+2. Enter the **Application Configuration** story.
 
     <!-- border; size:540px -->![Analytic_Application](overview-app.png)
 
@@ -264,9 +275,9 @@ Now that you have set up the Predictive Scenario and activated the Smart Predict
     >
     Both the traditional pre-population and the Smart Predict based pre-population take place now. The traditional pre-population, where values from one reference period are copied over to the periods of the plan horizon, are written on the `Aggregated_Plan` version as usual. The Smart Predict values on the other hand are written on the `Smart_Predict` version. This way, you will be able to use the values from the `Smart_Predict` version as a reference for your planning assumptions made on the `Aggregated_Plan` version.
 
-4. After the prediction has run through successfully, click on the **Home** icon on the top left corner to get back to the overview application.
+4. After the prediction has run through successfully, click on the **Home Page** button in the navigation menu to get back to the overview story.
 
-    <!-- border -->![Analytic_Application](home-icon.png)
+    <!-- border; size:540px -->![Analytic_Application](home-icon.png)
 
 5. Open either the **Aggregated External HC Plan** or the **Aggregated Internal HC Plan** application. In this example, the **Aggregated Internal HC Plan** application is opened.
 
@@ -276,7 +287,19 @@ Now that you have set up the Predictive Scenario and activated the Smart Predict
 
     You are now able to see the results of the time series forecast under the `Smart_Predict` plan version.
 
-
+### Final Remarks
 Congratulations! You have now successfully created a predictive scenario.
 
-Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content?source=social-Global-SAP+Analytics-YOUTUBE-MarketingCampaign-Analytics-Analytics-spr-5330779922).
+If you want to learn more about the **SAP xP&A Operational Workforce Planning** content package, customize the content and adjust it according to your own business requirements, the following resources might be helpful:
+
+- [xP&A Operational Workforce Planning - Get to know the Operational Workforce Planning Content](xpa-sac-hxm-workforceplanning-gettoknow)
+- [xP&A Operational Workforce Planning - Create and Upload Central Assumptions](xpa-sac-hxm-maintain-central-assumptions)
+- [xP&A Operational Workforce Planning - Add a new Plan Level](xpa-sac-hxm-add-plan-level)
+- [xP&A Operational Workforce Planning - Add a new Cost Type](xpa-sac-hxm-add-cost-type)
+- [xP&A Operational Workforce Planning - Add a new Version](xpa-sac-hxm-add-new-version)
+- [xP&A Operational Workforce Planning - Create Predictive Scenario](xpa-sac-hxm-create-predictive-scenario)
+- [xP&A Operational Workforce Planning - Write back plan positions to SAP SuccessFactors](xpa-sac-hxm-successfactors-writeback)
+
+If you want to get an overview of the entire xP&A Operational Workforce Planning content package, make sure to check out the [Mission](https://developers.sap.com/mission.hxm-workforce-planning.html).
+
+Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).

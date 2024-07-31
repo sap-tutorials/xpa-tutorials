@@ -2,7 +2,7 @@
 title: xP&A CX Commercial Planning - Introduction to the Marketing Planning Data Model within the Commercial Planning Content part of the xP&A Content Suite
 description: This tutorial will provide you with an introduction to the Dimensions and Measures used in the Marketing Planning Data Model and will also explain how data is stored inside the model.
 author_name: Rudolf Lindt
-author_profile: https://people.sap.com/rudolf.lindt
+author_profile: https://github.com/RudolfLindt93
 auto_validation: false
 keywords: xP&A, Commercial Planning, Portfolio Planning, Marketing Planning, Demand Planning, Budget Planning, List Price Planning
 time: 30
@@ -29,7 +29,9 @@ But in order to do this, you have to get an understanding about the data model f
 
 This tutorial provides fundamental information about the data model and the provided demo data. You will learn about the dimensions, measures and how data is supposed to be stored. 
 
-In case you have any questions or require further support, please use the [SAP Blog question form](https://answers.sap.com/questions/ask.html?primaryTagId=bcbf0782-ce74-43b8-b695-dafd7c1ff1c1&additionalTagId=67838200100800006884&additionalTagId=819703369010316911100650199149950&topics=commercial%20planning) to reach out to us.
+In case you have any questions or require further support, please use the [SAP Question Form](https://community.sap.com/t5/forums/postpage/choose-node/true/product-id/bcbf0782-ce74-43b8-b695-dafd7c1ff1c1/board-id/technology-questions).
+
+If you have a specific request to our team in regards to the business content, you may also submit a request using the [SAP Influence Platform](https://influence.sap.com/sap/ino/#/idea-create?campaign=884&title=Extended%20Planning%20and%20Analysis%3A%20content&tags=Extended%20Planning%20and%20Analysis&RespList=cust.ino.config.SAP_ANALYTICS_CLOUD_SAP_DIGITAL_BOARDROOM.BIZ_CONTENT).
 
 If you are interested in more xP&A topics, related business content packages, or videos showing the content in action, feel free to check out our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).
 
@@ -48,7 +50,7 @@ The **Sales Planning** module has its own data model while it consumes some of t
   
 - The member `public.Actual` stores actual data as the name indicates. It contains actual revenues, costs as well as the list prices and cost rates per product. 
 - The member `public.Financial Target` of category `Budget` serves as a reference version and is not used for planning activities in this content package. This version stores data which mimics a revenue and cost budget that is given from upper management or from the financial department and is thus only used for reporting purposes.
-- The member `public.Budget` of category `Budget` is initially an exact copy of the `Financial Target` version. The difference here is that the `Budget` version is plannable which means that you can change your marketing budget and use this version as a reference for your planning activities later. 
+- The member `public.Budget` of category `Budget` is initially an exact copy of the `Financial Target` version. The difference here is that planning on the `Budget` version is enabled which means that you can change your marketing budget and use this version as a reference for your planning activities later. 
 - The member `public.Plan` of category `Planning` is the version where you will enter your planning assumptions. Here you can plan quantities, price changes, revenues and costs. Here you can also find the baseline quantity which is imported from **SAP Integrated Business Planning** and the initial list prices imported from **SAP S/4HANA**. In addition to that, imported COGS rates from the product cost model `SAP_FI_IFP_IM_ProductCost` part of the **Integrated Financial Planning for SAP S/4HANA (xP&A - Integrated Financial Planning for SAP S/4HANA and S/4HANA Cloud)** business content are also stored here.
 - The member `public.PricesFromSource` of category `Planning` stores the initial prices coming from the source system, which is **SAP S/4HANA** in this case. This version serves as a sort of backup version or reference version for the initial data that had been integrated and is not used for planning purposes, but rather for reporting purposes.
 
@@ -75,7 +77,7 @@ The **Sales Planning** module has its own data model while it consumes some of t
 
 **Sales Organisation**
 
-- <p>The dimension <code>SAP_ALL_SALESORGANISATION</code> is a shared public dimension and provides IDs for numerous sales organisations which are semantically structured by region</p>
+- The dimension `SAP_ALL_SALESORGANISATION` is a shared public dimension and provides IDs for numerous sales organisations which are semantically structured by region.
   
     <!-- border; size:540px -->![xp&A Commercial Planning](1/4.png)
   
@@ -137,7 +139,7 @@ The **Sales Planning** module has its own data model while it consumes some of t
 **Spend Type**
 
 - The dimension `SpendType` is a private dimension which exists only inside the data model.
-- <p>This dimension is used to store different options of spend types which can be maintained in the property <code>Spend Type</code> of the <code>SAP_MKT_MarketingAtivity</code> dimension.</p>
+- This dimension is used to store different options of spend types which can be maintained in the property Spend Type< of the `SAP_MKT_MarketingAtivity` dimension.
   
     <!-- border; size:540px -->![xp&A Commercial Planning](1/8.png)
 
@@ -252,7 +254,7 @@ If you do not know if an account is considered to be of type `INC` (representing
 
 **Impact Percentage**
 
-- The measure `IMPACT_PERCENTAGE` is a plannable measure of type `decimal` which uses an exception aggregation of type `Average` across the dimensions `Date` and `SAP_ALL_PRODUCT` scaled in `Percent`.
+- The measure `IMPACT_PERCENTAGE` is a measure of type `decimal` which uses an exception aggregation of type `Average` across the dimensions `Date` and `SAP_ALL_PRODUCT` scaled in `Percent`.
 - It is used to plan the incremental quantity as a percentage which comes on top to the baseline quantity.
 - Generally, you do not plan incremental quantities as absolute values in this content package. You would rather have to plan whether you expect the quantity to increase or decrease based on what is provided as `baseLine` by entering percentage values.
 - The `IMPACT_PERCENTAGE` is stored on the exact same combination of dimensions as the `QUANTITY`, using both G/L Account and driver to identify which quantity and for which stream you expect the quantity to increase or decrease.
@@ -332,7 +334,7 @@ For simplicity reasons, we will not take a look at the real demo data but instea
 **Financial Target**
 
 - Let us continue with the version `Financial Target`.
-- The `Financial Target` version is not plannable in this content package and only serves as a reference version for reporting purposes as mentioned.
+- The `Financial Target` version is not enabled for planning in this content package and only serves as a reference version for reporting purposes as mentioned.
 - List prices and COGS rates are stored on the exact same combination as it is the case in the `Plan` version.
 - The same applies for quantities, revenues and costs, but with one major difference.
 - As the numbers stored on this version represent a high-level budget, no differentiation between different drivers is made. As a result, absolutely all records on this version are stored on the driver member `#`. 
@@ -343,7 +345,7 @@ For simplicity reasons, we will not take a look at the real demo data but instea
 
 - On the `Budget` version, data is stored exactly the same as on the `Financial Target` version.
 - Initially, the budget version is empty. It is initialized from within the story **Marketing Budget Planning** by creating a copy of the `Financial Target` version.
-- The only difference between these versions is that the budget version is plannable and that it is of type `Budget` instead of `Planning`.
+- The only difference between these versions is that the budget version is enabled for planning and that it is of type `Budget` instead of `Planning`.
 - But in terms of how data is stored, it is precisely the same. 
 - In the demo data set, this version is initially empty and must be initialized from within the **Marketing Budget Planning** story.
 
@@ -372,16 +374,15 @@ If you want to learn more about the modules of this content package, check out t
 
 If you want to customize the content and adjust it according to your own business requirements, the following resources might be helpful:
 
-- [xP&A Commercial Planning - Understanding the technical structure of Stories](xpa-sac-cx-technical-structure-of-stories)
+- [xP&A Commercial Planning - Understanding the technical structure of Stories](xpa-sac-cx-technical-structure-stories)
 - [xP&A Commercial Planning - Data Integration](xpa-sac-cx-data-integration-setup)
 - [xP&A Commercial Planning - Manage data loads](xpa-sac-cx-manage-data-loads)
-- [xP&A Commercial Planning - Add additional sections to a story](xpa-sac-cx-add-new-sections-to-app)
-- [xP&A Commercial Planning - Add an additional story to the Navigation Menu](xpa-sac-cx-add-new-story-to-navmenu)
+- [xP&A Commercial Planning - Add additional sections to a story](xpa-sac-cx-add-new-sections)
+- [xP&A Commercial Planning - Add an additional story to the Navigation Menu](xpa-sac-cx-add-story-navmenu)
 - [xP&A Commercial Planning - Customize Default Settings](xpa-sac-cx-customize-default-settings)
-- [xP&A Commercial Planning - Customize Table Settings Dialogue](xpa-sac-cx-customize-table-settings-dialogue)
+- [xP&A Commercial Planning - Customize Table Settings Dialogue](xpa-sac-cx-customize-tablesettings-dialogue)
 - [xP&A Commercial Planning (Marketing) - Add a new Driver](xpa-sac-cxmp-add-new-driver)
 - [xP&A Commercial Planning (Marketing) - Add a new Version](xpa-sac-cxmp-add-new-version)
-- [xP&A Commercial Planning (Marketing) - Extend campaign and activity attributes](xpa-sac-cxmp-add-new-attributes)
 - [xP&A Commercial Planning (Marketing) - Extend activity spend dates](xpa-sac-cxmp-extend-activity-dates)
 - [xP&A Commercial Planning (Sales) - Add a new Version](xpa-sac-cxsp-add-new-version)
 - [xP&A Commercial Planning (Sales) - Add a new Tactic](xpa-sac-cxsp-add-new-tactic)

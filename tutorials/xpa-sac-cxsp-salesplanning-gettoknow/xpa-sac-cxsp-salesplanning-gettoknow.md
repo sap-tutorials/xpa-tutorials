@@ -29,7 +29,9 @@ parser: v2
 
 A detailed documentation can be found in our [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/b0046d8673b5412cbef7f521cfdfed95.html).
 
-In case you have any questions or require further support, please [submit a question](https://answers.sap.com/questions/ask.html?primaryTagId=bcbf0782-ce74-43b8-b695-dafd7c1ff1c1&additionalTagId=67838200100800006884&additionalTagId=819703369010316911100650199149950&topics=commercial%20planning) in the SAP Community to reach out to us. Make sure you have a public profile in order to participate.
+In case you have any questions or require further support, please use the [SAP Question Form](https://community.sap.com/t5/forums/postpage/choose-node/true/product-id/bcbf0782-ce74-43b8-b695-dafd7c1ff1c1/board-id/technology-questions).
+
+If you have a specific request to our team in regards to the business content, you may also submit a request using the [SAP Influence Platform](https://influence.sap.com/sap/ino/#/idea-create?campaign=884&title=Extended%20Planning%20and%20Analysis%3A%20content&tags=Extended%20Planning%20and%20Analysis&RespList=cust.ino.config.SAP_ANALYTICS_CLOUD_SAP_DIGITAL_BOARDROOM.BIZ_CONTENT).
 
 If you are interested in more xP&A topics, related business content packages, or videos showing the content in action, feel free to check out our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).
 
@@ -120,7 +122,7 @@ As a last preparation step, it is required to understand the navigation concept 
 
 1. **Navigation Menu**
 
-    - Each planning story apart from the **Sales Planning Overview Page** (`SAP_SD_SalesPlanning_Overview`) has a Navigation Menu button located on the top-left corner.
+    - Each story apart from the **Sales Planning Overview Page** (`SAP_SD_SalesPlanning_Overview`) has a Navigation Menu button located on the top-left corner.
   
     <!-- border; size:540px -->![xP&A Sales Planning](4/1.png)
 
@@ -134,15 +136,14 @@ As a last preparation step, it is required to understand the navigation concept 
 
     <!-- border; size:540px -->![xP&A Sales Planning](4/3.png)
 
-    - This button can be found in planning stories of this content package and is located at the top-left corner.
+    - This button can be found in the left-side panel of all planning and reporting stories of this content package.
     - You can filter tables and charts down to specific members of the given dimensions for an eased data entry and reporting.
 
 3. **Collapse/Expand** button
 
     <!-- border; size:540px -->![xP&A Sales Planning](4/4.png)
 
-    - This button can be found in each planning application of this content package containing the filter panel and is located at the top of the panel itself.
-    - Clicking on the triangle icon next to the filter section allows you to expand or collapse the corresponding panel in order to create more room for tables or charts.
+    - By clicking on the little **arrow icon**, you can collapse the side panel in order to create more space for your planning tables or charts. 
 
 4. **Confirm** button
 
@@ -169,7 +170,7 @@ As a last preparation step, it is required to understand the navigation concept 
 
     <!-- border; size:540px -->![xP&A Sales Planning](4/8.png)
 
-    - This button can be found in planning stories at the top-right above the table.
+    - This button can be found at the top-right above the table.
     - The **Reduce/Enlarge** button lets you maximize and minimize the planning table by hiding or showing the charts above accordingly.
 
 8. **Comment** button
@@ -178,14 +179,14 @@ As a last preparation step, it is required to understand the navigation concept 
 
     <!-- border; size:540px -->![xP&A Sales Planning](4/10.png)
 
-    - This button can be found at the top-right above the table or on the filter panel depending which application you are using. In future versions of the content, we will standardize on providing the Comments on the left-side panel.
+    - This button can be found at the top-right above the table or on the left-side panel depending which application you are using. 
     - The **Comment** button enables you and your team to collaborate and communicate on your planning.
 
 9. **Steps** description field
 
     <!-- border; size:540px -->![xP&A Sales Planning](4/11.png)
 
-    - Such a text field can be found in each planning application of this content package apart from the **Sales Planning Overview Page** (`SAP_SD_SalesPlanning_Overview`) and is located at the top-left corner.
+    - Such a text field can be found in all stories of this content package apart from the **Sales Planning Overview Page** (`SAP_SD_SalesPlanning_Overview`) and is located inside the left-side panel.
     - This description field serves as a rough guideline and describes the intended workflow within each of the planning applications.
 
 ### Application Configuration
@@ -358,7 +359,7 @@ In the next steps the Sales Planning stories of this content package are introdu
 
     - You are a global sales leader who wants to increase the sales revenue by a lot.
     - Change the filter on the left side to the year you want to plan and show all data for Company Code, Sales Organization, Customer and Product.
-    - Click in the cell of line **Total** as **Sales Organization**, **Total Bikes** as **Product** and of column **2023** as **Date**, **Gross Revenue** as **GL Account**, **Amount @ Budget** as Measures and **BudgetL1** as **Version**.
+    - Click in the cell of line **Total** as **Sales Organization**, **Total Bikes** as **Product** and of column **2024** as **Date**, **Gross Revenue** as **GL Account**, **Amount @ Budget** as Measures and **BudgetL1** as **Version**.
     - Increase the value by roughly **+7%**. In this example you see the value of **550.000.000,00 USD**.
     - Notice the change happening to the charts at the top and in the table highlighted yellow, once you press enter. The variance **Global Budget (L1) versus Financial Target** for **Gross Revenue** and **Gross Margin** increases and is therefore colored green. The **GL Account** **Investment Rate %** reacts on your change as well.
 
@@ -367,7 +368,7 @@ In the next steps the Sales Planning stories of this content package are introdu
     <!-- border; size:540px -->![xP&A Sales Planning](6/9.png)
 
     - In order to achieve the increase in revenue you are willing to increase the spend budget by an even bigger amount.
-    - Click in the cell of line **Total** as **Sales Organization**, **Total Bikes** as **Product** and of column **2023** as **Date**, **Sales Deduction** as **GL Account**, **Amount @ Budget** as Measures and **BudgetL1** as **Version**.
+    - Click in the cell of line **Total** as **Sales Organization**, **Total Bikes** as **Product** and of column **2024** as **Date**, **Sales Deduction** as **GL Account**, **Amount @ Budget** as Measures and **BudgetL1** as **Version**.
     - Increase the value by roughly **+10%**. In this example you see the value of **40.000.000,00 USD**.
     - Notice the change happening to the charts at the top and in the table highlighted yellow, once you press enter. The variance **Global Budget (L1) versus Financial Target** for **Spend** increases and is therefore colored red. Once again, the **GL Account** **Investment Rate %** reacts on your change.
 
@@ -427,10 +428,6 @@ In the next steps the Sales Planning stories of this content package are introdu
     - Select a year to copy the data from the **Global Budget** (`BudgetL1`) version to your **Regional Budget** (`BudgetL2`) version and click **Done**.
     - Note the yellow highlighting in your table as the values have changed.
 
-    >INFORMATION:
-    >
-    Note, there is a known bug in which the charts at the top of the page do not refresh properly after Budget Initialization. You may need to reload the story in order to refresh those charts until this bug is shipped with the next release of the Commercial Planning package.
-
 5. **Plan** the Regional Budget by adjusting **Table Settings**
 
     <!-- border; size:540px -->![xP&A Sales Planning](7/5.png)
@@ -458,7 +455,7 @@ In the next steps the Sales Planning stories of this content package are introdu
     <!-- border; size:540px -->![xP&A Sales Planning](7/9.png)
 
     - You know with your market knowledge in your region that with the given spend budget for your products for young people, you can generate more sales revenue than currently planned. That is why you are going to increase the sales revenue.
-    - Click in the cell of line **Dom. Sales Org DE** as **Sales Organization**, **Total Customers** as **Customer**, **Youth** as **Product** and of column **2023** as **Date**, **Gross Revenue** as **GL Account**, **Amount @ Budget** as Measures and **BudgetL2** as **Version**.
+    - Click in the cell of line **Dom. Sales Org DE** as **Sales Organization**, **Total Customers** as **Customer**, **Youth** as **Product** and of column **2024** as **Date**, **Gross Revenue** as **GL Account**, **Amount @ Budget** as Measures and **BudgetL2** as **Version**.
     - Increase the value by roughly **+10%**. In this example you see the value of **21.000.000,00 USD**.
     - Notice the change happening to the charts at the top and in the table highlighted yellow, once you press enter. The variance **Regional Budget versus Global Budget** for **Gross Revenue** and **Gross Margin** increases and is therefore colored green. The **GL Account** **Investment Rate %** reacts on your change as well.
 
@@ -467,9 +464,9 @@ In the next steps the Sales Planning stories of this content package are introdu
     <!-- border; size:540px -->![xP&A Sales Planning](7/10.png)
 
     - However, the global sales leader wants you to achieve higher revenue for mountain and racing bikes than you deem possible with the current spend budget. Therefore, you are going to increase it.
-    - Click in the cell of line **Total** as **Dom. Sales Org DE**, **Total Customers** as **Customer**, **Mountain** as **Product** and of column **2023** as **Date**, **Sales Deduction** as **GL Account**, **Amount @ Budget** as Measures and **BudgetL2** as **Version**.
+    - Click in the cell of line **Total** as **Dom. Sales Org DE**, **Total Customers** as **Customer**, **Mountain** as **Product** and of column **2024** as **Date**, **Sales Deduction** as **GL Account**, **Amount @ Budget** as Measures and **BudgetL2** as **Version**.
     - Increase the value to **5.000.000,00 USD**.
-    - Click in the cell of line **Dom. Sales Org DE** as **Sales Organisation**, **Total Customers** as **Customer**, **Racing** as **Product** and of column **2023** as **Date**, **Sales Deduction** as **GL Account**, **Amount @ Budget** as Measures and **BudgetL2** as **Version**.
+    - Click in the cell of line **Dom. Sales Org DE** as **Sales Organisation**, **Total Customers** as **Customer**, **Racing** as **Product** and of column **2024** as **Date**, **Sales Deduction** as **GL Account**, **Amount @ Budget** as Measures and **BudgetL2** as **Version**.
     - Increase the value to **3.500.000,00 USD**.
     - Notice the changes happening to the charts at the top and in the table highlighted yellow, once you press enter. The variance **Regional Budget versus Global Budget** for **Spend** increases and is therefore colored red. Once again, the **GL Account** **Investment Rate %** reacts on your change.
 
@@ -495,7 +492,7 @@ In the next steps the Sales Planning stories of this content package are introdu
 
 ### Sales Demand Planning
 
-In this next section, you will be planning the sales demand for year 2023 based on your analysis of sales as well as consumer trends and historical sales, which your organization has already conducted. You will now play the role of a Sales Demand Planner for Germany.
+In this next section, you will be planning the sales demand for year 2024 based on your analysis of sales as well as consumer trends and historical sales, which your organization has already conducted. You will now play the role of a Sales Demand Planner for Germany.
 
 1. Open **Sales Demand Planning** (`SAP_SD_SalesDemandPlanning`) from the Sales Planning Overview Page
 
@@ -518,7 +515,7 @@ In this next section, you will be planning the sales demand for year 2023 based 
 
     <!-- border; size:540px -->![xP&A Sales Planning](8/3.png)
 
-    - You want to plan the demand for the **year 2023** and the German organization with **Company Code 1010**.
+    - You want to plan the demand for the **year 2024** and the German organization with **Company Code 1010**.
     - Filter your year and company code with the input controls on the left accordingly.
     - The numeric point indicators and table display the relevant data.
 
@@ -545,9 +542,9 @@ In this next section, you will be planning the sales demand for year 2023 based 
     >
     Incremental quantities refer to the amount of products sold during a specific period of time that exceeds the baseline quantity of your business. This difference is typically attributed to the implementation of a specific promotional sales activity. The concept of incremental quantity can also be used by you as a key performance indicator (KPI) to assess the effectiveness of marketing efforts.
 
-    - Click in the cell of line **Total Customers** as **Customer**, **Cruise** as **Product**, **Baseline** as **Type**, **Piece** as **Quantity Unit** and of column **Plan** as **Version**, **2023** as **Date** and **Quantity** as **Measure**.
+    - Click in the cell of line **Total Customers** as **Customer**, **Cruise** as **Product**, **Baseline** as **Type**, **Piece** as **Quantity Unit** and of column **Plan** as **Version**, **2024** as **Date** and **Quantity** as **Measure**.
     - Increase the value to **47.000**, which is roughly +5% as you expect an increase.
-    - Click in the cell of line **Total Customers** as **Customer**, **Exercise** as **Product**, **Baseline** as **Type**, **Piece** as **Quantity Unit** and of column **Plan** as **Version**, **2023** as **Date** and **Quantity** as **Measure**.
+    - Click in the cell of line **Total Customers** as **Customer**, **Exercise** as **Product**, **Baseline** as **Type**, **Piece** as **Quantity Unit** and of column **Plan** as **Version**, **2024** as **Date** and **Quantity** as **Measure**.
     - Decrease the value to **4000**, which is roughly -3% as you expect a decrease.
     - Notice the changes happening to the numeric point indicator at the top and in the table highlighted yellow, once you press enter.
 
@@ -605,13 +602,13 @@ Now you are ready to perform the tasks of a sales activity manager.  You will cr
 
     <!-- border; size:540px -->![xP&A Sales Planning](9/3.png)
 
-    - You want to manage your activities for the **year 2023** and the German organization with **Company Code 1010**.
+    - You want to manage your activities for the **year 2024** and the German organization with **Company Code 1010**.
     - Filter your year and company code with the input controls on the left accordingly.
     - The charts and table display the relevant data.
 
 4. Create a new **Sales Activity**
 
-    You are creating a **Sales Activity* for large cycles, specifically cruise bikes, for the Western Europe customers for the second half of the year 2023. You are willing to spend a lump sum of USD 800000 and expect an uplift of 20% in return.
+    You are creating a **Sales Activity** for large cycles, specifically cruise bikes, for the Western Europe customers for the second half of the year 2024. You are willing to spend a lump sum of USD 800000 and expect an uplift of 20% in return.
 
     <!-- border; size:540px -->![xP&A Sales Planning](9/4.png)
 
@@ -625,8 +622,8 @@ Now you are ready to perform the tasks of a sales activity manager.  You will cr
     |---             |---          |
     | `Title`           | `DE15`       |
     | `Activity ID`        | `auto-generated` |
-    | `Start Date`         | `2023-07-01`     |
-    | `End Date`           | `2023-12-31`     |
+    | `Start Date`         | `2024-07-01`     |
+    | `End Date`           | `2024-12-31`     |
     | `Tactic`             | `Product`        |
     | `Status`             | `Planned`        |
     | `Sales Organization` | `1010 - Dom. Sales Org DE` |
@@ -809,19 +806,6 @@ The **Sales Activity Return on Investment Report** (`SAP_SD_SalesActivityROI`) a
     The **Return on Investment** in the last column of the table is calculated as following:
     `Return on Investment = (Incremental Gross Sales - Incremental Cost of Goods Sold - Sales Deductions)/Sales Deductions`
 
-4. Example calculation of **Return on Investment**
-
-    <!-- border; size:540px -->![xP&A Sales Planning](12/3.png)
-
-    Have a look at the `Sales Activity US7`. Below you can see the same numbers as you can see in the screenshot, but with a mapping to the variables of the formula above.
-
-    | Activity | Gross Revenue (Incremental Gross Sales) | Sales Deductions | Cost of Goods Sold (Incremental Cost of Goods Sold) | Return on Investment |
-    |--- |--- |--- |--- |--- |
-    | US7 | 2,441,554.38 | 553,998.26 | 1,943,461.32 | -10.09% |
-
-    You can calculate your return on investment as the following:
-    `-10.09% = (2,441,554.38 - 1,943,461.32 - 553,998.26) / 553,998.26`
-
     You have successfully understood the capabilities of the **Sales Activity Return on Investment Report** (`SAP_SD_SalesActivityROI`) application.
 
 ### Sales Performance Analysis
@@ -868,10 +852,26 @@ The **Sales Performance Analysis** (`SAP_SD_SalesPerformanceAnalysis`) applicati
 
 Congratulations! You have finished the introduction tutorial and are now able to use the Sales Planning module of the **SAP Commercial Planning (CX)** content package.
 
+- [xP&A Commercial Planning - Get to know the Marketing Planning module](xpa-sac-cxmp-marketingplanning-gettoknow)
+- [xP&A Commercial Planning - Get to know the Portfolio Planning module](xpa-sac-cxpp-portfolioplanning-gettoknow)
+
 If you want to customize the content and adjust it according to your own business requirements, the following resources might be helpful:
 
+- [xP&A Commercial Planning - Introduction to the Data Model](xpa-sac-cxmp-datamodelfundamentals)
+- [xP&A Commercial Planning - Understanding the technical structure of Stories](xpa-sac-cx-technical-structure-stories)
+- [xP&A Commercial Planning - Data Integration](xpa-sac-cx-data-integration-setup)
+- [xP&A Commercial Planning - Manage data loads](xpa-sac-cx-manage-data-loads)
+- [xP&A Commercial Planning - Add additional sections to a story](xpa-sac-cx-add-new-sections)
+- [xP&A Commercial Planning - Add an additional story to the Navigation Menu](xpa-sac-cx-add-story-navmenu)
+- [xP&A Commercial Planning - Customize Default Settings](xpa-sac-cx-customize-default-settings)
+- [xP&A Commercial Planning - Customize Table Settings Dialogue](xpa-sac-cx-customize-tablesettings-dialogue)
+- [xP&A Commercial Planning (Marketing) - Add a new Driver](xpa-sac-cxmp-add-new-driver)
+- [xP&A Commercial Planning (Marketing) - Add a new Version](xpa-sac-cxmp-add-new-version)
+- [xP&A Commercial Planning (Marketing) - Extend activity spend dates](xpa-sac-cxmp-extend-activity-dates)
 - [xP&A Commercial Planning (Sales) - Add a new Version](xpa-sac-cxsp-add-new-version)
-- [xP&A Commercial Planning (Sales) - Add a new Tactic](xpa-sac-cxsp-add-new-tactic)
 - [xP&A Commercial Planning (Sales) - Add a new Spend Type](xpa-sac-cxsp-add-new-spendtype)
+- [xP&A Commercial Planning (Sales) - Add a new Tactic](xpa-sac-cxsp-add-new-tactic)
+
+For the full xP&A experience and to complement the commercial planning process with a dedicated revenue planning process, make sure to check out the [SAP Consensus Net Revenue Planning](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/778ddfa3a6b74c1793804d07fc64de17.html) content package as well! More details about this content package can be found in the [xP&A Consensus Net Revenue - Get to know the Consensus Net Revenue Planning Content part of the xP&A Content Suite](xpa-sac-cnr-gettoknow) introduction tutorial.
 
 Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content?source=social-Global-SAP+Analytics-YOUTUBE-MarketingCampaign-Analytics-Analytics-spr-5330779922).

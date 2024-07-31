@@ -37,7 +37,7 @@ In the first step, it is necessary to add a new member to the `Tactic` dimension
 
     <!-- border; size:540px -->![model](search-model.png)
 
-2. Either click on `SAP_SD_Tactic` or on the button **Navigate to Dimension**
+2. Open the `SAP_SD_Tactic` dimension.
 
     <!-- border; size:540px -->![model](tactic-dimension.png)
 
@@ -49,7 +49,7 @@ In the first step, it is necessary to add a new member to the `Tactic` dimension
 
 ### Adjust Planning Application
 
-In the next step the **Sales Planning Admin Page** (`SAP_SD_SalesPlanning_AdminPage`)  must be modified, and a new mapping should be provided for the new `Tactic` member created.
+In the next step the **Sales Planning Admin Page** (`SAP_SD_SalesPlanning_AdminPage`) must be modified, and a new mapping should be provided for the new `Tactic` member created.
 
 1. In the SAP Analytics Cloud Menu, navigate to the **Files** section, search for `SAP_SD_SalesPlanning_AdminPage` and select **Open in Story Edit Mode**.
 
@@ -59,7 +59,7 @@ In the next step the **Sales Planning Admin Page** (`SAP_SD_SalesPlanning_AdminP
 
     <!-- border; size:540px -->![canvas_story](edit-input-control.png)
 
-3. Toggle to **Show unbooked members**.  Select your newly added tactic `Discount`. Click on **OK**.
+3. Open the **Settings**, go to the **Member Display** setting and select **All Members** in the **Available Members** drop down. Then select your newly added tactic `Discount`. Click on **OK**.
 
     <!-- border; size:540px -->![canvas_story](add-discount.png)
 
@@ -81,7 +81,7 @@ In the next step the **Sales Planning Admin Page** (`SAP_SD_SalesPlanning_AdminP
     |--------------|-----------------------|
     | `SpendType`  | Discount Percentage   |
     | `Tactic`     | Discount              |
-    | `GL Account` | Sales Deductions      |
+    | `GL Account` | Sales Discount - Domestic |
 
 7. Click on **Confirm** to publish your change.
 
@@ -94,5 +94,27 @@ In the next step the **Sales Planning Admin Page** (`SAP_SD_SalesPlanning_AdminP
 ### Final Remarks
 
 Congratulations! You have now successfully created a new tactic and embedded it into the planning applications and stories!
+
+If you want to learn more about the other modules of this content package, check out the following tutorials:
+
+- [xP&A Commercial Planning - Get to know the Marketing Planning module](xpa-sac-cxmp-marketingplanning-gettoknow)
+- [xP&A Commercial Planning - Get to know the Sales Planning module](xpa-sac-cxsp-salesplanning-gettoknow)
+- [xP&A Commercial Planning - Get to know the Portfolio Planning module](xpa-sac-cxpp-portfolioplanning-gettoknow)
+
+If you want to customize the content and adjust it according to your own business requirements, the following resources might be helpful:
+
+- [xP&A Commercial Planning - Introduction to the Data Model](xpa-sac-cxmp-datamodelfundamentals)
+- [xP&A Commercial Planning - Understanding the technical structure of Stories](xpa-sac-cx-technical-structure-stories)
+- [xP&A Commercial Planning - Data Integration](xpa-sac-cx-data-integration-setup)
+- [xP&A Commercial Planning - Manage data loads](xpa-sac-cx-manage-data-loads)
+- [xP&A Commercial Planning - Add additional sections to a story](xpa-sac-cx-add-new-sections)
+- [xP&A Commercial Planning - Add an additional story to the Navigation Menu](xpa-sac-cx-add-story-navmenu)
+- [xP&A Commercial Planning - Customize Default Settings](xpa-sac-cx-customize-default-settings)
+- [xP&A Commercial Planning - Customize Table Settings Dialogue](xpa-sac-cx-customize-tablesettings-dialogue)
+- [xP&A Commercial Planning (Marketing) - Add a new Driver](xpa-sac-cxmp-add-new-driver)
+- [xP&A Commercial Planning (Marketing) - Add a new Version](xpa-sac-cxmp-add-new-version)
+- [xP&A Commercial Planning (Marketing) - Extend activity spend dates](xpa-sac-cxmp-extend-activity-dates)
+- [xP&A Commercial Planning (Sales) - Add a new Version](xpa-sac-cxsp-add-new-version)
+- [xP&A Commercial Planning (Sales) - Add a new Spend Type](xpa-sac-cxsp-add-new-spendtype)
 
 Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).

@@ -2,7 +2,7 @@
 title: xP&A CX Commercial Planning - Get to know the Marketing Planning module within the Commercial Planning Content part of the xP&A Content Suite
 description: This tutorial will provide you with an overview and run through of the content sub-package in order for you to get familiar with the standard workflow as well as the capabilities of the content.
 author_name: Rudolf Lindt
-author_profile: https://people.sap.com/rudolf.lindt
+author_profile: https://github.com/RudolfLindt93
 auto_validation: false
 keywords: xP&A, Get To Know, Overview, Commercial Planning, Marketing Planning, Campaign Planning, Campaign Analysis, Demand Planning, Budget Planning, Performance Analysis
 time: 60
@@ -29,7 +29,9 @@ In this tutorial you will learn all basics about the **Marketing Planning** modu
 
 A detailed documentation can be found in our [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/b0046d8673b5412cbef7f521cfdfed95.html).
 
-In case you have any questions or require further support, please use the [SAP Blog question form](https://answers.sap.com/questions/ask.html?primaryTagId=bcbf0782-ce74-43b8-b695-dafd7c1ff1c1&additionalTagId=67838200100800006884&additionalTagId=819703369010316911100650199149950&topics=commercial%20planning) to reach out to us.
+In case you have any questions or require further support, please use the [SAP Question Form](https://community.sap.com/t5/forums/postpage/choose-node/true/product-id/bcbf0782-ce74-43b8-b695-dafd7c1ff1c1/board-id/technology-questions).
+
+If you have a specific request to our team in regards to the business content, you may also submit a request using the [SAP Influence Platform](https://influence.sap.com/sap/ino/#/idea-create?campaign=884&title=Extended%20Planning%20and%20Analysis%3A%20content&tags=Extended%20Planning%20and%20Analysis&RespList=cust.ino.config.SAP_ANALYTICS_CLOUD_SAP_DIGITAL_BOARDROOM.BIZ_CONTENT).
 
 If you are interested in more xP&A topics, related business content packages, or videos showing the content in action, feel free to check out our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).
 
@@ -203,16 +205,16 @@ As a last preparation step, it is required to understand the navigation concept 
 
     <!-- border; size:200px -->![xp&A Commercial Planning](4/61.png)
 
-6. **Steps** description field
+6. **Instructions** section
 
     <!-- border; size:540px -->![xp&A Commercial Planning](4/7.png)
 
-    - Such a text field can be found in each planning story of this content package and is located at the top-left corner.
+    - Such a text field can be found in each story of this content package and is located in the left-side panel, indicated by the info icon.
     - This description field serves as a rough guideline and describes the intended user workflow within each of the planning stories.
 
-7. **Filter** panel
+7. **Filter** section
 
-    - This panel can be found in each story apart from the overview pages of this content package and is located on the left-hand side of the screen.
+    - This section can be found in each story apart from the overview pages of this content package and is located in the left-side panel, indicated by the filter icon.
 
     <!-- border; size:540px -->![xp&A Commercial Planning](4/8.png)
 
@@ -229,52 +231,58 @@ As a last preparation step, it is required to understand the navigation concept 
     >
     - Be aware that some widgets are disconnected from the input controls and thus do not take into consideration the settings from the filter panel. 
     - This is because some charts are specifically designed to only show data for one specific version or member of a dimension. 
+    - Please also note that collapsing and expanding the side panel works for every section of the left side panel, not just the filter section.
 
-8.   **Reference Version** drop-down
+8. **Help** section
+
+    <!-- border; size:540px -->![xp&A Commercial Planning](4/71.png)
+
+    - This section can be found in each story apart from the overview pages of this content package and is located in the left-side panel, indicated by the question mark icon.
+    - The content help section contains useful links for the user, which for instance redirect you to the official documentation or provide you with contact details so you can get in touch with the developers. 
+
+9. **Comment** section
+
+    <!-- border; size:540px -->![xp&A Commercial Planning](4/9.png)
+    
+    - This section can only be found in each story apart from the overview pages of this content package and is located in the left-side panel.
+    - By clicking on the comment icon, the comment panel is opened where you can leave comments for yourself or the other planners. 
+
+10. **Driver** panel
+
+    <!-- border; size:540px -->![xp&A Commercial Planning](4/10.png)
+    
+    - This section can only be found in the **Marketing Demand Planning** story and is located in the left-side panel.
+    - By clicking on the configuration icon, the driver panel is opened where you can enter impact percentages for the consumer trend and the market share driver on a product group level. 
+
+11.  **Reference Version** drop-down
 
     <!-- border; size:540px -->![xp&A Commercial Planning](4/12.png)
 
     - This drop-down widget can be found in some of the stories of this content package.
     - By using this drop-down widget, you can define the reference version against which you would like to compare your plan data.
 
-9.   **Hide / Unhide Section** button
+12.  **Hide / Unhide Section** button
     
     <!-- border; size:540px -->![xp&A Commercial Planning](4/13.png)
 
     - In case a story contains multiple sections, you can choose to hide specific parts of the story by using the **Hide Section** button or respectively unhide the section by using the **Unhide Section** button. 
     - Both of these buttons can be found on the top left corner of each section.
 
-10. **Comment** panel
-
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/9.png)
-    
-    - This panel can only be found in the **Marketing Demand Planning** story and is located on the left-hand side of the screen.
-    - In this story, the left-side panel which usually only contains the filter panel is extended by two different panels, one of these being the comment panel.
-    - By clicking on the comment icon, the comment panel is opened where you can leave comments for yourself or the other planners. 
-
-11. **Driver** panel
-
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/10.png)
-    
-    - This panel can only be found in the **Marketing Demand Planning** story and is located on the left-hand side of the screen.
-    - In this story, the left-side panel which usually only contains the filter panel is extended by two different panels, one of these being the driver panel.
-    - By clicking on the chart icon, the driver panel is opened where you can enter impact percentages for the consumer trend and the market share driver on a product group level. 
-
-12. **Initialize Version** button
+13. **Initialize Version** button
 
     <!-- border; size:540px -->![xp&A Commercial Planning](4/14.png)
 
     - The button **Initialize Version** can be found on the top right corner above the table in the **Marketing Budget Panning** story. 
     - By pressing on this button, a pop-up is opened where you can select a start date and an end date to start a copy operation from another version, which in the scope of this content is the `Financial Target` version. 
 
-13. **Recalculate Quantities** button
+14. **Recalculate Quantities** button
 
     <!-- border; size:540px -->![xp&A Commercial Planning](4/15.png)
 
     - The button **Recalculate Quantities** can be found on the top right corner above the table in the **Marketing Budget Planning** story. 
     - By pressing on this button, a recalculation of quantities is triggered as this planning story allows you to make changes on the budgeted revenue. In order to keep data consistent and correct, you need to recalculate the quantities based on your new revenue entries. 
 
-14. **Select Action** drop down
+15. **Select Action** drop down
 
     <!-- border; size:540px -->![xp&A Commercial Planning](4/16.png)
 
@@ -283,7 +291,7 @@ As a last preparation step, it is required to understand the navigation concept 
     
     <!-- border; size:540px -->![xp&A Commercial Planning](4/161.png)
 
-15. **Switch to ROI view** and **Switch to Chart view** buttons
+16. **Switch to ROI view** and **Switch to Chart view** buttons
 
      <!-- border; size:540px -->![xp&A Commercial Planning](4/170.png)
 
@@ -295,7 +303,7 @@ As a last preparation step, it is required to understand the navigation concept 
 
     - By clicking on this button, you will return to the default view mode of this story. 
 
-16. **Tabular View** and **Graphical View** buttons
+17. **Tabular View** and **Graphical View** buttons
 
     <!-- border; size:540px -->![xp&A Commercial Planning](4/180.png)
 
@@ -665,7 +673,7 @@ Currently, you have opened the tab **Enter Budget Data**. This tab provides guid
 4. Adjust the revenue budget
 
     - You can now adjust the revenue budget based on global or local currency, this is completely up to you.
-    - Expand the G/L Account structure to see plannable account members. In the scope of this content package, we only have the accounts **Revenue Domestic** and **Marketing Expenses** that requires budgeting. 
+    - Expand the G/L Account structure to see all account members on which you can plan. In the scope of this content package, we only have the accounts **Revenue Domestic** and **Marketing Expenses** that requires budgeting. 
     - To edit the revenue and marketing expense budget, simply click on any editable cell and change the value.
 
     <!-- border; size:540px -->![xp&A Commercial Planning](6/10.png)
@@ -680,7 +688,7 @@ Currently, you have opened the tab **Enter Budget Data**. This tab provides guid
 
     <!-- border; size:540px -->![xp&A Commercial Planning](6/13.png)
 
-    - In this example, the marketing expenses were adjusted from a value of `550.000.000` to `550.000`, which is exactly 10 % of the revenue budget. As you can see, the distribution of the overall marketing expense budget among the company codes is precisely the same as for the revenue budget with `Company Code 1010` having around 32 % of the overall budget, `Company Code 1710` having around 40.5 % of the overall budget and `Company Code 2310` having around 27.5 % of the overall budget.
+    - In this example, the marketing expenses were adjusted from a value of `500.000.000` to `50.000.000`, which is exactly 10 % of the revenue budget. As you can see, the distribution of the overall marketing expense budget among the company codes is precisely the same as for the revenue budget with `Company Code 1010` having around 32 % of the overall budget, `Company Code 1710` having around 40.5 % of the overall budget and `Company Code 2310` having around 27.5 % of the overall budget.
 
 
 5. Recalculate the quantities
@@ -815,7 +823,7 @@ Currently, you have opened the tab **Enter Plan Data**. This tab provides guidan
     >INFORMATION:
     >
     - In some cases you might experience that your entered value is slightly adjusted after the calculation.
-    - This is because the executed data action contains a step in which your incremental quantities are refreshed based on the maintained quantitiy impact percentage values first to ensure data integrity. 
+    - This is because the executed data action contains a step in which your incremental quantities are refreshed based on the maintained quantity impact percentage values first to ensure data integrity. 
     - As `Quantity` is an integer measure while `Quantity Impact (%)` is a decimal measure, results are stored as integer values consequently which leads to the slight adjustments you might experience. 
 
 7. Adjust the market share and consumer trend drivers
@@ -878,12 +886,13 @@ You will learn how to open the story (Tab 1) and how to create, modify and delet
 Currently, you have opened the tab **Open Story**. This tab provides guidance on how to open the **Marketing Campaign Planning** (`SAP_MKT_MarketingCampaignPlanning`) story.
 
 1. If you are still located inside the **Marketing Demand Planning** story introduced in the previous step, click on the burger menu located on the top left corner to open the navigation panel.
+   
 2. Now click on either **Marketing Planning** to jump back to the **Marketing Planning Overview Page** or on **Marketing Campaign Planning** to directly access the **Marketing Campaign Planning** story. 
+
+    - In this particular case, we will go back to the **Marketing Planning Overview Page** by clicking on the **Marketing Planning** button.
 
     <!-- border; size:540px -->![xp&A Commercial Planning](8/1.png)
     
-    In this particular case, we will go back to the **Marketing Planning Overview Page** by clicking on the **Marketing Planning** button.
-
 3. Click on the link **Marketing Campaign Planning** to enter the story.
 
     <!-- border; size:540px -->![xp&A Commercial Planning](8/2.png)
@@ -1050,9 +1059,9 @@ Currently, you have opened the tab **Open Story**. This tab provides guidance on
 1. If you still have the **Marketing Campaign Planning** story opened from the previous step, click on the burger menu located on the top left corner to open the navigation panel.
 2. Now click on either **Marketing Planning** to jump back to the **Marketing Planning Overview Page** or on **Marketing Campaign Analysis** to directly access the **Marketing Campaign Analysis** story. 
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](9/1.png)
+    - In this particular case, we will go back to the **Marketing Planning Overview Page** by clicking on the **Marketing Planning** button.
     
-    In this particular case, we will go back to the **Marketing Planning Overview Page** by clicking on the **Marketing Planning** button.
+     <!-- border; size:540px -->![xp&A Commercial Planning](9/1.png)
 
 3. Click on the link **Marketing Campaign Analysis** to enter the story.
 
@@ -1135,12 +1144,13 @@ Here you will learn how to open the story (Tab 1) and how to consume the differe
 Currently, you have opened the tab **Open Story**. This tab provides guidance on how to open the **Marketing Performance Analysis** (`SAP_MKT_MarketingPerformanceAnalysis`) story.
 
 1. If you still have the **Marketing Campaign Analysis** story opened from the previous step, click on the burger menu located on the top left corner to open the navigation panel.
+
 2. Now click on either **Marketing Planning** to jump back to the **Marketing Planning Overview Page** or on **Marketing Performance Analysis** to directly access the **Marketing Performance Analysis** story. 
+
+    - In this particular case, we will go back to the **Marketing Planning Overview Page** by clicking on the **Marketing Planning** button.
 
     <!-- border; size:540px -->![xp&A Commercial Planning](10/1.png)
     
-    In this particular case, we will go back to the **Marketing Planning Overview Page** by clicking on the **Marketing Planning** button.
-
 3. Click on the link **Marketing Performance Analysis** to enter the story.
 
     <!-- border; size:540px -->![xp&A Commercial Planning](10/2.png)
@@ -1238,16 +1248,15 @@ If you want to learn more about the other modules of this content package, check
 If you want to customize the content and adjust it according to your own business requirements, the following resources might be helpful:
 
 - [xP&A Commercial Planning - Introduction to the Data Model](xpa-sac-cxmp-datamodelfundamentals)
-- [xP&A Commercial Planning - Understanding the technical structure of Stories](xpa-sac-cx-technical-structure-of-stories)
+- [xP&A Commercial Planning - Understanding the technical structure of Stories](xpa-sac-cx-technical-structure-stories)
 - [xP&A Commercial Planning - Data Integration](xpa-sac-cx-data-integration-setup)
 - [xP&A Commercial Planning - Manage data loads](xpa-sac-cx-manage-data-loads)
-- [xP&A Commercial Planning - Add additional sections to a story](xpa-sac-cx-add-new-sections-to-app)
-- [xP&A Commercial Planning - Add an additional story to the Navigation Menu](xpa-sac-cx-add-new-story-to-navmenu)
+- [xP&A Commercial Planning - Add additional sections to a story](xpa-sac-cx-add-new-sections)
+- [xP&A Commercial Planning - Add an additional story to the Navigation Menu](xpa-sac-cx-add-story-navmenu)
 - [xP&A Commercial Planning - Customize Default Settings](xpa-sac-cx-customize-default-settings)
-- [xP&A Commercial Planning - Customize Table Settings Dialogue](xpa-sac-cx-customize-table-settings-dialogue)
+- [xP&A Commercial Planning - Customize Table Settings Dialogue](xpa-sac-cx-customize-tablesettings-dialogue)
 - [xP&A Commercial Planning (Marketing) - Add a new Driver](xpa-sac-cxmp-add-new-driver)
 - [xP&A Commercial Planning (Marketing) - Add a new Version](xpa-sac-cxmp-add-new-version)
-- [xP&A Commercial Planning (Marketing) - Extend campaign and activity attributes](xpa-sac-cxmp-add-new-attributes)
 - [xP&A Commercial Planning (Marketing) - Extend activity spend dates](xpa-sac-cxmp-extend-activity-dates)
 - [xP&A Commercial Planning (Sales) - Add a new Version](xpa-sac-cxsp-add-new-version)
 - [xP&A Commercial Planning (Sales) - Add a new Tactic](xpa-sac-cxsp-add-new-tactic)
@@ -1255,5 +1264,7 @@ If you want to customize the content and adjust it according to your own busines
 
 
 If you want to get an overview of the entire xP&A Commercial Planning content package, make sure to check out the Mission.
+
+For the full xP&A experience and to complement the commercial planning process with a dedicated revenue planning process, make sure to check out the [SAP Consensus Net Revenue Planning](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/778ddfa3a6b74c1793804d07fc64de17.html) content package as well! More details about this content package can be found in the [xP&A Consensus Net Revenue - Get to know the Consensus Net Revenue Planning Content part of the xP&A Content Suite](xpa-sac-cnr-gettoknow) introduction tutorial.
 
 Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content?source=social-Global-SAP+Analytics-YOUTUBE-MarketingCampaign-Analytics-Analytics-spr-5330779922).

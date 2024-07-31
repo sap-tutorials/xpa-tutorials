@@ -263,4 +263,28 @@ You learn how to set the new version as default in a variable in the story `SAP_
 
 Congratulations! You have now successfully created a new version and embedded it into the planning applications and stories!
 
+If you want to learn more about the modules of this content package, check out the following tutorials:
+
+- [xP&A Commercial Planning - Get to know the Sales Planning module](xpa-sac-cxsp-salesplanning-gettoknow)
+- [xP&A Commercial Planning - Get to know the Portfolio Planning module](xpa-sac-cxpp-portfolioplanning-gettoknow)
+- [xP&A Commercial Planning - Get to know the Marketing Planning module](xpa-sac-cxmp-marketingplanning-gettoknow)
+
+If you want to customize the content and adjust it according to your own business requirements, the following resources might be helpful:
+
+- [xP&A Commercial Planning - Introduction to the Data Model](xpa-sac-cxmp-datamodelfundamentals)
+- [xP&A Commercial Planning - Data Integration](xpa-sac-cx-data-integration-setup)
+- [xP&A Commercial Planning - Manage data loads](xpa-sac-cx-manage-data-loads)
+- [xP&A Commercial Planning - Understanding the technical structure of Stories](xpa-sac-cx-technical-structure-stories)
+- [xP&A Commercial Planning - Add additional sections to a story](xpa-sac-cx-add-new-sections)
+- [xP&A Commercial Planning - Add an additional story to the Navigation Menu](xpa-sac-cx-add-story-navmenu)
+- [xP&A Commercial Planning - Customize Default Settings](xpa-sac-cx-customize-default-settings)
+- [xP&A Commercial Planning - Customize Table Settings Dialogue](xpa-sac-cx-customize-tablesettings-dialogue)
+- [xP&A Commercial Planning (Marketing) - Add a new Driver](xpa-sac-cxmp-add-new-driver)
+- [xP&A Commercial Planning (Marketing) - Extend activity spend dates](xpa-sac-cxmp-extend-activity-dates)
+- [xP&A Commercial Planning (Sales) - Add a new Version](xpa-sac-cxsp-add-new-version)
+- [xP&A Commercial Planning (Sales) - Add a new Tactic](xpa-sac-cxsp-add-new-tactic)
+- [xP&A Commercial Planning (Sales) - Add a new Spend Type](xpa-sac-cxsp-add-new-spendtype)
+
+If you want to get an overview of the entire xP&A Commercial Planning content package, make sure to check out the Mission.
+
 Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).

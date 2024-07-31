@@ -21,14 +21,14 @@ parser: v2
 - Have an SAP Analytics Cloud tenant available with Planning enabled and a user with admin rights for it
 - Import the **xP&A Commercial Planning** content package as described in [xP&A Commercial Planning - Get to know the Marketing Planning module](xpa-sac-cxmp-marketingplanning-gettoknow)
 - Have an SAP Integration Suite instance
-- Copied the integration package [SAP Commercial Planning](https://api.sap.com) into your SAP Integration Suite instance and configured Process Integration Runtime.
+- Copied the integration package [SAP Commercial Planning](https://api.sap.com/package/IntegrationbetweenSAPIntegratedBusinessPlanningfordemandandSAPAnalyticsCloud/integrationflow) into your SAP Integration Suite instance and configured Process Integration Runtime.
 - Completed configuration of authentication and connectivity for Commercial Planning integration flows as described in [xP&A Commercial Planning - Data Integration](xpa-sac-cx-data-integration-setup)
 
 ## Intro
 
 In the previous tutorial [xP&A Commercial Planning - How to set up system connections](xpa-sac-cx-data-integration-setup) you have set up the initial connectivity between SAP Integrated Business Planning for Demand, SAP Cloud Integration Suite and SAP Analytics Cloud and created a Process Integration Runtime. In this tutorial you will learn how to leverage these connections to manage the data loads between those respective applications.
 
-Each of the integration flows offered in the package [SAP Commercial Planning](https://api.sap.com) is related to either the sales planning or marketing planning data model and is used for transfer of data labeled in the honeycombs highlighted in green in the picture below. 
+Each of the integration flows offered in the package [SAP Commercial Planning](https://api.sap.com/package/IntegrationbetweenSAPIntegratedBusinessPlanningfordemandandSAPAnalyticsCloud/integrationflow) is related to either the sales planning or marketing planning data model and is used for transfer of data labeled in the honeycombs highlighted in green in the picture below. 
 
 ![OverviewPicture](Step00Intro/0001_IntroOverview.png)
 
@@ -124,7 +124,7 @@ Once you have entered all details click on the **Create** button to have your co
 
 Let's have a look at the Multi Actions now.
 
-You can find the list of the multi actions delivered with the content package and their integration flows for transferring data in the table below. You can find more information on the individual cloud integration flows in their package documentation on [SAP Business Accelerator Hub](api.sap.com).
+You can find the list of the multi actions delivered with the content package and their integration flows for transferring data in the table below. You can find more information on the individual cloud integration flows in their package documentation on [SAP Business Accelerator Hub](https://api.sap.com/package/IntegrationbetweenSAPIntegratedBusinessPlanningfordemandandSAPAnalyticsCloud/documents).
 
 |Multi Action|Integration Flow|Source|Target|
 |:-----|:-----|:-----|:-----|
