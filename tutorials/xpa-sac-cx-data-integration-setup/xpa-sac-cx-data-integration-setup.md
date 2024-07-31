@@ -33,7 +33,7 @@ Short sketch of the process:
 - Marketing Planning in SAP Analytics Cloud produces marketing expense amounts
 - These marketing expense amounts represent demand drivers and need to be transferred from SAP Analytics Cloud -> SAP IBP for Demand 
 
-For each of the data movements a SAP cloud integration flow is delivered on the SAP Business Accelerator Hub https://api.sap.com/package/IntegrationbetweenSAPIntegratedBusinessPlanningfordemandandSAPAnalyticsCloud/integrationflow.
+For each of the data movements a SAP cloud integration flow is delivered on the [SAP Business Accelerator Hub](https://api.sap.com/package/IntegrationbetweenSAPIntegratedBusinessPlanningfordemandandSAPAnalyticsCloud/integrationflow).
 
 This tutorial will guide you through the process of setting up the connections and authentication. The results of this tutorial are configured Integration Flows which can be triggered via API. These APIs will be integrated into SAP Analytics Cloud to be started via Multi Actions.
 

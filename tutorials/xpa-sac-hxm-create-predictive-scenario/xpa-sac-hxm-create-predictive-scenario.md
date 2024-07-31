@@ -15,16 +15,6 @@ parser: v2
 - You are familiar with the **xP&A - Operational Workforce Planning** content from the xP&A Business Content Suite. Reference: [Getting Started tutorial](xpa-sac-hxm-workforceplanning-gettoknow)
 - You have installed the **xP&A - Operational Workforce Planning** content in an SAP Analytics Cloud tenant. Reference: [Business Content Installation Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/078868f57f3346a98c3233207bd211c7.html), [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html)  
 
-## Intro
-In this tutorial you will learn how to create and embed a predictive scenario.
-
-In case you have any questions or require further support, please use the [SAP Question Form](https://community.sap.com/t5/forums/postpage/choose-node/true/product-id/bcbf0782-ce74-43b8-b695-dafd7c1ff1c1/board-id/technology-questions).
-
-If you have a specific request to our team in regards to the business content, you may also submit a request using the [SAP Influence Platform](https://influence.sap.com/sap/ino/#/idea-create?campaign=884&title=Extended%20Planning%20and%20Analysis%3A%20content&tags=Extended%20Planning%20and%20Analysis&RespList=cust.ino.config.SAP_ANALYTICS_CLOUD_SAP_DIGITAL_BOARDROOM.BIZ_CONTENT).
-
-If you are interested in more xP&A topics, related business content packages, or videos showing the content in action, feel free to check out our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).
-
-
 ## You will learn
 - The benefits of using **Smart Predict** capabilities in the context of the xP&A Operational Workforce Planning content package for SAP Analytics Cloud
 - Which steps are required in order to make Smart Predict work
@@ -33,6 +23,14 @@ If you are interested in more xP&A topics, related business content packages, or
   -embedding Predictive Scenarios into Multi Actions
   -adjusting the planning applications to enable Smart Predict
 
+## Intro
+In this tutorial you will learn how to create and embed a predictive scenario.
+
+In case you have any questions or require further support, please use the [SAP Question Form](https://community.sap.com/t5/forums/postpage/choose-node/true/product-id/bcbf0782-ce74-43b8-b695-dafd7c1ff1c1/board-id/technology-questions).
+
+If you have a specific request to our team in regards to the business content, you may also submit a request using the [SAP Influence Platform](https://influence.sap.com/sap/ino/#/idea-create?campaign=884&title=Extended%20Planning%20and%20Analysis%3A%20content&tags=Extended%20Planning%20and%20Analysis&RespList=cust.ino.config.SAP_ANALYTICS_CLOUD_SAP_DIGITAL_BOARDROOM.BIZ_CONTENT).
+
+If you are interested in more xP&A topics, related business content packages, or videos showing the content in action, feel free to check out our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).
 
 ### Understanding the term Smart Predict
 To quote SAP's official definition, [Smart Predict](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/92a4a76cf6ae454cbf55b73df1cc2f3d/ccf8379080ff443ea20106fb0b95e6e7.html) describes the use of SAP machine learning algorithms to explore relationships in your dataset and build a formula – a Predictive Scenario – to predict future events or trends. Currently, three types of Predictive Scenarios are available in Smart Predict: classification, regression, and time series Predictive Scenarios.
@@ -263,7 +261,7 @@ Now that you have set up the Predictive Scenario and activated the Smart Predict
 
     >INFORMATION
     >
-    It is important to open the `SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE` stpry first instead of directly jumping to the `SAP_HR_BPL_IM_WFP_CENTRAL_ASSUMPTIONS` story as the parameter you changed in the previous step is transmitted via the overview application. If you opened the central assumptions applications directly, smart predict capabilities would not be activated.
+    It is important to open the `SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE` story first instead of directly jumping to the `SAP_HR_BPL_IM_WFP_CENTRAL_ASSUMPTIONS` story as the parameter you changed in the previous step is transmitted via the overview application. If you opened the central assumptions applications directly, smart predict capabilities would not be activated.
 
 2. Enter the **Application Configuration** story.
 
