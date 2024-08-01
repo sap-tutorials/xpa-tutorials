@@ -123,6 +123,7 @@ As this requires multiple changes across the second data action step, go ahead a
 
 <!-- border; size:540px -->![OverwriteActivityAllocationStep](Step02UpdateMaintainActvityDa/0208_OverwriteActivityAllocationStep.png)
 
+			```
 			CONFIG.HIERARCHY = [d/SAP_ALL_PRODUCT].[h/Hierarchy4],[d/SAP_MKT_MarketingCampaign].[h/Hierarchy2], [d/SAP_MKT_MarketingActivity].[h/Hierarchy2]
 
 			CONFIG.HIERARCHY.INCLUDE_MEMBERS_NOT_IN_HIERARCHY= 
@@ -240,6 +241,7 @@ As this requires multiple changes across the second data action step, go ahead a
 				[d/SAP_FI_XPA_GLAccount] = "41000000")
 
 			* ATTRIBUTE([d/SAP_MKT_MarketingActivity].[p/ActivitySpendAmount])
+			```
 
 Click on the **Save** icon to have your updated data action saved.
 
@@ -259,6 +261,7 @@ Click on the step **Recalculate all Activities** and replace the whole script in
 
 ![ReplaceRecalculateActivityDa](Step03UpdateRecalculateActivitiesDa/0302_ReplaceRecalculateDA.png)
 
+			```
 			CONFIG.HIERARCHY = [d/SAP_ALL_PRODUCT].[h/Hierarchy4],[d/SAP_MKT_MarketingCampaign].[h/Hierarchy2], [d/SAP_MKT_MarketingActivity].[h/Hierarchy2]
 
 			CONFIG.HIERARCHY.INCLUDE_MEMBERS_NOT_IN_HIERARCHY= 
@@ -348,7 +351,8 @@ Click on the step **Recalculate all Activities** and replace the whole script in
 				[d/SAP_FI_XPA_GLAccount] = "41000000")
 
 			* ATTRIBUTE([d/SAP_MKT_MarketingActivity].[p/ActivitySpendAmount]) ,3)
-
+			```
+			
 Click on the **Save** icon to have your updated data action saved.
 
 <!-- border; size:540px -->![SaveRecalculateActivityDa](Step03UpdateRecalculateActivitiesDa/0303_SaveRecalculateDA.png)
