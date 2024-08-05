@@ -356,8 +356,8 @@ Currently, you have opened the tab **Define Reference Period**. This tab provide
 
     >INFORMATION:
     >
-    - In this tutorial, the reference period will not be changed and all upcoming steps are based on the default configuration shown in the above screenshot
-    - If you still want to change the reference period, please do so for the versions `public.Aggregated_Plan` and `public.Detailed_Plan` as these versions are set as the default plan versions for the stories
+    - In this tutorial, the reference period will not be changed and all upcoming steps are based on the default configuration shown in the above screenshot.
+    - If you still want to change the reference period, please do so for the versions `public.Aggregated_Plan` and `public.Detailed_Plan` as these versions are set as the default plan versions for the stories.
 
 4. Save your changes
 
