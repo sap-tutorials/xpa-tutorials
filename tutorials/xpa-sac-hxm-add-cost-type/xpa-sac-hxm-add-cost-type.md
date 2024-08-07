@@ -20,7 +20,7 @@ parser: v2
     -adjusting all affected Data Actions
 
 ## Intro
-In this tutorial you will learn how to add a new Cost Type to the application.
+In this tutorial you will learn how to add a new Cost Type to the application. 
 
 In case you have any questions or require further support, please use the [SAP Question Form](https://community.sap.com/t5/forums/postpage/choose-node/true/product-id/bcbf0782-ce74-43b8-b695-dafd7c1ff1c1/board-id/technology-questions).
 

@@ -21,7 +21,7 @@ parser: v2
 - Which steps are required in order to add and use a new tactic
 - This includes...
   - adding a new tactic in the model
-  - adjust the planning applications
+  - adjust the planning applications 
 
 ## Intro
 

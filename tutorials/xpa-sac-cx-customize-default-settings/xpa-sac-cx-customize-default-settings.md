@@ -22,7 +22,7 @@ parser: v2
 - how to customize the default settings in each story of the **CX Commercial Planning** business content package. This includes...
 - ...changing the default measures for the graphs located in the header section of each planning story.
 - ...changing the default drill down in all widgets.
-- ...changing the default selection in the filter panel of each story.
+- ...changing the default selection in the filter panel of each story. 
 
 ## Intro
 Now that you have successfully gone through the introduction tutorials and know how to use the content package like an expert, you may want to start customizing it and adjusting it according to your own business needs.

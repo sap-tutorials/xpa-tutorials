@@ -21,7 +21,7 @@ parser: v2
 * You have an account with SAP Business Technology Platform as described in [Get a Free Account on SAP BTP Trial](https://developers.sap.com/tutorials/hcp-create-trial-account.html).
 * You have enabled Cloud Integration, capability of SAP Integration Suite, as described in [Set Up Integration Suite Trial](https://developers.sap.com/tutorials/cp-starter-isuite-onboard-subscribe.html).
 * Have access to SAP Integrated Business Planning. More details about the user role required are included below in the section entitled, "Set up authentication in SAP Integrated Business Planning". 
-* As the focus of this tutorial is on the configuration to integrate SAP Integrated Business Planning with SAP Analytics Cloud and SAP S/4HANA, you would need to be familiarity with how to access and navigate to the relevant configuration apps of these systems. 
+* As the focus of this tutorial is on the configuration to integrate SAP Integrated Business Planning with SAP Analytics Cloud and SAP S/4HANA, you would need to be familiarity with how to access and navigate to the relevant configuration apps of these systems.
 
 ## Intro
 

@@ -18,7 +18,7 @@ parser: v2
 - You have finished the tutorial [xP&A Commercial Planning - Understanding the technical structure of stories](xpa-sac-cx-technical-structure-stories) and understand the architectural design of each app
 
 ## You will learn
-- how to add an additional story to the navigation menu in case you plan to enhance this content package with additional applications. 
+- how to add an additional story to the navigation menu in case you plan to enhance this content package with additional applications.
 
 ## Intro
 Now that you have successfully gone through the introduction tutorials and know how to use the content package like an expert, you may want to start customizing it and adjusting it according to your own business needs.

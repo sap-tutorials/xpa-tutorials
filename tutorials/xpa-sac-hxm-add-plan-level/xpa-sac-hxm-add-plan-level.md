@@ -108,7 +108,7 @@ By doing this, your planning applications will automatically initialize all plan
 
     <!-- border; size:540px -->![Modify_Version_Dim](modify-version-dim.png)
 
-3. Save your changes.
+3. Save your changes. 
 
 
 ### Adjust Data Actions
@@ -116,7 +116,7 @@ In the next step, all affected Data Actions must be adjusted in order to make ca
 
 1. Navigate to the **Data Action** folder and open the Data Action `SAP__HR_BPL_IM_INITIALIZE_PLAN_WITH_AGGREGATION`.
 
-    <!-- border; size:540px -->![Data_Action_Menu](data-action-menu.png)
+    <!-- border; size:540px -->![Data_Action_Menu](data-action-menu.png) 
 
 2. Click on the second Data Action step **Seeding Internal** and complement the code with the following statement by adding these lines at the very end of the Data Action step:
 

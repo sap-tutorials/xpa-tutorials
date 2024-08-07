@@ -337,7 +337,7 @@ Now you want to use this period as a reference for your planning year 2021 and c
 
     - Execute the Data Action by pressing the trigger in your story
 
-    - You may close the story after the Data Action has run through. There is no need to save it.
+    - You may close the story after the Data Action has run through. There is no need to save it. 
 
 >INFORMATION:
 >

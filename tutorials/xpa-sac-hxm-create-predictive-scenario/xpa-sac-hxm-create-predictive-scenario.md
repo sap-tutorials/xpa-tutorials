@@ -17,7 +17,7 @@ parser: v2
 
 ## You will learn
 - The benefits of using **Smart Predict** capabilities in the context of the xP&A Operational Workforce Planning content package for SAP Analytics Cloud
-- Which steps are required in order to make Smart Predict work
+- Which steps are required in order to make Smart Predict work 
 - This includes...
   -creating and setting up Predictive Scenarios
   -embedding Predictive Scenarios into Multi Actions

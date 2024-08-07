@@ -22,7 +22,7 @@ parser: v2
 - This includes...
   - adding a new spend type in the model
   - adjust the planning applications
-  - adjust the data actions
+  - adjust the data actions 
 
 ## Intro
 

@@ -18,7 +18,7 @@ parser: v2
 
 ## You will learn
 
-- All basics of the Sales Planning module within the Commercial Planning (CX) content package for SAP Analytics Cloud
+- All basics of the Sales Planning module within the Commercial Planning (CX) content package for SAP Analytics Cloud 
 - How to navigate and use the Sales Planning stories in the content package
 - How to perform global and regional sales budget planning, including initializing the planning version, setting up the planning table, adjusting revenue and spend and publishing the result
 - How to perform sales demand planning, including setting up the planning table, adjusting revenue and quantity, and publishing the result

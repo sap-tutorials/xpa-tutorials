@@ -21,7 +21,7 @@ parser: v2
 - how to integrate data into your data model and prepare your plan version using the **Marketing Planning Admin Page** story 
 - how to plan your budget using the **Marketing Budget Planning** story
 - how to plan individual marketing campaigns and marketing activities using the **Marketing Campaign Planning** story
-- how to adjust the baseline and how to plan on different drivers using the **Marketing Demand Planning** story
+- how to adjust the baseline and how to plan on different drivers using the **Marketing Demand Planning** story 
 - how to track your performance using the **Marketing Campaign Analysis** and the **Marketing Performance Analysis** stories
 
 ## Intro

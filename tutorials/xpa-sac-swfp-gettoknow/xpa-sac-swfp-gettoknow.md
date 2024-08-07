@@ -20,7 +20,7 @@ parser: v2
 - all basics of the **SAP Strategic Workforce Planning** content package for SAP Analytics Cloud 
 - how to integrate data into your planning data model
 - how to prepare your versions for the planning activities
-- how to get an understanding of your current workforce composition
+- how to get an understanding of your current workforce composition 
 - how to plan the workforce supply and make an estimation about the future workforce demand
 - how to identify gaps between your planned supply headcount and your estimated demand headcount and how to derive strategies to close the gap
 - how to track your performance using the reporting stories

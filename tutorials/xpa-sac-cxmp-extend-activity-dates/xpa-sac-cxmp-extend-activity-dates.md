@@ -117,7 +117,7 @@ While you are looking at the parameter list you can also delete the parameter fo
 
 <!-- border; size:540px -->![RemoveActivitySpendParameter](Step02UpdateMaintainActvityDa/0207_DeleteActivitySpendParameter.png)
 
-Now that you have the data action in place, make sure that these parameters are being used and the proration is set up correctly (similarly to the one for campaigns).
+Now that you have the data action in place, make sure that these parameters are being used and the proration is set up correctly (similarly to the one for campaigns). 
 
 As this requires multiple changes across the second data action step, go ahead and click on the step called **Allocated Activity Costs according to Product Revenue** and replace everything in this step with the script provided below:
 

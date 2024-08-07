@@ -22,7 +22,7 @@ parser: v2
 - how stories are built from a technical perspective. This includes...
 - ...understanding the structure of stories
 - ...understanding the naming convention of the objects and widgets
-- ...learning about the usage of script variables
+- ...learning about the usage of script variables 
 - ...learning about the script objects 
 
 ## Intro

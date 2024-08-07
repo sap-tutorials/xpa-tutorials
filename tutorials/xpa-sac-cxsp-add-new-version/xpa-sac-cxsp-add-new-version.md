@@ -19,7 +19,7 @@ parser: v2
 ## You will learn
 
 - Which steps are required in order to add and use a new version
-- This includes...
+- This includes... 
   - adding a new version via the version management function
   - which options are available to use the new version for your planning activities
 

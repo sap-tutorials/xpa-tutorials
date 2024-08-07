@@ -20,7 +20,7 @@ parser: v2
 - all basics of the Portfolio Planning module within the Commercial Planning content package for SAP Analytics Cloud 
 - how to integrate data into your data model and prepare your plan version using the **Portfolio Planning Admin Page** story 
 - how to enter your planning assumptions using the **List Price Planning** story
-- how to consume the different reports using the **List Price Analysis** story
+- how to consume the different reports using the **List Price Analysis** story 
 
 ## Intro
 In this tutorial you will learn all basics about the **Portfolio Planning** module within the Commercial Planning Content Package. 

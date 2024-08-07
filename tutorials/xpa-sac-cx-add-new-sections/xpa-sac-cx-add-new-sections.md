@@ -18,7 +18,7 @@ parser: v2
 - You have finished the tutorial [xP&A Commercial Planning - Understanding the technical structure of stories](xpa-sac-cx-technical-structure-stories) and understand the architectural design of each app
 
 ## You will learn
-- how you can add additional sections to your stories based on the applied theme throughout this content package.  
+- how you can add additional sections to your stories based on the applied theme throughout this content package. 
 
 ## Intro
 Now that you have successfully gone through the introduction tutorials and understand the technical structure of the stories, you may want to start customizing the stories based on your own business needs. 

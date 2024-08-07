@@ -20,7 +20,7 @@ parser: v2
 
 ## You will learn
 - how to customize the table settings dialogue available in some of the planning stories. This includes...
-- ...adding new measures to the selection
+- ...adding new measures to the selection 
 - ...removing existing measures from the selection
 - ...properly dealing with measures which have conditional formatting applied to them
 

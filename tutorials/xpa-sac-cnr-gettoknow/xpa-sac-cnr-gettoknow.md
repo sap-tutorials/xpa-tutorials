@@ -18,7 +18,7 @@ parser: v2
 - You have installed the **Integrated Financial Planning for SAP S/4HANA (xP&A - Integrated Financial Planning for SAP S/4HANA and S/4HANA Cloud)** content (Reference: [Content Package User Guide](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/48f4b4785b8e45938ac44a67be8032d9/7ce894bc95f449779fa19d076e67c925.html)) and the **Rapid Financial Planning & Analysis for SAP S/4HANA (Best Practices)** content (Reference: [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/28c3faa21e4743479e76c1d2569d8a58.html)) in an SAP Analytics Cloud tenant. NOTE: While you can choose which Financial Planning package fits your needs best, you will need both installed in order to pass dependency checks when installing this SAP Consensus Net Revenue Planning package. 
 
 ## You will learn
-- all basics of the Consensus Net Revenue Planning content package for SAP Analytics Cloud 
+- all basics of the Consensus Net Revenue Planning content package for SAP Analytics Cloud
 - how to integrate data into your data model, prepare your versions and how to export your results using the **Consensus Net Revenue Planning Admin Page** story 
 - how to plan different consensus scenarios, compare them with each other and how to submit your final consensus using the **Consensus Net Revenue Scenario Planning** story
 - how to track your performance using the **Consensus Net Revenue and Margin Analysis** story

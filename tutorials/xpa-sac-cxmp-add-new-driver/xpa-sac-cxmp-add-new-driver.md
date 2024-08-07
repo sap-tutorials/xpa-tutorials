@@ -20,7 +20,7 @@ parser: v2
 
 ## You will learn
 - How to add a new driver. This includes...
-- ...creating a new member in the driver dimension
+- ...creating a new member in the driver dimension 
 - ...adding relevant calculated measures to the data model
 - ...adjusting all affected data actions
 - ...embedding the driver into the stories

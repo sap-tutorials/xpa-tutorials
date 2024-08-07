@@ -335,7 +335,7 @@ Currently, you have opened the tab **Define Reference Period**. This tab provide
 
     - In the SAP Analytics Cloud menu, navigate to the **Files** section
     - Look for the Operational Workforce Planning data model by entering the term `SAP__HR_BPL_IM_WORKFORCE` into the search bar
-    - Click on the file to open the data model
+    - Click on the file to open the data model 
 
     <!-- border; size:540px -->![xP&A Workforce Planning](11/1.png)
 

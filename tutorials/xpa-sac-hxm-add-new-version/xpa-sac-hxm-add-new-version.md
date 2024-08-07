@@ -16,7 +16,7 @@ parser: v2
 - You have installed the **xP&A - Operational Workforce Planning** content in an SAP Analytics Cloud tenant. Reference: [Business Content Installation Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/078868f57f3346a98c3233207bd211c7.html), [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html)  
 
 ## You will learn
-- Which steps are required in order to add and use a new version
+- Which steps are required in order to add and use a new version 
 - This includes...
   -adding a new version via the version management function
   -which options are available to use the new version for your planning activities
