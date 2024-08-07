@@ -109,7 +109,7 @@ Now you will need to create a new parameter for the end date. Click on the **Cre
 
 <!-- border; size:540px -->![CreateEndDateParameter](Step02UpdateMaintainActvityDa/0205_CreateParameter.png)
 
-Enter the parameter details as follows and click on **Done** to save and close the new parameter.
+Enter the parameter details as follows and click on **Done** to save and close the new parameter. 
 
 <!-- border; size:540px -->![CreateEndDateParameter](Step02UpdateMaintainActvityDa/0206_CreateParameterEndDate.png)
 

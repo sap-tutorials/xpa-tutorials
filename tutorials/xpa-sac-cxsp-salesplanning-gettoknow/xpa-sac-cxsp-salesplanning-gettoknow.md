@@ -855,7 +855,7 @@ Congratulations! You have finished the introduction tutorial and are now able to
 - [xP&A Commercial Planning - Get to know the Marketing Planning module](xpa-sac-cxmp-marketingplanning-gettoknow)
 - [xP&A Commercial Planning - Get to know the Portfolio Planning module](xpa-sac-cxpp-portfolioplanning-gettoknow)
 
-If you want to customize the content and adjust it according to your own business requirements, the following resources might be helpful:
+If you want to customize the content and adjust it according to your own business requirements, the following resources might be helpful: 
 
 - [xP&A Commercial Planning - Introduction to the Data Model](xpa-sac-cxmp-datamodelfundamentals)
 - [xP&A Commercial Planning - Understanding the technical structure of Stories](xpa-sac-cx-technical-structure-stories)

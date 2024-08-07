@@ -3,7 +3,7 @@ title: xP&A Operational Workforce Planning - Add a new Plan Level
 description: This tutorial provides information about how to add a new Plan Level.
 author_name: Rudolf Lindt
 author_profile: https://github.com/RudolfLindt93
-auto_validation: true
+auto_validation: false
 time: 20
 keywords: xP&A, plan level
 tags: [ tutorial>beginner, products>sap-analytics-cloud]
@@ -162,7 +162,7 @@ In the next step, all affected Data Actions must be adjusted in order to make ca
     - If you do this, make sure to change the commented header accordingly so the description matches to the new code.
     - Ensure that you adjust the *ELSEIF* condition as well and check for `PlanLevelNumeric` = `6`. The number `6` represents the Plan Level `PL6`. Accordingly, the number `1` would represent the Plan Level `PL1`, number `2` the Plan Level `PL2` etc.
     - In this example, the dimensions `[d/SAP_ALL_COMPANY_CODE]` and `[d/SAP_HR_JOBFUNCTION]` must be excluded from the code as they are part of the definition of Plan Level `PL6`. You can exclude dimensions by putting them into a comment as shown in the image.
-    - In order for the calculation to work correctly, you must always exclude those dimensions (i.e by putting them into a comment) that are part of your Plan Level definition, which in the case of Plan Level `PL6` are `[d/SAP_ALL_COMPANY_CODE]` and `[d/SAP_HR_JOBFUNCTION]`.
+    - In order for the calculation to work correctly, you must always exclude those dimensions (i.e by putting them into a comment) that are part of your Plan Level definition, which in the case of Plan Level `PL6` are `[d/SAP_ALL_COMPANY_CODE]` and `[d/SAP_HR_JOBFUNCTION]`. 
 
 3. Repeat the same activity for the third Data Action step **Seeding External**.
 

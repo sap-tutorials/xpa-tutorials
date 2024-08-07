@@ -16,14 +16,14 @@ parser: v2
 - You have installed the **SAP CX Commercial Planning content** in an SAP Analytics Cloud tenant. Reference: [Business Content Installation Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/078868f57f3346a98c3233207bd211c7.html), [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/b0046d8673b5412cbef7f521cfdfed95.html)
 - You have finished both introduction tutorials [xP&A Commercial Planning - Get to know the Portfolio Planning module](xpa-sac-cxpp-portfolioplanning-gettoknow) and [xP&A Commercial Planning - Get to know the Marketing Planning module](xpa-sac-cxmp-marketingplanning-gettoknow)
 - You have finished the tutorial [xP&A Commercial Planning - Introduction to the Data Model](xpa-sac-cxmp-datamodelfundamentals) and understand the data model of the Commercial Planning Content package
-- You have a basic familiarity with programming and understand concepts such as script variables
+- You have a basic familiarity with programming and understand concepts such as script variables 
 
 ## You will learn
 - how stories are built from a technical perspective. This includes...
 - ...understanding the structure of stories
 - ...understanding the naming convention of the objects and widgets
 - ...learning about the usage of script variables
-- ...learning about the script objects
+- ...learning about the script objects 
 
 ## Intro
 Now that you have successfully gone through the introduction tutorials and know how to use the content package like an expert, you may want to start customizing it and adjusting it according to your own business needs.

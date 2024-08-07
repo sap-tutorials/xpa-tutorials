@@ -255,7 +255,7 @@ You learn how to set the new version as default in a variable in the story `SAP_
 
     <!-- border; size:540px -->![analytic_application](find-reference.png)
 
-7. Save the changes.
+7. Save the changes. 
 
 [OPTION END]
 

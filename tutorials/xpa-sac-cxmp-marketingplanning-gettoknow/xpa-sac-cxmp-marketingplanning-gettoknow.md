@@ -1239,7 +1239,7 @@ Currently, you have opened the tab **Reporting**. This tab provides information 
 ### Final Remarks
 Congratulations! You have finished the introduction tutorial and are now able to use the **Marketing Planning** content like an expert.
 
-If you want to learn more about the other modules of this content package, check out the following tutorials:
+If you want to learn more about the other modules of this content package, check out the following tutorials: 
 
 - [xP&A Commercial Planning - Get to know the Sales Planning module](xpa-sac-cxsp-salesplanning-gettoknow)
 - [xP&A Commercial Planning - Get to know the Portfolio Planning module](xpa-sac-cxpp-portfolioplanning-gettoknow)

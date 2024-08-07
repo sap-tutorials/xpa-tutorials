@@ -14,7 +14,7 @@ parser: v2
 ## Prerequisites
 - You have an SAP Analytics Cloud tenant. If this is not the case, get started by requesting a free [SAP Analytics Cloud trial](https://www.sap.com/products/technology-platform/cloud-analytics/trial.html) tenant.
 - You have installed the **SAP Strategic Workforce Planning** content in an SAP Analytics Cloud tenant. Reference: [Business Content Installation Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/078868f57f3346a98c3233207bd211c7.html), [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/4d75077c28314f5398eeb78dfcb5b1ff.html)
-- You have optionally installed the **SAP Operational Workforce Planning** content in an SAP Analytics Cloud tenant. Reference: [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html). This is only required if you wish to integrate your final planning results into this content package.
+- You have optionally installed the **SAP Operational Workforce Planning** content in an SAP Analytics Cloud tenant. Reference: [Content Package User Guide](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/42093f14b43c485fbe3adbbe81eff6c8/7032f23e00b34a7ab6d79af20a8792a7.html). This is only required if you wish to integrate your final planning results into this content package. 
 
 ## You will learn
 - all basics of the **SAP Strategic Workforce Planning** content package for SAP Analytics Cloud 

@@ -274,7 +274,7 @@ If you want to customize the content and adjust it according to your own busines
 - [xP&A Commercial Planning (Marketing) - Extend activity spend dates](xpa-sac-cxmp-extend-activity-dates)
 - [xP&A Commercial Planning (Sales) - Add a new Version](xpa-sac-cxsp-add-new-version)
 - [xP&A Commercial Planning (Sales) - Add a new Tactic](xpa-sac-cxsp-add-new-tactic)
-- [xP&A Commercial Planning (Sales) - Add a new Spend Type](xpa-sac-cxsp-add-new-spendtype)
+- [xP&A Commercial Planning (Sales) - Add a new Spend Type](xpa-sac-cxsp-add-new-spendtype) 
 
 If you want to get an overview of the entire xP&A Commercial Planning content package, make sure to check out the Mission.
 

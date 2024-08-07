@@ -3,7 +3,7 @@ title: xP&A Operational Workforce Planning - Create Predictive Scenario
 description: This tutorial provides information about how to create a Predictive Scenario for machine learning based pre-population of plan data
 author_name: Rudolf Lindt
 author_profile: https://github.com/RudolfLindt93
-auto_validation: true
+auto_validation: false
 time: 30
 keywords: xP&A, smart predict, Predictive Scenario, time series forecast
 tags: [ tutorial>intermediate, software-product-function>sap-analytics-cloud--analytics-designer]
@@ -21,7 +21,7 @@ parser: v2
 - This includes...
   -creating and setting up Predictive Scenarios
   -embedding Predictive Scenarios into Multi Actions
-  -adjusting the planning applications to enable Smart Predict
+  -adjusting the planning applications to enable Smart Predict 
 
 ## Intro
 In this tutorial you will learn how to create and embed a predictive scenario.

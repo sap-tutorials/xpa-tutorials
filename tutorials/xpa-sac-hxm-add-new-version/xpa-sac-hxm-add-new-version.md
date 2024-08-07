@@ -3,7 +3,7 @@ title: xP&A Operational Workforce Planning - Add a new Version
 description: This tutorial provides information on how to add a new version and use it inside the different applications.
 author_name: Rudolf Lindt
 author_profile: https://github.com/RudolfLindt93
-auto_validation: true
+auto_validation: false
 time: 20
 keywords: xP&A, version
 tags: [ tutorial>beginner, software-product-function>sap-analytics-cloud--analytics-designer]
@@ -313,7 +313,7 @@ Lastly, you need to make the new version available for the filter widgets inside
 
 1. Head back to the **Files** section in the SAP Analytics Cloud Menu and look for the reporting story `SAP_HR_BPL_IM_WFP_REPORTING`.
 
-    Open the story in edit mode.
+    Open the story in edit mode. 
 
     <!-- border; size:540px -->![analytic_application](story-edit-mode.png)
 

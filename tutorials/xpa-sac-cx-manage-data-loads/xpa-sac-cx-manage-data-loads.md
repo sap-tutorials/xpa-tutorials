@@ -11,7 +11,7 @@ tags: [ tutorial>advanced, software-product>sap-integration-suite]
 parser: v2
 ---
 
-## You will learn
+## You will learn 
 
 - how to set up connectivity to cloud integration flows for loading data between SAP Integrated Business Planning for Demand, SAP S/4HANA and SAP CX Commercial Planning content in SAP Analytics Cloud.
 - how to use parameters and initialize cloud integration flows via SAP Analytics Cloud multi actions

@@ -115,7 +115,7 @@ Add a new calculated measure representing the incremental quantity coming from t
    
     <!-- border; size:540px -->![xp&A Commercial Planning](1/9.png)
 
-4. Save your story.
+4. Save your story. 
 
 5. Open your story in view mode to initialize the data for the new driver. Your tables should now contain the new driver with booked values.
 

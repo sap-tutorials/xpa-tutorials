@@ -152,7 +152,7 @@ This is why the measure must be kept in the layout at any given point in time.
 ### Final Remarks
 Congratulations! You have finished the tutorial and are now able to adjust the table settings dialogue.
 
-If you want to learn more about the modules of this content package, check out the following tutorials:
+If you want to learn more about the modules of this content package, check out the following tutorials: 
 
 - [xP&A Commercial Planning - Get to know the Sales Planning module](xpa-sac-cxsp-salesplanning-gettoknow)
 - [xP&A Commercial Planning - Get to know the Portfolio Planning module](xpa-sac-cxpp-portfolioplanning-gettoknow)

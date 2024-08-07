@@ -3,7 +3,7 @@ title: xP&A Operational Workforce Planning - Add a new Cost Type
 description: This tutorial provides information about how to add a new Cost Type
 author_name: Rudolf Lindt
 author_profile: https://github.com/RudolfLindt93
-auto_validation: true
+auto_validation: false
 time: 30
 keywords: xP&A, cost type
 tags: [ tutorial>beginner, software-product>sap-analytics-cloud]
@@ -212,7 +212,7 @@ By doing this, you will ensure that whenever a cost calculation takes place, cos
 
     <!-- border; size:540px -->![Data_Action](calculate-costs-data-action-4-1.png)
 
-15. Save your changes.
+15. Save your changes. 
 
 ### Maintain Central Assumptions for new Cost Type
 Lastly you need to maintain **Central Assumptions** for the new cost type `TRAINING_COSTS`.

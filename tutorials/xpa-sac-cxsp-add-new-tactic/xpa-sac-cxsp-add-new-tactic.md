@@ -87,7 +87,7 @@ In the next step the **Sales Planning Admin Page** (`SAP_SD_SalesPlanning_AdminP
 
     <!-- border; size:540px -->![canvas_story](confirm.png)
 
-8. Confirm your intention by pressing **Yes**.
+8. Confirm your intention by pressing **Yes**. 
 
     <!-- border; size:540px -->![canvas_story](yes.png)
 

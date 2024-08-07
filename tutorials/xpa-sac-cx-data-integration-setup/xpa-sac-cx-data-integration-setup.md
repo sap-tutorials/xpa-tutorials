@@ -8,7 +8,7 @@ time: 60
 keywords: xP&A, write back
 primary_tag: software-product>sap-analytics-cloud
 tags: [ tutorial>advanced, software-product>sap-integration-suite]
-parser: v2
+parser: v2 
 ---
 
 ## You will learn

@@ -19,7 +19,7 @@ parser: v2
 ## You will learn
 - all fundamentals about the data model used in the **Marketing Planning** and **Portfolio Planning** module of the **CX Commercial Planning** content package. This includes...
 - ...understanding the different dimensions and what they are used for
-- ...understanding the different measures and what they are used for
+- ...understanding the different measures and what they are used for 
 - ...getting an understanding of how data is stored in the data model.
 
 ## Intro

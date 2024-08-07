@@ -3,7 +3,7 @@ title: xP&A Operational Workforce Planning - Create and Upload Central Assumptio
 description: This tutorial provides guidance on how to create and upload Central Assumptions.
 author_name: Rudolf Lindt
 author_profile: https://github.com/RudolfLindt93
-auto_validation: true
+auto_validation: false
 time: 60
 keywords: xP&A, central assumptions
 tags: [ tutorial>intermediate, software-product>sap-analytics-cloud]
@@ -21,7 +21,7 @@ parser: v2
 - This includes...
   -creating the template for your data entry
   -entering values into the template correctly
-  -creating an import job to get the data into your data model
+  -creating an import job to get the data into your data model 
 
 ## Intro
 In this tutorial you will learn how create and upload central assumptions to your story.

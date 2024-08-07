@@ -434,7 +434,7 @@ Now let's verify your newly created position in SAP SuccessFactors. Log on to yo
 
 ![Go to position Management](Step11_VerifyPositionInSf/11_01_ManagePositions_SUI.png)
 
-In the **Manage Positions** application, select the **Position** option in the **Search** dropdown.
+In the **Manage Positions** application, select the **Position** option in the **Search** dropdown. 
 
 ![Select position option](Step11_VerifyPositionInSf/11_02_SelectOptionPosition_SUI.png)
 

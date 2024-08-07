@@ -181,7 +181,7 @@ You need to incorporate the option to select your new `SpendType Premium` whenev
 
     - Search for `PopUp_EditActivity`
     - Click on **Edit Scripts**.
-    - Add the following line to **line 48** to add your `SpendType`.
+    - Add the following line to **line 48** to add your `SpendType`. 
 
             case "SPEND_06": // Premium [Price]
 
