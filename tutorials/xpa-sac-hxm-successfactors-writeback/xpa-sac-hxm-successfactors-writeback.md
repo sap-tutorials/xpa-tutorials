@@ -13,7 +13,7 @@ parser: v2
 
 ## You will learn
 
-- how to set up end-to-end connectivity and authentication between SAP Analytics Cloud, SAP Cloud Integration and SAP SuccessFactors
+- how to set up end-to-end connectivity and authentication between SAP Analytics Cloud, SAP Cloud Integration and SAP SuccessFactors 
 - how to customize the position object in SAP SuccessFactors
 - how to customize and trigger the position write back in SAP Cloud Integration
 
