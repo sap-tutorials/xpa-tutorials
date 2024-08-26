@@ -1,6 +1,6 @@
 ---
 title: xP&A Operational Workforce Planning - Write back plan positions to SAP SuccessFactors
-description: This tutorial will show you how set up and run the Write Back of planned position in HXM Workforce Planning in SAP Analytics Cloud to position management in SAP SuccessFactors
+description: This tutorial will show you how set up and run the Write Back of planned position in Operational Workforce Planning in SAP Analytics Cloud to position management in SAP SuccessFactors
 author_name: Simon Kranig
 author_profile: https://people.sap.com/simon.kranig  
 auto_validation: false
@@ -15,7 +15,7 @@ parser: v2
 
 - how to set up end-to-end connectivity and authentication between SAP Analytics Cloud, SAP Cloud Integration and SAP SuccessFactors
 - how to customize the position object in SAP SuccessFactors
-- how to customize and trigger the position write back in SAP Cloud Integration 
+- how to customize and trigger the position write back in SAP Cloud Integration
 
 
 ## Prerequisites
@@ -258,7 +258,7 @@ Let's start with receiver **`SAC_Export`**
 
 For field **Address**, maintain the export path to the fact data of your workforce planning model as described in the [SAP Analytics Cloud Documentation](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/f7feb7c0792948e89cf89bcdb60db5d2.html).
 
-When using the default model of the HXM Workforce Planning content, the path will be:
+When using the default model of the Operational Workforce Planning content, the path will be:
 
 **`https://<your SAC tenant>/api/v1/dataexport/providers/sac/Caovcf79lrt4lemzdv5643rzls/FactData`**
 
@@ -372,15 +372,15 @@ Congratulations, now you are done with all customizing and can get started to do
 ### Plan a new Position
 
 [comment]: # (Step 9)
-Let's get ready to plan a new position in the HXM Workforce Planning. Logon to your SAC tenant and head over to the HXM Overview Page. Click on the link for the **Detailed Internal FTE Plan**
+Let's get ready to plan a new position in the Operational Workforce Planning. Logon to your SAC tenant and head over to the Overview Page. Click on the link for the **Detailed Internal FTE Plan**
 
 ![Detailed Internal FTE Plan](Step09_PlanANewPosition/09_01_HxmOverviewPage_SUI.png)
 
-When the plan application has finished loading, click on the **New Hires** button, so you will be able to plan for a new position.
+When the plan application has finished loading, click on the **New Hires** radio button, so you will be able to plan for a new position.
 
 ![Detailed Internal FTE Plan](Step09_PlanANewPosition/09_02_SwitchToNewHires_SUI.png)
 
-Click on the **Create Position** button.
+In the action menu, click on the **Create Position** button.
 
 ![Detailed Internal FTE Plan](Step09_PlanANewPosition/09_03_CreateNewPositionButton_SUI.png)
 
