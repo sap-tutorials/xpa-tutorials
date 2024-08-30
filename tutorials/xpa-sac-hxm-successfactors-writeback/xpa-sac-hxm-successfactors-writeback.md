@@ -45,7 +45,7 @@ In section **OAuth Clients**, take a note of the Token URL.
 
 > Take a note of the **Token URL** as you will need it later.
 
-![Token URL](Step01_GetSacOauthTokenUrl/01_01_TokenUrl_SUI.png)
+<!-- border; size:540px -->![Token URL](Step01_GetSacOauthTokenUrl/01_01_TokenUrl_SUI.png)
 
 
 ### Enable Export Service on SAP Analytics Cloud
@@ -53,7 +53,7 @@ In section **OAuth Clients**, take a note of the Token URL.
 [comment]: # (Step 2)
 In this step you will need to enable the Data Export Service and create the OAuth client credentials to be able to connect against this service of SAP Analytics Cloud. In section **Configured Clients** click on the **+ Add a New OAuth Client** link.
 
-![Add OAuth Client](Step02_EnableSacExportService/02_01_AddOauthClient_SUI.png)
+<!-- border; size:540px -->![Add OAuth Client](Step02_EnableSacExportService/02_01_AddOauthClient_SUI.png)
 
 - Provide a name for your client, e.g. **`SACExportClient`**
 -  in dropdown **Purpose** select option **`Interactive Usage and API Access`**
@@ -61,7 +61,7 @@ In this step you will need to enable the Data Export Service and create the OAut
 
 Finish the creation of the OAuth Client credentials by hitting the **Add** button at the bottom of the popup.
 
-![OAuth Client Details](Step02_EnableSacExportService/02_02_DetailsOauthClient_SUI.png)
+<!-- border; size:540px -->![OAuth Client Details](Step02_EnableSacExportService/02_02_DetailsOauthClient_SUI.png)
 
 
 Once the client credentials have been created, take a note of the
@@ -73,7 +73,7 @@ as you will need it in the next step.
 
 You can click on button **Done** now to close the popup and move over to the next step.
 
-![Note down OAuth Client details](Step02_EnableSacExportService/02_03_FinishOauthClient_SUI.png)
+<!-- border; size:540px -->![Note down OAuth Client details](Step02_EnableSacExportService/02_03_FinishOauthClient_SUI.png)
 
 
 ### Set up authentication for SAP Analytics Cloud
@@ -87,11 +87,11 @@ Let's head over and logon to SAP Cloud Integration.
 
 In SAP Cloud Integration click on the **Eye** icon to get to the overview page and then scroll down to **Manage Security** and click on the **Security Material** tile.
 
-![Security Material Tile](Step03_SetupSecurityMatCpi/04_01_SecurityMaterialTile_SUI.png)
+<!-- border; size:400px -->![Security Material Tile](Step03_SetupSecurityMatCpi/04_01_SecurityMaterialTile_SUI.png)
 
 Click on button **Create** on top of the Security Material list and choose **User Credentials**.
 
-![Create User Credentials](Step03_SetupSecurityMatCpi/04_02_CreateUserCredentials_SUI.png)
+<!-- border; size:540px -->![Create User Credentials](Step03_SetupSecurityMatCpi/04_02_CreateUserCredentials_SUI.png)
 
 - Provide a name for this security material; default name referenced in the integration flow is **`SAC_OAUTH_TOKEN_CREDS`**.
 - Provide a description (optional).
@@ -101,11 +101,11 @@ Click on button **Create** on top of the Security Material list and choose **Use
 
 Click on **Deploy** to save the user credential artifact.
 
-![Filled User Credentials](Step03_SetupSecurityMatCpi/04_03_FilledUserCredentials_SUI.png)
+<!-- border; size:540px -->![Filled User Credentials](Step03_SetupSecurityMatCpi/04_03_FilledUserCredentials_SUI.png)
 
 You can now see the created item in your list of security materials
 
-![Security Material List](Step03_SetupSecurityMatCpi/04_04_SecurityMaterialList_SUI.png)
+<!-- border; size:400px -->![Security Material List](Step03_SetupSecurityMatCpi/04_04_SecurityMaterialList_SUI.png)
 
 
 
@@ -116,11 +116,11 @@ You can now see the created item in your list of security materials
 For setting up connectivity between SAP Cloud Integration and SAP SuccessFactors, you first need to create a custom key pair in the keystore that can be used in the SuccessFactors connection security artifact.
  For this head back to the Overview page, click **Eye** icon, scroll down to section **Manage Security** and click on the **Keystore** tile.
 
-![Go To Keystore](Step04_SetupSFAuthentication/04_01_KeyStoreTile_SUI.png)
+<!-- border; size:250px -->![Go To Keystore](Step04_SetupSFAuthentication/04_01_KeyStoreTile_SUI.png)
 
 Click on the **Create Button** on top of the keystore list and choose **Key Pair**.
 
-![Create Key Pair](Step04_SetupSFAuthentication/04_02_CreateKeyPair_SUI.png)
+<!-- border; size:540px -->![Create Key Pair](Step04_SetupSFAuthentication/04_02_CreateKeyPair_SUI.png)
 
 Please provide your input for the following fields:
 
@@ -135,17 +135,17 @@ All other fields are optional.
 
 Hit the **Create** button to have your key pair created. You will now see it in entity list.
 
-![Maintain Key Pair](Step04_SetupSFAuthentication/04_03_MaintainKeyPair_SUI.png)
+<!-- border; size:540px -->![Maintain Key Pair](Step04_SetupSFAuthentication/04_03_MaintainKeyPair_SUI.png)
 
 As a next step, download the certificate as you need the certificate key for the SAP SuccessFactors OAuth Client Application entry.
 
 To download the certificate, click on the **Actions** Icon next to your key store entry and choose the option **Download Certificate**.
 
-![Download Certificate](Step04_SetupSFAuthentication/04_05_DownloadCertificate_SUI.png)
+<!-- border; size:540px -->![Download Certificate](Step04_SetupSFAuthentication/04_05_DownloadCertificate_SUI.png)
 
 Save the certificate to your local disk and open it with your preferred text editor. You will need the key value (everything between the **-----BEGIN CERTIFICATE-----** and **-----END CERTIFICATE-----** tag) in the upcoming step, so keep the file open.
 
-![Copy Certificate Key](Step04_SetupSFAuthentication/04_06_CopyCertificateKey_SUI.png)
+<!-- border; size:540px -->![Copy Certificate Key](Step04_SetupSFAuthentication/04_06_CopyCertificateKey_SUI.png)
 
 
 
@@ -163,7 +163,7 @@ In this application you can register client applications for SAP SuccessFactors 
 
 Hit the **Register Client Application** button to create a new entry for the integration flow.
 
-![Register new OAuth Client Application](Step05_RegisterOauthSF/05_02_RegisterNewClientApplication_SUI.png)
+<!-- border; size:540px -->![Register new OAuth Client Application](Step05_RegisterOauthSF/05_02_RegisterNewClientApplication_SUI.png)
 
 The field **Company** will be filled automatically based on your company login.
 
@@ -178,15 +178,15 @@ Please provide the following inputs:
 |  Application URL   | provide the host name of your SAP Cloud Integration tenant
 |  X.509 Certificate | paste the key value of your downloaded certificate from the previous step
 
-![Maintain OAuth Client Details](Step05_RegisterOauthSF/05_03_MaintainClientApplication_SUI.png)
+<!-- border; size:540px -->![Maintain OAuth Client Details](Step05_RegisterOauthSF/05_03_MaintainClientApplication_SUI.png)
 
 Hit the **Register** Button. As a result you can see your client application entry in the table. Now click on the **View** button for your entry, so you can find out the API Key for registering your client application.
 
-![Resulting OAuth Client Application Entry](Step05_RegisterOauthSF/05_04_ResultingClientApplication_SUI.png)
+<!-- border; size:540px -->![Resulting OAuth Client Application Entry](Step05_RegisterOauthSF/05_04_ResultingClientApplication_SUI.png)
 
 >Take a note of your **API Key** as you will need it in the next step.
 
-![Get SF API Key](Step05_RegisterOauthSF/05_05_GetSfApiKey_SUI.png)
+<!-- border; size:540px -->![Get SF API Key](Step05_RegisterOauthSF/05_05_GetSfApiKey_SUI.png)
 
 Now that you have a client application entry registered and you have an API Key for it, head back into your SAP Cloud Integration tenant for making use of it.
 
@@ -197,11 +197,11 @@ Now that you have a client application entry registered and you have an API Key 
 
 Being back in SAP Cloud Integration again, click on the **Eye** icon to get to the Overview page and scroll down to section **Manage Security** and click on the **Security Material** tile. You will now create the credential artifact, being used in the integration flow to authenticate against SAP SuccessFactors.
 
-![Go to Security Material](Step06_CreateSFCredentialArtifact/06_01_GoToSecurityMaterialAgain_SUI.png)
+<!-- border; size:350px -->![Go to Security Material](Step06_CreateSFCredentialArtifact/06_01_GoToSecurityMaterialAgain_SUI.png)
 
 On the top right click on **Create** and choose entry **OAuth2 SAML Bearer Assertion**
 
-![Create OAuth2 SAML Bearer Assertion](Step06_CreateSFCredentialArtifact/06_02_CreateOAuth2SamlBearerAssertion_SUI.png)
+<!-- border; size:540px -->![Create OAuth2 SAML Bearer Assertion](Step06_CreateSFCredentialArtifact/06_02_CreateOAuth2SamlBearerAssertion_SUI.png)
 
 Please provide the following inputs:
 
@@ -216,7 +216,7 @@ Please provide the following inputs:
 |  Key Pair Alias  | provide the alias name of the key pair you have created in step **4** (e.g. **`hxm_writeback_keypair`**)
 
 
-![Maintain OAuth2 SAML Bearer Assertion](Step06_CreateSFCredentialArtifact/06_03_MaintainOAuth2SamlBearerAssertion_SUI.png)
+<!-- border; size:540px -->![Maintain OAuth2 SAML Bearer Assertion](Step06_CreateSFCredentialArtifact/06_03_MaintainOAuth2SamlBearerAssertion_SUI.png)
 
 Hit the **Deploy** Button to save your credential artifact and to return to the list of security materials.
 
@@ -225,7 +225,7 @@ You can now see your two credential artifacts,
 - **`SAC_OAUTH_TOKEN_CREDS`** to connect to SAP Analytics Cloud for fetching newly planned positions
 - **`SFPositionWriteBack`** to connect to SAP SuccessFactors to push these newly planned positions  
 
-![Security Material Ready](Step06_CreateSFCredentialArtifact/06_04_SecurityMaterialsReady_SUI.png)
+<!-- border; size:540px -->![Security Material Ready](Step06_CreateSFCredentialArtifact/06_04_SecurityMaterialsReady_SUI.png)
 
 
 ### Get the Integration Flow ready
@@ -241,7 +241,7 @@ To copy the integration flow into your *Design* area in SAP Cloud Integration te
 
 You will now need to configure the integration flow with the security materials created. Once it is available in the *Design* area, click on the **Artifacts** tab of the integration flow and click on the **Actions** link for it and choose option **Configure**
 
-![Configure Integration Flow](Step07_GetIntegrationFlowReady/07_02_ConfigureIntegrationFlow_SUI.png)
+<!-- border; size:540px -->![Configure Integration Flow](Step07_GetIntegrationFlowReady/07_02_ConfigureIntegrationFlow_SUI.png)
 
 On tab **Timer** leave the option **Run Once**, as we will manually trigger the run.
 
@@ -251,7 +251,7 @@ Move on to tab **Receiver** in which you configure the three receivers of the fl
 - **`SAC_OAuth_Token`** will take care of the authentication against SAP Analytics Cloud
 - **`Insert_SF_Position`** will insert the newly planned positions to SAP SuccessFactors
 
-![Three Receivers to Configure](Step07_GetIntegrationFlowReady/07_03_ThreeReceiversToConfigure_SUI.png)
+<!-- border; size:540px -->![Three Receivers to Configure](Step07_GetIntegrationFlowReady/07_03_ThreeReceiversToConfigure_SUI.png)
 
 
 Let's start with receiver **`SAC_Export`**
@@ -264,7 +264,7 @@ When using the default model of the Operational Workforce Planning content, the 
 
 You can leave all other parameters as they are. Press the **Save** button
 
-![SAC_Export Receiver](Step07_GetIntegrationFlowReady/07_04_SacExportReceiver_SUI.png)
+<!-- border; size:540px -->![SAC_Export Receiver](Step07_GetIntegrationFlowReady/07_04_SacExportReceiver_SUI.png)
 
 **Authentication** is set to **None** as this will be taken care by the **`SAC_OAuth_Token`**, you need to configure next. In the Receiver dropdown, select entry **`SAC_OAuth_Token`**.
 
@@ -273,7 +273,7 @@ You can leave all other parameters as they are. Press the **Save** button
 
 Leave all other field entries as they are and hit the **Save** button.
 
-![SAC_OAuthc_Token Receiver](Step07_GetIntegrationFlowReady/07_05_SacOauthTokenReceiver_SUI.png)
+<!-- border; size:540px -->![SAC_OAuthc_Token Receiver](Step07_GetIntegrationFlowReady/07_05_SacOauthTokenReceiver_SUI.png)
 
 One receiver to go... the **`Insert_SF_Position`** receiver. In the Receiver dropdown, select entry **`Insert_SF_Position`**.
 
@@ -283,7 +283,7 @@ One receiver to go... the **`Insert_SF_Position`** receiver. In the Receiver dro
 
 Hit the **Save** Button.
 
-![Insert SF Position Receiver](Step07_GetIntegrationFlowReady/07_06_InsertSfPositionReceiver_SUI.png)
+<!-- border; size:540px -->![Insert SF Position Receiver](Step07_GetIntegrationFlowReady/07_06_InsertSfPositionReceiver_SUI.png)
 
 
 On the **More** tab you can do some more customizing of the integration flow. For example restrict the scope of execution using the filter fields for company code, position and job classification.
@@ -296,7 +296,7 @@ On the **More** tab you can do some more customizing of the integration flow. Fo
 
 You can set the **`MPI_Log_Switch`** to **ON** for detailed analysis of the integration flow execution.
 
-![Set Customer Filters ](Step07_GetIntegrationFlowReady/07_07_SetCustomFilters_SUI.png)
+<!-- border; size:540px -->![Set Customer Filters ](Step07_GetIntegrationFlowReady/07_07_SetCustomFilters_SUI.png)
 
 Once you are done, press the **Close** Button. Congratulations, now the integration flow is set up! However before you can run it, you will need to do some customizing in SAP SuccessFactors.
 
@@ -310,15 +310,15 @@ Secondly you will make sure the **`creationSource`** of a position is editable, 
 
 But let's start with the customer position type. Log on to your SAP SuccessFactors tenant and search for **Manage Data** in the search field and click on the **Manage Data** result to start the application.
 
-![Search Manage Data](Step08_CustomizePositionType/08_01_SearchManageData_SUI.png)
+<!-- border; size:540px -->![Search Manage Data](Step08_CustomizePositionType/08_01_SearchManageData_SUI.png)
 
 In the Manage Data application search for **Position Type** in the **Create New** search field on the right hand side and click on the resulting entry.
 
-![Search Create Position Type ](Step08_CustomizePositionType/08_02_CreatePositionType_SUI.png)
+<!-- border; size:540px -->![Search Create Position Type ](Step08_CustomizePositionType/08_02_CreatePositionType_SUI.png)
 
 For field **Code** choose the value **Custom Position 1** from the drop down values.
 
-![Choose Custom Position 1](Step08_CustomizePositionType/08_03_ChooseCustomPosition1_SUI.png)
+<!-- border; size:540px -->![Choose Custom Position 1](Step08_CustomizePositionType/08_03_ChooseCustomPosition1_SUI.png)
 
 Please maintain the other fields as listed in the table below and press **Save** to save your newly created position type.
 
@@ -329,27 +329,27 @@ Please maintain the other fields as listed in the table below and press **Save**
 |  Execute workflow on job information if position changes are synchronized to incumbents?           | `No`
 |  To whom shall the direct reports report if the manager leaves the position?           | `To no Manager`
 
-![Edit Custom Position Type](Step08_CustomizePositionType/08_04_SaveCustomPosition_SUI.png)
+<!-- border; size:540px -->![Edit Custom Position Type](Step08_CustomizePositionType/08_04_SaveCustomPosition_SUI.png)
 
 Once you have saved, you will see a green **Successfully Saved** confirm message.
 
-![Custom Position Type confirmed](Step08_CustomizePositionType/08_05_CustomPositionTypeSaved_SUI.png)
+<!-- border; size:540px -->![Custom Position Type confirmed](Step08_CustomizePositionType/08_05_CustomPositionTypeSaved_SUI.png)
 
 Now let's take care of the **`creationSource`** field of the **Position** object itself.
 
 In the search field enter **Manage Configuration UI** and pick the result entry
 
-![Search Manage Configuration UI](Step08_CustomizePositionType/08_06_ManageConfigurationUI_SUI.png)
+<!-- border; size:540px -->![Search Manage Configuration UI](Step08_CustomizePositionType/08_06_ManageConfigurationUI_SUI.png)
 
 Enter **Position** in the search dialogue and choose result **Position UI3 (PositionUI3)** from the result list.
 
 > Depending on the configuration of your tenant, you might be using a different UI for displaying positions, but for this example we stick to **Position UI3 (PositionUI3)**.
 
-![Search for Position UI](Step08_CustomizePositionType/08_07_SearchForPosition_SUI.png)
+<!-- border; size:200px -->![Search for Position UI](Step08_CustomizePositionType/08_07_SearchForPosition_SUI.png)
 
 Click on the **Edit** Icon next to field **Source of Creation**
 
-![Click Edit Source of Creation](Step08_CustomizePositionType/08_08_EditSourceOfCreation_SUI.png)
+<!-- border; size:540px -->![Click Edit Source of Creation](Step08_CustomizePositionType/08_08_EditSourceOfCreation_SUI.png)
 
 In the properties list for data object Source of Creation make sure
 
@@ -360,11 +360,11 @@ Then click on the **OK** button to close the property window.
 
 > Depending on the configuration of your tenant, these settings might already be in place. In this case, you don't need to change them.
 
-![Check Source of Creation properties](Step08_CustomizePositionType/08_08_SetEditableAndVisible_SUI.png)
+<!-- border; size:540px -->![Check Source of Creation properties](Step08_CustomizePositionType/08_08_SetEditableAndVisible_SUI.png)
 
 In case you had to change the property settings of field **Source of Creation**, make sure to click the **Save** button to save your changes now to the **Position UI3**.
 
-![Save changes for Position UI3](Step08_CustomizePositionType/08_09_SavePositionUI_SUI.png)
+<!-- border; size:540px -->![Save changes for Position UI3](Step08_CustomizePositionType/08_09_SavePositionUI_SUI.png)
 
 Congratulations, now you are done with all customizing and can get started to do some planning!
 
@@ -374,23 +374,23 @@ Congratulations, now you are done with all customizing and can get started to do
 [comment]: # (Step 9)
 Let's get ready to plan a new position in the Operational Workforce Planning. Logon to your SAC tenant and head over to the Overview Page. Click on the link for the **Detailed Internal FTE Plan**
 
-![Detailed Internal FTE Plan](Step09_PlanANewPosition/09_01_HxmOverviewPage_SUI.png)
+<!-- border; size:540px -->![Detailed Internal FTE Plan](Step09_PlanANewPosition/09_01_HxmOverviewPage_SUI.png)
 
 When the plan application has finished loading, click on the **New Hires** radio button, so you will be able to plan for a new position.
 
-![Detailed Internal FTE Plan](Step09_PlanANewPosition/09_02_SwitchToNewHires_SUI.png)
+<!-- border; size:200px -->![Detailed Internal FTE Plan](Step09_PlanANewPosition/09_02_SwitchToNewHires_SUI.png)
 
 In the action menu, click on the **Create Position** button.
 
-![Detailed Internal FTE Plan](Step09_PlanANewPosition/09_03_CreateNewPositionButton_SUI.png)
+<!-- border; size:540px -->![Detailed Internal FTE Plan](Step09_PlanANewPosition/09_03_CreateNewPositionButton_SUI.png)
 
 In the opening dialogue, switch on the template function and pick an existing position to serve as a template for you new plan position. Change any of the attribute fields if you like and click on the **Create** button and your new plan position will be created in the SAP Analytics Cloud data model.
 
-![Use template to plan new position](Step09_PlanANewPosition/09_04_UseTemplateForNewPosition_SUI.png)
+<!-- border; size:540px -->![Use template to plan new position](Step09_PlanANewPosition/09_04_UseTemplateForNewPosition_SUI.png)
 
 After your plan position has been created, you will see it in the FTE table. Make sure to click on the **Confirm** button now to publish you plan version, otherwise your plan position will not be visible in the Data Export API.
 
-![Confirm Publish Plan Version](Step09_PlanANewPosition/09_05_PublishNewPosition_SUI.png)
+<!-- border; size:540px -->![Confirm Publish Plan Version](Step09_PlanANewPosition/09_05_PublishNewPosition_SUI.png)
 Now your new plan position is ready to be transferred to SAP SuccessFactors.
 
 
@@ -401,28 +401,28 @@ Let's head back to the integration flow in SAP Cloud Integration.
 
 Open the integration flow again and press the **Deploy** button to run it.
 
-![Run Integration Flow](Step10_TriggerIntegrationFlow/10_01_DeployIntegrationFlow_SUI.png)
+<!-- border; size:540px -->![Run Integration Flow](Step10_TriggerIntegrationFlow/10_01_DeployIntegrationFlow_SUI.png)
 Confirm the Deployment.
 
-![Confirm Deployment](Step10_TriggerIntegrationFlow/10_02_ConfirmDeploy_SUI.png)
+<!-- border; size:400px -->![Confirm Deployment](Step10_TriggerIntegrationFlow/10_02_ConfirmDeploy_SUI.png)
 
 You will get a message that the integration flow is deployed. Let's head over to the logs to find out the newly created position Id.
 
  Click on the **Eye** Icon to return to the Overview page again and in section **Manage Message Processing** click on the **All Integration Flows Past Hour** tile to enter the Monitor view.
 
-![Go to Monitor](Step10_TriggerIntegrationFlow/10_03_GoToMonitor_SUI.png)
+<!-- border; size:350px -->![Go to Monitor](Step10_TriggerIntegrationFlow/10_03_GoToMonitor_SUI.png)
 
 On the left hand side, click on monitor entry for your flow execution. On the right hand side you will see two logs:
 
 - **SAC OData Main Query Filter** for fetching the position data from planning
 - **SF Position Insert Response** for inserting the planned positions into SuccessFactors position management
 
-![Display Log](Step10_TriggerIntegrationFlow/10_04_ShowSfLog_SUI.png)
+<!-- border; size:540px -->![Display Log](Step10_TriggerIntegrationFlow/10_04_ShowSfLog_SUI.png)
 
 Click on **SF Position Insert Response** to open the log file.
  If your position has been created successfully it will look like this:
 
-![Get new SF Position Id](Step10_TriggerIntegrationFlow/10_05_GetPositionId_SUI.png)
+<!-- border; size:540px -->![Get new SF Position Id](Step10_TriggerIntegrationFlow/10_05_GetPositionId_SUI.png)
 
 > Take a note of the position Id ( Code ), this is the position Id generated in SAP SuccessFactors
 
@@ -432,23 +432,23 @@ Click on **SF Position Insert Response** to open the log file.
 [comment]: # (Step 11)
 Now let's verify your newly created position in SAP SuccessFactors. Log on to your SAP SuccessFactors tenant again and go to the **Manage Positions** application by typing **Manage Posit...** into the search field.
 
-![Go to position Management](Step11_VerifyPositionInSf/11_01_ManagePositions_SUI.png)
+<!-- border; size:540px -->![Go to position Management](Step11_VerifyPositionInSf/11_01_ManagePositions_SUI.png)
 
 In the **Manage Positions** application, select the **Position** option in the **Search** dropdown. 
 
-![Select position option](Step11_VerifyPositionInSf/11_02_SelectOptionPosition_SUI.png)
+<!-- border; size:540px -->![Select position option](Step11_VerifyPositionInSf/11_02_SelectOptionPosition_SUI.png)
 
 To be able to find your position, you will need to pick an effective as-of-date equals or later than the start period of your plan position (in the example case this was equal to 1st of January 2023).
 
-![Select effective as of data](Step11_VerifyPositionInSf/11_03_SelectAsOfDate_SUI.png)
+<!-- border; size:540px -->![Select effective as of data](Step11_VerifyPositionInSf/11_03_SelectAsOfDate_SUI.png)
 
 Now you can search for the position Id that you have noted down in the previous step, select the position found and hit Enter.
 
-![Search position Id](Step11_VerifyPositionInSf/11_04_EnterPositionId_SUI.png)
+<!-- border; size:540px -->![Search position Id](Step11_VerifyPositionInSf/11_04_EnterPositionId_SUI.png)
 
 Congratulations, your plan position has successfully been transferred to SAP SuccessFactors. Note the custom position type **Workforce Planning**. You can check through the various attributes that have been transferred with the position.
 
-![Check position Id](Step11_VerifyPositionInSf/11_05_SfPositionReady_SUI.png)
+<!-- border; size:540px -->![Check position Id](Step11_VerifyPositionInSf/11_05_SfPositionReady_SUI.png)
 
 This has just been a basic example on how to do the transfer for one position, but it should get you going to take this to the next level. You can embed this into a seamless end-to-end planning process adding
 
@@ -463,6 +463,8 @@ Interested in more xP&A topics and related business content packages? Visit our 
 
 Congratulations! You have now integrated your data back to SAP SuccessFactors successfully.
 
+For further exploration, refer to the tutorial [Integration With SAP Analytics Cloud and SAP SuccessFactors](spa-sac-api-trigger) to see how SAP Build Process Automation could be used to implement an Approval Workflow into your Headcount Planning process prior to writing the position back into SAP SuccessFactors.
+
 If you want to learn more about the **SAP xP&A Operational Workforce Planning** content package, customize the content and adjust it according to your own business requirements, the following resources might be helpful:
 
 - [xP&A Operational Workforce Planning - Get to know the Operational Workforce Planning Content](xpa-sac-hxm-workforceplanning-gettoknow)
@@ -473,7 +475,7 @@ If you want to learn more about the **SAP xP&A Operational Workforce Planning** 
 - [xP&A Operational Workforce Planning - Create Predictive Scenario](xpa-sac-hxm-create-predictive-scenario)
 - [xP&A Operational Workforce Planning - Write back plan positions to SAP SuccessFactors](xpa-sac-hxm-successfactors-writeback)
 
-If you want to get an overview of the entire xP&A Operational Workforce Planning content package, make sure to check out the [Mission](https://developers.sap.com/mission.hxm-workforce-planning.html).
+If you want to get an overview of the entire xP&A Operational Workforce Planning content package, make sure to check out the [Mission](https://developers.sap.com/mission.hxm-workforce-planning.html). 
 
 Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).
 
