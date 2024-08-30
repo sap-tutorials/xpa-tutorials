@@ -475,7 +475,7 @@ If you want to learn more about the **SAP xP&A Operational Workforce Planning** 
 - [xP&A Operational Workforce Planning - Create Predictive Scenario](xpa-sac-hxm-create-predictive-scenario)
 - [xP&A Operational Workforce Planning - Write back plan positions to SAP SuccessFactors](xpa-sac-hxm-successfactors-writeback)
 
-If you want to get an overview of the entire xP&A Operational Workforce Planning content package, make sure to check out the [Mission](https://developers.sap.com/mission.hxm-workforce-planning.html). 
+If you want to get an overview of the entire xP&A Operational Workforce Planning content package, make sure to check out the [Mission](https://developers.sap.com/mission.hxm-workforce-planning.html).
 
 Interested in more xP&A topics and related business content packages? Visit our community page [Extended Planning & Analysis Business Content](https://community.sap.com/topics/cloud-analytics/planning/content).
 
