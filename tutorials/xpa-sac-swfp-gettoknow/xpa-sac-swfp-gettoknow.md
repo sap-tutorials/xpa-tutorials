@@ -47,18 +47,18 @@ In this step you will learn how to navigate to the folder which contains all SAP
 
 2. In the SAP Analytics Cloud Menu, navigate to the **Files** section.
 
-    <!-- border; size:300px-->![xp&A Strategic Workforce Planning](1/1.png)
+    ![xp&A Strategic Workforce Planning](1/1.png)
 
 3. Access the content package folder.
 
     - You can access the content package folder by either navigating to the `Public` folder first and looking for a folder named `SAP_CONTENT`, or by using the **search function** in the top-right corner.
     - In case you want to make use of the search function, simply enter the term `SAP_CONTENT` into the search bar.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](1/2.png)
+    ![xp&A Strategic Workforce Planning](1/2.png)
 
     - The folder `SAP_CONTENT` contains all objects required to run SAC content. Here you can find your installed content from the content network provided by SAP.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](1/3.png)
+    ![xp&A Strategic Workforce Planning](1/3.png)
 
 
 ### Access Strategic Workforce Planning Content
@@ -69,7 +69,7 @@ Now that you have learned where all the SAP Analytics Cloud content packages are
     - In order to do so, please use the keyword `SWFP`
     - In the result list, click on the folder `SAP_HR_SWFP_Strategic_Workforce_Planning` with the description `SAP Human Resources: Strategic Workforce Planning`
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](2/1.png)
+    ![xp&A Strategic Workforce Planning](2/1.png)
 
 2. Run the Strategic Workforce Planning content package.
 
@@ -81,14 +81,14 @@ Now that you have learned where all the SAP Analytics Cloud content packages are
     - The story **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`) serves as a starting point and allows you to access all other stories during run time.
     - In other words, you do not need to access the remaining stories by manually launching them from the **Files** section. Instead, you can conveniently open them from inside the **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`) story.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](2/2.png)
+    ![xp&A Strategic Workforce Planning](2/2.png)
 
 ### Strategic Workforce Planning Overview
 Before jumping into the individual stories of the **Strategic Workforce Planning** content package, it is necessary to understand what the stories are for and which use cases they cover.
 
 1. **Strategic Workforce Overview**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](3/6.png)
+    ![xp&A Strategic Workforce Planning](3/6.png)
 
     - By having opened the story **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`), you entered the **Home Screen** of the **Strategic Workforce Planning** content package.
     - This overview story serves as the central entry point for all personas and helps you to navigate through the content package.
@@ -97,7 +97,7 @@ Before jumping into the individual stories of the **Strategic Workforce Planning
 
 2. **Before You Plan**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](3/1.png)
+    ![xp&A Strategic Workforce Planning](3/1.png)
 
     - The section **Before You Plan** contains two links, both leading to the story **Review Current Workforce** (`SAP_HR_SWFP_KnowYourWorkforce`) while each of the links opens a different page of the two-page story.
     - The **Review Current Workforce** (`SAP_HR_SWFP_KnowYourWorkforce`) story marks the start of the process and allows you to consume various reports to get an understanding about your current workforce composition. 
@@ -110,14 +110,14 @@ Before jumping into the individual stories of the **Strategic Workforce Planning
 
 3. **Populating Plan**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](3/2.png)
+    ![xp&A Strategic Workforce Planning](3/2.png)
 
     - The section **Populating Plan** provides access to the story **Initialize the Plan** (`SAP_HR_SWFP_IdentifyPhase`). As the title of the section indicates, this story focusses on populating your plan version with data. 
     - This story consists of three different pages and allows you to upload historical data into your planning model **Strategic Workforce Planning Model** (`SAP_HR_SWFP_STRATEGIC`), seed data into the future periods by using the time series forecast mechanisms of SAC and lastly to modify retirement probabilities by making use of the information provided by the **Review Current Workforce** (`SAP_HR_SWFP_KnowYourWorkforce`) story.
 
 4. **Planning Assumptions**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](3/3.png)
+    ![xp&A Strategic Workforce Planning](3/3.png)
 
     - The section **Planning Assumptions** provides access the story **Supply and Demand Planning** (`SAP_HR_SWFP_PlanPhase`), which consists of five pages and focusses on the actual planning activities.
     - In specific, this story allows you to plan your headcount supply and to make an estimation about the future headcount demand 
@@ -125,14 +125,14 @@ Before jumping into the individual stories of the **Strategic Workforce Planning
 
 5. **Assumption Result Initial Review**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](3/4.png)
+    ![xp&A Strategic Workforce Planning](3/4.png)
 
     - The section **Assumption Result Initial Review** provides access the story **Scenario and Version Comparisons** (`SAP_HR_SWFP_ValidatePhase`), which consists of two pages.
     - This story provides you with various reports which help you to analyze and compare different scenarios and versions. 
 
 6. **Intervention Design and Modelling**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](3/5.png)
+    ![xp&A Strategic Workforce Planning](3/5.png)
 
     - The section **Intervention Design and Modelling** provides access the story **Response Strategy Modelling** (`SAP_HR_SWFP_StrategizePhase`), which consists of three pages pages.
     - This story marks the final step of the planning process and allows you to define a response strategy to close potential headcount gaps and to make cost estimations for the respective strategies.
@@ -143,7 +143,7 @@ As a last preparation step, it is required to understand the navigation concept 
 
 1. **Main Navigation** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/1.png)
+    ![xP&A Workforce Planning](4/1.png)
 
     - The **Main Navigation** button can be found in each story apart from the landing page story **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`) and is located at the top left corner.
     - By clicking on this button, a navigation menu opens with contains various hyperlinks.
@@ -151,9 +151,9 @@ As a last preparation step, it is required to understand the navigation concept 
 
 2. **Show/Hide Header** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/2.png)
+    ![xP&A Workforce Planning](4/2.png)
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/3.png)
+    ![xP&A Workforce Planning](4/3.png)
 
     - These buttons can be found in each story of this content package (apart from the landing page story **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`)) and are located at the top-right corner.
     - The **Hide Header** button hides the complete header section, which is useful in case you require more space for the planning tables.
@@ -161,7 +161,7 @@ As a last preparation step, it is required to understand the navigation concept 
 
 3. **Back to previous Page** and **Go to next Page** buttons
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/4.png)
+    ![xP&A Workforce Planning](4/4.png)
 
     - These buttons can be found in each story apart from the landing page story **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`) and are located at the top-left and top-right corners.
     - By clicking on these buttons, you will be redirected to the previous or respectively to the next story page according to the pre-defined user workflow.
@@ -169,35 +169,35 @@ As a last preparation step, it is required to understand the navigation concept 
 
 4. **Steps** description field
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/5.png)
+    ![xP&A Workforce Planning](4/5.png)
 
     - Such a text field can be found in each story of this content package (apart from the landing page story **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`)) and is located at the top-left corner.
     - This description field serves as a rough guideline and describes the intended workflow within each of the stories.
 
 5. **Filter** section
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/6.png)
+    ![xP&A Workforce Planning](4/6.png)
 
     - This section can be found in each story of this content package (apart from the landing page story **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`)) and is located in the header above the shell bar.
     - By using this function, you can filter all tables and charts down to specific members of the given dimensions for an eased data entry and reporting.
 
 6. **View Classification Predictions** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/9.png)
+    ![xP&A Workforce Planning](4/9.png)
 
     - This button can be found on the **Understand Influencers** page of the **Review Current Workforce** (`SAP_HR_SWFP_KnowYourWorkforce`) story.
     - By pressing this button, you will be redirected to the predictive scenario where you can view the detailed results from the classification algorithm.
 
 7. **Seed Data** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/10.png)
+    ![xP&A Workforce Planning](4/10.png)
 
     - This button can be found on the **Seed Data** page of the **Initialize the Plan** (`SAP_HR_SWFP_IdentifyPhase`) story.
     - By pressing this button, a pop-up window is opened in which you can select the measures you want to import into your planning data model from the data source **SAP SuccessFactors Workforce Analytics**.
 
 8. **Create Current Workforce Forecast** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/11.png)
+    ![xP&A Workforce Planning](4/11.png)
 
     - This button can be found on the **Forecasts** page of the **Initialize the Plan** (`SAP_HR_SWFP_IdentifyPhase`) story.
     - By pressing this button, you will be redirected to the predictive scenario where you can consume your detailed time series forecast report for the end of period headcount measure.
@@ -208,7 +208,7 @@ As a last preparation step, it is required to understand the navigation concept 
 
 9.  **Create Increases to Workforce Forecast** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/12.png)
+    ![xP&A Workforce Planning](4/12.png)
 
     - This button can be found on the **Forecasts** page of the **Initialize the Plan** (`SAP_HR_SWFP_IdentifyPhase`) story.
     - By pressing this button, you will be redirected to the predictive scenario where you can consume your detailed time series forecast report for the measure representing the increases to your workforce.
@@ -219,7 +219,7 @@ As a last preparation step, it is required to understand the navigation concept 
 
 10. **Create Reductions to Workforce Forecast** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/13.png)
+    ![xP&A Workforce Planning](4/13.png)
 
     - This button can be found on the **Forecasts** page of the **Initialize the Plan** (`SAP_HR_SWFP_IdentifyPhase`) story.
     - By pressing this button, you will be redirected to the predictive scenario where you can consume your detailed time series forecast report for the measure representing the reductions to your workforce.
@@ -230,70 +230,70 @@ As a last preparation step, it is required to understand the navigation concept 
 
 11. **Run Forecasts and Allocations** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/14.png)
+    ![xP&A Workforce Planning](4/14.png)
 
     - This button can be found on the **Forecasts** page of the **Initialize the Plan** (`SAP_HR_SWFP_IdentifyPhase`) story.
     - By pressing this button, a Multi Action is executed which runs all times series predictions for the three measures **Current Workforce Planned**, **Increases to Workforce Planned** and **Reductions to Workforce Planned**.
 
 12. **Calculate Future Retirements** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/15.png)
+    ![xP&A Workforce Planning](4/15.png)
 
     - This button can be found on the **Retirements** page of the **Initialize the Plan** (`SAP_HR_SWFP_IdentifyPhase`) story.
     - By pressing on this button, a Data Action is executed which calculates the future retirements based on maintained retirement probabilities. 
 
 13. **Calculate Supply** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/16.png)
+    ![xP&A Workforce Planning](4/16.png)
 
     - This button can be found on the **Supply Headcount** page of the **Supply and Demand Planning** (`SAP_HR_SWFP_PlanPhase`) story.
     - By pressing on this button, a Data Action is executed which recalculates the measure representing the measure **Headcount Supply** (`Supply_Headcount`).
 
 14. **Calculate Year over Year %** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/17.png)
+    ![xP&A Workforce Planning](4/17.png)
 
     - This button can be found on the **Demand Drivers** page of the **Supply and Demand Planning** (`SAP_HR_SWFP_PlanPhase`) story.
     - By pressing on this button, a Data Action is executed which recalculates the over year growth for the measure **Headcount Demand** (`Demand_Headcount`).
 
 15. **Calculate Demand Headcount** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/18.png)
+    ![xP&A Workforce Planning](4/18.png)
 
     - This button can be found on the **Demand Headcount** page of the **Supply and Demand Planning** (`SAP_HR_SWFP_PlanPhase`) story.
     - By pressing on this button, a Data Action is executed which recalculates the measure representing the **Headcount Demand** (`Demand_Headcount`)
 
 16. **Calculate Gap** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/19.png)
+    ![xP&A Workforce Planning](4/19.png)
 
     - This button can be found on the **Gap** page of the **Supply and Demand Planning** (`SAP_HR_SWFP_StrategizePhase`) story.
     - By pressing on this button, a Data Action is executed which recalculates the deviation between the headcount demand and the headcount supply. The result is persisted on the measure **Gap Headcount** (`Gap_Headcount`).
 
 17. **Choose a Strategy** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/20.png)
+    ![xP&A Workforce Planning](4/20.png)
 
     - This button can be found on the **Response Strategy** page of the **Response Strategy Modelling** (`SAP_HR_SWFP_PlanPhase`) story.
     - By pressing on this button, a pop-up is opened where you can choose between a variety of pre-defined strategies to close the headcount 
 
 18. **Carry over Strategy** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/21.png)
+    ![xP&A Workforce Planning](4/21.png)
 
     - This button can be found on the **Response Strategy** page of the **Response Strategy Modelling** (`SAP_HR_SWFP_PlanPhase`) story.
     - By pressing on this button, a Data Action is executed which carries over the chosen strategy to the remaining planning years.
 
 19. **Initialize Data to Operational Plan** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/22.png)
+    ![xP&A Workforce Planning](4/22.png)
 
     - This button can be found on the **Push to Operational** page of the **Response Strategy Modelling** (`SAP_HR_SWFP_PlanPhase`) story.
     - This button is without function and serves as a placeholder only.
 
 20. **Go to Operational Plan** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/23.png)
+    ![xP&A Workforce Planning](4/23.png)
 
     - This button can be found on the **Push to Operational** page of the **Response Strategy Modelling** (`SAP_HR_SWFP_PlanPhase`) story.
     - This button redirects you to the **SAP Operational Workforce Planning** content package.
@@ -310,7 +310,7 @@ Currently, you have opened the tab **Open Story**. This tab provides guidance on
 
 1. In the **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`) story, click on the **Know Your Workforce** link.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/1.png)
+    ![xp&A Strategic Workforce Planning](5/1.png)
 
     >INFORMATION:
     >
@@ -319,14 +319,14 @@ Currently, you have opened the tab **Open Story**. This tab provides guidance on
 
 2. Get an overview of the story.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning Overview](5/2.png)
+    ![xp&A Strategic Workforce Planning Overview](5/2.png)
 
     - Make yourself familiar with the story.
     - Try to identity the different sections and use cases. Do not execute anything yet, we will go through this step by step. 
 
 3. Check out the **Steps** section
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/3.png)
+    ![xp&A Strategic Workforce Planning](5/3.png)
 
     - As mentioned in the previous chapter, all stories provide a short in-built step by step guide which helps you to use the corresponding story correctly.
     - Before using the story, make sure to check the instructions to understand the intended user workflow.
@@ -344,18 +344,18 @@ Currently, you have opened the tab **Consume Reports**. This tab provides an ove
 
 1. Inspect your current workforce by year and one dimension of your choice.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/4.png)
+    ![xp&A Strategic Workforce Planning](5/4.png)
 
     - The section **Current Workforce** provides you with an overview on your workforce by year and any dimension of your choice.
     - The displayed numbers represent the respective headcount value. 
     - In order to change the reporting dimension or dimensional breakdown, simply use the radio button section left to the chart. 
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/5.png)
+    ![xp&A Strategic Workforce Planning](5/5.png)
 
 
 2. Get an understanding of the amount of retirements and terminations by year and any dimension of your choice. 
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/6.png)
+    ![xp&A Strategic Workforce Planning](5/6.png)
     
     - Scroll down until you find the second section called **Retirements and Terminations**.
     - Expand this section by using the **Expand Section** button as described in the previous chapter.
@@ -364,7 +364,7 @@ Currently, you have opened the tab **Consume Reports**. This tab provides an ove
 
 3. Get an understanding of the amount of hires by year and any dimension of your choice.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/7.png)
+    ![xp&A Strategic Workforce Planning](5/7.png)
     
     - Scroll down until you find the second section called **Hires**.
     - Expand this section by using the **Expand Section** button as described in the previous chapter.
@@ -379,15 +379,15 @@ Currently, you have opened the tab **Consume Reports**. This tab provides an ove
 
     - Option 1: Return to the landing page and enter the story **Understand Influencers** from there:
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/8.png)
+    ![xp&A Strategic Workforce Planning](5/8.png)
 
     - Option 2: Enter the story from within the **Main Menu**:
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/9.png)
+    ![xp&A Strategic Workforce Planning](5/9.png)
 
     - Option 3: Enter the story by using the **Go to next page** button:
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/10.png)
+    ![xp&A Strategic Workforce Planning](5/10.png)
 
 5. Analyze the retirement factors by consuming the heat maps.
 
@@ -395,13 +395,13 @@ Currently, you have opened the tab **Consume Reports**. This tab provides an ove
     - The displayed numbers represent the amount of headcount or respectively terminations and the color represents the intensity of the relationship between the dimensions. 
     - To analyze the relationship between different dimensions, simply use the radio button widgets provided on the left side this section.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/11.png)
+    ![xp&A Strategic Workforce Planning](5/11.png)
 
 6. Get an understanding of the flight risk factors.
 
     - Scroll down until you find the second section of this page called **Review Flight Risk Factors**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/12.png)
+    ![xp&A Strategic Workforce Planning](5/12.png)
 
     - Similar to the reports of the first page of this story, this section lets you analyze the headcount at risk per year and any dimension of your choice. 
     - The number represents the amount of headcount which is very likely to leave the company.
@@ -419,15 +419,15 @@ Currently, you have opened the tab **Classification Algorithm**. This tab provid
   
     - In order to create a new predictive scenario for classifications, open the SAC Menu and navigate to the **Predictive Scenarios** section.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/13.png)
+    ![xp&A Strategic Workforce Planning](5/13.png)
 
     - In the upper menu, click on the button **Classification**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/14.png)
+    ![xp&A Strategic Workforce Planning](5/14.png)
 
     - Provide a fitting name for the Predictive Scenario and select a suitable location to store it.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/15.png)
+    ![xp&A Strategic Workforce Planning](5/15.png)
 
 2. Configure the Predictive Scenario
 
@@ -435,7 +435,7 @@ Currently, you have opened the tab **Classification Algorithm**. This tab provid
   
     - In the Predictive Scenario configuration screen, select the Dataset `SAP_HR_SWFP_TERMINATIONS_DATASET` as the training data source.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/16.png)
+    ![xp&A Strategic Workforce Planning](5/16.png)
 
     >INFORMATION:
     >
@@ -447,7 +447,7 @@ Currently, you have opened the tab **Classification Algorithm**. This tab provid
   
     - Click on the button **Train** once you have set everything up.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/17.png)
+    ![xp&A Strategic Workforce Planning](5/17.png)
 
 3. Check your results. 
 
@@ -455,7 +455,7 @@ Currently, you have opened the tab **Classification Algorithm**. This tab provid
   
     - Verify your results by using the different sections of the Predictive Scenario located in the upper part of the screen.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/18.png)
+    ![xp&A Strategic Workforce Planning](5/18.png)
 
 4. Incorporate the Predictive Scenario report into your story.
 
@@ -463,27 +463,27 @@ Currently, you have opened the tab **Classification Algorithm**. This tab provid
    
     - In order to do so, please copy the hyperlink of your scenario which you can find in your URL bar in your browser.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/19.png)
+    ![xp&A Strategic Workforce Planning](5/19.png)
 
     - Return to the **Understand Influencers** page of the **Review Current Workforce** (`SAP_HR_SWFP_KnowYourWorkforce`) story and go into edit mode.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/20.png)
+    ![xp&A Strategic Workforce Planning](5/20.png)
 
     - Open the `onClick` event script of the button `Btn_Classification`.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/21.png)
+    ![xp&A Strategic Workforce Planning](5/21.png)
 
     - Modify your the script according to the provided comment. Remove the code in lines 2 and 4, remove the comment indicator (`//`) in line 7 and provide as first argument the hyperlink as String.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/22.png)
+    ![xp&A Strategic Workforce Planning](5/22.png)
 
     - Save your story and return to view mode. 
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/23.png)
+    ![xp&A Strategic Workforce Planning](5/23.png)
 
     - You are now able to access the Predictive Scenario report by clicking on the button **View Classification Predictions**.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](5/24.png)
+    ![xp&A Strategic Workforce Planning](5/24.png)
 [OPTION END]
 
 ### Initialize the Plan Version
@@ -498,17 +498,17 @@ Currently, you have opened the tab **Open Story**. This tab provides guidance on
 
 2. Now click on either **Home Page** to jump back to the **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`) or on **Seed Data** to directly access the first page of the **Initialize Plan** (`SAP_HR_SWFP_IdentifyPhase`) story.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/1.png)
+    ![xp&A Strategic Workforce Planning](6/1.png)
    
     In this particular case, we will go back to the **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`) by clicking on the **Home Page** button.
 
 3. Click on the link **Seed Data** to enter the first page of the story.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/2.png)
+    ![xp&A Strategic Workforce Planning](6/2.png)
 
 4. Get an overview of the **Seed Data** story page.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/3.png)
+    ![xp&A Strategic Workforce Planning](6/3.png)
 
     - Generally, this story page consists of two sections.
 
@@ -542,16 +542,16 @@ Currently you have opened the tab **Import Data**. This tab provides guidance on
     - If you would like to seed data for another planning version, you can configure that by changing the respective filter first and then clicking on any cell in the table.
     - As the content only comes with one pre-defined plan version, you would need to create a second version via the version management first.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/5.png)
+    ![xp&A Strategic Workforce Planning](6/5.png)
 
 
 2. Click on the button **Seed Data** located in the top right corner of the **View Seeded Data** section.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/4.png)
+    ![xp&A Strategic Workforce Planning](6/4.png)
 
 3. In the dialogue, select the measures which you want to import and click on **Run Seed Data** when done.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/6.png)
+    ![xp&A Strategic Workforce Planning](6/6.png)
 
     - The first selection **Choose Supply Headcount Measure** refers to the end of period headcount, where you can choose between the option to only integrate data for employees or employees and contractors.
     - The second selection **Choose Increases to Workforce** lets you decide if you want to integrate only hires, internal movements, or both.
@@ -570,13 +570,13 @@ Currently, you have opened the tab **Forecast Data**. This tab provides guidance
 
 1. In the SAC menu, navigate to the **Predictive Scenarios** section
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/8.png)
+    ![xp&A Strategic Workforce Planning](6/8.png)
 
     - Before executing the time series forecast, you must first create a predictive scenario and integrate it into the respective Multi Action, so you can trigger it from within the application.
 
 2. In the upper menu, click on **Time Series Forecast**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/9.png)
+    ![xp&A Strategic Workforce Planning](6/9.png)
 
     - Provide a proper name for your Predictive Scenario and save it anywhere you like.
 
@@ -592,23 +592,23 @@ Currently, you have opened the tab **Forecast Data**. This tab provides guidance
     - As the Time Series Data Source, specify the planning model `SAP_HR_SWFP_STRATEGIC`
     - As the Version, specify the planning version on which you want to perform your forecast. If you go with the default settings of the content package, select the version `SWFP_Plan`.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/10.png)
+    ![xp&A Strategic Workforce Planning](6/10.png)
 
     - As the target measure, select the measure **Current Workforce Planned**
     - As the date, select the option **Planning Year**. Per default, this is the only selection available.
     - For the number of periods to forecast, specify any number you like. In this example, we want to create a five-year forecast, thus we specify **5**. 
     - As the forecast entities, select the most relevant dimensions only as time series forecasts can only run on a small set of dimensions. In this example, we will select the entities **SWFP Scenario**, **Job Family** and **Organization Unit Level 1**.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/11.png)
+    ![xp&A Strategic Workforce Planning](6/11.png)
 
     - Perform additional filter settings for your forecast. In this example, we want to exclude the organizational unit **Unknown** from the forecast. 
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/12.png)
+    ![xp&A Strategic Workforce Planning](6/12.png)
 
     - As the training data source, specify the time frame which should be used for training the model. In this example, we choose all observations up until the last observation.
     - For the conversion of negative forecast values and the influencers, we will go with the default settings. 
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/13.png)
+    ![xp&A Strategic Workforce Planning](6/13.png)
 
 
 4. Save your Predictive Scenario.
@@ -617,23 +617,23 @@ Currently, you have opened the tab **Forecast Data**. This tab provides guidance
 
     - Repeat all steps from sub-step (3) but as the target measure, select the measure **Increases to Workforce Planned** instead of **Current Workforce Planned** to create a Predictive Scenario for hires.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/14.png)
+    ![xp&A Strategic Workforce Planning](6/14.png)
 
 6. Set up your Predictive Scenario for the measure **Reductions to Workforce Planned**
 
     - Repeat all steps from sub-step (3) but as the target measure, select the measure **Reductions to Workforce Planned** instead of **Current Workforce Planned** to create a predictive scenario for terminations.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/15.png)
+    ![xp&A Strategic Workforce Planning](6/15.png)
 
 7. Integrate all three Predictive Scenarios into the respective Multi Action responsible for running all time series forecasts
 
     - Navigate to the **Data Actions** folder of the content package and open the Multi Action **Forecast and Allocate Supply** (`SAP_HR_SWFP_FORECAST_ALLOCATION`).
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/16.png)
+    ![xp&A Strategic Workforce Planning](6/16.png)
 
     - Add three Predictive Steps to the Multi Action with each step calling one of the previously created Predictive Scenarios.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/17.png)
+    ![xp&A Strategic Workforce Planning](6/17.png)
 
     - Make sure to set **Train and Forecast** as the predictive action for each of the steps.
 
@@ -643,7 +643,7 @@ Currently, you have opened the tab **Forecast Data**. This tab provides guidance
 
     - If you still have the **Seed Data** page of the **Initialize Plan** (`SAP_HR_SWFP_IdentifyPhase`) story open, click on the button **Go to next Page** to switch to the **Forecasts** page.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/7.png)
+    ![xp&A Strategic Workforce Planning](6/7.png)
 
     - Alternatively, you can also navigate to the second page of the **Initialize Plan** (`SAP_HR_SWFP_IdentifyPhase`) story by using the **Main Menu** or by clicking on the **Forecasts** link in the **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`) story.
 
@@ -651,21 +651,21 @@ Currently, you have opened the tab **Forecast Data**. This tab provides guidance
 
 10. Open the `onClick` event script of the button `Section1_ForecastAllocationBtn`.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/18.png)
+    ![xp&A Strategic Workforce Planning](6/18.png)
 
 11. According to the comments provided in the script, deactivate the message in lines 3 to 4 and activate the script from lines 9 to 24
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/19.png)
+    ![xp&A Strategic Workforce Planning](6/19.png)
 
 12. Save your changes.
 
 13. Go into view mode of the story.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/20.png)
+    ![xp&A Strategic Workforce Planning](6/20.png)
 
 14. In the **Modify and Forecast Future Supply** section, click on the button **Run Forecast Allocations**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/21.png)
+    ![xp&A Strategic Workforce Planning](6/21.png)
 
     - Now that you have configured all Predictive Scenarios and set up you Multi Action, you can execute the Time Series Forecast by clicking on the button **Run Forecast Allocations**
 
@@ -673,13 +673,13 @@ Currently, you have opened the tab **Forecast Data**. This tab provides guidance
 
     - You may have noticed that the section **Modify and Forecast Future Supply** contains three more buttons as can be seen in the screenshot:
     
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/22.png)
+    ![xp&A Strategic Workforce Planning](6/22.png)
     
     - Similar to the classification algorithm, these buttons are designed to redirect the user to the detailed prediction reports which can be accessed once the time series forecasts have run through
 
     - Go back to each of your Predictive Scenarios and bookmark the hyperlinks.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/23.png)
+    ![xp&A Strategic Workforce Planning](6/23.png)
 
     - Go back to the **Forecasts** page of the **Initialize Plan** (`SAP_HR_SWFP_IdentifyPhase`) story and enter the edit mode.
 
@@ -687,7 +687,7 @@ Currently, you have opened the tab **Forecast Data**. This tab provides guidance
 
     - According to the comments provided in the respective scripts, edit the scripts as shown exemplary in the following screenshot:
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/24.png)
+    ![xp&A Strategic Workforce Planning](6/24.png)
 
     - Please ensure to include the hyperlink for the Predictive Scenario with the target measure **Current Workforce Planned** into the script of the button `Section1_ForecastWkfBtn` **Create Current Workforce Forecast**, the hyperlink for the Predictive Scenario with the target measure **Current Increased Planned** into the script of the button `Section1_ForecastIncBtn` **Create Increases to Workforce Forecast** and the hyperlink for the Predictive Scenario with the target measure **Current Reductions Planned** into the script of the button `Section1_ForecastRedBtn` **Create Reductions to Workforce Forecast**
 
@@ -701,13 +701,13 @@ Currently, you have opened the tab **Forecast Data**. This tab provides guidance
 
     - Here you can inspect your imported historical data as well as your predicted values per measure and time in a graphical fashion.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/25.png)
+    ![xp&A Strategic Workforce Planning](6/25.png)
 
 19. Consume your final forecasted results in the **View** section of the **Forecasts** page of the **Initialize Plan** (`SAP_HR_SWFP_IdentifyPhase`) story.
 
     - Here you can inspect your imported historical data as well as your predicted values per measure, organizational unit, job family, version and scenario over time in a tabular fashion, allowing you to gain deeper insights into your past and future workforce composition.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/26.png)
+    ![xp&A Strategic Workforce Planning](6/26.png)
 
 You may now switch to the tab **Plan Retirements**.
 [OPTION END]
@@ -717,19 +717,19 @@ Currently, you have opened the tab **Plan Retirements**. This tab provides guida
 
 1. If you are still located on the **Forecasts** page of the **Initialize Plan** (`SAP_HR_SWFP_IdentifyPhase`) story, click on the button **Go to next Page** on the top right corner of the story.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/27.png)
+    ![xp&A Strategic Workforce Planning](6/27.png)
 
     - Alternatively, you can also navigate to the third page of the **Initialize Plan** (`SAP_HR_SWFP_IdentifyPhase`) story by using the **Main Menu** and clicking on **Plan Retirements** or by clicking on the **Plan Retirements** link in the **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`) story.
 
 2. According to the Steps description, begin your activities by checking out the section **View Retirement Trends**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/28.png)
+    ![xp&A Strategic Workforce Planning](6/28.png)
 
     - This section provides an overview about the historical retirement of your workforce, while the numbers represent the retirement likelihood grouped by retirement eligibility. 
 
 3. Scroll down to the next section called **View Trends & Modify Retirement Probabilities**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/29.png)
+    ![xp&A Strategic Workforce Planning](6/29.png)
 
     - This section consists of two parts.
     - In the table on the left-hand side, you can see how many people are eligible for retirement per year, allowing you to derive a rough trend for your retirement planning activities. 
@@ -737,20 +737,20 @@ Currently, you have opened the tab **Plan Retirements**. This tab provides guida
 
 4. Maintain your planning assumption for the retirements.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/30.png)
+    ![xp&A Strategic Workforce Planning](6/30.png)
 
     - Maintain your retirement probabilities for the workforce eligible to retire into the right table of the **View Trends & Modify Retirement Probabilities** section.
     - In this example, we assume that `90 %` of all people who are eligible for retirement today will actually retire. 
 
 5. Calculate your future retirements.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/31.png)
+    ![xp&A Strategic Workforce Planning](6/31.png)
 
     - Scroll down to the section **Review Calculated Retirements** and click on the button **Calculate Future Retirements** located on the top right corner of the section.
 
 6. Review your calculated retirements
    
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](6/32.png)
+    ![xp&A Strategic Workforce Planning](6/32.png)
 
     - Once the respective Data Action has run through, you can inspect the calculated retirements for your selected planning context in the table inside the **Review Calculated Retirements** section
     - The measure **Current Workforce Planned** represents the end of period headcount, while the measure **Projected Retirements** shows the amount of headcount which is planned to retire.
@@ -770,13 +770,13 @@ Currently, you have opened the tab **Open Story**. This tab provides guidance on
 
 1. If you are still located on the **Retirements** page of the **Initialize Plan** (`SAP_HR_SWFP_IdentifyPhase`) story, click on the button **Go to next Page** on the top right corner of the story.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/1.png)
+    ![xp&A Strategic Workforce Planning](7/1.png)
 
     - Alternatively, you can also navigate to the first page of the **Supply and Demand Planning** (`SAP_HR_SWFP_PlanPhase`) story by using the **Main Menu** and clicking on **Supply Assumptions** or by clicking on the **Supply Assumptions** link in the **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`) story.
 
 2. Get an overview of the story
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/2.png)
+    ![xp&A Strategic Workforce Planning](7/2.png)
 
     - Generally the story consists of two sections
     - The upper section **View Supply Assumptions** functions as a purely informational section and provides you with an overview over your planned end of period headcount, your planned increases and reductions to the workforce
@@ -797,7 +797,7 @@ Currently, you have opened the tab **Enter Supply Assumptions**. This tab provid
     - Here you can see your projected increases, reductions and the projected retirements in a graphical fashion by planning year.
     - If you wish to change the planning context, make use of the story filters located in the header section of the story.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/3.png)
+    ![xp&A Strategic Workforce Planning](7/3.png)
 
 
 2. Adjust your headcount supply measures.
@@ -805,17 +805,17 @@ Currently, you have opened the tab **Enter Supply Assumptions**. This tab provid
     - Scroll down to the section **Modify Supply Assumptions** and manipulate the forecasted data according to your needs
     - To edit values, simply click on any editable cell and change the numbers.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/4.png)
+    ![xp&A Strategic Workforce Planning](7/4.png)
 
 3. Switch to the next page of the story by clicking on the button **Go to next Page**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/5.png)
+    ![xp&A Strategic Workforce Planning](7/5.png)
 
     - You will now be redirected to the second page of the story **Supply Headcount**
 
 4. Get an overview of the second page of the story.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/6.png)
+    ![xp&A Strategic Workforce Planning](7/6.png)
 
     - The **Supply Headcount** page consists of two sections.
     - The upper section **View Supply Headcount** provides you with a graphical overview on your total headcount per planning year. Additionally, you can recalculate your supply based on the assumptions that you have maintained in the previous page.
@@ -823,17 +823,17 @@ Currently, you have opened the tab **Enter Supply Assumptions**. This tab provid
 
 5. In the upper section **View supply Headcount**, click on the button **Calculate Supply** in order to refresh your projected headcount supply.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/7.png)
+    ![xp&A Strategic Workforce Planning](7/7.png)
 
 6. In the lower section **View Details Behind Supply Headcount**, check your estimated numbers and make some final adjustments if required.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/8.png)
+    ![xp&A Strategic Workforce Planning](7/8.png)
 
     - If you decide to adjust the values, make sure to rerun the supply calculation by clicking on the **Calculate Supply** button in the section **View Supply Headcount**
 
 7. Click on the button **Go to next Page** in order to proceed with the demand planning activities.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/9.png)
+    ![xp&A Strategic Workforce Planning](7/9.png)
 
     - Alternatively, you can also navigate to the third page of the **Supply and Demand Planning** (`SAP_HR_SWFP_PlanPhase`)  story by using the **Main Menu** and clicking on **Demand Drivers** or by clicking on the **Demand Drivers** link in the **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`) story.
 
@@ -845,7 +845,7 @@ Currently, you have opened the tab **Enter Demand Assumptions**. This tab provid
 
 1. Get an overview of the page **Demand Drivers**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/10.png)
+    ![xp&A Strategic Workforce Planning](7/10.png)
 
     - This story page contains only one major section which is the **Modify Demand Drivers** section.
     - The table located inside this section takes into consideration the filter settings from the story filter panel.
@@ -856,17 +856,17 @@ Currently, you have opened the tab **Enter Demand Assumptions**. This tab provid
     - You can either adjust the drivers by manipulating the absolute numbers or you can directly change the year over year value in the table.
     - If you decide to adjust your drivers by changing the absolute values, make sure to click on the **Calculate Year over Year %** button located on the top-right corner of the section to calculate the year over year change percentage required for the headcount demand calculation.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/11.png)
+    ![xp&A Strategic Workforce Planning](7/11.png)
 
 3. Click on the button **Go to next Page** in order to jump to the next page of the story.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/12.png)
+    ![xp&A Strategic Workforce Planning](7/12.png)
 
     - Alternatively, you can also navigate to the fourth page of the **Supply and Demand Planning** (`SAP_HR_SWFP_PlanPhase`)  story by using the **Main Menu** and clicking on **Demand Headcount** or by clicking on the **Demand Headcount** link in the **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`) story.
 
 4. Get an overview of the page **Demand Headcount**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/13.png)
+    ![xp&A Strategic Workforce Planning](7/13.png)
     
     - This page consists of two sections.
     - The upper section **View Demand Headcount** provides a button to calculate the demand headcount based on the drivers maintained in the previous page. In addition, you can inspect the drivers as well as the estimated demand headcount in the table of this section.
@@ -876,21 +876,21 @@ Currently, you have opened the tab **Enter Demand Assumptions**. This tab provid
 
     - In the **View Demand Headcount** section, click on the button **Calculate Demand Headcount** in order to create an estimation for the headcount demand.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/14.png)
+    ![xp&A Strategic Workforce Planning](7/14.png)
 
 6. Readjust your drivers if required and recalculate the headcount demand
 
     - In case you want to readjust the demand headcount, you can adjust the respective drivers directly in the table and recalculate the demand by pressing on the **Calculate Demand Headcount** button again
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/15.png)
+    ![xp&A Strategic Workforce Planning](7/15.png)
 
 7. Review your final results in the **View Demand Headcount compared to Forecasted Supply Headcount** section
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/16.png)
+    ![xp&A Strategic Workforce Planning](7/16.png)
 
 8. Click on the button **Go to next Page** in order to jump to the next page of the story.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/17.png)
+    ![xp&A Strategic Workforce Planning](7/17.png)
 
     - Alternatively, you can also navigate to the last page of the **Supply and Demand Planning** (`SAP_HR_SWFP_PlanPhase`) story by using the **Main Menu** and clicking on **Gap** or by clicking on the **Gap** link in the **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`) story.
 
@@ -902,7 +902,7 @@ Currently, you have opened the tab **Gap Analysis**. In this section you will le
 
 1. Get an overview of the page **Gap**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/18.png)
+    ![xp&A Strategic Workforce Planning](7/18.png)
 
     - This story page consists of two sections.
     - The upper section **View Gap** provides graphical insights on your gap between your projected headcount demand and your planned headcount supply. In addition to that it provides a button to calculate the deviation between those two measures.
@@ -911,18 +911,18 @@ Currently, you have opened the tab **Gap Analysis**. In this section you will le
 
 2. Click on the **Calculate Gap** button located in the **View Gap** section in order to derive the gap between the headcount demand and the headcount supply.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/19.png)
+    ![xp&A Strategic Workforce Planning](7/19.png)
 
 3. Review the demand headcount, the supply headcount as well as the deviation in the chart inside the **View Gap** section.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/20.png)
+    ![xp&A Strategic Workforce Planning](7/20.png)
 
     - You can see the headcount demand and the headcount supply depicted as a bar chart in the lower half of the chart.
     - In the upper half of the chart you can see the deviation between these two measures.
 
 4. Review the demand headcount, the supply headcount as well as the deviation in the table inside the **View Gap Details** section.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](7/21.png)
+    ![xp&A Strategic Workforce Planning](7/21.png)
 
     - This table provides identical information in a tabular fashion.
 
@@ -945,13 +945,13 @@ Currently, you have opened the tab **Open Story**. This tab provides guidance on
 
 2. Now click on either **Home Page** to jump back to the **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`) or on **Validation Phase** to directly access the **Scenario and Version Comparisons** (`SAP_HR_SWFP_ValidatePhase`) story or use the button **Go to next Page** in order to jump to the next story. 
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](8/1.png)
+    ![xp&A Strategic Workforce Planning](8/1.png)
     
     In this particular case, we will go back to the **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`) by clicking on the **Home Page** button.
 
 3. Click on the link **Version and Scenario Comparisons** to enter the **Scenario and Version Comparisons** (`SAP_HR_SWFP_ValidatePhase`) story.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](8/2.png)
+    ![xp&A Strategic Workforce Planning](8/2.png)
 
     >INFORMATION:
     >
@@ -966,7 +966,7 @@ Currently, you have opened the tab **Reporting**. This tab provides information 
 
 1. Get an overview of the page **Version Comparison**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](8/3.png)
+    ![xp&A Strategic Workforce Planning](8/3.png)
 
     - This story consists of only one major section, which is the **Compare Different Versions** section.
     - Here you can view in a graphical fashion your demand headcount, your supply headcount as well as the gap per planning year, scenario and version. 
@@ -979,11 +979,11 @@ Currently, you have opened the tab **Reporting**. This tab provides information 
 
 2. Click on the button **Go to Next Page** in order to enter the second page **Scenario Comparison** of this story.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](8/4.png)
+    ![xp&A Strategic Workforce Planning](8/4.png)
 
 3. Get an overview of the page **Scenario Comparison**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](8/5.png)
+    ![xp&A Strategic Workforce Planning](8/5.png)
 
     - This report is identical to the report located in the **Version Comparison** page.
     - The major difference is that the bar chart also breaks down the inspected versions by scenario, allowing you to identify the best possible scenario more easily.
@@ -1002,7 +1002,7 @@ Currently, you have opened the tab **Open Story**. This tab provides guidance on
 
 2. Now click on either **Home Page** to jump back to the **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`) or on **Analytics Dashboard** to directly access the **Analytics Dashboard** (`SAP_HR_SWFP_AnalyticsDashboard`) story or use the button **Go to next Page** in order to jump to the next story. 
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](9/1.png)
+    ![xp&A Strategic Workforce Planning](9/1.png)
     
     In this particular case, we will use the **Go to next Page** button to jump to the **Analytics Dashboard** (`SAP_HR_SWFP_AnalyticsDashboard`) story.
 
@@ -1014,7 +1014,7 @@ Currently, you have opened the tab **Reporting**. This tab provides information 
 
 1. Get an overview of story
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](9/2.png)
+    ![xp&A Strategic Workforce Planning](9/2.png)
 
     - This story consists of three sections.
     - The **Headcount Overview** section provides an overview on the total headcount by dimension of your choice.
@@ -1027,7 +1027,7 @@ Currently, you have opened the tab **Reporting**. This tab provides information 
 
 2. Scroll down to the section **Headcount Overview**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](9/3.png)
+    ![xp&A Strategic Workforce Planning](9/3.png)
 
     - This report provides you with an overview on your end of period headcount by selected dimension and job family.
     - In order to change the dimensional breakdown, use the radio button widget located on the left-hand side of the section.
@@ -1035,7 +1035,7 @@ Currently, you have opened the tab **Reporting**. This tab provides information 
 
 3. Scroll down to the section **Turnover Overview**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](9/4.png)
+    ![xp&A Strategic Workforce Planning](9/4.png)
 
     - This report shows the amount of terminations by selected dimension and job family.
     - In order to change the dimensional breakdown, use the radio button widget located on the left-hand side of the section.
@@ -1043,7 +1043,7 @@ Currently, you have opened the tab **Reporting**. This tab provides information 
 
 4. Scroll down to the section **Staffing Overview**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](9/5.png)
+    ![xp&A Strategic Workforce Planning](9/5.png)
 
     - This report contains two graphs.
     - On the left-hand side, you can see a table with the average time to fill and the net hire ratio per year. 
@@ -1070,7 +1070,7 @@ Currently, you have opened the tab **Open Story**. This tab provides guidance on
 
 2. Now click on either **Home Page** to jump back to the **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`) or on **Response Strategy** to directly access the **Response Strategy Modelling** (`SAP_HR_SWFP_StrategizePhase`) story or use the button **Go to next Page** in order to jump to the next story. 
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](10/1.png)
+    ![xp&A Strategic Workforce Planning](10/1.png)
     
     In this particular case, we will click on the **Analytics Dashboard** button in the main menu to jump to the **Response Strategy Modelling** (`SAP_HR_SWFP_StrategizePhase`) story.
 
@@ -1082,7 +1082,7 @@ Currently, you have opened the tab **Derive Strategy**. In this tab you will lea
 
 1. Get an overview of the page **Response Strategy**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](10/2.png)
+    ![xp&A Strategic Workforce Planning](10/2.png)
 
     - This story consists of three sections.
     - The **Modify External Cost** section provides input tables where you can maintain different cost rates in order to come up with a cost estimation once you derived a headcount strategy.
@@ -1091,7 +1091,7 @@ Currently, you have opened the tab **Derive Strategy**. In this tab you will lea
 
 2. Maintain your cost parameters
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](10/3.png)
+    ![xp&A Strategic Workforce Planning](10/3.png)
 
     - In the **Modify External Cost** section you can maintain different cost parameters and weights in order to provide a foundation for the cost calculation for your strategy.
     - The table on the left-hand side lets you define the average training and recruiting costs per organizational unit. 
@@ -1099,14 +1099,14 @@ Currently, you have opened the tab **Derive Strategy**. In this tab you will lea
 
 3. Define a headcount strategy
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](10/4.png)
+    ![xp&A Strategic Workforce Planning](10/4.png)
 
     - In the table inside this section, you can see the gap headcount as well as the adjusted gap per planning year.
     - The green cells represent input cells. This is the place where you want to enter your headcount deltas in order to close the gap. Every entry is reflected in the adjusted gap measure in real time.
     - You can either enter the values manually into the cells or use the **Choose a Strategy** button in order to let a pre-defined algorithm close the calculated gap. 
     - In order to automatically close the gap, click on any cell in the table and hit the **Choose a Strategy** button.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](10/5.png)
+    ![xp&A Strategic Workforce Planning](10/5.png)
 
     - In the dropdown selection, you can now choose between different strategies.
     - The **Attract - Buy** strategy fills the gap by allocating 10 % of the gap headcount to contractors and 80 % to external hires.
@@ -1118,24 +1118,24 @@ Currently, you have opened the tab **Derive Strategy**. In this tab you will lea
     - If you want to change the weights or if you want to define your own strategies, you can do so by entering the planning data model `SAP_HR_STRATEGIC_WFP` and going into the dimension `SAP_SWFP_STRATEGY_OPT`.
     - Here you can change the respective attributes to modify the weights per strategy. 
     
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](10/6.png)
+    ![xp&A Strategic Workforce Planning](10/6.png)
 
     - Once you completed planning the first year, you can make use of the carry forward function to carry over the strategy to the remaining planning periods by clicking on the **Carry Over Strategy** button.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](10/7.png)
+    ![xp&A Strategic Workforce Planning](10/7.png)
 
     - In parallel you can always track your estimated strategy costs in the table on left-hand side of the section.
 
 4. Create an alternative strategy
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](10/8.png)
+    ![xp&A Strategic Workforce Planning](10/8.png)
 
     - Create an alternative strategy if desired to compare multiple strategy opportunities and the associated costs.
     - To do so, repeat the exercise from the previous sub-step in the section **Modify Strategy Actions - Option 2**.
 
 5. Click on the button **Go to next Page** in order to jump to the next page of the story.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](10/9.png)
+    ![xp&A Strategic Workforce Planning](10/9.png)
 
     - Alternatively, you can also navigate to the second page of the **Response Strategy Modelling** (`SAP_HR_SWFP_StrategizePhase`) story by using the **Main Menu** and clicking on **Response Dashboard** or by clicking on the **Response Dashboard** link in the **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`) story.
 
@@ -1147,7 +1147,7 @@ Currently, you have opened the tab **Dashboard Summary**. In this section you wi
 
 1. Get an overview of the page **Response Dashboard**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](10/10.png)
+    ![xp&A Strategic Workforce Planning](10/10.png)
 
     - This story page consists of three sections.
     - The upper section **View Do Nothing Scenario Compared to Response Strategy** compares the headcount of your selected strategy with the initially planned headcount supply measures. 
@@ -1157,14 +1157,14 @@ Currently, you have opened the tab **Dashboard Summary**. In this section you wi
 
 2. Scroll down to the **View Do Nothing Scenario Compared to Response Strategy** section.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](10/11.png)
+    ![xp&A Strategic Workforce Planning](10/11.png)
 
     - In this section you can see your initially planned headcount compared to your final headcount per planning year and version.
     - In the upper half of the chart you can see the deviation between these two headcount values. A negative value indicates that the initially planned headcount is lower than the newly planned headcount.
 
 3. Scroll down to the **View Strategy Action Plan** section.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](10/12.png)
+    ![xp&A Strategic Workforce Planning](10/12.png)
 
     - In this section you can analyze your workforce composition in more detail.
     - Here you can see per planning year how many contractors, external hires, internal movements, attrition reductions and restructuring headcount you have planned to close the gap.
@@ -1172,14 +1172,14 @@ Currently, you have opened the tab **Dashboard Summary**. In this section you wi
 
 4. Scroll down to the **View Strategy Cost** section.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](10/13.png)
+    ![xp&A Strategic Workforce Planning](10/13.png)
 
     - In this section you can see the associated costs that come with the individual actions.
     - On the right-hand side of the section, you can also see the average costs per action. 
 
 5. Click on the button **Go to next Page** in order to jump to the next page of the story.
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](10/14.png)
+    ![xp&A Strategic Workforce Planning](10/14.png)
 
     - Alternatively, you can also navigate to the second page of the **Response Strategy Modelling** (`SAP_HR_SWFP_StrategizePhase`) story by using the **Main Menu** and clicking on **Response Dashboard** or by clicking on the **Response Dashboard** link in the **Strategic Workforce Planning Overview** (`SAP_HR_SWFP_LandingPage`) story.
 
@@ -1192,7 +1192,7 @@ Currently, you have opened the tab **Integrate Results**. In this section you wi
 
 - This story page consists of only one section **Initialize Data to Operational Planning**
 
-    <!-- border; size:540px -->![xp&A Strategic Workforce Planning](10/15.png)
+    ![xp&A Strategic Workforce Planning](10/15.png)
 
 - The button **Initialize Data to Operational Plan** is a placeholder with no function provided by the content package. 
 - As the logic may vary significantly per customer, it is required to first create a data action in order to prepare your data for the integration into the **SAP Operational Workforce Planning** content package as the data structures in this content are different from the ones in this content package.
