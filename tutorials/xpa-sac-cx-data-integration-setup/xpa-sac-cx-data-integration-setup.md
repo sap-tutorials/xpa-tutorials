@@ -39,7 +39,7 @@ This tutorial will guide you through the process of setting up the connections a
 
 You will first focus on connecting SAP Analytics Cloud and SAP Cloud Integration (Step 1 to 3). Secondly you will connect SAP Integrated Business Planning with SAP Cloud Integration (Step 4 and 5). Thirdly connect SAP S/4HANA with SAP Cloud Integration (Step 6 and 7). After you connected all relevant systems with SAP Cloud Integration, the last sections are about authorizations and configurations within SAP Cloud Integration (Step 8 to 10).
 
-<!-- border; size:540px -->![Insight to Action](00_Overview.png)
+![Insight to Action](00_Overview.png)
 
 ### Get OAuth Token URL for your SAP Analytics Cloud Tenant
 
@@ -53,7 +53,7 @@ In section **OAuth Clients**, take a note of the Token URL.
 
 > Take a note of the **Token URL** as you will need it later.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step01_GetSacOauthTokenUrl/01_01_TokenUrl_SUI.png)
+![xp&A Commercial Planning](Step01_GetSacOauthTokenUrl/01_01_TokenUrl_SUI.png)
 
 ### Enable Import- and Export Service on SAP Analytics Cloud
 
@@ -67,7 +67,7 @@ In this step you enable the Data Export and Import Service and create the OAuth 
 
 Finish the creation of the OAuth Client credentials by hitting the **Add** button at the bottom of the popup.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step02_EnableSacApiService/02_01_FinishOauthClient_SUI.png)
+![xp&A Commercial Planning](Step02_EnableSacApiService/02_01_FinishOauthClient_SUI.png)
 
 Once the client credentials have been created, take a note of the
 
@@ -76,7 +76,7 @@ Once the client credentials have been created, take a note of the
 
 as you will need it in the next step.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step02_EnableSacApiService/02_02_DetailsOauthClient_SUI.png)
+![xp&A Commercial Planning](Step02_EnableSacApiService/02_02_DetailsOauthClient_SUI.png)
 
 You can click on the button **Done** to close the popup and move over to the next step.
 
@@ -90,11 +90,11 @@ Let's head over and logon to SAP Cloud Integration.
 
 In SAP Cloud Integration click on the **Monitor Artifacts** symbol below the **Burger Menu** icon in the top left corner and access **Integrations**. Access the **Manage Security** tile.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step05_SetupSecurityMatCpiIBP/05_01_SecurityMaterialApp.png)
+![xp&A Commercial Planning](Step05_SetupSecurityMatCpiIBP/05_01_SecurityMaterialApp.png)
 
 Click on button **Create** on top of the Security Material list and choose **OAuth2 Client Credentials**.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step03_SetupSecurityMatCpi/03_01_AddOauthClient_SUI.png)
+![xp&A Commercial Planning](Step03_SetupSecurityMatCpi/03_01_AddOauthClient_SUI.png)
 
 - Provide a **name** for this security material; default name referenced in the integration flow is **`SACoAUTH`**.
 - Provide a description (optional).
@@ -104,7 +104,7 @@ Click on button **Create** on top of the Security Material list and choose **OAu
 
 Click on **Deploy** to save the user credential artifact.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step03_SetupSecurityMatCpi/03_02_DetailsOauthClient_SUI.png)
+![xp&A Commercial Planning](Step03_SetupSecurityMatCpi/03_02_DetailsOauthClient_SUI.png)
 
 ### Set up authentication in SAP Integrated Business Planning
 
@@ -118,19 +118,19 @@ You need a business user with the role like *`SAP_BR_DEMAND_PLANNER_IBP`*. This 
 
 Remember the **Business User ID** as you will need it in the next step.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step04_GetIBPUserPassword/04_01_BusinessUser.png)
+![xp&A Commercial Planning](Step04_GetIBPUserPassword/04_01_BusinessUser.png)
 
 Open the App *Maintain Communication User* to create a Communication User. Please note down the **Communication User ID** and **Password**, they will be needed in the next step to access SAP Integrated Business Planning from SAP Cloud Integration. This tutorial creates Basic Access Authentication  credentials for SAP Integrated Business Planning. You could also choose a different authentication method.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step04_GetIBPUserPassword/04_03_CommUser.png)
+![xp&A Commercial Planning](Step04_GetIBPUserPassword/04_03_CommUser.png)
 
 Assign this **Communication User** to the **Communication System** in the *Communication System* App.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step04_GetIBPUserPassword/04_04_AssignUserCommScenario.png)
+![xp&A Commercial Planning](Step04_GetIBPUserPassword/04_04_AssignUserCommScenario.png)
 
 Change to the *Communication Arrangements* App and create a **Communication Arrangement** of scenario *`SAP_COM_0720`* with the Communication System and Communication User just created.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step04_GetIBPUserPassword/04_02_CommunicationArrangement.png)
+![xp&A Commercial Planning](Step04_GetIBPUserPassword/04_02_CommunicationArrangement.png)
 
 After this configuration you have the user and password of the Communication User for accessing SAP Cloud Integration via API. This credential needs to be stored as security material in SAP Cloud Integration. Storing the credential will be part of the next step.
 
@@ -146,11 +146,11 @@ Let's head over and logon to SAP Cloud Integration.
 
 In SAP Cloud Integration click on the **Monitor Artifacts** symbol below the **Burger Menu** icon in the top left corner and access **Integrations**. Access the **Manage Security** tile.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step05_SetupSecurityMatCpiIBP/05_01_SecurityMaterialApp.png)
+![xp&A Commercial Planning](Step05_SetupSecurityMatCpiIBP/05_01_SecurityMaterialApp.png)
 
 Click on button **Create** on top of the Security Material list and choose **User Credentials**.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step05_SetupSecurityMatCpiIBP/05_02_SecurityMaterialCreate.png)
+![xp&A Commercial Planning](Step05_SetupSecurityMatCpiIBP/05_02_SecurityMaterialCreate.png)
 
 - Provide a **name** for this security material. Remember this name as you will need it in the Integration Flow configuration (Step 10).
 - Provide a description (optional).
@@ -158,7 +158,7 @@ Click on button **Create** on top of the Security Material list and choose **Use
 - In field **User** enter the *Communication User ID* that has been created in the previous step.
 - In field **Password**/ **Repeat Password** enter the *Password* that has been created in the previous step.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step05_SetupSecurityMatCpiIBP/05_03_SecurityMaterial.png)
+![xp&A Commercial Planning](Step05_SetupSecurityMatCpiIBP/05_03_SecurityMaterial.png)
 
 - Click on **Deploy** to save the user credential artifact.
 
@@ -173,19 +173,19 @@ A similar Communication User has to be created for SAP S/4HANA. The Integration 
 
 Open the App *Maintain Communication User* to create a Communication User. This example uses Basic Authorization. Please note down the **Communication User** and **Password**, they will be needed in the next step.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step06_S4HANA/06_01_CommunicationUser.png)
+![xp&A Commercial Planning](Step06_S4HANA/06_01_CommunicationUser.png)
 
 Create a **Communication System** in the *Communication System* App. Assign the **Communication User** that was just created to this **Communication System**.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step06_S4HANA/06_02_CommunicationSystem.png)
+![xp&A Commercial Planning](Step06_S4HANA/06_02_CommunicationSystem.png)
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step06_S4HANA/06_02_CommunicationSystem2.png)
+![xp&A Commercial Planning](Step06_S4HANA/06_02_CommunicationSystem2.png)
 
 Change to the *Communication Arrangements* App and create two **Communication Arrangements**. One of scenario type *`SAP_COM_0087`* for the master data and of type *`SAP_COM_0294`* for the price service. 
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step06_S4HANA/06_04_CommunicationArrangement87.png)
+![xp&A Commercial Planning](Step06_S4HANA/06_04_CommunicationArrangement87.png)
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step06_S4HANA/06_04_CommunicationArrangement294.png)
+![xp&A Commercial Planning](Step06_S4HANA/06_04_CommunicationArrangement294.png)
 
 After this configuration you have the user and password of the Communication User for accessing SAP S/4HANA APIs. This credential needs to be stored as security material in SAP Cloud Integration. Storing the credential will be part of the next step.
 
@@ -201,11 +201,11 @@ The steps are identical to how to configure Secure Material for SAP Integration 
 
 In SAP Cloud Integration click on the **Monitor Artifacts** symbol below the **Burger Menu** icon in the top left corner and access **Integrations**. Access the **Manage Security** tile.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step05_SetupSecurityMatCpiIBP/05_01_SecurityMaterialApp.png)
+![xp&A Commercial Planning](Step05_SetupSecurityMatCpiIBP/05_01_SecurityMaterialApp.png)
 
 Click on button **Create** on top of the Security Material list and choose **User Credentials**.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step05_SetupSecurityMatCpiIBP/05_02_SecurityMaterialCreate.png)
+![xp&A Commercial Planning](Step05_SetupSecurityMatCpiIBP/05_02_SecurityMaterialCreate.png)
 
 - Provide a **name** for this security material. Note down this name as it will be used in Step 10.
 - Provide a description (optional).
@@ -213,7 +213,7 @@ Click on button **Create** on top of the Security Material list and choose **Use
 - In field **User** enter the *Communication User ID* that has been created in the previous step.
 - In field **Password**/ **Repeat Password** enter the *Password* that has been created in the previous step.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step07_S4UserSecurityMaterial/07_01_Security_Material.png)
+![xp&A Commercial Planning](Step07_S4UserSecurityMaterial/07_01_Security_Material.png)
 
 - Click on **Deploy** to save the user credential artifact.
 
@@ -235,38 +235,38 @@ Login to your BTP account and navigate to the Service Marketplace of your sub ac
 
 Click **Create** on the Process Integration Runtime tile.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step08_Setup_ProcessIntegrationRuntime/08_00_StartPRI.png)
+![xp&A Commercial Planning](Step08_Setup_ProcessIntegrationRuntime/08_00_StartPRI.png)
 
 In the pop-up choose **`integration-flow`** in the combo box for **Plan** and populate the other fields depending on your BTP setup. Once complete, click "Next" at the bottom of the pop-up to continue.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step08_Setup_ProcessIntegrationRuntime/08_01_CreatePRI.png)
+![xp&A Commercial Planning](Step08_Setup_ProcessIntegrationRuntime/08_01_CreatePRI.png)
 
 You can keep the standard role **`ESBMessaging.send`** or enter a custom role.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step08_Setup_ProcessIntegrationRuntime/08_02_CreatePRI.png)
+![xp&A Commercial Planning](Step08_Setup_ProcessIntegrationRuntime/08_02_CreatePRI.png)
 
 Review the settings click **Create** and wait until the Service Instance is created.
 
 Based on the Process Integration Runtime Service instance we will create the OAuth Service Key. In your Service Marketplace click again on the Process Integration Runtime tile, but choose **Instance and Subscriptions** instead of **Create**.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step08_Setup_ProcessIntegrationRuntime/08_03_StartServiceKey.png)
+![xp&A Commercial Planning](Step08_Setup_ProcessIntegrationRuntime/08_03_StartServiceKey.png)
 
 Click on **`Create Service Key`** for your instance.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step08_Setup_ProcessIntegrationRuntime/08_07_ClickToCreateServiceKey.png)
+![xp&A Commercial Planning](Step08_Setup_ProcessIntegrationRuntime/08_07_ClickToCreateServiceKey.png)
 
 Give your key a name and choose **`Clientid/Secret`** for the Key Type. Click **Create** to close the dialog and start the key generation.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step08_Setup_ProcessIntegrationRuntime/08_05_CreateServiceKey.png)
+![xp&A Commercial Planning](Step08_Setup_ProcessIntegrationRuntime/08_05_CreateServiceKey.png)
 
 You can access the Service Key by navigating to your sub account into the instance section. Here you should find the Service Instance with your generated Service Key.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step08_Setup_ProcessIntegrationRuntime/08_06_CreateServiceKey.png)
+![xp&A Commercial Planning](Step08_Setup_ProcessIntegrationRuntime/08_06_CreateServiceKey.png)
 
 You need to note down the *`clientid`*, *`clientsecret`* and *`tokenurl`*.
 This information will be needed later in an SAP Analytic Cloud connection so that the Integration Flows can be triggered via API from SAP Analytics Cloud.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step08_Setup_ProcessIntegrationRuntime/08_04_GetServiceKey.png)
+![xp&A Commercial Planning](Step08_Setup_ProcessIntegrationRuntime/08_04_GetServiceKey.png)
 
 ### Upload the Commercial Planning Integration Flows into SAP Cloud Integration
 
@@ -276,15 +276,15 @@ After all authorizations have been set up it is time to enable the Cloud Integra
 
 Access the Integration Suite and go into the **Discover - Integrations** section. Search for the package name *`Integration between SAP Integrated Business Planning for demand and SAP Analytics Cloud`* by typing in the whole name or parts of the name or description like **IBP**.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step09_EnableCIPackage/09_01_Package.png)
+![xp&A Commercial Planning](Step09_EnableCIPackage/09_01_Package.png)
 
 Do a left click on the package to access it. Within the package click **Copy** to copy the package into your tenant.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step09_EnableCIPackage/09_02_CopyPackage.png)
+![xp&A Commercial Planning](Step09_EnableCIPackage/09_02_CopyPackage.png)
 
 After the copy has been executed successfully the package will be available in the **Design - Integrations** section on your tenant. 
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step09_EnableCIPackage/09_03_Installed.png)
+![xp&A Commercial Planning](Step09_EnableCIPackage/09_03_Installed.png)
 
 In the next step the newly created package will be configured.
 
@@ -297,30 +297,30 @@ In the previous steps we have configured credentials for SAP Integrated Business
 You need to configure all Integration Flows except *Write to SAP IBP for Demand using OData*. This step configures the Integration Flow 
 **Send IBP for Demand baseline to SAP Analytics Cloud Marketing model** as an example. The other flows are configured in the same way.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step10_ConfigureIntegrationFlows/10_01_ChooseIntegrationFlow.png)
+![xp&A Commercial Planning](Step10_ConfigureIntegrationFlows/10_01_ChooseIntegrationFlow.png)
 
 Access the Integration Flow and press **Configure**
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step10_ConfigureIntegrationFlows/10_02_ConfigIntegrationFlow.png)
+![xp&A Commercial Planning](Step10_ConfigureIntegrationFlows/10_02_ConfigIntegrationFlow.png)
 
 The next step is about configuring the API endpoint. The API endpoint, a URL, will be used to call the Integration Flow from SAP Analytics Cloud. The URL consists of two parts. The first part with the host of your Cloud Instance tenant and the path to all Cloud Integration Flows cannot be configured. But the last part that identifies this Integration Flow can be configured. In the popup go to the **Sender** tab. In the **Address** field enter a name. This name specifies the Integration Flow in the URL.
 
 If you would to name the API endpoint for the Integration Flow that writes IBP baselines into the SAP Cloud Analytics Marketing model like *`https://my-cloud-instance.com/http/xpa_mkt_write2sac`*
  than you would need to configure *`/xpa_mkt_write2sac`* in the *`Address`* input box (including the slash /).  
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step10_ConfigureIntegrationFlows/10_03_Address.png)
+![xp&A Commercial Planning](Step10_ConfigureIntegrationFlows/10_03_Address.png)
 
 In the **Receiver** tab you need to configure the SAP Analytics Cloud tenant URL as *`<SAPHDA_SAC_URL>`* and the Security Material name with the credentials of your SAP Analytics Cloud instance in *`Credential Name`*. Following the example of step 3 it would be *`SACoAUTH`*.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step10_ConfigureIntegrationFlows/10_04_SAC.png)
+![xp&A Commercial Planning](Step10_ConfigureIntegrationFlows/10_04_SAC.png)
 
 The same configuration of Security Material name and URL needs to be done for SAP Integrated Business Planning and SAP S/4HANA by choosing the systems from the combo box. This needs to be done per Integration Flow that you would like to use. 
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step10_ConfigureIntegrationFlows/10_05_Receiver.png)
+![xp&A Commercial Planning](Step10_ConfigureIntegrationFlows/10_05_Receiver.png)
 
 Close the popup and ensure that you deploy the Integration Flow after all the settings are done by leaving the popup with the **deploy** button or by pressing the **deploy** button in the upper right corner of the Integration Flow designer.
 
-<!-- border; size:300px -->![xp&A Commercial Planning](Step10_ConfigureIntegrationFlows/10_06_Deploy.png)
+![xp&A Commercial Planning](Step10_ConfigureIntegrationFlows/10_06_Deploy.png)
 
 ### Conclusion
 

@@ -35,15 +35,15 @@ In the first step, it is necessary to add a new member to the `Tactic` dimension
 
 1. In the SAP Analytics Cloud Menu, navigate to the **Files** section, search for `SAP_SD_IM_SalesPlanning` and click on the data model to open it.
 
-    <!-- border; size:540px -->![model](search-model.png)
+    ![model](search-model.png)
 
 2. Open the `SAP_SD_Tactic` dimension.
 
-    <!-- border; size:540px -->![model](tactic-dimension.png)
+    ![model](tactic-dimension.png)
 
 3. Add a new member to the tactic dimension. Use `DISCOUNT` as your **Member ID** and use `Discount` as your description.
 
-    <!-- border; size:540px -->![model](new-tactic.png)
+    ![model](new-tactic.png)
 
 4. **Save** your change.
 
@@ -53,27 +53,27 @@ In the next step the **Sales Planning Admin Page** (`SAP_SD_SalesPlanning_AdminP
 
 1. In the SAP Analytics Cloud Menu, navigate to the **Files** section, search for `SAP_SD_SalesPlanning_AdminPage` and select **Open in Story Edit Mode**.
 
-    <!-- border; size:540px -->![canvas_story](open-story.png)
+    ![canvas_story](open-story.png)
 
 2. Select the **Mapping** page of the story. Right click on the **Tactic** input control or select the button **More Actions**. Click on **Edit Filter...**.
 
-    <!-- border; size:540px -->![canvas_story](edit-input-control.png)
+    ![canvas_story](edit-input-control.png)
 
 3. Open the **Settings**, go to the **Member Display** setting and select **All Members** in the **Available Members** drop down. Then select your newly added tactic `Discount`. Click on **OK**.
 
-    <!-- border; size:540px -->![canvas_story](add-discount.png)
+    ![canvas_story](add-discount.png)
 
 4. **Save** your change and go to **View** mode.
 
-    <!-- border; size:540px -->![canvas_story](switch-view-mode.png)
+    ![canvas_story](switch-view-mode.png)
 
 5. Select the **Mapping** page of the story. Right-click on the column `SpendType` in the **Mapping Table**. Select the **Show/Hide** option and select **Unbooked**.
 
-    <!-- border; size:540px -->![canvas_story](unbooked.png)
+    ![canvas_story](unbooked.png)
 
 6. The new tactic `Discount` is now visible in the table. Perform a manual input on the desired combination of `SpendType`, `Tactic` and `GL Account` to create a valid driver combination to be used for the sales activity planning.
 
-    <!-- border; size:540px -->![canvas_story](driver.png)
+    ![canvas_story](driver.png)
 
     For instance, enter `1` for the following combination:
 
@@ -85,11 +85,11 @@ In the next step the **Sales Planning Admin Page** (`SAP_SD_SalesPlanning_AdminP
 
 7. Click on **Confirm** to publish your change.
 
-    <!-- border; size:540px -->![canvas_story](confirm.png)
+    ![canvas_story](confirm.png)
 
 8. Confirm your intention by pressing **Yes**. 
 
-    <!-- border; size:540px -->![canvas_story](yes.png)
+    ![canvas_story](yes.png)
 
 ### Final Remarks
 

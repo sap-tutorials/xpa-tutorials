@@ -37,7 +37,7 @@ In the first step, it is necessary to add a new member to the `Version` dimensio
 
 2. Search for any application with a table. In this example, we will look for the `SAP_MKT_MarketingCampaignPlanning` application and **Open in Story Edit Mode**.
 
-    <!-- border; size:540px -->![analytic_application](search-application-6.png)
+    ![analytic_application](search-application-6.png)
 
 3. Click on the table and open the **Version Management** section in the **Tools** section.
 
@@ -45,7 +45,7 @@ In the first step, it is necessary to add a new member to the `Version` dimensio
     >
     **Version Management** is greyed out as long as you have not selected the table beforehand.
 
-    <!-- border; size:540px -->![canvas_story](version-management.png)
+    ![canvas_story](version-management.png)
 
 ### Create new Version
 
@@ -55,7 +55,7 @@ After clicking on the **Version Management** icon, a new section on the right-ha
 
     - Choose a version and click on the **copy** icon next to it. In this example, you will create a copy of the version `public.Plan`.
 
-    <!-- border; size:540px -->![copy_version](copy-version-1.png)
+    ![copy_version](copy-version-1.png)
 
 2. Define the version properties.
 
@@ -64,7 +64,7 @@ After clicking on the **Version Management** icon, a new section on the right-ha
     - Choose one of the options provided for your copy operation. In this example, we will **Copy all data** from the `public.Plan` version to the new version.
     - Click on **OK** to create the copy.
 
-    <!-- border; size:540px -->![copy_version](copy-version-2.png)
+    ![copy_version](copy-version-2.png)
 
 ### Publish new Version
 
@@ -72,7 +72,7 @@ Now that you created the new version, you need to publish it as it is initially 
 
 1. Click on the **Publish** icon next to your new version. Select the option **Publish As**.
 
-    <!-- border; size:540px -->![publish_version](publish-as.png)
+    ![publish_version](publish-as.png)
 
 2. Specify the version properties.
 
@@ -80,7 +80,7 @@ Now that you created the new version, you need to publish it as it is initially 
     - Specify the version category once more. Ensure to select **Planning**.
     - Click on the **Publish** button when done.
 
-    <!-- border; size:540px -->![publish_version](publish.png)
+    ![publish_version](publish.png)
 
 3. Close your story.
 
@@ -95,11 +95,11 @@ Now that you created your new version, you can make a couple of adjustments whic
 
 2. Search for the `SAP_MKT_IM_MarketingPlanning` data model and open it.
 
-    <!-- border; size:540px -->![Data_Model](data-model.png)
+    ![Data_Model](data-model.png)
 
 3. Click on the dimension `Version` or on the **Navigate to Dimension**-button.
 
-    <!-- border; size:540px -->![Version_Dim](version-dim.png)
+    ![Version_Dim](version-dim.png)
 
 4. Adjust the version properties.
 
@@ -107,7 +107,7 @@ Now that you created your new version, you can make a couple of adjustments whic
     - In this particular case, the version `Plan` does not have any property.
     - In case you want to add a property, you can do it here.
 
-    <!-- border; size:540px -->![Version_Dim](version-properties.png)
+    ![Version_Dim](version-properties.png)
 
     The below table offers an overview on the different properties and their impact.
 
@@ -131,7 +131,7 @@ Here you learn how to set the new version as the default version for the initial
 
 2. Search for the affected application, in which you want the objects to be initialized with new version. In this example, we will look for the `SAP_MKT_MarketingCampaignAnalysis` application and **Open in Story Edit Mode**.
 
-    <!-- border; size:540px -->![analytic_application](search-application-1.png)
+    ![analytic_application](search-application-1.png)
 
     >INFORMATION:
     >
@@ -144,15 +144,15 @@ Here you learn how to set the new version as the default version for the initial
 
 3. Open the **Left Side Panel** and open the **Outline**. Search for the table `pnl_chart_smallCharts_chart01` or select the left most chart on **Page_1** manually.
 
-    <!-- border; size:540px -->![analytic_application](bar-chart.png)
+    ![analytic_application](bar-chart.png)
 
 4. Select **Right Side Panel** and click on the **Version** filter.
 
-    <!-- border; size:540px -->![analytic_application](bar-chart-filter.png)
+    ![analytic_application](bar-chart-filter.png)
 
 5. Unselect the current version `Plan` and select the new version `Baseline`. Click on **OK**.
 
-    <!-- border; size:540px -->![analytic_application](set-bar-chart-filter.png)
+    ![analytic_application](set-bar-chart-filter.png)
 
 6. Follow step 3-5 for the remaining charts. You have to change the version filter for the following charts:
 
@@ -174,15 +174,15 @@ You learn how to set the new version as an option in filter widgets inside the r
 
 2. Search for the affected application `SAP_MKT_MarketingPerformanceAnalysis` and **Open in Story Edit Mode**.
 
-    <!-- border; size:540px -->![analytic_application](search-application-2.png)
+    ![analytic_application](search-application-2.png)
 
 3. Right-click on the input control `p1_ic_detailHeader_Version`. (You can search the name of the object in the **Outline** in the **Left Side Panel**.) Click on **Edit Filter** in the context menu.
 
-    <!-- border; size:540px -->![analytic_application](edit-input-control.png)
+    ![analytic_application](edit-input-control.png)
 
 4. Select `Baseline` as additional value for your version. Press **OK**.
 
-    <!-- border; size:540px -->![analytic_application](select-value-version.png)
+    ![analytic_application](select-value-version.png)
 
 5. Save the story.
 
@@ -197,19 +197,19 @@ The data actions are used to switch back and forth between the quantity and reve
 
 2. Search for the story `SAP_MKT_MarketingDemandPlanning` and open it in **Edit Mode**.
 
-    <!-- border; size:540px -->![analytic_application](search-application-4.png)
+    ![analytic_application](search-application-4.png)
 
 3. Open the **Left Side Panel** and open the **Outline**. Scroll down to **Data Actions**. Click on `da_populateMeasures`.
 
-    <!-- border; size:540px -->![analytic_application](data-action-version-2.png)
+    ![analytic_application](data-action-version-2.png)
 
 4. Click on the **value member selector** of the Target Version drop down menu in the **right side panel**.
 
-    <!-- border; size:540px -->![analytic_application](data-action-version-3.png)
+    ![analytic_application](data-action-version-3.png)
 
 5. Select the `Baseline` version and click on **OK**.
 
-    <!-- border; size:540px -->![analytic_application](select-target-version.png)
+    ![analytic_application](select-target-version.png)
 
 6. Repeat step 3-5 for the other data actions
 
@@ -227,7 +227,7 @@ You learn how to set the new version as default in a variable in the story `SAP_
 
 2. Search for the story `SAP_MKT_MarketingDemandPlanning` and open it in **Edit Mode**.
 
-    <!-- border; size:540px -->![analytic_application](search-application-4.png)
+    ![analytic_application](search-application-4.png)
 
     >INFORMATION:
     >
@@ -237,11 +237,11 @@ You learn how to set the new version as default in a variable in the story `SAP_
 
 3. Open the **Left Side Panel** and open the **Outline**. Scroll down to `p_MarketingDemandPlanning`. Click on `fx` in order to **Edit Scripts** and then click `onInitialization`.
 
-    <!-- border; size:540px -->![analytic_application](onInitialization.png)
+    ![analytic_application](onInitialization.png)
 
 4. Adjust line 60 of the script.
 
-    <!-- border; size:540px -->![analytic_application](script.png)
+    ![analytic_application](script.png)
 
     Remove the old version `public.Plan` and add the new version `public.Baseline` like this
 
@@ -249,11 +249,11 @@ You learn how to set the new version as default in a variable in the story `SAP_
 
 5. Use the **Left Side Panel** with the **Outline** again. Search for the **Script Variable** `cfg_planVersion`. Click on `...` in order to **Find Reference**.
 
-    <!-- border; size:540px -->![analytic_application](find-reference.png)
+    ![analytic_application](find-reference.png)
 
 6. Change the **Default Value** in the **Right Side Panel** to `public.Baseline`. Dive deeper into the **Reference List** at the bottom to understand where the script variable `cfg_planVersion` is used.
 
-    <!-- border; size:540px -->![analytic_application](find-reference.png)
+    ![analytic_application](find-reference.png)
 
 7. Save the changes. 
 

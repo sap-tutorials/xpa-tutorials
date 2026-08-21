@@ -53,11 +53,11 @@ In the service drop down, filter for **Process Integration Runtime**. In the pla
 
 >Hint: This should be the same one you had used to set up the flows during the tutorial [xP&A Commercial Planning - How to set up system connections](xpa-sac-cx-data-integration-setup)
 
-<!-- border; size:540px -->![OpenBTP](Step01GetKey/0101_OpenBTP.png)
+![OpenBTP](Step01GetKey/0101_OpenBTP.png)
 
 Once you have located the correct one in the list of instances click on the **Key** link in the **Credentials** column. You will get pop up displaying the credential details for `OAuth` authentication.
 
-<!-- border; size:540px -->![GetOauthKey](Step01GetKey/0102_GetOAuthCredentials.png)
+![GetOauthKey](Step01GetKey/0102_GetOAuthCredentials.png)
 
 Take a note of:
 
@@ -74,11 +74,11 @@ In case you have not worked through the previous tutorial [xP&A Commercial Plann
 
 Head over to your Integration Suite instance. In section **Monitor** click on **Integrations**.
 
-<!-- border; size:300px -->![OpenMonitorIntegrations](Step02GetEndpoint/0201_ManageIntegrations.png)
+![OpenMonitorIntegrations](Step02GetEndpoint/0201_ManageIntegrations.png)
 
 In the search field enter `market` which should give you any of the integration flows being part of the SAP Commercial Planning package. Click on one of the search results.
 
-<!-- border; size:540px -->![GetEndpointUrl](Step02GetEndpoint/0202_ClickOnFlow.png)
+![GetEndpointUrl](Step02GetEndpoint/0202_ClickOnFlow.png)
 
 On the right hand-side under tab **Endpoints**, you can find the Endpoint for the particular flow. 
 
@@ -92,15 +92,15 @@ Now that we have the credentials, the `URL` and the endpoint(s),  let us create 
 
 In SAP Analytics Cloud click on menu entry **Connection**.
 
-<!-- border; size:300px -->![SacConnection](Step03AddConnection/0301_SacConnections.png)
+![SacConnection](Step03AddConnection/0301_SacConnections.png)
 
 and then on the **+** icon to add the new connection
 
-<!-- border; size:540px -->![AddConnection](Step03AddConnection/0302_AddConnection.png)
+![AddConnection](Step03AddConnection/0302_AddConnection.png)
 
 Please choose the connection type **HTTP `API`**.
 
-<!-- border; size:300px -->![TypeHttpApi](Step03AddConnection/0303_TypeHttpApi.png)
+![TypeHttpApi](Step03AddConnection/0303_TypeHttpApi.png)
 
 You will get a pop up to enter the connection details
 
@@ -118,7 +118,7 @@ Provide the following details
 
 Once you have entered all details click on the **Create** button to have your connection created.
 
-<!-- border; size:300px -->![TypeHttpApi](Step03AddConnection/0304_EnterConnectionDetails.png)
+![TypeHttpApi](Step03AddConnection/0304_EnterConnectionDetails.png)
 
 ### Customize Multi Actions
 
@@ -148,7 +148,7 @@ Let's use the multi action `SAP_MKT_IM_MarketingPlanning_LoadBaselineQuantities`
 
 In the Files menu search for multi action `SAP_MKT_IM_MarketingPlanning_LoadBaselineQuantities` and open it
 
-<!-- border; size:540px -->![OpenLoadBaselineMultiAction](Step04CustomizeMultiActions/0401_OpenLoadBaseline.png)
+![OpenLoadBaselineMultiAction](Step04CustomizeMultiActions/0401_OpenLoadBaseline.png)
 
 In the multi action screen, click on the `API` step in the middle of the screen. On the Step Details panel on the right-hand side you will need to finalize the details for the step.
 
@@ -164,7 +164,7 @@ This is:
 
 Example: `https://<host of your process integration runtime>/http/<your configured end point>`
 
-<!-- border; size:300px -->![ConfigLoadBaselineMultiAction](Step04CustomizeMultiActions/0402_ConfigLoadBaseline.png)
+![ConfigLoadBaselineMultiAction](Step04CustomizeMultiActions/0402_ConfigLoadBaseline.png)
 
 In the **Body** input field you need to specify three parameters and their values for the integration flow:
 
@@ -176,7 +176,7 @@ In the **Body** input field you need to specify three parameters and their value
 
 If you are working with the models as delivered by default, the parameter `modelID` is pointing to the correct model id already. In case you have created a copy of the model, make sure to insert the correct model id. The correct id can be found in the `URL` when opening your model from the File menu.
 
-<!-- border; size:540px -->![FindModelId](Step04CustomizeMultiActions/0403_FindModelId.png)
+![FindModelId](Step04CustomizeMultiActions/0403_FindModelId.png)
 
 Parameters for `calmonthFrom` and `calmonthTo` are filled by parameters `${StartPeriod}` and `${EndPeriod}` respectively which will prompt you to enter a value when running the multi action.
 
@@ -184,7 +184,7 @@ In the **Response** section, leave the option as displayed in the screen shot be
 
 In section **Request -> Method**, leave the setting at **Synchronous Return**.
 
-<!-- border; size:300px -->![ConfigLoadPricesMultiActionReturn](Step04CustomizeMultiActions/0404_ConfigLoadBaselineReturn.png)
+![ConfigLoadPricesMultiActionReturn](Step04CustomizeMultiActions/0404_ConfigLoadBaselineReturn.png)
 
 Great, now that you have customized the multi actions, head over to the next step to see them in action
 
@@ -205,23 +205,23 @@ Based on the different planning scenarios in the Commercial Planning package, th
 To continue with our example, search for story `SAP_MKT_Marketing_AdminPage`
 in the File menu and open it.
 
-<!-- border; size:540px -->![ConfigLoadBaselineMultiActionReturn](Step05RunMultiactions/0501_OpenMarketingAdmin.png)
+![ConfigLoadBaselineMultiActionReturn](Step05RunMultiactions/0501_OpenMarketingAdmin.png)
 
 Click on the **Load Baseline Quantities** multi action trigger to start the multi action.
 
-<!-- border; size:300px -->![RunLoadBaselineMultiAction](Step05RunMultiactions/0502_CallLoadBaselineMa.png)
+![RunLoadBaselineMultiAction](Step05RunMultiactions/0502_CallLoadBaselineMa.png)
 
 You will get a pop up to set the parameters for start and end period as seen before in the previous steps. Enter values for start and end period and click on **Run**
 
-<!-- border; size:300px -->![EnterLoadBaselineParameters](Step05RunMultiactions/0503_SetParametersForDate.png)
+![EnterLoadBaselineParameters](Step05RunMultiactions/0503_SetParametersForDate.png)
 
 Now your multi action will call the cloud integration flow to pick up baseline quantity data from SAP Integrated Business Planning for Demand and push it into your SAP Analytics Cloud planning model.
 
-<!-- border; size:300px -->![MultiActionRunning](Step05RunMultiactions/0504_MaRunning.gif)
+![MultiActionRunning](Step05RunMultiactions/0504_MaRunning.gif)
 
 Once the job has finished, you will get a notification.
 
-<!-- border; size:540px -->![MultiActionSuccess](Step05RunMultiactions/0505_MaSuccess.png)
+![MultiActionSuccess](Step05RunMultiactions/0505_MaSuccess.png)
 
 > Please repeat steps 4 and 5 of this tutorial to get all of your multi actions ready.
 

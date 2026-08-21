@@ -47,18 +47,18 @@ In this step you will learn how to navigate to the folder which contains all SAP
 
 2. In the SAP Analytics Cloud Menu, navigate to the **Files** section.
 
-    <!-- border; size:300px -->![xP&A Sales Planning](1/1.png)
+    ![xP&A Sales Planning](1/1.png)
 
 3. Access the content package folder.
 
     - You can access the content package folder by either navigating to the `Public` folder first and looking for a folder named `SAP_CONTENT`, or by using the **search function** in the top-right corner.
     - In case you want to make use of the search function, simply enter the term `SAP_CONTENT` into the search bar.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](1/2.png)
+    ![xP&A Sales Planning](1/2.png)
 
     - The folder `SAP_CONTENT` contains all objects required to run SAC content. Here you can find your installed content from the content network provided by SAP.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](1/3.png)
+    ![xP&A Sales Planning](1/3.png)
 
 ### Access Sales Planning Content
 
@@ -69,14 +69,14 @@ Now that you learned where all the SAP Analytics Cloud content packages are stor
     - In order to do so, please use the keyword `xP&A` or `SD`
     - In the result list, click on the folder `SAP_SD_Sales_Planning` with the description `xP&A – SAP Sales Planning`
 
-    <!-- border; size:540px -->![xP&A Sales Planning](2/1.png)
+    ![xP&A Sales Planning](2/1.png)
 
 2. Run the Sales Planning content package.
 
     - The folder `SAP_SD_Sales_Planning` contains all planning applications and the reporting story.
     - To run the Sales Planning content, please click on the folder `Stories` and on the application called **Sales Planning Overview Page** (`SAP_SD_SalesPlanning_Overview`).
 
-    <!-- border; size:540px -->![xP&A Sales Planning](2/2.png)
+    ![xP&A Sales Planning](2/2.png)
 
     >INFORMATION:
     >
@@ -88,7 +88,7 @@ Before jumping into the different applications which are accessible through the 
 
 1. **Overview Page**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](3/1.png)
+    ![xP&A Sales Planning](3/1.png)
 
     - By having opened the application **Sales Planning Overview Page** (`SAP_SD_SalesPlanning_Overview`), you entered the **Home Screen** of the Sales Planning content.
     - The overview application serves as the central entry point for all personas and helps to navigate through the content package.
@@ -97,7 +97,7 @@ Before jumping into the different applications which are accessible through the 
 
 2. **Configure**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](3/2.png)
+    ![xP&A Sales Planning](3/2.png)
 
     - The section **Configure** contains links to the different pages of the application **Sales Planning Admin Page** (`SAP_SD_SalesPlanning_AdminPage`).
     - This application marks the start of the planning process and allows you to set up all the required mapping between dimensions for the planning version.
@@ -105,13 +105,13 @@ Before jumping into the different applications which are accessible through the 
 
 3. **Plan**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](3/3.png)
+    ![xP&A Sales Planning](3/3.png)
 
     - The section **Plan** provides access to different applications which allow you to perform planning activities in the different scenarios.
 
 4. **Report**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](3/4.png)
+    ![xP&A Sales Planning](3/4.png)
 
     - The section **Reporting** contains links to different parts of the reporting stories available for the **Sales Planning** content.
     - The reporting stories provide reports to compare actual performances with different plan scenarios in order to derive actions for your business.
@@ -124,67 +124,67 @@ As a last preparation step, it is required to understand the navigation concept 
 
     - Each story apart from the **Sales Planning Overview Page** (`SAP_SD_SalesPlanning_Overview`) has a Navigation Menu button located on the top-left corner.
   
-    <!-- border; size:540px -->![xP&A Sales Planning](4/1.png)
+    ![xP&A Sales Planning](4/1.png)
 
     - For example, launch the Business Admin Tasks from the Configure box. Now you will see the Navigation Menu button.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](4/2.png)
+    ![xP&A Sales Planning](4/2.png)
 
     - Click on the Navigation Menu button and a panel with all the applications available in the system for the Commercial Planning package will appear.
 
 2. **Filter** button
 
-    <!-- border; size:540px -->![xP&A Sales Planning](4/3.png)
+    ![xP&A Sales Planning](4/3.png)
 
     - This button can be found in the left-side panel of all planning and reporting stories of this content package.
     - You can filter tables and charts down to specific members of the given dimensions for an eased data entry and reporting.
 
 3. **Collapse/Expand** button
 
-    <!-- border; size:540px -->![xP&A Sales Planning](4/4.png)
+    ![xP&A Sales Planning](4/4.png)
 
     - By clicking on the little **arrow icon**, you can collapse the side panel in order to create more space for your planning tables or charts. 
 
 4. **Confirm** button
 
-    <!-- border; size:540px -->![xP&A Sales Planning](4/5.png)
+    ![xP&A Sales Planning](4/5.png)
 
     - This button can be found in each planning story of this content package and is located at the top-right above the table.
     - The **Confirm** button lets you publish your current plan data as a public plan version.
 
 5. **Reset** button
 
-    <!-- border; size:540px -->![xP&A Sales Planning](4/6.png)
+    ![xP&A Sales Planning](4/6.png)
 
     - This button can be found in each planning story of this content package and is located at the top-right above the table.
     - The **Reset** button can be used to reset all changes you have done in the plan version since the last publish.
 
 6. **Table Settings** button
 
-    <!-- border; size:540px -->![xP&A Sales Planning](4/7.png)
+    ![xP&A Sales Planning](4/7.png)
 
     - This button can be found in some of the planning stories at the top-right above the table.
     - The **Table Settings** button lets you adjust some dimensions and measures of the table.
 
 7. **Reduce/Enlarge** button
 
-    <!-- border; size:540px -->![xP&A Sales Planning](4/8.png)
+    ![xP&A Sales Planning](4/8.png)
 
     - This button can be found at the top-right above the table.
     - The **Reduce/Enlarge** button lets you maximize and minimize the planning table by hiding or showing the charts above accordingly.
 
 8. **Comment** button
 
-    <!-- border; size:540px -->![xP&A Sales Planning](4/9.png)
+    ![xP&A Sales Planning](4/9.png)
 
-    <!-- border; size:540px -->![xP&A Sales Planning](4/10.png)
+    ![xP&A Sales Planning](4/10.png)
 
     - This button can be found at the top-right above the table or on the left-side panel depending which application you are using. 
     - The **Comment** button enables you and your team to collaborate and communicate on your planning.
 
 9. **Steps** description field
 
-    <!-- border; size:540px -->![xP&A Sales Planning](4/11.png)
+    ![xP&A Sales Planning](4/11.png)
 
     - Such a text field can be found in all stories of this content package apart from the **Sales Planning Overview Page** (`SAP_SD_SalesPlanning_Overview`) and is located inside the left-side panel.
     - This description field serves as a rough guideline and describes the intended workflow within each of the planning applications.
@@ -201,14 +201,14 @@ You only need to perform the initialization steps for the data if you want to wo
 
 1. Open **Business Admin tasks**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](5/1.png)
+    ![xP&A Sales Planning](5/1.png)
 
     - Open **Sales Planning Overview Page** (`SAP_SD_SalesPlanning_Overview`).
     - Click on **Business Admin tasks** in the Configure section in order to land on the related tab of the Admin Page.
 
 2. Familiarize yourself with the application
 
-    <!-- border; size:540px -->![xP&A Sales Planning](5/2.png)
+    ![xP&A Sales Planning](5/2.png)
 
     - Get an overview of the application and read the instructions.
     - All planning applications provide a short in-built step by step guide which helps you to use the corresponding application correctly.
@@ -220,19 +220,19 @@ You only need to perform the initialization steps for the data if you want to wo
 
 3. Setup your data
 
-    <!-- border; size:540px -->![xP&A Sales Planning](5/3.png)
+    ![xP&A Sales Planning](5/3.png)
 
     >INFORMATION:
     >
     Please note, that the following steps assume, that you have already setup your data for Marketing Planning. The following steps are building on top of it. Please note as well, that you need to maintain the **HTTP API Connection** and **API URL** of your **SAP Integrated Business Planning (IBP)** system in the multi action `Multiaction importing IBP Baseline Quantities` (`SAP_SD_IM_InboundBaselineQuantitiesFromIBP`). Otherwise, you will get a warning that you need to fix errors in the multi action designer.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](5/6.png)
+    ![xP&A Sales Planning](5/6.png)
 
     >INFORMATION:
     >
     This is mentioned error screen you receive when triggering the multi action **Baseline Quantities** without proper configuration. The link will take you to the multi action to maintain the needed details.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](5/7.png)
+    ![xP&A Sales Planning](5/7.png)
 
     >INFORMATION:
     >
@@ -251,28 +251,28 @@ You only need to perform the initialization steps for the data if you want to wo
 
     Now, that the data is loaded into the data model, you are going to have a look how to adjust **Spend Type - Tactic - GL Account Mapping**.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](5/1.png)
+    ![xP&A Sales Planning](5/1.png)
 
     - Go back to the **Sales Planning Overview Page** (`SAP_SD_SalesPlanning_Overview`).
     - Click on **Spend Type - Tactic - GL Account Mapping** in the Configure section in order to land on the related tab of the Admin Page.
 
 5. Open Spend Type - Tactic - GL Account Mapping from the Business Admin tasks page
 
-    <!-- border; size:540px -->![xP&A Sales Planning](5/4.png)
+    ![xP&A Sales Planning](5/4.png)
 
     - Move your mouse to the top of the page and wait for the navigation menu to appear.
     - Click on **Mapping** to open **Spend Type - Tactic - GL Account Mapping** page.
 
 6. Define mapping
 
-    <!-- border; size:540px -->![xP&A Sales Planning](5/5.png)
+    ![xP&A Sales Planning](5/5.png)
 
     - This tab allows for the review and adjustment of the existing mapping between `SpendType`, `Tactic` and `GL Account` of a specific activity. It enables you to drive the objectives of your organization by prioritizing on certain combinations.
     - The table displays the current mapping Spend Type - Tactic - GL Account of an activity.
     - Use the filter panel on the left-hand side to select the desired combination of Spend Type and Tactic to be mapped.
     - Adjust the mapping in the table by cancelling the value stored on a specific combination into the Driver column and input "1" on the Spend Account to be used for the Spend Type - Tactic combination of an activity.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](5/8.png)
+    ![xP&A Sales Planning](5/8.png)
 
     - For example, apply a filter in the left panel on `SpendType` on `Rebate Percentage` and on `Tactic` on `Price`. The main table will filter down to a single row.
     - Right-click on `GL Account`.
@@ -284,14 +284,14 @@ You only need to perform the initialization steps for the data if you want to wo
 
     You can now switch to the Customer-Product selection tab after you are done with your mapping.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](5/1.png)
+    ![xP&A Sales Planning](5/1.png)
 
     - Go back to the **Sales Planning Overview Page** (`SAP_SD_SalesPlanning_Overview`).
     - Click on **Customer-Product selection for Activities** in the Configure section in order to land on the related tab of the Admin Page.
 
 8. Open the **Customer-Product selection** page
 
-    <!-- border; size:540px -->![xP&A Sales Planning](5/4.png)
+    ![xP&A Sales Planning](5/4.png)
 
     - Move your mouse to the top of the page and wait for the navigation menu to appear.
     - Click on **Customer-Product selection** to open **Customer-Product selection for Activities** page.
@@ -305,14 +305,14 @@ In the next steps the Sales Planning stories of this content package are introdu
 
 1. Open **Global Sales Budget Planning** (`SAP_SD_SalesBudgetPlanningGlobal`) from the Sales Planning Overview Page
 
-    <!-- border; size:540px -->![xP&A Sales Planning](6/1.png)
+    ![xP&A Sales Planning](6/1.png)
 
     - Go to the **Sales Planning Overview Page** (`SAP_SD_SalesPlanning_Overview`).
     - Click on **Global Sales Budget** in the Plan section in order to land on the **Global Sales Budget Planning** (`SAP_SD_SalesBudgetPlanningGlobal`) application.
 
 2. Understand the application
 
-    <!-- border; size:540px -->![xP&A Sales Planning](6/2.png)
+    ![xP&A Sales Planning](6/2.png)
 
     - The application consists of four sections.
     - In the middle at the top, you can read the instructions to understand the workflow of this application.
@@ -322,13 +322,13 @@ In the next steps the Sales Planning stories of this content package are introdu
 
 3. **Initialization** of the Global Budget
 
-    <!-- border; size:540px -->![xP&A Sales Planning](6/3.png)
+    ![xP&A Sales Planning](6/3.png)
 
     - Click on the button **Initialize Global Budget** to copy data from **Financial Target** (`FinancialTarget`) version to **Global Budget** (`BudgetL1`) version. It clears all data on the **Global Budget** (`BudgetL1`) version for the selected time range and copies the Financial Target data for the selected time range.
 
 4. Select **Initialization Year**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](6/4.png)
+    ![xP&A Sales Planning](6/4.png)
 
     >INFORMATION:
     >
@@ -339,11 +339,11 @@ In the next steps the Sales Planning stories of this content package are introdu
 
 5. **Plan the Global Budget** by adjusting **Table Settings**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](6/5.png)
+    ![xP&A Sales Planning](6/5.png)
 
     - Click on **Table Settings**.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](6/6.png)
+    ![xP&A Sales Planning](6/6.png)
 
     - Check the **Reference Version 1** and select the **Financial Target** in the drop down menu.
     - With this change you can compare the difference between your planned and original amount for gross revenue and sales deduction, which you will change in the next steps.
@@ -351,11 +351,11 @@ In the next steps the Sales Planning stories of this content package are introdu
     - Click on **OK** once you are done.
     - Note that the table has a Financial Target column for each GL Account and Measure.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](6/7.png)
+    ![xP&A Sales Planning](6/7.png)
 
 6. Plan **Gross Revenue**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](6/8.png)
+    ![xP&A Sales Planning](6/8.png)
 
     - You are a global sales leader who wants to increase the sales revenue by a lot.
     - Change the filter on the left side to the year you want to plan and show all data for Company Code, Sales Organization, Customer and Product.
@@ -365,7 +365,7 @@ In the next steps the Sales Planning stories of this content package are introdu
 
 7. Plan **Sales Deduction**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](6/9.png)
+    ![xP&A Sales Planning](6/9.png)
 
     - In order to achieve the increase in revenue you are willing to increase the spend budget by an even bigger amount.
     - Click in the cell of line **Total** as **Sales Organization**, **Total Bikes** as **Product** and of column **2024** as **Date**, **Sales Deduction** as **GL Account**, **Amount @ Budget** as Measures and **BudgetL1** as **Version**.
@@ -374,7 +374,7 @@ In the next steps the Sales Planning stories of this content package are introdu
 
 8. **Calculate Quantity**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](6/10.png)
+    ![xP&A Sales Planning](6/10.png)
 
     - The measure **Quantity** has not reacted at all on your changes. You can take this step once you are done with your planning of **Gross Revenue** and **Sales Deduction**.
     - Click on the button **Calculate Quantity**.
@@ -382,7 +382,7 @@ In the next steps the Sales Planning stories of this content package are introdu
 
 9. **Publish** your version **Global Budget** (`BudgetL1`)
 
-    <!-- border; size:540px -->![xP&A Sales Planning](6/11.png)
+    ![xP&A Sales Planning](6/11.png)
 
     - You adjusted the amount of **Gross Revenue** and **Sales Deduction** and the **Investment Rate %** and **Quantity** units followed suit.
     - Now it is time to publish your new planned data as version **Global Budget** (`BudgetL1`).
@@ -396,14 +396,14 @@ In the next steps the Sales Planning stories of this content package are introdu
 
 1. Open **Regional Sales Budget Planning** (`SAP_SD_SalesBudgetPlanningRegional`) from the Sales Planning Overview Page
 
-    <!-- border; size:540px -->![xP&A Sales Planning](7/1.png)
+    ![xP&A Sales Planning](7/1.png)
 
     - Go to the **Sales Planning Overview Page** (`SAP_SD_SalesPlanning_Overview`).
     - Click on **Regional Sales Budget** in the Plan section in order to land on the **Regional Sales Budget Planning** (`SAP_SD_SalesBudgetPlanningRegional`) application.
 
 2. Understand the application
 
-    <!-- border; size:540px -->![xP&A Sales Planning](7/2.png)
+    ![xP&A Sales Planning](7/2.png)
 
     - The application consists of four sections.
     - In the middle at the top, you can read the instructions to understand the workflow of this application.
@@ -413,13 +413,13 @@ In the next steps the Sales Planning stories of this content package are introdu
 
 3. **Initialization** of the Regional Budget
 
-    <!-- border; size:540px -->![xP&A Sales Planning](7/3.png)
+    ![xP&A Sales Planning](7/3.png)
 
     - Click on the button **Initialize Regional Budget** to copy data from **Global Budget** (`BudgetL1`) version to **Regional Budget** (`BudgetL2`) version. It clears all data on the Regional Budget (`BudgetL2`) version for the selected time range and copies the **Global Budget** (`BudgetL1`) data for the selected time range.
 
 4. Select **Initialization Year**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](7/4.png)
+    ![xP&A Sales Planning](7/4.png)
 
     >INFORMATION:
     >
@@ -430,11 +430,11 @@ In the next steps the Sales Planning stories of this content package are introdu
 
 5. **Plan** the Regional Budget by adjusting **Table Settings**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](7/5.png)
+    ![xP&A Sales Planning](7/5.png)
 
     - Click on **Table Settings**.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](7/6.png)
+    ![xP&A Sales Planning](7/6.png)
 
     - Check the **Reference Version 1** and select the **Global Budget** (`BudgetL1`) in the drop down menu.
     - With this change you can compare the difference between your planned and original amount for gross revenue and sales deduction, which you will change in the next steps.
@@ -442,17 +442,17 @@ In the next steps the Sales Planning stories of this content package are introdu
     - Click on **OK** once you are done.
     - Note that the table has a **Global Budget** column for each GL Account and Measure.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](7/7.png)
+    ![xP&A Sales Planning](7/7.png)
 
 6. Plan **Gross Revenue**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](7/8.png)
+    ![xP&A Sales Planning](7/8.png)
 
     - Change the filter on the left side to the year you want to plan and show all data for Sales Organization, Customer and Product.
     - You can assume that you are now in the role of a regional sales leader for Germany. Filter on the **company code 1010** to only display your data by selecting the input control, selecting the **company code 1010** and clicking **Apply Selection**.
     - All other Sales Organizations besides the german one are filtered out.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](7/9.png)
+    ![xP&A Sales Planning](7/9.png)
 
     - You know with your market knowledge in your region that with the given spend budget for your products for young people, you can generate more sales revenue than currently planned. That is why you are going to increase the sales revenue.
     - Click in the cell of line **Dom. Sales Org DE** as **Sales Organization**, **Total Customers** as **Customer**, **Youth** as **Product** and of column **2024** as **Date**, **Gross Revenue** as **GL Account**, **Amount @ Budget** as Measures and **BudgetL2** as **Version**.
@@ -461,7 +461,7 @@ In the next steps the Sales Planning stories of this content package are introdu
 
 7. Plan **Sales Deduction**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](7/10.png)
+    ![xP&A Sales Planning](7/10.png)
 
     - However, the global sales leader wants you to achieve higher revenue for mountain and racing bikes than you deem possible with the current spend budget. Therefore, you are going to increase it.
     - Click in the cell of line **Total** as **Dom. Sales Org DE**, **Total Customers** as **Customer**, **Mountain** as **Product** and of column **2024** as **Date**, **Sales Deduction** as **GL Account**, **Amount @ Budget** as Measures and **BudgetL2** as **Version**.
@@ -472,7 +472,7 @@ In the next steps the Sales Planning stories of this content package are introdu
 
 8. **Calculate Quantity**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](7/11.png)
+    ![xP&A Sales Planning](7/11.png)
 
     - The measure **Quantity** has not reacted at all on your changes. You can take this step once you are done with your planning of **Gross Revenue** and **Sales Deduction**.
     - Click on the button **Calculate Quantity**.
@@ -480,7 +480,7 @@ In the next steps the Sales Planning stories of this content package are introdu
 
 9. **Publish** your version Regional Budget (L2)
 
-    <!-- border; size:540px -->![xP&A Sales Planning](7/12.png)
+    ![xP&A Sales Planning](7/12.png)
 
     - You adjusted the amount of **Gross Revenue** and **Sales Deduction** and the **Investment Rate %** and **Quantity** units followed suit.
     - Now it is time to publish your new planned data as version Regional Budget (L2) for Germany.
@@ -496,14 +496,14 @@ In this next section, you will be planning the sales demand for year 2024 based 
 
 1. Open **Sales Demand Planning** (`SAP_SD_SalesDemandPlanning`) from the Sales Planning Overview Page
 
-    <!-- border; size:540px -->![xP&A Sales Planning](8/1.png)
+    ![xP&A Sales Planning](8/1.png)
 
     - Go to the **Sales Planning Overview Page** (`SAP_SD_SalesPlanning_Overview`).
     - Click on **Sales Demand Planning** in the Plan section in order to land on the **Sales Demand Planning** (`SAP_SD_SalesDemandPlanning`) application.
 
 2. Understand the application
 
-    <!-- border; size:540px -->![xP&A Sales Planning](8/2.png)
+    ![xP&A Sales Planning](8/2.png)
 
     - The application consists of four sections.
     - In the middle at the top, you can read the instructions to understand the workflow of this application.
@@ -513,7 +513,7 @@ In this next section, you will be planning the sales demand for year 2024 based 
 
 3. **Plan** the Sales Demand by filtering your data
 
-    <!-- border; size:540px -->![xP&A Sales Planning](8/3.png)
+    ![xP&A Sales Planning](8/3.png)
 
     - You want to plan the demand for the **year 2024** and the German organization with **Company Code 1010**.
     - Filter your year and company code with the input controls on the left accordingly.
@@ -521,11 +521,11 @@ In this next section, you will be planning the sales demand for year 2024 based 
 
 4. Adjust **Table Settings**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](8/4.png)
+    ![xP&A Sales Planning](8/4.png)
 
     - Click on **Table Settings**.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](8/5.png)
+    ![xP&A Sales Planning](8/5.png)
 
     - Select **Quantity** as option in the radio button group.
     - Click on **OK**.
@@ -533,7 +533,7 @@ In this next section, you will be planning the sales demand for year 2024 based 
 
 5. Plan **Quantity**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](8/6.png)
+    ![xP&A Sales Planning](8/6.png)
 
     - In your planning table drill down one product level under **Total Bikes**.
     - You can now adjust the baseline quantity of each product line, but you cannot change the incremental quantity directly.
@@ -548,11 +548,11 @@ In this next section, you will be planning the sales demand for year 2024 based 
     - Decrease the value to **4000**, which is roughly -3% as you expect a decrease.
     - Notice the changes happening to the numeric point indicator at the top and in the table highlighted yellow, once you press enter.
 
-         <!-- border; size:540px -->![xP&A Sales Planning](8/7.png)
+         ![xP&A Sales Planning](8/7.png)
 
 6. **Update Figures**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](8/8.png)
+    ![xP&A Sales Planning](8/8.png)
 
     - Once you are done with your sales demand plan, you want to update all depending figures by pressing the button **Update Figures**.
     - By this action you delete existing baseline quantities and cost of goods sold for the **Plan** version. Then it recalculates them based on the ratio between amount and price on revenue GL Account and by multiplying quantities by the respective costs of goods sold rates respectively. As a subsequent step this refreshes the calculations of all existing activities to ensure return of investment and required metrics are up to date.
@@ -560,7 +560,7 @@ In this next section, you will be planning the sales demand for year 2024 based 
 
 7. **Publish** your version Plan
 
-    <!-- border; size:540px -->![xP&A Sales Planning](8/9.png)
+    ![xP&A Sales Planning](8/9.png)
 
     - You planned the **Quantity** for the products **Cruise** and **Exercise** and recalculated the depending measures.
     - Now it is time to publish your new planned data as version **Plan**.
@@ -576,14 +576,14 @@ Now you are ready to perform the tasks of a sales activity manager.  You will cr
 
 1. Open **Sales Activity Planning** (`SAP_SD_SalesActivityPlanning`) from the Sales Planning Overview Page
 
-    <!-- border; size:540px -->![xP&A Sales Planning](9/1.png)
+    ![xP&A Sales Planning](9/1.png)
 
     - Go to the **Sales Planning Overview Page** (`SAP_SD_SalesPlanning_Overview`).
     - Click on **Sales Activity Planning** in the Plan section in order to land on the **Sales Activity Planning** (`SAP_SD_SalesActivityPlanning`) application.
 
 2. Understand the application
 
-    <!-- border; size:540px -->![xP&A Sales Planning](9/2.png)
+    ![xP&A Sales Planning](9/2.png)
 
     - The application consists of four sections.
     - In the middle at the top, you can read the instructions to understand the workflow of this application.
@@ -600,7 +600,7 @@ Now you are ready to perform the tasks of a sales activity manager.  You will cr
 
 3. **Manage** your activities by filtering your data
 
-    <!-- border; size:540px -->![xP&A Sales Planning](9/3.png)
+    ![xP&A Sales Planning](9/3.png)
 
     - You want to manage your activities for the **year 2024** and the German organization with **Company Code 1010**.
     - Filter your year and company code with the input controls on the left accordingly.
@@ -610,11 +610,11 @@ Now you are ready to perform the tasks of a sales activity manager.  You will cr
 
     You are creating a **Sales Activity** for large cycles, specifically cruise bikes, for the Western Europe customers for the second half of the year 2024. You are willing to spend a lump sum of USD 800000 and expect an uplift of 20% in return.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](9/4.png)
+    ![xP&A Sales Planning](9/4.png)
 
     - Click on the button **Activity Actions** and select **Create Activity** in the drop down menu.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](9/5.png)
+    ![xP&A Sales Planning](9/5.png)
 
     - Fill in the popup with the following data:
 
@@ -637,34 +637,34 @@ Now you are ready to perform the tasks of a sales activity manager.  You will cr
 
     - Click on **Save**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](9/6.png)
+    ![xP&A Sales Planning](9/6.png)
 
     - Notice the added activity in the table highlighted in yellow.
 
 5. Approve a **Sales Activity**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](9/7.png)
+    ![xP&A Sales Planning](9/7.png)
 
     - Select the **Sales Activity DE1** in your table.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](9/8.png)
+    ![xP&A Sales Planning](9/8.png)
 
     - Click on the button **Activity Actions** and select **Edit Activity**.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](9/9.png)
+    ![xP&A Sales Planning](9/9.png)
 
     - A popup for the selected **Sales Activity** opens.
     - Click on the **Status** dropdown menu and select **Approved**
     - Remove the comment "Waiting for customer confirmation"
     - Click on the **Save** button.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](9/10.png)
+    ![xP&A Sales Planning](9/10.png)
 
     - Notice the changed activity in the table highlighted in yellow.
 
 6. **Publish** your version Plan
 
-    <!-- border; size:540px -->![xP&A Sales Planning](9/11.png)
+    ![xP&A Sales Planning](9/11.png)
 
     - You created a new **Sales Activity** and approved another one.
     - Now it is time to publish your new activities.
@@ -680,39 +680,39 @@ The **Sales Budget Analysis Report** (`SAP_SD_SalesBudgetAnalysis`) provides an 
 
 1. Open **Sales Budget Analysis Report** (`SAP_SD_SalesBudgetAnalysis`) from the Sales Planning Overview Page
 
-    <!-- border; size:540px -->![xP&A Sales Planning](10/1.png)
+    ![xP&A Sales Planning](10/1.png)
 
     - Go to the **Sales Planning Overview Page** (`SAP_SD_SalesPlanning_Overview`).
     - Click on **Sales Budget Analysis** in the Report section in order to land on the **Sales Budget Analysis Report** (`SAP_SD_SalesBudgetAnalysis`) application.
 
 2. Understand the application
 
-    <!-- border; size:540px -->![xP&A Sales Planning](10/2.png)
+    ![xP&A Sales Planning](10/2.png)
 
     - The application consists of three sections.
     - On the left-hand side of the page, you can find the filter panel, that allows you to select the desired combination of Date, Company Code, Customer, Product and two reference versions that will be reflected on the charts.
     - In the top section, you can find charts that show Revenue, Spend and Quantity for the different versions for the selected time frame.
     - In the lower section, you can switch views from your **Revenue Performance Overview** to **Trade Budget Performance Overview** or **Quantity Performance Overview**.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](10/3.png)
+    ![xP&A Sales Planning](10/3.png)
 
     - Click on the button **Change View** on the right side and confirm your selection by pressing **OK** in the dialog to switch views.
 
 3. **Revenue Performance Overview**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](10/6.png)
+    ![xP&A Sales Planning](10/6.png)
 
     - In the **Revenue Performance Overview** you can see **Revenue Over Time**, **Customer Regional Breakdown** and **Sales Organization Breakdown** for the selected reference versions for revenue.
 
 4. **Trade Budget Performance Overview**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](10/4.png)
+    ![xP&A Sales Planning](10/4.png)
 
     - In the **Trade Budget Performance Overview** you can see the **Trade Budget Over Time**, **Customer Regional Breakdown** and **Sales Organization Breakdown** for the selected reference versions for spend.
 
 5. **Quantity Performance Overview**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](10/5.png)
+    ![xP&A Sales Planning](10/5.png)
 
     - In the **Quantity Performance Overview** you can see the **Quantity Over Time**, **Customer Regional Breakdown** and **Sales Organization Breakdown** for the selected reference versions for revenue.
 
@@ -724,14 +724,14 @@ The **Sales Activity Analysis** (`SAP_SD_SalesActivityAnalysis`) application pro
 
 1. Open ***Sales Activity Analysis** (`SAP_SD_SalesActivityAnalysis`) application from the Sales Planning Overview Page
 
-    <!-- border; size:540px -->![xP&A Sales Planning](11/1.png)
+    ![xP&A Sales Planning](11/1.png)
 
     - Go to the **Sales Planning Overview Page** (`SAP_SD_SalesPlanning_Overview`).
     - Click on **Sales Activity Analysis** in the Report section in order to land on the **Sales Activity Analysis** (`SAP_SD_SalesActivityAnalysis`) application.
 
 2. Understand the application
 
-    <!-- border; size:540px -->![xP&A Sales Planning](11/2.png)
+    ![xP&A Sales Planning](11/2.png)
 
     - The application consists of three sections.
     - On the top left side of the page, you can find an instruction plus details about the current filters applied.
@@ -742,40 +742,40 @@ The **Sales Activity Analysis** (`SAP_SD_SalesActivityAnalysis`) application pro
 
     - Imagine you are a **German** Sales Activity Planner and want to filter on all **planned** activities with **Tactic Price**.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](11/3.png)
+    ![xP&A Sales Planning](11/3.png)
 
     - Hover to the top of you screen to let the shell bar show up.
     - Select the button **Filter Panel**.
     - Click on the filter for **Sales Activity**, which is applied per default.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](11/4.png)
+    ![xP&A Sales Planning](11/4.png)
 
     - Uncheck the filter on **All** activities.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](11/5.png)
+    ![xP&A Sales Planning](11/5.png)
 
     - Search for `DE` in the search bar of the filter.
     - Check **All Results**.
     - **Apply Selections** to confirm your filter configuration.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](11/6.png)
+    ![xP&A Sales Planning](11/6.png)
 
     - Click on **Add new filter**.
     - Navigate to **Dimensions** -> **Sales Activity** -> **Status (Sales Planning)**
 
-    <!-- border; size:540px -->![xP&A Sales Planning](11/7.png)
+    ![xP&A Sales Planning](11/7.png)
 
     - Select the member `01_PLANNED` in the dialog.
     - Click on **OK**.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](11/8.png)
+    ![xP&A Sales Planning](11/8.png)
 
     - Click on **Add new filter** again.
     - Navigate to **Dimensions** -> **Tactic**
     - Select the member `Price` in the dialog.
     - Click on **OK**.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](11/9.png)
+    ![xP&A Sales Planning](11/9.png)
 
     - Notice the changes in the description section in the top left, the changed charts on the top right and the changed **Sales Activity Details**. The report now shows **planned** activities for **Germany** with the **Tactic Price**.
 
@@ -787,14 +787,14 @@ The **Sales Activity Return on Investment Report** (`SAP_SD_SalesActivityROI`) a
 
 1. Open **Sales Activity Return on Investment Report** (`SAP_SD_SalesActivityROI`) from the Sales Planning Overview Page
 
-    <!-- border; size:540px -->![xP&A Sales Planning](12/1.png)
+    ![xP&A Sales Planning](12/1.png)
 
     - Go to the **Sales Planning Overview Page** (`SAP_SD_SalesPlanning_Overview`).
     - Click on **Sales Activity ROI Report** in the Report section in order to land on the **Sales Activity Return on Investment Report** (`SAP_SD_SalesActivityROI`) application.
 
 2. Understand the application
 
-    <!-- border; size:540px -->![xP&A Sales Planning](12/2.png)
+    ![xP&A Sales Planning](12/2.png)
 
     - The application consists of three sections.
     - On the left side of the page, you can find the filter section to filter on Date, Company Code, Customer, Product, Distribution Channel and Plant.
@@ -814,35 +814,35 @@ The **Sales Performance Analysis** (`SAP_SD_SalesPerformanceAnalysis`) applicati
 
 1. Open **Sales Performance Analysis** (`SAP_SD_SalesPerformanceAnalysis`) application from the Sales Planning Overview Page
 
-    <!-- border; size:540px -->![xP&A Sales Planning](13/1.png)
+    ![xP&A Sales Planning](13/1.png)
 
     - Go to the **Sales Planning Overview Page** (`SAP_SD_SalesPlanning_Overview`).
     - Click on **Sales Performance Analysis** in the Report section in order to land on the **Sales Performance Analysis** (`SAP_SD_SalesPerformanceAnalysis`) application.
 
 2. Understand the application
 
-    <!-- border; size:540px -->![xP&A Sales Planning](13/2.png)
+    ![xP&A Sales Planning](13/2.png)
 
     - The application consists of three sections.
     - On the left side of the page, you can find the filter section to filter on Date, Company Code, Customer, Product, Distribution Channel, Plant and Currency.
     - At the top, you can find charts that show Gross Revenue, Spend and Gross Margin for the versions Actual, Plan and Budget.
     - In the lower section, you can find the **Detailed Analysis Breakdown**. It shows charts for the Gross Revenue by Customer for the different versions, Plan Gross Revenue by Product over the Time and Plan Gross Revenue by Product.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](13/3.png)
+    ![xP&A Sales Planning](13/3.png)
 
     - You can change the measure for the **Detailed Analysis Breakdown** by clicking on the dropdown menu mentioning **Gross Revenue** above the **Detailed Analysis Breakdown**. You can choose between **Gross Revenue**, **Sales Deductions** and **Gross Margin**.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](13/4.png)
+    ![xP&A Sales Planning](13/4.png)
 
     - You can change the version for the **Detailed Analysis Breakdown** by clicking on the dropdown menu mentioning **Plan** above the **Detailed Analysis Breakdown**. You can choose between **Actual**, **Budget** and **Plan**.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](13/5.png)
+    ![xP&A Sales Planning](13/5.png)
 
     - You can also switch from the **Detailed Analysis Breakdown** with charts to a tabular view.
     - Click on **Tabular View**.
     - You can switch back by clicking on **Graphical View**.
 
-    <!-- border; size:540px -->![xP&A Sales Planning](13/6.png)
+    ![xP&A Sales Planning](13/6.png)
 
     - The tabular view shows you **Amount** per **Customer** and **GL Account** for the versions **Actual**, **Budget** and **Plan**. Additionally, the table provides you with color-coded variances for **Plan vs Actual**, **Plan vs Budget** and **Actual vs Budget**.
 

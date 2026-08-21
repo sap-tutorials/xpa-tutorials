@@ -47,11 +47,11 @@ In the first step, it is necessary to add a new member to the `SAP_HR_COSTTYPE` 
 
 2. Search for the `SAP__HR_BPL_IM_WORKFORCE` data model and open it.
 
-    <!-- border; size:540px -->![Data_Model](data-model.png)
+    ![Data_Model](data-model.png)
 
 3. Open the dimension `SAP_HR_COSTTYPE`.
 
-    <!-- border; size:540px -->![Select_Cost_Type_Dim](select-costtype-dim.png)
+    ![Select_Cost_Type_Dim](select-costtype-dim.png)
 
 4. Add a new member with the respective attributes to the cost type dimension.
 
@@ -70,7 +70,7 @@ In the first step, it is necessary to add a new member to the `SAP_HR_COSTTYPE` 
     |  `GL_Account`       |                                 | Optional field. Shows to which GL account member the cost type will translate in a cross model copy scenario.
     |  `Row_Source`       | `SAC`                           | Optional field. Shows, whether this cost type comes from SuccessFactors or whether it was manually added in SAP Analytics Cloud.
 
-    <!-- border; size:540px -->![Add_New_Member](add-new-member.png)
+    ![Add_New_Member](add-new-member.png)
 
 4. Save your changes.
 
@@ -83,15 +83,15 @@ In this example, you will create a new calculated measure called `CM_TrainingCos
 
 1. Navigate to the **Calculation Management** menu by switching the **Workspace** on the top left corner via the drop down menu.
 
-    <!-- border; size:540px -->![Calculation_Management](calculation-management.png)
+    ![Calculation_Management](calculation-management.png)
 
 2. Click on the **plus** UI element in order to add a new calculated measure
 
 3. Provide the formula for the new calculated measure. In this example, you may use the following formula in order to restrict the `Rate_Absolute` measure to the `TRAINING_COSTS` cost type:
 
-    ```
-    RESTRICT ([Rate_Absolute], [d/SAP_HR_COSTTYPE] = "TRAINING_COSTS" )
-    ```
+   ```
+   RESTRICT ([Rate_Absolute], [d/SAP_HR_COSTTYPE] = "TRAINING_COSTS" )
+   ```
 
 4. Provide a valid name for your calculated measure. In this example, you want to call it `CM_TrainingCosts`.
 
@@ -103,7 +103,7 @@ In this example, you will create a new calculated measure called `CM_TrainingCos
 
 8. Save your changes.
 
-<!-- border; size:540px -->![Calculated_Measure](calculated-measure.png)
+![Calculated_Measure](calculated-measure.png)
 
 >IMPORTANT:
 >
@@ -116,22 +116,22 @@ In the next step, the Central Assumptions (`SAP_HR_BPL_IM_WFP_CENTRAL_ASSUMPTION
 
 1. Navigate through the file explorer and open the planning application `SAP__HR_BPL_IM_WFP_CENTRAL_ASSUMPTIONS` in **edit mode**.
 
-    <!-- border; size:540px -->![Data_Action_Menu](central-assumption-app.png)
+    ![Data_Action_Menu](central-assumption-app.png)
 
 2. Open the script object `configureTablesDynamic` while in **edit mode** of the application.
 
-    <!-- border; size:540px -->![Script](script-config-tables.png)
+    ![Script](script-config-tables.png)
 
 3. Search for the line with the comment **//Set Filters for Internal Mode**. Add your new calculated measure to the predefined array by complementing it with the keyword `CM_TrainingCosts` as shown in the following screenshot.
 
-    <!-- border; size:540px -->![Script](modify-config-table.png)
+    ![Script](modify-config-table.png)
 
-    ```
-    switch (inputMode) {
-    	case "Internal":
-    		//Set Filters for Internal Mode
-    		centralAssumptionsDataSource.setDimensionFilter(Alias.MeasureDimension,["CM_TravelCosts","CM_SocialInsurance","CM_RetirementFund","CM_Pension","CM_MidpointSalary","CM_LifeInsurance","CM_ITCosts","CM_HealthInsurance_Rate","CM_CarCosts","CM_Bonus","CM_Comission_Rate","CM_MeritIncrease_Rate","CM_TrainingCosts"]);
-    ```
+   ```
+   switch (inputMode) {
+   	case "Internal":
+   		//Set Filters for Internal Mode
+   		centralAssumptionsDataSource.setDimensionFilter(Alias.MeasureDimension,["CM_TravelCosts","CM_SocialInsurance","CM_RetirementFund","CM_Pension","CM_MidpointSalary","CM_LifeInsurance","CM_ITCosts","CM_HealthInsurance_Rate","CM_CarCosts","CM_Bonus","CM_Comission_Rate","CM_MeritIncrease_Rate","CM_TrainingCosts"]);
+   ```
 
 4. Save your planning application.
 
@@ -142,7 +142,7 @@ By doing this, you will ensure that whenever a cost calculation takes place, cos
 
 1. In the SAP Analytics Cloud menu, navigate to the **Data Actions** folder inside the `SAP_HR_OWFP_Operational_Workforce_Planning` content folder.
 
-    <!-- border; size:540px -->![SAC_Menu](data-action-section.png)
+    ![SAC_Menu](data-action-section.png)
 
 2. Open the `SAP__HR_BPL_IM_CALCULATE_COSTS` Data Action.
 
@@ -158,7 +158,7 @@ By doing this, you will ensure that whenever a cost calculation takes place, cos
     - Change the naming in the commented header line from `CAR COSTS` to `TRAINING COSTS`
     - Change the **RESULTLOOKUP** and **DATA** member for the dimension `SAP_HR_COSTTYPE` from `CAR_COSTS` to `TRAINING_COSTS`
 
-    <!-- border; size:540px -->![Data_Action](calculate-costs-data-action.png)
+    ![Data_Action](calculate-costs-data-action.png)
 
     >GENERAL INFORMATION:
     >
@@ -178,9 +178,9 @@ By doing this, you will ensure that whenever a cost calculation takes place, cos
 
     - Use any fitting code block as template, copy and paste it, adjust the header comment above the code block and change the cost type in the **RESULTLOOKUP** and **DATA** statement to the new cost type.
 
-    <!-- border; size:540px -->![Data_Action](calculate-costs-data-action-2.png)
+    ![Data_Action](calculate-costs-data-action-2.png)
 
-    <!-- border; size:540px -->![Data_Action](calculate-costs-data-action-2-1.png)
+    ![Data_Action](calculate-costs-data-action-2-1.png)
 
 9. Save your changes.
 
@@ -194,7 +194,7 @@ By doing this, you will ensure that whenever a cost calculation takes place, cos
 
     - Use any fitting code block as template, copy and paste it, adjust the header comment above the code block and change the cost type in the **RESULTLOOKUP** and **DATA** statement to the new cost type.
 
-    <!-- border; size:540px -->![Data_Action](calculate-costs-data-action-3.png)
+    ![Data_Action](calculate-costs-data-action-3.png)
 
 12. Save your changes.
 
@@ -208,9 +208,9 @@ By doing this, you will ensure that whenever a cost calculation takes place, cos
 
     - Use any fitting code block as template, copy and paste it, adjust the header comment above the code block and change the cost type in the **RESULTLOOKUP** and **DATA** statement to the new cost type.
 
-    <!-- border; size:540px -->![Data_Action](calculate-costs-data-action-4.png)
+    ![Data_Action](calculate-costs-data-action-4.png)
 
-    <!-- border; size:540px -->![Data_Action](calculate-costs-data-action-4-1.png)
+    ![Data_Action](calculate-costs-data-action-4-1.png)
 
 15. Save your changes. 
 

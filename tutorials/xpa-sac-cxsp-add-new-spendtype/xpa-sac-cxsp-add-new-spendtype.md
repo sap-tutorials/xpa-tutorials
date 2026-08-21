@@ -36,15 +36,15 @@ In the first step, it is necessary to add a new member to the `SpendType` dimens
 
 1. In the SAP Analytics Cloud Menu, navigate to the **Files** section, search for `SAP_SD_IM_SalesPlanning` and click on it.
 
-    <!-- border; size:540px -->![model](search-model.png)
+    ![model](search-model.png)
 
 2. Open the `SpendType` dimension.
 
-    <!-- border; size:540px -->![model](spendType-dimension.png)
+    ![model](spendType-dimension.png)
 
 3. Add a new member to the `SpendType` dimension. The spend type is meant for long-term regular customers.
 
-    <!-- border; size:540px -->![model](new-spendType.png)
+    ![model](new-spendType.png)
 
     - Use `SPEND_06` as your `Member ID`
     - Use `Premium` as your `Description`.
@@ -58,27 +58,27 @@ In the next step the **Sales Planning Admin Page** (`SAP_SD_SalesPlanning_AdminP
 
 1. In the SAP Analytics Cloud Menu, navigate to the **Files** section, search for `SAP_SD_SalesPlanning_AdminPage` and select **Open in Story Edit Mode**.
 
-    <!-- border; size:540px -->![canvas_story](open-story.png)
+    ![canvas_story](open-story.png)
 
 2. Select the **Mapping** page of the story. Right click on the **Spend Type** input control or select the button **More Actions**. Click on **Edit Filter...**.
 
-    <!-- border; size:540px -->![canvas_story](edit-input-control.png)
+    ![canvas_story](edit-input-control.png)
 
 3. Click on **Settings**. In the members display settings, and select **All Members** in the **Available Members** drop down. Then select your newly added Spend Type `Premium`. Click on **OK**.
 
-    <!-- border; size:540px -->![canvas_story](add-premium.png)
+    ![canvas_story](add-premium.png)
 
 4. **Save** your change and go to **View** mode.
 
-    <!-- border; size:540px -->![canvas_story](switch-view-mode.png)
+    ![canvas_story](switch-view-mode.png)
 
 5. Select the **Mapping** page of the story. Right-click on the column `SpendType` in the **Mapping Table**. Select the **Show/Hide** option and select **Unbooked**.
 
-    <!-- border; size:540px -->![canvas_story](unbooked.png)
+    ![canvas_story](unbooked.png)
 
 6. The new `SpendType` `Premium` is now visible in the table. Perform a manual input on the desired combination of `SpendType`, `Tactic` and `GL Account` to create a valid driver combination to be used for the sales activity planning.
 
-    <!-- border; size:540px -->![canvas_story](driver.png)
+    ![canvas_story](driver.png)
 
     For instance, enter `1` for the following combination:
 
@@ -90,11 +90,11 @@ In the next step the **Sales Planning Admin Page** (`SAP_SD_SalesPlanning_AdminP
 
 7. Click on **Confirm** to publish your change.
 
-    <!-- border; size:540px -->![canvas_story](confirm.png)
+    ![canvas_story](confirm.png)
 
 8. Confirm your intention by pressing **Yes**.
 
-    <!-- border; size:540px -->![canvas_story](yes.png)
+    ![canvas_story](yes.png)
 
 ### Understand Spend Type in Data Action
 
@@ -104,11 +104,11 @@ Now, you are going to learn the different ways how your `SpendType` is treated i
 
 2. Search for the affected data action `SAP_SD_IM_SalesPlanning_ActualActivityP&LCalculation` and open it.
 
-    <!-- border; size:540px -->![canvas_story](search-data-action.png)
+    ![canvas_story](search-data-action.png)
 
 3. Click on step `Calculate Incremental Spend - Rate`.
 
-    <!-- border; size:540px -->![canvas_story](data-action-step.png)
+    ![canvas_story](data-action-step.png)
 
     The following table explains roughly what the data action step is about.
 
@@ -128,7 +128,7 @@ Now, you are going to learn the different ways how your `SpendType` is treated i
 
     The first 23 lines are the same in each step. The data action steps differ in the last part. They distinguish between the `Base_Account/Measure (Sales Planning)` of the `SpendType`. The `SpendType` has currently three different base accounts:
 
-    <!-- border; size:540px -->![canvas_story](spendType-baseAccount.png)
+    ![canvas_story](spendType-baseAccount.png)
 
     - `SPEND_PERCENTAGE`
     - `AMOUNT`
@@ -144,7 +144,7 @@ You need to incorporate the option to select your new `SpendType Premium` whenev
 
 2. Search for `SAP_SD_SalesActivityPlanning`, click on **More actions** and select **Open in Story Edit Mode**.
 
-    <!-- border; size:540px -->![model](search-application.png)
+    ![model](search-application.png)
 
 3. Adjust the master data.
 
@@ -157,13 +157,13 @@ You need to incorporate the option to select your new `SpendType Premium` whenev
 
             dimension_SpendType[6]=temp_SpendType[6];
 
-    <!-- border; size:540px -->![model](master-data.png)
+    ![model](master-data.png)
 
 4. Adjust the logic how the values of the rates are stored when you create a new activity.
 
     When you save an activity the rate value is treated in two ways. It is either converted into a percentage value by dividing the entered value by one hundred or it is stored as it is. As a digression please have a look at the screenshot below. It shows the dialog for creating and editing an activity. Once you are done, you will be able to select `Premium` as `SpendType` in this dialog as well. You can see the referred value.
 
-    <!-- border; size:540px -->![model](activity-value.png)
+    ![model](activity-value.png)
 
     As of now the value for `SpendType Premium` is not saved to the data model. You need to do the following change to make it happen.
 
@@ -173,7 +173,7 @@ You need to incorporate the option to select your new `SpendType Premium` whenev
 
             case "SPEND_06": // Premium [Price]
 
-    <!-- border; size:540px -->![model](rate-value.png)
+    ![model](rate-value.png)
 
 5. Adjust the logic how the values of the rates are stored when you edit an existing activity.
 
@@ -185,7 +185,7 @@ You need to incorporate the option to select your new `SpendType Premium` whenev
 
             case "SPEND_06": // Premium [Price]
 
-    <!-- border; size:540px -->![model](edit-rate-value.png)
+    ![model](edit-rate-value.png)
 
 6. **Save** your changes.
 

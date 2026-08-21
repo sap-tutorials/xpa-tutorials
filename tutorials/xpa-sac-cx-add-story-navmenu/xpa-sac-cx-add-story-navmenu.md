@@ -40,7 +40,7 @@ In order to add a new story to the navigation menu, you must first retrieve the 
 2. Retrieve the technical story ID.
     - Check the hyperlink. The highlighted part represents the technical story ID. Please note that your story ID might differ.
     
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/1.png)
+    ![xp&A Commercial Planning](1/1.png)
     
     - In this case, the new story has the ID `A99AE05507BABDEB716E3C299797B03`. 
     - Save the ID somewhere as you will need it later.
@@ -52,7 +52,7 @@ Now that you have retrieved the story ID of the story by which you want to exten
 
     - The composite for the navigation menu is located inside the **Commercial Planning** folder structure and is called **Composite for Commercial Planning Navigation Menu** (`SAP_CX_XPA_NavMenu`).
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/2.png)
+    ![xp&A Commercial Planning](1/2.png)
 
     >INFORMATION:
     >
@@ -67,13 +67,13 @@ Now that you have retrieved the story ID of the story by which you want to exten
     - In order to create a new item in the menu, open the **Left Side Panel**, go to the **Outline** section, select one of the panels under the `pnl_mainNav_items` container (starting with `pnl_mainNav_mnu_itm_xxx`) and duplicate it. 
     - In this example, we will simply use the `pnl_mainNav_itm_GlobalSalesBudget` container as a baseline for the new menu item. You can chose any other panel as well since the structure across all of those buttons is identical.
     
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/3.png)
+    ![xp&A Commercial Planning](1/3.png)
 
 3. Rename the new elements
 
     - You can now see the new elements in the **Outline** section in the **Left Side Panel**. 
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/4.png)
+    ![xp&A Commercial Planning](1/4.png)
 
     - After duplicating existing elements, the new elements are provided with a generic name. 
     - Adjust the names of the panel and the text field according to the naming convention.
@@ -84,13 +84,13 @@ Now that you have retrieved the story ID of the story by which you want to exten
 
     - In this demonstration, we will rename the panel `Panel_1` to `pnl_mainNav_itm_TestStory` and the text field from `Text_1` to `txt_mainNav_itm_TestStory`.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/5.png)
+    ![xp&A Commercial Planning](1/5.png)
 
 4. Adjust the display name of the new menu item.
 
     - Double click on the text widget on the canvas and adjust the text which should be displayed in runtime. 
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/51.png)
+    ![xp&A Commercial Planning](1/51.png)
 
 
 5. Rearrange the new elements by changing the positioning
@@ -98,7 +98,7 @@ Now that you have retrieved the story ID of the story by which you want to exten
     - If required, you can now rearrange the positioning of the new elements in the menu.
     - Please note that all panels inside the `pnl_mainNav_items` container have a fixed positioning. If you want to move the new elements to the top, you will consequently have to change the positioning of the following panels as well in order to avoid overlapping.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/6.png)
+    ![xp&A Commercial Planning](1/6.png)
 
 5. Open the `initializeNavMenu` script of the composite.
 
@@ -106,7 +106,7 @@ Now that you have retrieved the story ID of the story by which you want to exten
     - Go to **Outline**
     - Open the `initializeNavMenu` script of the composite.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/7.png)
+    ![xp&A Commercial Planning](1/7.png)
 
 6. Extend the `cfg_storyIds_pageIndex` dictionary.
 
@@ -116,7 +116,7 @@ Now that you have retrieved the story ID of the story by which you want to exten
     - For the so called `value`, provide the story ID of your new story as string that you retrieved in **Step 1** of this tutorial. In this case, the ID is `A99AE05507BABDEB716E3C299797B03`. 
     - Your result should look like this now:
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/8.png)
+    ![xp&A Commercial Planning](1/8.png)
 
 7. Add a new line of code to apply the correct CSS class to the duplicated text object.
 
@@ -124,7 +124,7 @@ Now that you have retrieved the story ID of the story by which you want to exten
     - Add a new line of code here. Enter the name of the text element you have defined in sub-step 3 and append `.setCssClass(itemsTextsCssClass);` to it.
     - The result should look like this, with the new line visible in line 58: 
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/9.png)
+    ![xp&A Commercial Planning](1/9.png)
 
 8. Add a new line of code to apply the correct CSS class to the duplicated panel object.
 
@@ -132,14 +132,14 @@ Now that you have retrieved the story ID of the story by which you want to exten
     - Add a new line of code here. Enter the name of the panel object you have defined in sub-step 3 and append `.setCssClass(itemsPanelsCssClass);` to it.
     - The result should look like this, with the new line visible in line 78: 
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/10.png)
+    ![xp&A Commercial Planning](1/10.png)
 
 9. Extend the switch function at the end of the script.
 
     - Scroll to the last part of the script where you will find a switch function containing many cases. 
     - Extend the switch function by an additional case as shown in the following screenshot:
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/11.png)
+    ![xp&A Commercial Planning](1/11.png)
 
 10. Update the `onClick` event script of the duplicated text element.
 
@@ -148,7 +148,7 @@ Now that you have retrieved the story ID of the story by which you want to exten
     - Open the `onClick` event script.
     - Edit the code by changing the highlighted part to the key name you provided in sub-step 6.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/12.png)
+    ![xp&A Commercial Planning](1/12.png)
 
 11. Save your changes.
 

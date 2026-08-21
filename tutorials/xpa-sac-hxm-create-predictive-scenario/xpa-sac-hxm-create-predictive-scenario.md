@@ -53,19 +53,19 @@ In the first step, it is necessary to create a new **Predictive Scenario**.
 
 1. In the SAP Analytics Cloud menu, navigate to the **Predictive Scenario** section.
 
-    <!-- border; size:120px -->![Predictive_Scenario](predictive-scenario-menu.png)
+    ![Predictive_Scenario](predictive-scenario-menu.png)
 
 
 2. Select the **Time Series Forecast** predictive model.
 
-    <!-- border; size:400px -->![Predictive_Scenario](predictive-model.png)
+    ![Predictive_Scenario](predictive-model.png)
 
 
 3. Store your **Predictive Scenario** in the folder where your content package is located or any other location of your choice.
 
     According to the naming convention, you can call your scenario `SAP__HR_BPL_IM_PredictiveScenario` for instance.
 
-    <!-- border; size:400px -->![Predictive_Scenario](store-predictive-scenario.png)
+    ![Predictive_Scenario](store-predictive-scenario.png)
 
 
 ### Set Up Predictive Scenario
@@ -77,7 +77,7 @@ Now that the Predictive Scenario object has been created, you need to set it up 
 
     In order to do so please enter the term `PL1` into the description window and select the `SAP__HR_BPL_IM_WORKFORCE` data model as your time series data source.
 
-    <!-- border; size:300px -->![Predictive_Scenario](setup-ps.png)
+    ![Predictive_Scenario](setup-ps.png)
 
     After specifying your time series data source, the menu on the right hand side expands.
 
@@ -100,11 +100,11 @@ Now that the Predictive Scenario object has been created, you need to set it up 
     |  `Convert negative values to zero`       | `True`                       
     |  `Influencers`                           | `None`                     
 
-    <!-- border; size:250px -->![Predictive_Scenario](settings-ps.png)
+    ![Predictive_Scenario](settings-ps.png)
 
 3. Save your Predictive Scenario.
 
-    <!-- border; size:300px -->![Predictive_Scenario](save-ps.png)
+    ![Predictive_Scenario](save-ps.png)
 
     Your predictive model for the Plan Level **PL1** has now been created.
 
@@ -116,21 +116,21 @@ Now that the Predictive Scenario object has been created, you need to set it up 
 
     - Click on the **three dots** and duplicate your predictive model
 
-    <!-- border; size:540px -->![Predictive_Scenario](duplicate-pm.png)
+    ![Predictive_Scenario](duplicate-pm.png)
 
 5. Select the duplicated model in the menu at the bottom of the page and rename the description of the predictive model from `Based on Predictive Model 1` to `PL2`
 
-    <!-- border; size:300px -->![Predictive_Scenario](description-pm.png)
+    ![Predictive_Scenario](description-pm.png)
 
 6. Adjust the configuration of this predictive model according to the definition of Plan Level **PL2**.
 
     - Change the entities to `Company Code`, `Business Unit` and `Location` only as Plan Level **PL2** represents a  `Company Code`, `Business Unit` (and `Location` in case of external workers) point of view.
 
-    <!-- border; size:250px -->![Predictive_Scenario](settings-pm2.png)
+    ![Predictive_Scenario](settings-pm2.png)
 
 7. Save your Predictive Scenario.
 
-    <!-- border; size:300px -->![Predictive_Scenario](save-ps.png)
+    ![Predictive_Scenario](save-ps.png)
 
     Your predictive model for the Plan Level **PL2** has now been created.
 
@@ -148,7 +148,7 @@ Now that the Predictive Scenario object has been created, you need to set it up 
 
 11. Save your Predictive Scenario.
 
-    <!-- border; size:300px -->![Predictive_Scenario](save-ps.png)
+    ![Predictive_Scenario](save-ps.png)
 
     Your predictive model for the Plan Level **PL3** has now been created.
 
@@ -166,7 +166,7 @@ Now that the Predictive Scenario object has been created, you need to set it up 
 
 15. Save your Predictive Scenario.
 
-    <!-- border; size:300px -->![Predictive_Scenario](save-ps.png)
+    ![Predictive_Scenario](save-ps.png)
 
     Your predictive model for the Plan Level **PL5** has now been created.
 
@@ -182,13 +182,13 @@ Now that the Predictive Scenario and the different predictive models have been c
 
 1. In the SAP Analytics Cloud Menu, navigate to the **Multi Actions** section.
 
-    <!-- border; size:120px -->![Multi_Actions](multi-actions-section.png)
+    ![Multi_Actions](multi-actions-section.png)
 
 2. Search for the Multi Action `SAP__HR_BPL_IM_WFP_SmartPredict_PL1` and open it.
 
 3. In the next step, add a new Predictive Scenario to the Multi Action by clicking on the binocular icon on the top lane.
 
-    <!-- border; size:300px -->![Multi_Actions](add-ma.png)
+    ![Multi_Actions](add-ma.png)
 
     The new step will be added at the very bottom of the Multi Action chain.
 
@@ -204,11 +204,11 @@ Now that the Predictive Scenario and the different predictive models have been c
     |  `Version to save Forecast`              | `Aggregated_Plan_SmartPredictTemporary`
 
 
-    <!-- border; size:250px -->![Multi_Actions](settings-ma-ps.png)
+    ![Multi_Actions](settings-ma-ps.png)
 
 5. Duplicate the newly created step by hovering over the predictive step and clicking on the thee dots.
 
-    <!-- border; size:300px -->![Multi_Actions](duplicate-ma.png)
+    ![Multi_Actions](duplicate-ma.png)
 
 6. Rename the description of the new step to `Forecast PL1 FTE (external)`
 
@@ -217,7 +217,7 @@ Now that the Predictive Scenario and the different predictive models have been c
     - In order to do so, use the **Move up** function
     - Place the `Forecast PL1 FTE` step in **third** order of the Multi Action chain and the `Forecast PL1 FTE (external)` step in **ninth** order.
 
-    <!-- border; size:120px -->![Multi_Actions](move-ps-ma.png)
+    ![Multi_Actions](move-ps-ma.png)
 
 8. Save your changes.
 
@@ -226,7 +226,7 @@ Now that the Predictive Scenario and the different predictive models have been c
     - Repeat **Sub-Step 3** to **Sub-Step 8** of this Step.
     - Please note that you now have to select `PL2` as your predictive model when creating the predictive steps.
 
-      <!-- border; size:300px -->![Multi_Actions](ps-ma-pl2.png)
+      ![Multi_Actions](ps-ma-pl2.png)
 
 10. Repeat **Sub-Step 3** to **Sub-Step 8** for the Multi Actions `SAP__HR_BPL_IM_WFP_SmartPredict_PL3` and `SAP__HR_BPL_IM_WFP_SmartPredict_PL5`.
 
@@ -243,11 +243,11 @@ Per default, Smart Predict is turned off and thus cannot be triggered when pre-p
 
 2. In the **Outline** section on the left-hand side of your development environment, click on the variable `toggleIsPredictiveEnabled`
 
-    <!-- border; size:540px -->![Analytic_Application](get-customizing.png)
+    ![Analytic_Application](get-customizing.png)
 
 3. Set the default value to `true` as shown in the screenshot and save your changes.
 
-    <!-- border; size:400px -->![Analytic_Application](change-script.png)
+    ![Analytic_Application](change-script.png)
 
     >INFORMATION:
     >
@@ -265,11 +265,11 @@ Now that you have set up the Predictive Scenario and activated the Smart Predict
 
 2. Enter the **Application Configuration** story.
 
-    <!-- border; size:540px -->![Analytic_Application](overview-app.png)
+    ![Analytic_Application](overview-app.png)
 
 3. Click on the **Confirm** button and activate the toggle **Initialize Plan Data After Publish**. A new toggle **Use Predictive** will appear below. Activate this toggle and hit the **OK** button in order to run your Predictive Scenario.
 
-    <!-- border; size:540px -->![Analytic_Application](central-assumptions-app.png)
+    ![Analytic_Application](central-assumptions-app.png)
 
     >INFORMATION
     >
@@ -277,13 +277,13 @@ Now that you have set up the Predictive Scenario and activated the Smart Predict
 
 4. After the prediction has run through successfully, click on the **Home Page** button in the navigation menu to get back to the overview story.
 
-    <!-- border; size:540px -->![Analytic_Application](home-icon.png)
+    ![Analytic_Application](home-icon.png)
 
 5. Open either the **Aggregated External HC Plan** or the **Aggregated Internal HC Plan** application. In this example, the **Aggregated Internal HC Plan** application is opened.
 
 6. Activate the toggle **Show Smart Predict Reference**.
 
-    <!-- border; size:540px -->![Analytic_Application](smart-predict-reference.png)
+    ![Analytic_Application](smart-predict-reference.png)
 
     You are now able to see the results of the time series forecast under the `Smart_Predict` plan version.
 

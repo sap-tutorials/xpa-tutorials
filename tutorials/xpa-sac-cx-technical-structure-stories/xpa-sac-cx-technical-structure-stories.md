@@ -45,25 +45,25 @@ Depending on which story you are looking at, the high level structure of the UI 
 
 Each page consists of multiple bigger groups or respectively **Panels** to put it in technical SAC terms. 
   
-<!-- border; size:540px -->![xp&A Commercial Planning](1/0.png)
+![xp&A Commercial Planning](1/0.png)
 
 These panels are used to structure the different sections of the story into different components in order to make the story more modular. 
   
 The **CONTENT** section is the section where the main part of the content is located. Based on what you have learned in the introduction tutorials, that could cover the header section with the high level graphs, but also the main area where the planning tables reside, for instance.
   
-<!-- border; size:540px -->![xp&A Commercial Planning](1/1.png)
+![xp&A Commercial Planning](1/1.png)
 
 The `ShellBar` section is where the shell bar on the top is configured. All of the stories apart from the Overview Pages contain a bespoke shell bar built specifically for this content package, which consistently provides the exact same functionality across all stories. 
   
-<!-- border; size:540px -->![xp&A Commercial Planning](1/2.png)
+![xp&A Commercial Planning](1/2.png)
 
 The `pnl_LeftSidePanel` section is where the left-side panel is configured. As this component is used across all planning and reporting stories as well, it deserves to have an own container outside the **CONTENT** section.
   
-<!-- border; size:540px -->![xp&A Commercial Planning](1/3.png)
+![xp&A Commercial Planning](1/3.png)
 
 The `MainNavMenu` section is where the navigation menu is configured. Other than the other sections, the `MainNavMenu` section is a composite object which is configured outside the story as this component is used across almost all stories of this content package. 
   
-<!-- border; size:540px -->![xp&A Commercial Planning](1/4.png)
+![xp&A Commercial Planning](1/4.png)
 
 [OPTION END]
 
@@ -72,19 +72,19 @@ The overview pages may have a slightly different approach of clustering the diff
 
 Similar as it is the case for planning and reporting stories, the overview pages are divided into different components by using **Containers**, such as **Panels** or **Flow Layout Panels**.
 
-<!-- border; size:540px -->![xp&A Commercial Planning](1/5.png)
+![xp&A Commercial Planning](1/5.png)
 
 The body section (`pPp_fpnl_body`) is used for the containers in the center of the application.
 
-<!-- border; size:540px -->![xp&A Commercial Planning](1/6.png)
+![xp&A Commercial Planning](1/6.png)
 
 The header section (consisting of `pPp_pnl_header` and `pPp_pnl_header_overlay` in this example) is used for the upper part of the overview page, where the image is located.
 
-<!-- border; size:540px -->![xp&A Commercial Planning](1/7.png)
+![xp&A Commercial Planning](1/7.png)
 
 The footer section (`pPp_pnl_footer`) is used for the lower part of the story, where the version of the content is specified.
 
-<!-- border; size:540px -->![xp&A Commercial Planning](1/8.png)
+![xp&A Commercial Planning](1/8.png)
 [OPTION END]
 
 
@@ -118,7 +118,7 @@ In this step you will learn about script variables and how they are named.
 
 Generally the **Script Variables** section is the place where you can define global variables for your story.
 
-<!-- border; size:540px -->![xp&A Commercial Planning](1/9.png)
+![xp&A Commercial Planning](1/9.png)
 
 In the scope of this content, two different groups of variables have been created.
 
@@ -130,71 +130,71 @@ In the scope of this content, two different groups of variables have been create
 
 - Some of the variables are initialized directly in the menu provided by the builder panel. 
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/10.png)
+    ![xp&A Commercial Planning](1/10.png)
 
 - Other variables are initialized in the `onInitialization` script of the story. The following screenshot provides such an example.
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/11.png)
+    ![xp&A Commercial Planning](1/11.png)
 
 Many variables are re-used across all stories while some of the variables only exist inside a particular story. The following list provides an overview of the **most important and common** variables and how they are used:
 
 - The variable `cfg_chartCollection` is an array of chart objects which can be found in many stories and is initialized in the `onInitialization` script. It is used to store all chart objects of a particular story.
 - <p>The variable is mainly used in order to loop over all chart objects, making it easy to address all chart widgets of a story at once.</p>
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/12.png)
+    ![xp&A Commercial Planning](1/12.png)
 
 - The variable `cfg_tableCollection` is an array of table objects which can be found in many stories and is initialized in the `onInitialization` script. It is used to store all table objects of a particular story.
 - <p>The variable is mainly used in order to loop over all table objects, making it easy to address all table widgets of a story at once.</p>
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/22.png)
+    ![xp&A Commercial Planning](1/22.png)
 
 - The variable `cfg_dimensionMapping` of type `Selection` is initialized in the `onInitialization` script and serves as a dictionary which stores all dimension IDs of the data model and provides a descriptive naming to these dimensions. 
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/13.png)
+    ![xp&A Commercial Planning](1/13.png)
 
 - The left column, also known as the **key**, provides the descriptive naming for the dimension ID, whereas the right column, also known as the **value** represents the technical dimension ID as it is stored in the data model. 
 - This variable is used in order to ease the usage of dimension IDs in the scripts. By using this dictionary, you can work with the easy descriptions instead of having to write the entire dimension ID each time you call a script or API where you need to specify a dimension.
 - <p>If for instance your product dimension has a different dimension ID, you can simply replace the value in the dictionary with your own ID and the scripts will still work without having to change the dimension in every single line of code where the product dimension is used.</p>
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/14.png)
+    ![xp&A Commercial Planning](1/14.png)
 
 - The variable `cfg_displayMode` of type `string` is initialized in the `onInitialization` script. 
 - <p>It is hard coded to one single value <code>present</code> and is used when switching over to other stories when using the navigation menu. The script used to open a new story consumes this variable and opens the story in present mode respectively. If you want to open the story in another mode than the present mode, you may change the value to any other valid value than <code>present</code>.</p> 
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/15.png)
+    ![xp&A Commercial Planning](1/15.png)
 
 - The variable `cfg_iconRepository` of type `Selection` is initialized in the `onInitialization` script and serves as a dictionary to store the `unicode` of an icon together with its descriptive name in a key-value fashion similar to `cfg_dimensionMapping`.
 - <p>Also here, the main use case is to ease the usage and addressing of icons in the scripts.</p>
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/16.png)
+    ![xp&A Commercial Planning](1/16.png)
 
 - The variable `cfg_measureMapping` of type `Selection` is initialized in the `onInitialization` script and serves as a dictionary which stores all measure IDs of the data model and the story and provides a descriptive naming to these measures. 
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/17.png)
+    ![xp&A Commercial Planning](1/17.png)
 
 - Similar to the variable `cfg_dimensionMapping`, this dictionary is mainly used to ease the usage of measure IDs in the scripts. In addition to that it also provides more flexibility, as you can change the measure IDs in your data model freely and only need to update the new ID on one single spot instead of having to go into every single script where the measure is called. 
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/18.png)
+    ![xp&A Commercial Planning](1/18.png)
 
 - The variable `cfg_planVersion` of type `string` is initialized in both the `onInitialization` script and the Right-side panel where it is provided a default value. 
 - <p>It is hard coded to the default plan version of this content package, which is the <code>public.Plan</code> version.</p>
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/19.png)
+    ![xp&A Commercial Planning](1/19.png)
 
 - The variable `g_versionText` of type `string` is used for the same purpose, except that it does not store the prefix but only the version text itself. Similar to `cfg_planVersion`, it is hard coded to the value `Plan`.
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/20.png)
+    ![xp&A Commercial Planning](1/20.png)
 
 - The variable `cfg_storyIds` of type `Selection` is initialized in the `onInitialization` script and serves as a dictionary which stores all story IDs of the content package and provides a descriptive naming to these stories.
 - <p>This dictionary is used for the navigation menu. By having initialized this dictionary in a central place, you can create new stories or copy existing stories and maintain everything in one single spot instead of having to look for the button or widget where the script to open another story is called.</p>
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/21.png)
+    ![xp&A Commercial Planning](1/21.png)
 
 - The variable `g_actionConfirmReset` of type `string` is not initialized on startup and does not posses a default value. It is used in the process of publishing or reverting a version and stores information on whether the version will be published or reverted. 
 
 - Depending on the story, there may also be additional variables which have not been mentioned here. Covering every single variable which was created to serve for one particular purpose would go beyond the scope of this tutorial. Please check the in-line documentation to find out what they are used for and where they are used by using the in-built search function in SAC. 
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/23.png)
+    ![xp&A Commercial Planning](1/23.png)
 
 ### Script Objects
 In this step you will learn about script objects and how they are clustered. 
@@ -203,7 +203,7 @@ Generally the **Script Objects** section is the place where you can create scrip
 
 In the scope of this content, you will find three different groups of scripts, which are clustered in `applicationScripts`, `layoutScripts` and `utilityScripts`.
 
-<!-- border; size:540px -->![xp&A Commercial Planning](1/40.png)
+![xp&A Commercial Planning](1/40.png)
 
 - The `applicationScripts` group is the place where all story specific scripts are stored. These kind of scripts are not re-usable as they execute a very specific task designed for one particular story only.
 - The `layoutScripts` group is the place where all layout related scripts are stored. These kind of scripts are used to change the layout of the application and come into action when you collapse a table for example or expand a section.

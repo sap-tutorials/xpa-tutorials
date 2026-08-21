@@ -47,18 +47,18 @@ In this step you will learn how to navigate to the folder which contains all SAP
 
 2. In the SAP Analytics Cloud Menu, navigate to the **Files** section.
 
-    <!-- border; size:300px -->![xp&A Commercial Planning](1/1.png)
+    ![xp&A Commercial Planning](1/1.png)
 
 3. Access the content package folder.
 
     - You can access the content package folder by either navigating to the `Public` folder first and looking for a folder named `SAP_CONTENT`, or by using the **search function** in the top-right corner.
     - In case you want to make use of the search function, simply enter the term `SAP_CONTENT` into the search bar.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/2.png)
+    ![xp&A Commercial Planning](1/2.png)
 
     - The folder `SAP_CONTENT` contains all objects required to run SAC content. Here you can find your installed content from the content network provided by SAP.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/3.png)
+    ![xp&A Commercial Planning](1/3.png)
 
 
 ### Access Portfolio Planning Content
@@ -69,7 +69,7 @@ Now that you have learned where all the SAP Analytics Cloud content packages are
     - In order to do so, please use the keyword `xP&A` or `CX`
     - In the result list, click on the folder `SAP_CX_Commercial_Planning` with the description `xP&A – Commercial Planning`
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](2/1.png)
+    ![xp&A Commercial Planning](2/1.png)
 
 2. Run the Commercial Planning content package.
 
@@ -84,7 +84,7 @@ Now that you have learned where all the SAP Analytics Cloud content packages are
     - The story **Commercial Planning Overview Page** (`SAP_MKT_CommercialPlanning_Overview`) serves as a starting point and allows you to access all resources of **all modules** during run time.
     - In other words, you do not need to access the remaining stories by manually launching them from the **Files** section. Instead, you can conveniently open them from inside the **Commercial Planning Overview Page** (`SAP_MKT_CommercialPlanning_Overview`) story.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](2/2.png)
+    ![xp&A Commercial Planning](2/2.png)
 
 3. Access the Portfolio Planning content sub-package. 
 
@@ -92,7 +92,7 @@ Now that you have learned where all the SAP Analytics Cloud content packages are
     - These sections are the **Portfolio Planning** section, the **Sales Planning** section and the **Marketing Planning** section. 
     - In order to run the **Portfolio Planning** content sub-package, click anywhere on the **Portfolio Planning** section to open the story **Portfolio Planning Overview Page** (`SAP_MKT_PortfolioPlanning_Overview`). Similar to the **Commercial Planing Overview Page**, the **Portfolio Planning Overview Page** serves as a starting point for all portfolio planning related activities. 
     
-    <!-- border; size:540px -->![xp&A Commercial Planning](2/3.png)
+    ![xp&A Commercial Planning](2/3.png)
 
 
 ### Portfolio Planning Overview
@@ -104,7 +104,7 @@ If you wish to learn more about the marketing planning module or the sales plann
 
 1. **Portfolio Planning Overview Page**
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](3/1.png)
+    ![xp&A Commercial Planning](3/1.png)
 
     - By having opened the application **Portfolio Planning Overview Page** (`SAP_MKT_PortfolioPlanning_Overview`), you entered the **Home Screen** of the **Portfolio Planning** content sub-package.
     - The overview application serves as the central entry point for all personas and helps to navigate through the content package.
@@ -113,7 +113,7 @@ If you wish to learn more about the marketing planning module or the sales plann
 
 2. **Configure**
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](3/2.png)
+    ![xp&A Commercial Planning](3/2.png)
 
     - The section **Configure** contains a link to the story **Portfolio Planning Admin Page** (`SAP_MKT_PortfolioPlanning_AdminPage`).
     - This story marks the start of the planning process and allows you to perform any administrative task required for the list price planning activities. 
@@ -123,7 +123,7 @@ If you wish to learn more about the marketing planning module or the sales plann
 
 3. **Plan**
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](3/3.png)
+    ![xp&A Commercial Planning](3/3.png)
 
     - The section **Plan** provides access to the **List Price Planning** (`SAP_MKT_PortfolioPlanning_ListPricePlanning`) story.
     - This story is covering use cases of the list price planner persona.
@@ -131,7 +131,7 @@ If you wish to learn more about the marketing planning module or the sales plann
 
 4. **Report**
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](3/4.png)
+    ![xp&A Commercial Planning](3/4.png)
 
     - The section **Report** contains a link to the reporting story **List Price Analysis** (`SAP_MKT_PortfolioPlanning_ListPriceAnalysis`).
     - The reporting story is divided into different sections, which provide deeper insights into various price related topics.
@@ -144,11 +144,11 @@ As a last preparation step, it is required to understand the navigation concept 
 
     - Each story apart from the Overview Pages (`SAP_MKT_MarketingPlanning_Overview`, `SAP_MKT_PortfolioPlanning_Overview` and `SAP_MKT_CommercialPlanning_Overview`) has a **Main Navigation** button located on the top-left corner.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/0.png)
+    ![xp&A Commercial Planning](4/0.png)
 
     - By clicking on the **Main Navigation** button, a panel on the left-hand side of the story is opened.
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/1.png)
+    ![xp&A Commercial Planning](4/1.png)
   
     - Here you can quickly navigate to other stories of the Commercial Planning Content Package.
 
@@ -157,22 +157,22 @@ As a last preparation step, it is required to understand the navigation concept 
     - These buttons can be found in all stories apart from the Overview Pages and are located at the top-right corner of each available section.
     - The **Expand Section** button (with the arrows pointing to the outside) enlarges a specific section and hides the header and the remaining sections, which is quite useful in case you require more space for the planning tables or reports.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/2.png) 
+    ![xp&A Commercial Planning](4/2.png) 
 
     - The **Expand Section** button changes to a **Collapse Section** button (with the arrows pointing to the center) after entering full screen mode. By pressing the **Collapse Section** button, you can unhide the header section as well as the remaining sections again and return to the default view mode.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/3.png) 
+    ![xp&A Commercial Planning](4/3.png) 
 
 3. **Confirm** button
 
     - The **Confirm** button can be found in each planning story of this content package and is located at the top-right corner above the tables.
     - The **Confirm** button lets you publish your current plan data into the public plan version.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/4.png)
+    ![xp&A Commercial Planning](4/4.png)
 
     - Prior to publishing the version you will receive the following pop-up:
 
-    <!-- border; size:200px -->![xp&A Commercial Planning](4/41.png)
+    ![xp&A Commercial Planning](4/41.png)
 
     - If there is nothing to confirm, an application warning will appear instead of the pop-up telling you that there is nothing to publish.
 
@@ -180,11 +180,11 @@ As a last preparation step, it is required to understand the navigation concept 
 
     - The **Reset** button can be found in each planning story of this content package and is located at the top-right corner above the tables.
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/5.png)
+    ![xp&A Commercial Planning](4/5.png)
 
     - Prior to reverting the plan version you will receive the following pop-up:
 
-    <!-- border; size:200px -->![xp&A Commercial Planning](4/51.png)
+    ![xp&A Commercial Planning](4/51.png)
 
     - If there is nothing to reset, an application warning will appear instead of the pop-up telling you that there is nothing to revert.
 
@@ -192,16 +192,16 @@ As a last preparation step, it is required to understand the navigation concept 
 
     - Some of the planning stories contain a **Table Settings** button which can be found on the top-right corner above the table. 
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/6.png)
+    ![xp&A Commercial Planning](4/6.png)
 
     - By pressing on this button, a pop-up is opened where you can select different measures to be displayed in your table. 
     - Depending on the story the offered selection of measures might differ.
 
-    <!-- border; size:200px -->![xp&A Commercial Planning](4/61.png)
+    ![xp&A Commercial Planning](4/61.png)
 
 6. **Instructions** section
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/7.png)
+    ![xp&A Commercial Planning](4/7.png)
 
     - Such a text field can be found in each story of this content package and is located in the left-side panel, indicated by the info icon.
     - This description field serves as a rough guideline and describes the intended user workflow within each of the planning stories.
@@ -210,16 +210,16 @@ As a last preparation step, it is required to understand the navigation concept 
 
     - This section can be found in each story apart from the overview pages of this content package and is located in the left-side panel, indicated by the filter icon.
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/8.png)
+    ![xp&A Commercial Planning](4/8.png)
 
     - By using the drop down widgets, you can filter all tables and charts down to specific members of the given dimensions for an eased data entry and reporting.
     - By clicking on the little **arrow icon**, you can collapse the side panel in order to create more space for your planning tables or charts. 
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/81.png)
+    ![xp&A Commercial Planning](4/81.png)
 
     - You can then reopen the side panel by clicking on the **reversed arrow icon**.
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/82.png)
+    ![xp&A Commercial Planning](4/82.png)
 
     >INFORMATION:
     >
@@ -228,38 +228,38 @@ As a last preparation step, it is required to understand the navigation concept 
 
 8. **Help** section
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/71.png)
+    ![xp&A Commercial Planning](4/71.png)
 
     - This section can be found in each story apart from the overview pages of this content package and is located in the left-side panel, indicated by the question mark icon.
     - The content help section contains useful links for the user, which for instance redirect you to the official documentation or provide you with contact details so you can get in touch with the developers. 
 
 9. **Comment** section
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/90.png)
+    ![xp&A Commercial Planning](4/90.png)
     
     - This section can only be found in each story apart from the overview pages of this content package and is located in the left-side panel.
     - By clicking on the comment icon, the comment panel is opened where you can leave comments for yourself or the other planners. 
 
 8.  **Distribute Changes** button
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/9.png)
+    ![xp&A Commercial Planning](4/9.png)
 
     - This button can only be found in the **List Price Planning** (`SAP_MKT_PortfolioPlanning_ListPricePlanning`) story.
     - By pressing on this button a pop-up is opened where you can define different parameters for a carry forward operation. This topic will be covered in a later step of this tutorial in more detail.
 
 9.   **Reference Version** drop-down
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/10.png)
+   ![xp&A Commercial Planning](4/10.png)
 
-    - This drop-down widget can be found in some of the stories of this content package.
-    - By using this drop-down widget, you can define the reference version against which you would like to compare your plan data.
+   - This drop-down widget can be found in some of the stories of this content package.
+   - By using this drop-down widget, you can define the reference version against which you would like to compare your plan data.
 
 10.  **Hide / Unhide Section** button
     
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/11.png)
+   ![xp&A Commercial Planning](4/11.png)
 
-    - In case a story contains multiple sections, you can choose to hide specific parts of the story by using the **Hide Section** button or respectively unhide the section by using the **Show Section** button. 
-    - Both of these buttons can be found on the top-left corner of each section.
+   - In case a story contains multiple sections, you can choose to hide specific parts of the story by using the **Hide Section** button or respectively unhide the section by using the **Show Section** button. 
+   - Both of these buttons can be found on the top-left corner of each section.
 
 ### Portfolio Planning Admin Page
 Now that you are familiar with the basics and the navigation concept, you will learn in more detail how to use the different stories.
@@ -273,7 +273,7 @@ Currently, you have opened the tab **Open Story**. This tab provides guidance on
 
 1. In the **Portfolio Planning Overview Page** (`SAP_MKT_PortfolioPlanning_Overview`) story, click on the **Portfolio Planning Admin Page** link.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](5/1.png)
+    ![xp&A Commercial Planning](5/1.png)
 
     >INFORMATION:
     >
@@ -283,14 +283,14 @@ Currently, you have opened the tab **Open Story**. This tab provides guidance on
 
 2. Get an overview of the story
 
-    <!-- border; size:540px -->![xp&A Commercial Planning Overview](5/2.png)
+    ![xp&A Commercial Planning Overview](5/2.png)
 
     - Make yourself familiar with the story.
     - Try to identity the different administrative sections and use cases. Do not execute anything yet, we will go through this step by step. 
 
 3. Check the **INSTRUCTIONS** section
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](5/3.png)
+    ![xp&A Commercial Planning](5/3.png)
 
     - All stories provide a short in-built step by step guide which helps you to use the corresponding story correctly.
     - Before using the story, make sure to check the **INSTRUCTIONS** description field to understand the intended user workflow.
@@ -303,7 +303,7 @@ You may now switch to the second tab **Load Data**.
 [OPTION BEGIN [Load Data]]
 Currently, you have opened the tab **Load Data**. This tab provides guidance on how to integrate all relevant data from different data sources, such as baseline quantities, cost rates and list prices. All relevant actions related to this step can be found in the **Load Data** section of the **Portfolio Planning Admin Page**.
 
- <!-- border; size:540px -->![xp&A Commercial Planning](5/4.png)
+ ![xp&A Commercial Planning](5/4.png)
 
 >INFORMATION:
 >
@@ -315,7 +315,7 @@ Currently, you have opened the tab **Load Data**. This tab provides guidance on 
 
 1. Click on the **Load Prices** trigger to integrate price data into the data model.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](5/5.png)
+    ![xp&A Commercial Planning](5/5.png)
 
     - As suggested in the **INSTRUCTIONS** description field, start the planning process with the data loading in case it has not been done elsewhere yet. 
     - By clicking on the trigger, a Multi Action is executed which loads price data from **SAP S/4HANA** into the data model of this content package. 
@@ -329,7 +329,7 @@ Currently, you have opened the tab **Load Data**. This tab provides guidance on 
 
 2. Click on the **Load Baseline Quantities** trigger to integrate baseline quantities into the data model
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](5/6.png)
+    ![xp&A Commercial Planning](5/6.png)
 
     - By clicking on the trigger, a Multi Action is executed which loads baseline quantities from **SAP IBP** into the data model of this content package. 
 
@@ -342,7 +342,7 @@ Currently, you have opened the tab **Load Data**. This tab provides guidance on 
 
 3. Click on the **Load COGS Rates** trigger to integrate cost rates into the data model
 
-    <!-- border; size:350px -->![xp&A Commercial Planning](5/7.png)
+    ![xp&A Commercial Planning](5/7.png)
 
     - By clicking on the trigger, a Data Action is executed which loads COGS rates from the product cost data model outside the content package (`SAP_FI_IFP_IM_ProductCost`) into the data model of this content package. 
 
@@ -360,11 +360,11 @@ Now that you have loaded in all data successfully, you can proceed with the init
 [OPTION BEGIN [Initialize Plan Version]]
 Currently you have opened the tab **Initialize Plan Version**. This tab provides guidance on how to prepare your plan version so you can finally start with your planning activities. All relevant actions related to this step can be found in the **Initialize Planning** section of the **Portfolio Planning Admin Page**.
 
- <!-- border; size:540px -->![xp&A Commercial Planning](5/8.png)
+ ![xp&A Commercial Planning](5/8.png)
 
 1. Click on the **Initialize Plan Version** trigger to calculate all relevant measures based on your integrated data.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](5/9.png)
+    ![xp&A Commercial Planning](5/9.png)
 
     - In the previous step you learned how to load in baseline quantities, COGS rates and list prices.
     - By clicking on the trigger, a Data Action is executed which now calculates the total revenue and costs based on the imported figures for each product.
@@ -378,7 +378,7 @@ Currently you have opened the tab **Initialize Plan Version**. This tab provides
   
 2. Click on the **Initialize Quantity Impact (%)** trigger to populate the Quantity Impact (%) measure with booked values.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](5/10.png)
+    ![xp&A Commercial Planning](5/10.png)
 
     - By clicking on the trigger, a Data Action is executed which populates the Quantity Impact (%) measure (`QUANTITY_IMPACT`) for each member of the `Driver` dimension (excluding `baseLine` and `#`) with zeroes for all data records, where a baseline quantity can be found.
     - In the data action dialogue, please select the respective version on which you want to perform this action. In this example, you would have to execute the data action on the target version `public.Plan`.
@@ -393,7 +393,7 @@ Currently you have opened the tab **Initialize Plan Version**. This tab provides
 
 3. Click on the **Initialize Price Uplift Qty** trigger to populate the Uplift Quantity measure with booked values.
     
-    <!-- border; size:540px -->![xp&A Commercial Planning](5/11.png)
+    ![xp&A Commercial Planning](5/11.png)
 
     - By clicking on the trigger, a Data Action is executed which populates the Quantity measure (`QUANTITY`) with zeroes for all data records where a baseline quantity can be found. 
     - In the data action dialogue, please select the respective version on which you want to perform this action. In this example, you would have to execute the data action on the target version `public.Plan`.
@@ -414,34 +414,34 @@ Currently you have opened the tab **Other Actions**. This tab provides a rough o
 
 1. **Clear List Price Data**
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](5/12.png)
+    ![xp&A Commercial Planning](5/12.png)
 
     - This Data Action deletes all list prices from a target version.
     - This can be quite useful in case you want to reset your planned changes and re-upload the original list prices.
   
 2. **Copy Data**
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](5/13.png)
+    ![xp&A Commercial Planning](5/13.png)
 
     - This Data Action deletes all data from the target version for a specified date range and copies data from another version to the exact same date range.
     - This Data Action can be used if you work on more than two versions for example or if you want to redeploy data from a backup version of yours. 
 
 3. **Copy List Prices**
     
-    <!-- border; size:540px -->![xp&A Commercial Planning](5/14.png)
+    ![xp&A Commercial Planning](5/14.png)
 
     - This Data Action copies over list prices to the target version from another version for a specified time range.
 
 4. **Carry Forward Price and Impact**
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](5/15.png)
+    ![xp&A Commercial Planning](5/15.png)
 
     - This Multi Action carries forward the List Price and the Quantity Impact (%) for a specific product or for the members of a product group from a specified starting period until a specified end period.
     - This Multi Action is normally executed automatically during the usage of the **List Price Planning** (`SAP_MKT_PortfolioPlanning_ListPricePlanning`) story.  
 
 5. **Recalculate all after Price Change**
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](5/16.png)
+    ![xp&A Commercial Planning](5/16.png)
 
     - This Multi Action calculates the impact of the adjusted price on the demand quantity by taking the planned Quantity Impact (%) of the `priceImpact` Driver and multiplying it by the baseline quantity. The resulting incremental quantity is then stored on the respective driver. 
     - In addition to that it also recalculates revenues and costs for all drivers by multiplying the Quantity by the List Price and COGS rates. The result is then stored on the respective members of the Driver dimension.
@@ -450,7 +450,7 @@ Currently you have opened the tab **Other Actions**. This tab provides a rough o
 
 6. **Populate Quantity Impact Percent**
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](5/17.png)
+    ![xp&A Commercial Planning](5/17.png)
 
     - This Data Action creates a booked value (zero) for the Quantity Impact (%) measure related to the `priceImpact` driver member for all records where a List Price can be found.
     - This Data Action is normally executed automatically during the usage of the planning stories and should not be executed manually.  
@@ -458,28 +458,28 @@ Currently you have opened the tab **Other Actions**. This tab provides a rough o
 
 7. **Carry forward Price**
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](5/18.png)
+    ![xp&A Commercial Planning](5/18.png)
 
     - This Data Action carries forward the List Price for a specific product or for the members of a product group from a specified starting period until a specified end period.
     - This Data Action is normally executed automatically during the usage of the **List Price Planning** (`SAP_MKT_PortfolioPlanning_ListPricePlanning`) story.  
 
 8. **Carry forward Price Impact Percent**
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](5/19.png)
+    ![xp&A Commercial Planning](5/19.png)
 
     - This Data Action carries forward the Quantity Impact (%) for a specific product or for the members of a product group from a specified starting period until a specified end period. 
     - This Data Action is normally executed automatically during the usage of the **List Price Planning** (`SAP_MKT_PortfolioPlanning_ListPricePlanning`) story.  
 
 9.  **Calculate Price Uplift Qty**
     
-    <!-- border; size:540px -->![xp&A Commercial Planning](5/20.png)
+    ![xp&A Commercial Planning](5/20.png)
 
     - This Data Action calculates the incremental quantity for the `priceImpact` driver by multiplying the baseline quantity by the Quantity Impact (%) value of the respective driver. 
     - This Data Action is normally executed automatically during the usage of the **List Price Planning** (`SAP_MKT_PortfolioPlanning_ListPricePlanning`) story.  
 
 10. **ReCalculate Revenue/COGS**
     
-    <!-- border; size:540px -->![xp&A Commercial Planning](5/21.png)
+    ![xp&A Commercial Planning](5/21.png)
 
     - This Data Action recalculates revenues and costs for all drivers by multiplying the quantities by the list prices and COGS rates. The result is then stored on a the respective members of the driver dimension.
     - This Data Action is normally executed automatically during the usage of the planning stories.  
@@ -500,7 +500,7 @@ Currently, you have opened the tab **Open Story**. This tab provides guidance on
    
 2. Now click on either **Portfolio Planning** to jump back to the **Portfolio Planning Overview Page** or on **List Price Planning** to directly access the **List Price Planning** story. 
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](6/1.png)
+    ![xp&A Commercial Planning](6/1.png)
     
     In this particular case, we will go back to the **Portfolio Planning Overview Page** by clicking on the **Portfolio Planning** button.
 
@@ -514,11 +514,11 @@ Currently, you have opened the tab **Open Story**. This tab provides guidance on
 
 3. Click on the link **List Price Planning** to enter the story.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](6/2.png)
+    ![xp&A Commercial Planning](6/2.png)
 
 4. Get an overview of the application
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](6/3.png)
+    ![xp&A Commercial Planning](6/3.png)
 
     - The story consists of three sections. 
     - The header section provides three charts showing the Average List Price, the Adjusted Quantity and the Gross Revenue. 
@@ -550,7 +550,7 @@ Currently, you have opened the tab **Enter Plan Data**. This tab provides guidan
     >
     For the following demonstration filters will not be changed. 
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](6/4.png)
+    ![xp&A Commercial Planning](6/4.png)
 
     >INFORMATION:
     >
@@ -564,22 +564,22 @@ Currently, you have opened the tab **Enter Plan Data**. This tab provides guidan
     - Adjust the list price for any product or product group inside the planning table. Make sure to only adjust the list price for one single period for now.
     - In this example the price for the product `Cruise Ebike` in period `P01 (2023)` was changed to a value of `USD 1200`.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](6/5.png)
+    ![xp&A Commercial Planning](6/5.png)
 
 3. Recalculate revenues based on new list price.
 
     - Click on the cell in which you edited the list price.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](6/6.png)
+    ![xp&A Commercial Planning](6/6.png)
 
     - Now click on the button **Distribute Changes** located on the top-right corner above the planning table.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](6/7.png)
+    ![xp&A Commercial Planning](6/7.png)
 
     - A pop-up window appears with all mandatory information already pre-populated. 
     - Check the settings for correctness and change the **End Date** to the same period as **Start Date** `P01 (2023)`.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](6/8.png)
+    ![xp&A Commercial Planning](6/8.png)
     
     >INFORMATION:
     >
@@ -602,7 +602,7 @@ Currently, you have opened the tab **Enter Plan Data**. This tab provides guidan
     - Adjust the Quantity Impact (%) for any product or product group inside the planning table. 
     - For demonstration purposes, the Quantity Impact (%) will be changed for the same product and period as before.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](6/9.png)
+    ![xp&A Commercial Planning](6/9.png)
 
     >INFORMATION:
     >
@@ -614,21 +614,21 @@ Currently, you have opened the tab **Enter Plan Data**. This tab provides guidan
 
     - Click on the cell in which you edited the Quantity Impact (%).
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](6/10.png)
+    ![xp&A Commercial Planning](6/10.png)
 
     - Now click on the button **Distribute Changes** located on the top-right corner above the planning table.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](6/7.png)
+    ![xp&A Commercial Planning](6/7.png)
 
     - A pop-up window appears with all mandatory information already pre-populated. 
     - Check the settings for correctness. As we want to perform a carry forward operation as well this time, change the **End Date** to a later period than the **Start Date**.
     - In addition to that, also put a check on **List Price** in the measure section of the pop-up so you carry forward the list price together with the Quantity Impact (%). 
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](6/11.png)
+    ![xp&A Commercial Planning](6/11.png)
 
     - Alternatively, you can also just select both the Quantity Impact (%) and the List Price in the planning table with your mouse and pre-populate this setting instead of setting the check manually.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](6/12.png)
+    ![xp&A Commercial Planning](6/12.png)
 
     - Click on **Apply** to start the carry forward and recalculation.
     
@@ -665,18 +665,18 @@ Currently, you have opened the tab **Open Story**. This tab provides guidance on
 
 2. Now click on either **Portfolio Planning** to jump back to the **Portfolio Planning Overview Page** or on **List Price Analysis** to directly access the **List Price Analysis** story. 
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](7/1.png)
+    ![xp&A Commercial Planning](7/1.png)
     
     In this particular case, we will go back to the **Portfolio Planning Overview Page** by clicking on the **Portfolio Planning** button.
 
 
 3. Click on the link **List Price Analysis** to enter the story.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](7/2.png)
+    ![xp&A Commercial Planning](7/2.png)
 
 4. Get an overview of the application
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](7/3.png)
+    ![xp&A Commercial Planning](7/3.png)
 
     - This story supports the list price planning process and provides detailed insights into price related topics. 
     - It provides visualizations which for instance show average prices over time, their effect on revenues and quantities, and compares actuals, plans, and budgets for key metrics. 
@@ -693,11 +693,11 @@ Currently, you have opened the tab **Reporting**. This tab provides information 
 
     - In the header section you can find four graphs that provide you with high level insights.
     
-    <!-- border; size:540px -->![xp&A Commercial Planning](7/4.png)
+    ![xp&A Commercial Planning](7/4.png)
 
     - You can change the context of all graphs by using the filters on the left-hand side of the story. 
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](7/5.png)
+    ![xp&A Commercial Planning](7/5.png)
 
     >INFORMATION:
     >
@@ -714,11 +714,11 @@ Currently, you have opened the tab **Reporting**. This tab provides information 
     - This section provides deeper insights into key metrics and allows you to analyze different trends. 
     - Apart from the **Price Deviations** graph, this can be seen as an extension to the header charts. 
     
-    <!-- border; size:540px -->![xp&A Commercial Planning](7/6.png)
+    ![xp&A Commercial Planning](7/6.png)
 
     - You can change the context of all graphs by using the filters on the left-hand side of the story. 
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](7/5.png)
+    ![xp&A Commercial Planning](7/5.png)
 
     >INFORMATION:
     >
@@ -734,11 +734,11 @@ Currently, you have opened the tab **Reporting**. This tab provides information 
 
     - This section provides deeper insights into price related topics based on the `Plan` version. 
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](7/7.png)
+    ![xp&A Commercial Planning](7/7.png)
 
     - You can change the context of all graphs by using the filters on the left-hand side of the story. 
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](7/5.png)
+    ![xp&A Commercial Planning](7/5.png)
 
     >INFORMATION:
     >
@@ -754,7 +754,7 @@ Currently, you have opened the tab **Reporting**. This tab provides information 
     - This section allows you to perform data quality checks and identify missing list prices for products which have a planned quantity. 
     - The table takes into consideration all filters set in the filter panel on the left-hand side of the story.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](7/8.png)
+    ![xp&A Commercial Planning](7/8.png)
 
     >INFORMATION:
     >
