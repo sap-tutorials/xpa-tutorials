@@ -42,17 +42,17 @@ First you need to create a new dimension member in the `Driver` dimension.
   
 1. Open the `Marketing Planning` data model `SAP_MKT_IM_MarketingPlanning` and click on the `Driver` dimension in the dimension list on the left-hand side.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/1.png)
+    ![xp&A Commercial Planning](1/1.png)
 
 2. Add a new member ID to the dimension and save your changes.
     - In this example, we will create a new driver to be able to plan season based fluctuations. We will call this driver `Seasonal Impact` and provide the member ID `seasonalImpact`.
     - Save your changes afterwards.
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/2.png)
+    ![xp&A Commercial Planning](1/2.png)
 
 3. Navigate back to the main menu of the data model and enter the **Calculation Management** section.
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/3.png)
+    ![xp&A Commercial Planning](1/3.png)
 
 ### Create Calculated Measure 
 Add a new calculated measure representing the incremental quantity coming from the new driver
@@ -61,11 +61,11 @@ Add a new calculated measure representing the incremental quantity coming from t
 2. Provide a fitting **Name** and **Description** in the Properties panel on the right-hand side
 3. <p>Add the formula according to the screenshot</p>
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/4.png)
+    ![xp&A Commercial Planning](1/4.png)
 
-    ```
-    LOOKUP([QUANTITY], [d/Driver]="" AND [d/SAP_MKT_MarketingActivity]="#" AND [d/SAP_MKT_MarketingCampaign]="#" AND[d/SpendType]="#", [d/t.S:SAP_ALL_PLANT] )
-    ```
+   ```
+   LOOKUP([QUANTITY], [d/Driver]="" AND [d/SAP_MKT_MarketingActivity]="#" AND [d/SAP_MKT_MarketingCampaign]="#" AND[d/SpendType]="#", [d/t.S:SAP_ALL_PLANT] )
+   ```
 
 4. Save your changes
 
@@ -79,27 +79,27 @@ Add a new calculated measure representing the incremental quantity coming from t
 
 2. In step 1 `Populate Quantities with booked Values`, add a new line according to the screenshot
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/5.png)
+    ![xp&A Commercial Planning](1/5.png)
 
-    ```
-    DATA.APPEND([d/Driver]="seasonalImpact")=(RESULTLOOKUP()/RESULTLOOKUP())-1
-    ```
+   ```
+   DATA.APPEND([d/Driver]="seasonalImpact")=(RESULTLOOKUP()/RESULTLOOKUP())-1
+   ```
 
 3. In step 2 `Populate Revenues with booked Values`, add a new line according to the screenshot
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/6.png)
+    ![xp&A Commercial Planning](1/6.png)
 
-    ```
-    DATA.APPEND([d/Driver]="seasonalImpact")=(RESULTLOOKUP([d/Measures]="QUANTITY")/RESULTLOOKUP([d/Measures]="QUANTITY"))-1
-    ```
+   ```
+   DATA.APPEND([d/Driver]="seasonalImpact")=(RESULTLOOKUP([d/Measures]="QUANTITY")/RESULTLOOKUP([d/Measures]="QUANTITY"))-1
+   ```
 
 4. In step 3 `Populate Quantity Impact (%) with booked Values `, add a new line according to the screenshot
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/7.png)
+    ![xp&A Commercial Planning](1/7.png)
 
-    ```
-    DATA.APPEND([d/Driver]="seasonalImpact",[d/t.S:SAP_ALL_PLANT]="#")=(RESULTLOOKUP([d/Measures]="QUANTITY")/RESULTLOOKUP([d/Measures]="QUANTITY"))-1
-    ```
+   ```
+   DATA.APPEND([d/Driver]="seasonalImpact",[d/t.S:SAP_ALL_PLANT]="#")=(RESULTLOOKUP([d/Measures]="QUANTITY")/RESULTLOOKUP([d/Measures]="QUANTITY"))-1
+   ```
 
 5. Save the Data Action
 
@@ -109,11 +109,11 @@ Add a new calculated measure representing the incremental quantity coming from t
 
 2. Open the **Left Side Panel**, go to the **Outline** tab, look for the object called `tbl_DriversTable`, click on it and open the **Right Side Panel** to enter the **Builder** panel.
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/8.png)
+    ![xp&A Commercial Planning](1/8.png)
 
 3. Add the new driver member to the filter of the table widget.
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/9.png)
+    ![xp&A Commercial Planning](1/9.png)
 
 4. Save your story. 
 

@@ -37,7 +37,7 @@ In the first step, it is necessary to add a new member to the `Version` dimensio
 
 2. Search for any application with a table. In this example, we will look for the `SAP_SD_SalesDemandPlanning` application and **Open in Story Edit Mode**.
 
-    <!-- border; size:540px -->![analytic_application](search-application-1.png)
+    ![analytic_application](search-application-1.png)
 
 3. Click on the table and open the **Version Management** section in the **Tools** section.
 
@@ -45,7 +45,7 @@ In the first step, it is necessary to add a new member to the `Version` dimensio
     >
     **Version Management** is greyed out as long as you have not selected the table beforehand.
 
-    <!-- border; size:540px -->![canvas_story](version-management.png)
+    ![canvas_story](version-management.png)
 
 ### Create new Version
 
@@ -55,7 +55,7 @@ After clicking on the **Version Management** icon, a new section on the right-ha
 
     - Choose a version and click on the **copy** icon next to it. In this example, you will create a copy of the version `public.Plan`.
 
-    <!-- border; size:540px -->![copy_version](copy-version-1.png)
+    ![copy_version](copy-version-1.png)
 
 2. Define the version properties.
 
@@ -64,7 +64,7 @@ After clicking on the **Version Management** icon, a new section on the right-ha
     - Choose one of the options provided for your copy operation. In this example, we will **Copy all data** from the `public.Plan` version to the new version.
     - Click on **OK** to create the copy.
 
-    <!-- border; size:540px -->![copy_version](copy-version-2.png)
+    ![copy_version](copy-version-2.png)
 
 ### Publish new Version
 
@@ -72,11 +72,11 @@ Now that you created the new version, you need to publish it as it is initially 
 
 1. Click on the **Publish** icon next to your new version. Select the option **Publish As**.
 
-    <!-- border; size:540px -->![publish_version](publish-as.png)
+    ![publish_version](publish-as.png)
 
 2. Specify the version properties.
 
-    <!-- border; size:540px -->![publish_version](publish.png)
+    ![publish_version](publish.png)
 
     - Specify the version name once more. In this example, we will stick to the name `Baseline`.
     - Specify the version category once more. Ensure to select **Planning**.
@@ -96,15 +96,15 @@ Now that you created your new version, you can make a couple of adjustments whic
 
 2. Search for the `SAP_SD_IM_SalesPlanning` data model and open it.
 
-    <!-- border; size:540px -->![Data_Model](data-model.png)
+    ![Data_Model](data-model.png)
 
 3. Open the `Version` dimension.
 
-    <!-- border; size:540px -->![Version_Dim](version-dim.png)
+    ![Version_Dim](version-dim.png)
 
 4. Adjust the version properties.
 
-    <!-- border; size:540px -->![Version_Dim](version-properties.png)
+    ![Version_Dim](version-properties.png)
 
     - As your new version `Baseline` was created based on a copy of the version `Actual`, all properties were copied.
     - In case you want to adjust some of the properties, you can do it here.
@@ -133,7 +133,7 @@ You need to make some adjustments in order for the applications to initialize al
 
       2. Search for the affected application, in which you want the objects to be initialized with new version. In this example, we will look for the `SAP_SD_SalesDemandPlanning` application and **Open in Story Edit Mode**.
 
-         <!-- border; size:540px -->![analytic_application](search-application-1.png)
+         ![analytic_application](search-application-1.png)
 
          >INFORMATION:
          >
@@ -148,27 +148,27 @@ You need to make some adjustments in order for the applications to initialize al
 
       3. Open the **Left Side Panel**, open the **Outline**. Scroll down to the **Scripting** section and click on the **More**-button of the script variable `pageFilter_Version`. Click on **Find Reference** and get an overview in which scripts the variable is used.
 
-         <!-- border; size:540px -->![analytic_application](pageFilter_Version.png)
+         ![analytic_application](pageFilter_Version.png)
 
       4. Select one of the references `Script for Event "PageFilters_Update: ..."`. In line 9 of the `ActionScripts.PageFilters_Update`-script replace the first element of the array with your newly created version:
 
             `pageFilter_Version[0] = "Baseline"`;
 
-         <!-- border; size:540px -->![analytic_application](pageFilters_Update.png)
+         ![analytic_application](pageFilters_Update.png)
 
          The first entry in the variable array `pageFilter_Version` is used for publishing and reverting data. However, it is not used to set the version filter to the planning table and charts and the variances for the charts. You change this in the next steps.
 
       5. Close the **Info Panel** and search for the table `Table_content` or select the table on **page_1** manually.
 
-         <!-- border; size:540px -->![analytic_application](table-content.png)
+         ![analytic_application](table-content.png)
 
       6. Select **Right Side Panel** and click on the **Version** filter.
 
-         <!-- border; size:540px -->![analytic_application](table-filter.png)
+         ![analytic_application](table-filter.png)
 
       7. Unselect the current version `Plan` and select the new version `Baseline`. Click on **OK**.
 
-         <!-- border; size:540px -->![analytic_application](set-table-filter.png)
+         ![analytic_application](set-table-filter.png)
 
       8. Follow step 5-7 for the remaining charts. You have to change the version filter for the following charts:
 
@@ -177,11 +177,11 @@ You need to make some adjustments in order for the applications to initialize al
 
       9. Adjust the variance for both charts `p1_chart_pageHeader_chartKPI_1` and `p1_chart_pageHeader_chartKPI_3`. Click on the **Edit**-button of `All Accounts in Use (Variance)` under **Variance**.
 
-         <!-- border; size:540px -->![analytic_application](variance.png)
+         ![analytic_application](variance.png)
 
       10. Change the Version for **COMPARE (A)** from `Plan` to `Baseline` for both charts `p1_chart_pageHeader_chartKPI_1` and `p1_chart_pageHeader_chartKPI_3`. Save your changes afterwards.
 
-         <!-- border; size:540px -->![analytic_application](edit-variance.png)
+         ![analytic_application](edit-variance.png)
 
 2. Adjust Version Input Controls in a Story
 
@@ -191,23 +191,23 @@ You need to make some adjustments in order for the applications to initialize al
 
       2. Search for the affected application `SAP_SD_SalesBudgetAnalysis` and **Open in Story Edit Mode**.
 
-         <!-- border; size:540px -->![analytic_application](search-application-2.png)
+         ![analytic_application](search-application-2.png)
 
       3. Right-click on the input control **Reference_Version1**. Otherwise, you can hover over the input control to get the option to click on the three dots **"..." (More Actions)**. Click on **Edit Input Control** in the context menu.
 
-         <!-- border; size:540px -->![analytic_application](edit-input-control.png)
+         ![analytic_application](edit-input-control.png)
 
       4. In the **Input Section** of the **Calculation Input Control** click on the values to edit them.
 
-         <!-- border; size:540px -->![analytic_application](input-values.png)
+         ![analytic_application](input-values.png)
 
       5. Select `Baseline` as additional value for your version. Press **OK** two times.
 
-         <!-- border; size:540px -->![analytic_application](select-value-version.png)
+         ![analytic_application](select-value-version.png)
 
       6. Repeat step 3-5 for the input control **Reference_Version2** below input control **Reference_Version1**. Save the story afterwards.
 
-         <!-- border; size:540px -->![analytic_application](repeat-version-change.png)
+         ![analytic_application](repeat-version-change.png)
 
 3. Adjust Version in Data Actions
 
@@ -221,15 +221,15 @@ You need to make some adjustments in order for the applications to initialize al
 
       2. Search for the affected data action `SAP_SD_IM_SalesPlanning_ActualActivityP&LCalculation` and open it.
 
-         <!-- border; size:540px -->![analytic_application](search-application-3.png)
+         ![analytic_application](search-application-3.png)
 
       3. Click on the step `Compute Baseline Activity COGS`. Search for the previous version `Plan` and replace it in the data action on line 26 with the new version `Baseline`.
 
-         <!-- border; size:540px -->![analytic_application](data-action-version-1.png)
+         ![analytic_application](data-action-version-1.png)
 
       4. Click on the next step `Compute Incremental COGS` and do the same as in step 4.
 
-         <!-- border; size:540px -->![analytic_application](data-action-version-2.png)
+         ![analytic_application](data-action-version-2.png)
 
       5. Save the changes.
 

@@ -40,17 +40,17 @@ Open the story in which you want to add a new section in edit mode.
 - As mentioned, in this example the **List Price Analysis** (`SAP_MKT_PortfolioPlanning_ListPriceAnalysis`) story is opened.
 - As you can see the story already has three sections, which are the **Trend Analysis** section, the **Average List Price** section and the **Data Quality** section.
   
-<!-- border; size:540px -->![xp&A Commercial Planning](1/0.png)
+![xp&A Commercial Planning](1/0.png)
 
 ### Modify Layout
 
 1. Open the **Left Side Panel** and switch to the **Outline** tab. 
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/1.png)
+    ![xp&A Commercial Planning](1/1.png)
 
 2. Drill down to the **CONTENT** panel of the story page and look for panel groups called `p2_pnl_section1_lyt`, `p2_pnl_section2_lyt` and `p2_pnl_section3_lyt`.
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/2.png)
+    ![xp&A Commercial Planning](1/2.png)
 
     - Each of these panels represents one section of the story.
     - The container `p2_pnl_section1_lyt` contains all elements of the **Trend Analysis** section.
@@ -63,7 +63,7 @@ Open the story in which you want to add a new section in edit mode.
   
 3. Click on one of those containers and duplicate it. 
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/3.png)
+    ![xp&A Commercial Planning](1/3.png)
 
     - As we want to add a new section to the story, we need to create another container which has the same structure as the others.
     - Building it from scratch would be way too time consuming - so let us just copy an existing container and modify it afterwards. 
@@ -72,7 +72,7 @@ Open the story in which you want to add a new section in edit mode.
 4. Rename the new panel to `p2_pnl_section4_lyt`.
     - According to the naming convention used, rename the new panel from the auto-generated name (which in this instance is `Panel_1`) to `p2_pnl_section4_lyt` by double clicking on the panel name in the **Outline**.
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/4.png)
+    ![xp&A Commercial Planning](1/4.png)
 
     - It is generally recommended to also rename the widgets and panels inside this container according to the naming convention too, as all duplicated elements have the default naming now. However, for the purpose of efficiency, the rest of this tutorial assumes that the widgets and panels inside this container are left with their default names.
 
@@ -82,7 +82,7 @@ Open the story in which you want to add a new section in edit mode.
     - This will be the height of the panel when you open the story. Depending on how many widgets you want to place there, you may want to increase or decrease your pixels.
     - In this case, let us change the height from `550 px` to `700 px`.
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/5.png)
+    ![xp&A Commercial Planning](1/5.png)
 
     >INFORMATION:
     >
@@ -96,98 +96,98 @@ Open the story in which you want to add a new section in edit mode.
     - Each of these buttons calls a tiny script which changes the layout accordingly. As we have a new section now, we need to adjust all scripts of each button to take into consideration the new panel as well. 
     - First, let us start with the button of the first section `p2_pnl_section1_lyt`. Use the search function to look for the button called `p2_btn_section1_button1`. This is the technical name of the expand or respectively collapse button of the first section. 
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/6.png)
+    ![xp&A Commercial Planning](1/6.png)
 
     - Open the `onClick` script by clicking on the `fx` icon of the button in the **Left Side Panel**.
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/7.png)
+    ![xp&A Commercial Planning](1/7.png)
 
     - Now extend the script of this button by inserting the following code marked in red:
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/8.png)
+    ![xp&A Commercial Planning](1/8.png)
 
-    ```
-    var toggleVisibilityPanels = ArrayUtils.create(Type.Panel);
+   ```
+   var toggleVisibilityPanels = ArrayUtils.create(Type.Panel);
 
-    // Get objects for visiblity toggle
-    var reportPanel = Application.getWidgets({searchPattern:'p2_pnl_section2_lyt', type:WidgetType.Panel});
-    var reportPanel2 = Application.getWidgets({searchPattern:'p2_pnl_section3_lyt', type:WidgetType.Panel});
-    var reportPanel3 = Application.getWidgets({searchPattern:'p2_pnl_section4_lyt', type:WidgetType.Panel});
-    var pageHeader = Application.getWidgets({searchPattern:'p2_pnl_pageHeader_lyt', type:WidgetType.Panel});
-    var backNavigation = Application.getWidgets({searchPattern:'p2_pnl_backNavigation_lyt', type:WidgetType.Panel});
-    var expandBtn = Application.getWidgets({searchPattern:'p2_pnl_btn_section1_expand', type:WidgetType.Panel});
+   // Get objects for visiblity toggle
+   var reportPanel = Application.getWidgets({searchPattern:'p2_pnl_section2_lyt', type:WidgetType.Panel});
+   var reportPanel2 = Application.getWidgets({searchPattern:'p2_pnl_section3_lyt', type:WidgetType.Panel});
+   var reportPanel3 = Application.getWidgets({searchPattern:'p2_pnl_section4_lyt', type:WidgetType.Panel});
+   var pageHeader = Application.getWidgets({searchPattern:'p2_pnl_pageHeader_lyt', type:WidgetType.Panel});
+   var backNavigation = Application.getWidgets({searchPattern:'p2_pnl_backNavigation_lyt', type:WidgetType.Panel});
+   var expandBtn = Application.getWidgets({searchPattern:'p2_pnl_btn_section1_expand', type:WidgetType.Panel});
 
-    toggleVisibilityPanels = reportPanel.concat(pageHeader).concat(backNavigation).concat(expandBtn).concat(reportPanel2).concat(reportPanel3);
+   toggleVisibilityPanels = reportPanel.concat(pageHeader).concat(backNavigation).concat(expandBtn).concat(reportPanel2).concat(reportPanel3);
 
-    layoutScripts.resizePanelsMulti(toggleVisibilityPanels, p2_pnl_section1_lyt, this );
-    ```
+   layoutScripts.resizePanelsMulti(toggleVisibilityPanels, p2_pnl_section1_lyt, this );
+   ```
 
     - As you can see, lines 4 to 6 are pretty identical. These lines must always address the parent containers of the **other** buttons, which are `p2_pnl_section2_lyt`,  `p2_pnl_section3_lyt` and `p2_pnl_section4_lyt` as we are located in `p2_pnl_section1_lyt` in this case. For the variable name, just give it some unique name. According to the naming convention, we will just go with `reportPanel3` in this case.
     - In addition to that, you can see that in line 11 a concatenation operation is done. Add the new variable addressing the new panel to the end of the concatenation operation. 
     - Now, look for the button `p2_btn_section2_button1` in the **Left Side Panel** and repeat these steps in order to adjust the script for the button of the second section.
     - As you are located inside the `p2_pnl_section2_lyt` container now, the `onClick` script must address the panels `p2_pnl_section1_lyt`, `p2_pnl_section3_lyt` and `p2_pnl_section4_lyt`.
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/9.png)
+    ![xp&A Commercial Planning](1/9.png)
 
-    ```
-    var toggleVisibilityPanels = ArrayUtils.create(Type.Panel);
+   ```
+   var toggleVisibilityPanels = ArrayUtils.create(Type.Panel);
 
-    // Get objects for visiblity toggle
-    var reportPanel = Application.getWidgets({searchPattern:'p2_pnl_section1_lyt', type:WidgetType.Panel});
-    var reportPanel2 = Application.getWidgets({searchPattern:'p2_pnl_section3_lyt', type:WidgetType.Panel});
-    var reportPanel3 = Application.getWidgets({searchPattern:'p2_pnl_section4_lyt', type:WidgetType.Panel});
-    var pageHeader = Application.getWidgets({searchPattern:'p2_pnl_pageHeader_lyt', type:WidgetType.Panel});
-    var backNavigation = Application.getWidgets({searchPattern:'p2_pnl_backNavigation_lyt', type:WidgetType.Panel});
-    var expandBtn = Application.getWidgets({searchPattern:'p2_pnl_btn_section2_expand', type:WidgetType.Panel});
+   // Get objects for visiblity toggle
+   var reportPanel = Application.getWidgets({searchPattern:'p2_pnl_section1_lyt', type:WidgetType.Panel});
+   var reportPanel2 = Application.getWidgets({searchPattern:'p2_pnl_section3_lyt', type:WidgetType.Panel});
+   var reportPanel3 = Application.getWidgets({searchPattern:'p2_pnl_section4_lyt', type:WidgetType.Panel});
+   var pageHeader = Application.getWidgets({searchPattern:'p2_pnl_pageHeader_lyt', type:WidgetType.Panel});
+   var backNavigation = Application.getWidgets({searchPattern:'p2_pnl_backNavigation_lyt', type:WidgetType.Panel});
+   var expandBtn = Application.getWidgets({searchPattern:'p2_pnl_btn_section2_expand', type:WidgetType.Panel});
 
-    toggleVisibilityPanels = reportPanel.concat(pageHeader).concat(backNavigation).concat(expandBtn).concat(reportPanel2).concat(reportPanel3);
+   toggleVisibilityPanels = reportPanel.concat(pageHeader).concat(backNavigation).concat(expandBtn).concat(reportPanel2).concat(reportPanel3);
 
-    layoutScripts.resizePanelsMulti(toggleVisibilityPanels, p2_pnl_section2_lyt, this );
-    ```
+   layoutScripts.resizePanelsMulti(toggleVisibilityPanels, p2_pnl_section2_lyt, this );
+   ```
 
     - Repeat the same steps for the button `p2_btn_section3_button1`.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/10.png)
+    ![xp&A Commercial Planning](1/10.png)
 
-    ```
-    var toggleVisibilityPanels = ArrayUtils.create(Type.Panel);
+   ```
+   var toggleVisibilityPanels = ArrayUtils.create(Type.Panel);
 
-    // Get objects for visiblity toggle
-    var reportPanel = Application.getWidgets({searchPattern:'p2_pnl_section1_lyt', type:WidgetType.Panel});
-    var reportPanel2 = Application.getWidgets({searchPattern:'p2_pnl_section2_lyt', type:WidgetType.Panel});
-    var reportPanel3 = Application.getWidgets({searchPattern:'p2_pnl_section4_lyt', type:WidgetType.Panel});
-    var pageHeader = Application.getWidgets({searchPattern:'p2_pnl_pageHeader_lyt', type:WidgetType.Panel});
-    var backNavigation = Application.getWidgets({searchPattern:'p2_pnl_backNavigation_lyt', type:WidgetType.Panel});
-    var expandBtn = Application.getWidgets({searchPattern:'p2_pnl_btn_section3_expand', type:WidgetType.Panel});
+   // Get objects for visiblity toggle
+   var reportPanel = Application.getWidgets({searchPattern:'p2_pnl_section1_lyt', type:WidgetType.Panel});
+   var reportPanel2 = Application.getWidgets({searchPattern:'p2_pnl_section2_lyt', type:WidgetType.Panel});
+   var reportPanel3 = Application.getWidgets({searchPattern:'p2_pnl_section4_lyt', type:WidgetType.Panel});
+   var pageHeader = Application.getWidgets({searchPattern:'p2_pnl_pageHeader_lyt', type:WidgetType.Panel});
+   var backNavigation = Application.getWidgets({searchPattern:'p2_pnl_backNavigation_lyt', type:WidgetType.Panel});
+   var expandBtn = Application.getWidgets({searchPattern:'p2_pnl_btn_section3_expand', type:WidgetType.Panel});
 
-    toggleVisibilityPanels = reportPanel.concat(pageHeader).concat(backNavigation).concat(expandBtn).concat(reportPanel2).concat(reportPanel3);
+   toggleVisibilityPanels = reportPanel.concat(pageHeader).concat(backNavigation).concat(expandBtn).concat(reportPanel2).concat(reportPanel3);
 
-    layoutScripts.resizePanelsMulti(toggleVisibilityPanels, p2_pnl_section3_lyt, this );
-    ```
+   layoutScripts.resizePanelsMulti(toggleVisibilityPanels, p2_pnl_section3_lyt, this );
+   ```
 
     - Lastly repeat the same steps for your new button of the new section. Since we have not renamed the button yet according to the naming conventions, the button is called `Button_1` in this example, which is its auto-generated name.
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/11.png)
+    ![xp&A Commercial Planning](1/11.png)
 
     - As you can see, the `onClick` script is completely empty here - simply copy the `onClick` script of another button and adjust the code according to the logic explained - or simply copy the code from the text box below. You script should now look like this, with lines 4 to 6 addressing the other containers `p2_pnl_section1_lyt`, `p2_pnl_section2_lyt` and `p2_pnl_section3_lyt`:
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/12.png)
+    ![xp&A Commercial Planning](1/12.png)
 
-    ```
-    var toggleVisibilityPanels = ArrayUtils.create(Type.Panel);
+   ```
+   var toggleVisibilityPanels = ArrayUtils.create(Type.Panel);
 
-    // Get objects for visiblity toggle
-    var reportPanel = Application.getWidgets({searchPattern:'p2_pnl_section1_lyt', type:WidgetType.Panel});
-    var reportPanel2 = Application.getWidgets({searchPattern:'p2_pnl_section2_lyt', type:WidgetType.Panel});
-    var reportPanel3 = Application.getWidgets({searchPattern:'p2_pnl_section3_lyt', type:WidgetType.Panel});
-    var pageHeader = Application.getWidgets({searchPattern:'p2_pnl_pageHeader_lyt', type:WidgetType.Panel});
-    var backNavigation = Application.getWidgets({searchPattern:'p2_pnl_backNavigation_lyt', type:WidgetType.Panel});
-    var expandBtn = Application.getWidgets({searchPattern:'p2_pnl_btn_section3_expand', type:WidgetType.Panel});
+   // Get objects for visiblity toggle
+   var reportPanel = Application.getWidgets({searchPattern:'p2_pnl_section1_lyt', type:WidgetType.Panel});
+   var reportPanel2 = Application.getWidgets({searchPattern:'p2_pnl_section2_lyt', type:WidgetType.Panel});
+   var reportPanel3 = Application.getWidgets({searchPattern:'p2_pnl_section3_lyt', type:WidgetType.Panel});
+   var pageHeader = Application.getWidgets({searchPattern:'p2_pnl_pageHeader_lyt', type:WidgetType.Panel});
+   var backNavigation = Application.getWidgets({searchPattern:'p2_pnl_backNavigation_lyt', type:WidgetType.Panel});
+   var expandBtn = Application.getWidgets({searchPattern:'p2_pnl_btn_section3_expand', type:WidgetType.Panel});
 
-    toggleVisibilityPanels = reportPanel.concat(pageHeader).concat(backNavigation).concat(expandBtn).concat(reportPanel2).concat(reportPanel3);
+   toggleVisibilityPanels = reportPanel.concat(pageHeader).concat(backNavigation).concat(expandBtn).concat(reportPanel2).concat(reportPanel3);
 
-    layoutScripts.resizePanelsMulti(toggleVisibilityPanels, p2_pnl_section3_lyt, this );
-    ```
+   layoutScripts.resizePanelsMulti(toggleVisibilityPanels, p2_pnl_section3_lyt, this );
+   ```
 
 7.  Adjust the resizing script for the containers
     - The next thing you have to do is to adjust the resizing script for the containers once you leave the full screen mode and go back to default view. 
@@ -195,21 +195,21 @@ Open the story in which you want to add a new section in edit mode.
     - Now extend the if-else block with a new else-if condition, targeting the new section.
     - In the following screenshot, lines 30 to 32 were added. 
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/13.png)
+    ![xp&A Commercial Planning](1/13.png)
 
     - In order to simplify the extension of the code, copy lines 26 to 28 and paste them below.
     - Afterwards change the `p2_pnl_section3_lyt` to `p2_pnl_section4_lyt` in line 30.
     - Lastly change the orange highlighted number in line 31 from `550` to the pixel height of your new container which we defined in step 1, being `700` in this case. 
 
-    ```
-    else if (panelToBeResized===p2_pnl_section4_lyt) {
+   ```
+   else if (panelToBeResized===p2_pnl_section4_lyt) {
 		panelToBeResized.getLayout().setHeight(LayoutValue.create(700, LayoutUnit.Pixel));		
 		fullScreen_btn.setText(cfg_iconRepository.enterfullscreen);	}
-    ```
+   ```
     
-    >INFORMATION:
-    >
-    - The amount of conditional checks in this script depends on how many containers or respectively sections you have. 
+   >INFORMATION:
+   >
+   - The amount of conditional checks in this script depends on how many containers or respectively sections you have. 
 
 8.  Adjust the `onClick` script of the **Hide** or respectively **Unhide** button located on the top-left corner of the new section.
 
@@ -226,32 +226,32 @@ Open the story in which you want to add a new section in edit mode.
   
     - Enter the `onClick` script of this button and add the following code:
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/14.png)
+    ![xp&A Commercial Planning](1/14.png)
 
-    ```
-    layoutScripts.sectionExpandCollapse(Button_2,
+   ```
+   layoutScripts.sectionExpandCollapse(Button_2,
 								    FlowLayoutPanel_1,
 								    p2_pnl_section4_lyt,
 								    FlowLayoutPanel_2,
 								    LayoutValue.create(700, LayoutUnit.Pixel));
-    ```
+   ```
 
-    - As already mentioned, this script may differ a little from the `onClick` scripts of the other buttons as we have not renamed the elements inside the new container according to the naming convention and thus have to go with the default names. 
-    - The arguments you need to pass are basically the following:
-    - As the first argument, you need to pass the button responsible for hiding or unhiding the new section, which in this example is called `Button_2`.
+   - As already mentioned, this script may differ a little from the `onClick` scripts of the other buttons as we have not renamed the elements inside the new container according to the naming convention and thus have to go with the default names. 
+   - The arguments you need to pass are basically the following:
+   - As the first argument, you need to pass the button responsible for hiding or unhiding the new section, which in this example is called `Button_2`.
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/15.png)
+   ![xp&A Commercial Planning](1/15.png)
 
-    - As the second argument, you need to pass the flow layout panel which covers the content of the section, which in this case is called `FlowLayoutPanel_1`
+   - As the second argument, you need to pass the flow layout panel which covers the content of the section, which in this case is called `FlowLayoutPanel_1`
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/16.png)
+   ![xp&A Commercial Planning](1/16.png)
 
-    - The third argument is the parent container which we had just created and renamed correctly, which is `p2_pnl_section4_lyt`.
-    - The fourth argument is the flow layout panel containing the button to enter full screen, which in this case is called `FlowLayoutPanel_2`
+   - The third argument is the parent container which we had just created and renamed correctly, which is `p2_pnl_section4_lyt`.
+   - The fourth argument is the flow layout panel containing the button to enter full screen, which in this case is called `FlowLayoutPanel_2`
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/17.png)
+   ![xp&A Commercial Planning](1/17.png)
 
-    The last argument is a script, in which you need to pass another argument specifying the pixel height of the parent container, which we set to `700`. 
+   The last argument is a script, in which you need to pass another argument specifying the pixel height of the parent container, which we set to `700`. 
 
 9.  Save your story.
 

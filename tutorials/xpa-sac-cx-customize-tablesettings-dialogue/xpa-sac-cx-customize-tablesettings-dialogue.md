@@ -45,11 +45,11 @@ In this step you will learn how to add new measures to the table settings dialog
 
 2. Open the **Left Side Panel**, go to the **Outline** tab and edit the `onInitialization` script of the story object.
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/0.png)
+    ![xp&A Commercial Planning](1/0.png)
 
 3. Look for the line where the variable `cfg_measureMapping` is initialized. 
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/1.png)
+    ![xp&A Commercial Planning](1/1.png)
    
     >INFORMATION:
     >
@@ -61,7 +61,7 @@ In this step you will learn how to add new measures to the table settings dialog
  
 4. Scroll down inside the script a little further until you find the array called `cfg_tableSettingOptions`. 
     
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/2.png)
+    ![xp&A Commercial Planning](1/2.png)
 
     >INFORMATION:
     >
@@ -77,7 +77,7 @@ In this step you will learn how to add new measures to the table settings dialog
 
     - Let us assume that we have a measure in our data model called `Revenue_GlobalCurrency`. If we wanted to add this to the list of selections, the `cfg_tableSettingsOptions` would now look like this:
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/6.png)
+    ![xp&A Commercial Planning](1/6.png)
 
     - Now that you have configured which measures you want to display in the pop-up window, you need to adjust the back-end logic so the table layout changes accordingly as well.
 
@@ -85,18 +85,18 @@ In this step you will learn how to add new measures to the table settings dialog
 
     - Scroll down until you find this big switch-case block. 
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/3.png)
+    ![xp&A Commercial Planning](1/3.png)
 
     - Make sure that all measures you have maintained in your `cfg_tableSettingOptions` dictionary from the `onInitialization` script are represented in this switch-case block.    
     - If you added a new measure that had not been there initially, make sure to add a respective `case` block for that new measure. 
     - Simply copy one of the existing `case` blocks and paste it somewhere in between the other `case` blocks. The order does not matter. In regards to the screenshot, one of the existing `case` blocks you could choose to copy from ranges from line 29 to 33.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/4.png)
+    ![xp&A Commercial Planning](1/4.png)
 
     - Make sure to change the measure IDs in the new `case` block accordingly. In regards to the previous screenshot, this must be done in lines 29, 31 and 32. 
     - Following the previous example, your result should look like that:
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/7.png)
+    ![xp&A Commercial Planning](1/7.png)
 
     - Save your changes. 
 
@@ -113,11 +113,11 @@ In this step you will learn how to remove measures from the table settings dialo
 
 2. Open the **Left Side Panel**, go on **Outline** and edit the `onInitialization` script of the story object.
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/0.png)
+    ![xp&A Commercial Planning](1/0.png)
  
 3. Scroll down inside the script until you find the array called `cfg_tableSettingOptions`. 
     
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/2.png)
+    ![xp&A Commercial Planning](1/2.png)
 
     >INFORMATION:
     >
@@ -129,19 +129,19 @@ In this step you will learn how to remove measures from the table settings dialo
     
     - Scroll down until you find this huge switch-case block. 
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/3.png)
+    ![xp&A Commercial Planning](1/3.png)
 
     - Make sure that all measures you have maintained in your `cfg_tableSettingOptions` dictionary from the `onInitialization` script are represented in this switch-case block.
     - If you removed a certain measure, make sure to remove the respective `case` block for the same measure ID as well. So if you removed the measure `cfg_measureMapping.cmListPrice` from the `cfg_tableSettingOptions` dictionary for example, delete the respective lines as well:
     
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/4.png)
+    ![xp&A Commercial Planning](1/4.png)
     
     - Save your changes. 
   
 ### Formatted Measures
 You may have noticed that one measure ID is excluded from the switch-case code block and is listed separately at the end of the `applicationScripts.applyTableSettings` script. 
 
-<!-- border; size:540px -->![xp&A Commercial Planning](1/5.png)
+![xp&A Commercial Planning](1/5.png)
 
 This is because this particular measure has conditional formatting applied to it and thus **must not** be removed from the table layout. 
 

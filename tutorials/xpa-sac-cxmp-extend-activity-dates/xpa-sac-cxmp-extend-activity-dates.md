@@ -28,19 +28,19 @@ parser: v2
 
 In the default content for marketing campaign planning, when planning a marketing activity, the marketing activity spend is allocated to a particular period only which is derived from the user input entered in the invoice date field. This is how the activity form looks by default:
 
-<!-- border; size:540px -->![ActivityFormBefore](Step00Intro/0001_ActivityFormBefore.png)
+![ActivityFormBefore](Step00Intro/0001_ActivityFormBefore.png)
 
 The activity spend is then allocated according to the individual products revenues chosen during activity creation.
 
-<!-- border; size:540px -->![ActivityAllocationBefore](Step00Intro/0002_ActivityAllocationBefore.png)
+![ActivityAllocationBefore](Step00Intro/0002_ActivityAllocationBefore.png)
 
 This tutorial will enable you to extend the concept to allocate marketing activity spend to a time period based on a start and end date provided by the user. The updated form will look like this:
 
-<!-- border; size:540px -->![ActivityFormAfter](Step00Intro/0003_ActivityFormAfter.png)
+![ActivityFormAfter](Step00Intro/0003_ActivityFormAfter.png)
 
 The activity spend is then split/allocated according to the prorated product revenues for each product according to the number of days of each involved period within the chosen time interval.
 
-<!-- border; size:540px -->![ActivityAllocationAfter](Step00Intro/0004_ActivityAllocationAfter.png)
+![ActivityAllocationAfter](Step00Intro/0004_ActivityAllocationAfter.png)
 
 To achieve this you will need to go though all components of the content:
 
@@ -56,11 +56,11 @@ Have a look at the properties of the dimension **Marketing Activity** (`SAP_MKT_
 
 Open the marketing planning model **Marketing Planning** (`SAP_MKT_IM_MarketingPlanning`), searching for it in the file browser of SAP Analytics Cloud.
 
-<!-- border; size:540px -->![OpenStory](Step01UpdateDimensionProperties/0101_OpenModel.png)
+![OpenStory](Step01UpdateDimensionProperties/0101_OpenModel.png)
 
 In the dimension on the left-hand side, click on the entry for **Marketing Campaign Activity** (`SAP_MKT_CampaignActivity`) to open the dimension details on the right-hand side.
 
-<!-- border; size:540px -->![OpenActivityDimension](Step01UpdateDimensionProperties/0102_MarketingActivity.png)
+![OpenActivityDimension](Step01UpdateDimensionProperties/0102_MarketingActivity.png)
 
 On the right-hand side in the Properties list, click on the "+" to add two new properties.
 
@@ -71,13 +71,13 @@ On the right-hand side in the Properties list, click on the "+" to add two new p
 
 Enter the needed values and click on **Create** to close the property editor
 
-<!-- border; size:540px -->![AddStartDate](Step01UpdateDimensionProperties/0103_PropertyStartDate.png)
+![AddStartDate](Step01UpdateDimensionProperties/0103_PropertyStartDate.png)
 
 Repeat the same to add the property `EndDate`.
 
 Once you are done, click the **Save** icon to save the model.
 
-<!-- border; size:540px -->![SaveDataModel](Step01UpdateDimensionProperties/0104_SaveModel.png)
+![SaveDataModel](Step01UpdateDimensionProperties/0104_SaveModel.png)
 
 Now you have two properties to store the start and end date for the marketing activity.
 
@@ -89,39 +89,39 @@ As a next step, you will need to adjust the data action that allocates the activ
 
 In the File explorer search for data action **Maintain Marketing Campaign Activity** (`SAP_MKT_IM_MarketingPlanning_MaintainActivity`) and open it. This is the data action that is being called when you create or edit a marketing activity.
 
-<!-- border; size:540px -->![OpenDataAction](Step02UpdateMaintainActvityDa/0201_SearchDA.png)
+![OpenDataAction](Step02UpdateMaintainActvityDa/0201_SearchDA.png)
 
 You will need to add additional parameters for the start and end period to the data action. Click on the parameter icon to open the list of parameters available for the data action.
 
-<!-- border; size:540px -->![DisplayDataActionParameters](Step02UpdateMaintainActvityDa/0202_DisplayParameterList.png)
+![DisplayDataActionParameters](Step02UpdateMaintainActvityDa/0202_DisplayParameterList.png)
 
 As the parameter for the `InvoiceDate` will not be needed anymore, change it to become the parameter for the start period.
 Click on the change icon next to the parameter.
 
-<!-- border; size:540px -->![OpenInvoiceDateParameter](Step02UpdateMaintainActvityDa/0203_UpdateInvoiceDate.png)
+![OpenInvoiceDateParameter](Step02UpdateMaintainActvityDa/0203_UpdateInvoiceDate.png)
 
 Change the `Id` and `Name for Prompt` field to `StartPeriod`. While you are here you can also remove the Default Member currently set to *P04.2024* by marking it with your mouse and pressing the `Delete/DEL` key on your keyboard.
 Once you have made the changes click on **Done**.
 
-<!-- border; size:540px -->![EditInvoiceDateParameter](Step02UpdateMaintainActvityDa/0204_UpdateInvoiceDate02.png)
+![EditInvoiceDateParameter](Step02UpdateMaintainActvityDa/0204_UpdateInvoiceDate02.png)
 
 Now you will need to create a new parameter for the end date. Click on the **Create Parameter** below the parameter list.
 
-<!-- border; size:540px -->![CreateEndDateParameter](Step02UpdateMaintainActvityDa/0205_CreateParameter.png)
+![CreateEndDateParameter](Step02UpdateMaintainActvityDa/0205_CreateParameter.png)
 
 Enter the parameter details as follows and click on **Done** to save and close the new parameter. 
 
-<!-- border; size:540px -->![CreateEndDateParameter](Step02UpdateMaintainActvityDa/0206_CreateParameterEndDate.png)
+![CreateEndDateParameter](Step02UpdateMaintainActvityDa/0206_CreateParameterEndDate.png)
 
 While you are looking at the parameter list you can also delete the parameter for the `ActivitySpendAmount` as we will use the ATTRIBUTE function in the updated version of the data action. Click on the **trash can** icon next to it to delete it.
 
-<!-- border; size:540px -->![RemoveActivitySpendParameter](Step02UpdateMaintainActvityDa/0207_DeleteActivitySpendParameter.png)
+![RemoveActivitySpendParameter](Step02UpdateMaintainActvityDa/0207_DeleteActivitySpendParameter.png)
 
 Now that you have the data action in place, make sure that these parameters are being used and the proration is set up correctly (similarly to the one for campaigns). 
 
 As this requires multiple changes across the second data action step, go ahead and click on the step called **Allocated Activity Costs according to Product Revenue** and replace everything in this step with the script provided below:
 
-<!-- border; size:540px -->![OverwriteActivityAllocationStep](Step02UpdateMaintainActvityDa/0208_OverwriteActivityAllocationStep.png)
+![OverwriteActivityAllocationStep](Step02UpdateMaintainActvityDa/0208_OverwriteActivityAllocationStep.png)
 
 			```
 			CONFIG.HIERARCHY = [d/SAP_ALL_PRODUCT].[h/Hierarchy4],[d/SAP_MKT_MarketingCampaign].[h/Hierarchy2], [d/SAP_MKT_MarketingActivity].[h/Hierarchy2]
@@ -245,7 +245,7 @@ As this requires multiple changes across the second data action step, go ahead a
 
 Click on the **Save** icon to have your updated data action saved.
 
-<!-- border; size:540px -->![SaveActivityAllocationDa](Step02UpdateMaintainActvityDa/0209_SaveActivityAllocationDa.png)
+![SaveActivityAllocationDa](Step02UpdateMaintainActvityDa/0209_SaveActivityAllocationDa.png)
 
 ### Update data action for recalculation of all activities (optional)
 
@@ -355,7 +355,7 @@ Click on the step **Recalculate all Activities** and replace the whole script in
 			
 Click on the **Save** icon to have your updated data action saved.
 
-<!-- border; size:540px -->![SaveRecalculateActivityDa](Step03UpdateRecalculateActivitiesDa/0303_SaveRecalculateDA.png)
+![SaveRecalculateActivityDa](Step03UpdateRecalculateActivitiesDa/0303_SaveRecalculateDA.png)
 
 ### Update activity input form to extend with additional field for end date
 
@@ -363,31 +363,31 @@ Now you need to do some work on the screen for the marketing activity form to ca
 
 Go to the file menu and search for the story **Marketing Campaign Planning** (`SAP_MKT_MarketingCampaignPlanning`).
 
-<!-- border; size:540px -->![OpenCampaignPlanningStory](Step04UpdateActivityInputForm/0401_OpenStory.png)
+![OpenCampaignPlanningStory](Step04UpdateActivityInputForm/0401_OpenStory.png)
 
 In case you want to try this out on a copy of the story, mark the checkbox left to the story and hit the **Copy** button on top. Provide a name for your story copy and have it saved. Now open the saved copy.
 
-<!-- border; size:540px -->![OpenCampaignPlanningStory](Step04UpdateActivityInputForm/0402_CreateStoryCopy.png)
+![OpenCampaignPlanningStory](Step04UpdateActivityInputForm/0402_CreateStoryCopy.png)
 
 Switch to **Edit** mode so you can make changes to the story. In the **View** section click on button to **Left Display Panel** to display the outline panel on the left-hand side.
 
-<!-- border; size:540px -->![OpenCampaignPlanningStory](Step04UpdateActivityInputForm/0403_SwitchToEditMode.png)
+![OpenCampaignPlanningStory](Step04UpdateActivityInputForm/0403_SwitchToEditMode.png)
 
 In the outline panel on the left-hand side locate the `dialog_maintainActivity` pop-up, which you will need to adjust. You will reuse the existing `Invoice Date` input field for the start date and duplicate it to have a second input field for the end date. For the second input field you can use the empty space right next to it (currently filled up with placeholder panel `d2_pnl_cs1_placeholder02`).
 
-<!-- border; size:540px -->![LocateActivityDialog](Step04UpdateActivityInputForm/0404_LocateActivityDialog.png)
+![LocateActivityDialog](Step04UpdateActivityInputForm/0404_LocateActivityDialog.png)
 
 Start with the duplication, mark the panel `d2_pnl_cs1_invoiceDate` and in the **Edit** menu on top select option **Duplicate**.
 
-<!-- border; size:540px -->![DuplicateInputField](Step04UpdateActivityInputForm/0405_DuplicateInputFieldGroup.png)
+![DuplicateInputField](Step04UpdateActivityInputForm/0405_DuplicateInputFieldGroup.png)
 
 You will get a duplicate group containing a panel, the input field and the label field. Now drag this set below the placeholder panel `d2_pnl_cs1_placeholder02`.
 
-<!-- border; size:540px -->![DuplicateInputAfterCopy](Step04UpdateActivityInputForm/0406_DragDuplicateGroup.png)
+![DuplicateInputAfterCopy](Step04UpdateActivityInputForm/0406_DragDuplicateGroup.png)
 
 It should look like this.
 
-<!-- border; size:540px -->![DuplicateInputAfterCopy](Step04UpdateActivityInputForm/0407_DraggedPanelGroup.png)
+![DuplicateInputAfterCopy](Step04UpdateActivityInputForm/0407_DraggedPanelGroup.png)
 
 Delete the placeholder panel `d2_pnl_cs1_placeholder02` as it is not needed anymore and rename the two date input groups for start and end date (panel, input field and text) as follows:
 
@@ -414,32 +414,32 @@ The input fields for start and end date are being handled once when initializing
 
 First, we will introduce two new global key/value pairs in the variable `cfg_activityAttr` for the two activity properties start and end date, so they can easily be addressed throughout the scripts. Click on the `fx` icon next to the story page object **Page_1** to edit the `onInitialization` function.
 
-<!-- border; size:540px -->![EditOnInit](Step05UpdatePopupInit/0501_EditOnInit.png)
+![EditOnInit](Step05UpdatePopupInit/0501_EditOnInit.png)
 
 Search for the assignment of variable `cfg_activityAttr` and add two additional key/value pairs to it, so it looks like this.
 
-<!-- border; size:540px -->![EditCfgActivityAttr](Step05UpdatePopupInit/0502_EditCfgActivityAttr.png)
+![EditCfgActivityAttr](Step05UpdatePopupInit/0502_EditCfgActivityAttr.png)
 
 Once you are done, locate the function `initializeActivityPopUp` below the `applicationScripts` object and click on the `fx` icon to open it in the editor.
 
-<!-- border; size:540px -->![EditInitScript](Step05UpdatePopupInit/0503_EditScript.png)
+![EditInitScript](Step05UpdatePopupInit/0503_EditScript.png)
 
 In the switch statement, there is a case block for creating a new activity. Within this block of code, you need to make sure the new input fields are properly initialized to empty strings (i.e., no value) when opening the pop-up.
 Note that when you renamed the input field for invoice date to start date, the variable name had already been adjusted in this script automatically:
 
-<!-- border; size:540px -->![EditBlankFieldBefore](Step05UpdatePopupInit/0504_BlankActivityFieldsBefore.png)
+![EditBlankFieldBefore](Step05UpdatePopupInit/0504_BlankActivityFieldsBefore.png)
 
 So you just need to add a line for initializing the end date input field (and update the comment).
 
-<!-- border; size:540px -->![EditBlankFieldAfter](Step05UpdatePopupInit/0505_BlankActivityFieldsAfter.png)
+![EditBlankFieldAfter](Step05UpdatePopupInit/0505_BlankActivityFieldsAfter.png)
 
 In the same switch statement, there is also a case block for editing an existing activity. Within this block of code, you need to make sure the new input fields for start and end date are properly filled from the activity properties. Initially it looks like this, still being filled from invoice date.
 
-<!-- border; size:540px -->![EditFillInputBefore](Step05UpdatePopupInit/0506_FillInputActivityBefore.png)
+![EditFillInputBefore](Step05UpdatePopupInit/0506_FillInputActivityBefore.png)
 
 Change the assignment to read the value from the start date property instead of invoice date of the Marketing Activity dimension. Additionally you will need to add a line for the end date input field and assign the end date property of the Marketing Activity dimension to it (and update the comment).
 
-<!-- border; size:540px -->![EditFillInputAfter](Step05UpdatePopupInit/0507_FillInputActivityAfter.png)
+![EditFillInputAfter](Step05UpdatePopupInit/0507_FillInputActivityAfter.png)
 
 Great, now continue with the next step to handle the saving of an activity.
 
@@ -449,27 +449,27 @@ In this step you need to make sure that the values for start and end date entere
 
 Locate the function `maintainActivity` below the `applicationScripts` object and click on the `fx` icon to open it in the editor.
 
-<!-- border; size:540px -->![OpenMaintainScript](Step06UpdatePopupMaintain/0601_OpenMaintainScript.png)
+![OpenMaintainScript](Step06UpdatePopupMaintain/0601_OpenMaintainScript.png)
 
 At first you need to retrieve the values entered by the user from the input fields.
 For start date we reuse and rename the formerly used invoice date while for the end date we need to add this similarly.
 
 Change this section
 
-<!-- border; size:540px -->![ReadInputBefore](Step06UpdatePopupMaintain/0602_MaintainReadInputBefore.png)
+![ReadInputBefore](Step06UpdatePopupMaintain/0602_MaintainReadInputBefore.png)
 
 So it looks like this, i.e handling, reading and validating start and end date input
 
-<!-- border; size:540px -->![ReadInputAfter](Step06UpdatePopupMaintain/0603_MaintainReadInputAfter.png)
+![ReadInputAfter](Step06UpdatePopupMaintain/0603_MaintainReadInputAfter.png)
 
 Now you need to make use of the read values for updating the activity's properties.
 This is how it looks before the change
 
-<!-- border; size:540px -->![UpdatePropertiesBefore](Step06UpdatePopupMaintain/0604_MaintainUpdatePropertiesBefore.png)
+![UpdatePropertiesBefore](Step06UpdatePopupMaintain/0604_MaintainUpdatePropertiesBefore.png)
 
 Change the line to adjust for start date instead of invoice date and add an additional line for the end date so it looks like this
 
-<!-- border; size:540px -->![UpdatePropertiesBefore](Step06UpdatePopupMaintain/0605_MaintainUpdatePropertiesAfter.png)
+![UpdatePropertiesBefore](Step06UpdatePopupMaintain/0605_MaintainUpdatePropertiesAfter.png)
 
 Additionally to updating property values, the derived start and end period need to be passed as parameters to the data action **Maintain Marketing Campaign Activity** (`SAP_MKT_IM_MarketingPlanning_MaintainActivity`) for calculating the activity data.
 
@@ -478,11 +478,11 @@ Additionally to updating property values, the derived start and end period need 
 
 You need to adjust this section
 
-<!-- border; size:540px -->![DaParameterPassingBefore](Step06UpdatePopupMaintain/0606_MaintainPassDaParametersBefore.png)
+![DaParameterPassingBefore](Step06UpdatePopupMaintain/0606_MaintainPassDaParametersBefore.png)
 
 to look like this
 
-<!-- border; size:540px -->![DaParameterPassingBefore](Step06UpdatePopupMaintain/0607_MaintainPassDaParametersAfter.png)
+![DaParameterPassingBefore](Step06UpdatePopupMaintain/0607_MaintainPassDaParametersAfter.png)
 
 Do not forget to save all the changes you have made to the story.
 

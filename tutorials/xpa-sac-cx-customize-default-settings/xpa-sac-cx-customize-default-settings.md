@@ -45,11 +45,11 @@ In this step you will learn how to change the default company code selection.
 
 2. Click on the arrow icon of the **Company Code Input Control** on the left-hand side of the story to expand the selection of available company codes. 
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/1.png)
+    ![xp&A Commercial Planning](1/1.png)
 
 3. Now select the company code you want the widgets to be filtered to on startup of the story.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/2.png)
+    ![xp&A Commercial Planning](1/2.png)
 
     >INFORMATION:
     >
@@ -69,7 +69,7 @@ In this step you will learn how to change the default product selection.
 
 3. Now select the products you want the widgets to be filtered to on startup of the story and click on **Apply Selections**
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](2/1.png)
+    ![xp&A Commercial Planning](2/1.png)
 
 4. Save your story.
 
@@ -82,7 +82,7 @@ In this step you will learn how to change the default version selection.
 
 3. Now select the versions you want the widgets to be filtered to on startup of the story and click on **Apply Selections**
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](3/1.png)
+    ![xp&A Commercial Planning](3/1.png)
 
 4. Save your story.
 
@@ -90,17 +90,17 @@ In this step you will learn how to change the default version selection.
 Please note that some versions of the data model might be excluded from the input control and are not selectable as a result.
 In order to change that, right-click on the **Version Input Control** and hit **Edit Filter...**.
 
-<!-- border; size:540px -->![xp&A Commercial Planning](3/2.png)
+![xp&A Commercial Planning](3/2.png)
 
 Select all version you want to be selectable and click on **OK** to apply the new setting.
 
-<!-- border; size:540px -->![xp&A Commercial Planning](3/3.png)
+![xp&A Commercial Planning](3/3.png)
 
 This works for any other input control as well in case you notice that some members or nodes are missing.
 
 If a version is not displayed in the selection screen, go to **Settings** on the top-right corner and make sure that you selected all available versions to be displayed.
 
-<!-- border; size:540px -->![xp&A Commercial Planning](3/4.png)
+![xp&A Commercial Planning](3/4.png)
 
 
 ### Change Default Date
@@ -114,11 +114,11 @@ This is because the date default settings are controlled via a script that is ex
 
 2. In order to define the date default selection, open the **Left Side Panel**, go on **Outline** and edit the `onInitialization` script of the story object.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/1.png)
+    ![xp&A Commercial Planning](4/1.png)
 
 3. Scroll down until you find the line of code shown in the next screenshot. Depending on the story you are working on, the line number might differ but the code itself remains the same. 
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/2.png)
+    ![xp&A Commercial Planning](4/2.png)
 
 4. In order to change the date range to be selected, only adjust the orange-colored numbers in this line. 
    
@@ -128,11 +128,11 @@ This is because the date default settings are controlled via a script that is ex
     - Consequently the default date range would be `2023` (resulting from `2023`+`0`) to `2024` (resulting from `2023`+`1`).
     - If on the other hand you wanted the default date range to be from `2023` (which is the current year in this example) to `2025` (which would be the current year plus `2`), you would have to change the script to look as shown in the next screenshot:
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/3.png)
+    ![xp&A Commercial Planning](4/3.png)
 
     - If you wanted to change the default date range to be from `2022` (which would be the current year minus `1`) to `2025` (which would be the current year plus `2`), you would have to change the script to look like that:
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](4/4.png)
+    ![xp&A Commercial Planning](4/4.png)
 
 5. Save your changes
    
@@ -155,7 +155,7 @@ In this step you will learn how to change the default drill down for widgets app
    
 2. Open the `onInitialization` script of the story and look for these lines of codes.
 
-    <!-- border; size:540px -->![xp&A Commercial Planning](5/1.png)
+    ![xp&A Commercial Planning](5/1.png)
 
     >INFORMATION:
     >
@@ -194,7 +194,7 @@ In this step you will learn how to change the measures in the header graphs of t
 
 2. Click on the chart widget in which you want to change the measure and open the **Right Side Panel** to enter the **Builder**.
     
-    <!-- border; size:540px -->![xp&A Commercial Planning](6/1.png)
+    ![xp&A Commercial Planning](6/1.png)
 
 3. Now simply select another measure or account of your choice in order to change the graph by using the SAC standard capabilities provided in the **Builder** panel.
 
@@ -202,11 +202,11 @@ In this step you will learn how to change the measures in the header graphs of t
 
 Please note that some graphs may have pre-defined variances and color settings which potentially must be adjusted as well. 
 
-<!-- border; size:200px -->![xp&A Commercial Planning](6/2.png)
+![xp&A Commercial Planning](6/2.png)
 
 Depending on the scope of your changes, you might have to adjust the chart sub title as well. Some of the sub-titles are manually configured or contain custom variables directing to specific attributes of dimensions.
 
-<!-- border; size:540px -->![xp&A Commercial Planning](6/3.png)
+![xp&A Commercial Planning](6/3.png)
   
 Depending on the scope of your changes, please make sure that the drill down script `utilityScripts.changeHierarchyLevelChart` as described in the previous step still works. This is the case when no error on initialization of the story occurs. This is particularly necessary if you remove the date dimension from the y-axis of the chart as per default the drill-down script is targeting the date dimension.
 
@@ -219,7 +219,7 @@ Here you will learn how to change the default view.
 
 2. Click on the currency drop down widget and open the **Right Side** panel and select the option `LC` as default.
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](7/1.png)
+    ![xp&A Commercial Planning](7/1.png)
 
     >INFORMATION:
     >
@@ -228,7 +228,7 @@ Here you will learn how to change the default view.
 
 3. Next, open the **Left Side Panel**, go into the **Outline** section and look for the global variable `g_currencyMode`. Change the default value to `LC`.
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](7/2.png)
+    ![xp&A Commercial Planning](7/2.png)
 
 4. Lastly, scroll through the complete **Outline** panel and look for the widgets with the suffix `_LC` or `_GC`. 
     
@@ -237,15 +237,15 @@ Here you will learn how to change the default view.
 
 5. Click on the chart with the suffix `_GC`, open the **Right Side** panel and open the chart properties. Select **Always Pause** now.
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](7/3.png)
+    ![xp&A Commercial Planning](7/3.png)
 
 6. Now make the chart with the `_GC` suffix invisible by clicking on the `eye` icon and set the chart with the `_LC` suffix to visible.
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](7/4.png)
+    ![xp&A Commercial Planning](7/4.png)
 
 7. Now click on the chart with the `_LC` suffix in the **Outline** Panel, open to the **Right Side** panel, open the chart properties section and set the chart to **Always Refresh**.
    
-    <!-- border; size:540px -->![xp&A Commercial Planning](7/5.png)
+    ![xp&A Commercial Planning](7/5.png)
 
 8. Repeat this step for every panel which contains widgets having the `_LC` and `_GC` suffix. 
    

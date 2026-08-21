@@ -47,18 +47,18 @@ In this step you will learn how to navigate to the folder which contains all SAP
 
 2. In the SAP Analytics Cloud Menu, navigate to the **Files** section.
 
-    <!-- border; size:300px-->![xP&A Workforce Planning](1/1.png)
+    ![xP&A Workforce Planning](1/1.png)
 
 3. Access the content package folder.
 
     - You can access the content package folder by either navigating to the `Public` folder first and looking for a folder named `SAP_CONTENT`, or by using the **search function** in the top-right corner.
     - In case you want to make use of the search function, simply enter the term `SAP_CONTENT` into the search bar.
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](1/2.png)
+    ![xP&A Workforce Planning](1/2.png)
 
     - The folder `SAP_CONTENT` contains all objects required to run SAC content. Here you can find your installed content from the content network provided by SAP.
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](1/3.png)
+    ![xP&A Workforce Planning](1/3.png)
 
 
 ### Access Workforce Planning Content
@@ -69,14 +69,14 @@ Now that you learned where all the SAP Analytics Cloud content packages are stor
     - In order to do so, please use the keyword `xP&A` or `OWFP`
     - In the result list, click on the folder `SAP_HR_OWFP_Operational_Workforce_Planning` with the description `xP&A – Operational Workforce Planning`
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](2/1.png)
+    ![xP&A Workforce Planning](2/1.png)
 
 2. Run the Workforce Planning content package.
 
     - The folder `SAP_HR_OWFP_Operational_Workforce_Planning` contains all objects related to the content package, such as the data model, the stories and all Data Actions.
     - To run the Workforce Planning content, navigate to the **Stories** folder and click on the story called **Operational Workforce Planning - Overview Page** (`SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE`).
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](2/2.png)
+    ![xP&A Workforce Planning](2/2.png)
 
     >INFORMATION:
     >
@@ -89,7 +89,7 @@ Before jumping into the different st which are accessible through the landing pa
 
 1. **Overview Page**
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](3/1.png)
+    ![xP&A Workforce Planning](3/1.png)
 
     - By having opened the story **Operational Workforce Planning - Overview Page** (`SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE`), you entered the **Home Screen** of the Workforce Planning content package.
     - The overview story serves as the central entry point for all personas and helps to navigate through the content package.
@@ -99,7 +99,7 @@ Before jumping into the different st which are accessible through the landing pa
 
 2. **Configure Application and Parameters**
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](3/2.png)
+    ![xP&A Workforce Planning](3/2.png)
 
     - The section **Configure Application and Parameters** contains a link to the planning story **Application Configuration** (`SAP_HR_BPL_IM_WFP_CENTRAL_ASSUMPTIONS`)
     - This story marks the start of the planning process and allows you to set up all central cost parameters and assumptions for a plan version of your choice
@@ -108,7 +108,7 @@ Before jumping into the different st which are accessible through the landing pa
 
 3. **Plan FTE Demands and Costs**
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](3/3.png)
+    ![xP&A Workforce Planning](3/3.png)
 
     - The section **Plan FTE Demands and Costs** provides access to different stories which allow you to perform planning activities in the different scenarios.
     - The stories **Aggregated Internal HC Plan** (`SAP_HR_BPL_IM_WFP_AGGREGATED_INTERNAL`) and **Aggregated External HC Plan** (`SAP_HR_BPL_IM_WFP_AGGREGATED_EXTERNAL`) allow you to plan on an aggregated level. These stories are covering use cases of an the HR business partner persona.
@@ -117,7 +117,7 @@ Before jumping into the different st which are accessible through the landing pa
 
 4. **Reporting**
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](3/4.png)
+    ![xP&A Workforce Planning](3/4.png)
 
     - The section **Reporting** contains links to different parts of the reporting story `SAP__HR_BPL_IM_WFP_REPORTING`.
     - The reporting story provides standard reports to compare different plans and to provide other valuable insights.
@@ -133,49 +133,49 @@ As a last preparation step, it is required to understand the navigation concept 
 
 1. **Navigation Menu** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/1.png)
+    ![xP&A Workforce Planning](4/1.png)
 
     - Each story apart from the Overview Page (`SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE`) has a **Navigation Menu** button located on the top-left corner
     - By clicking on the **Navigation Menu** button, you can open a menu which contains multiple buttons or hyperlinks. Each of those buttons redirects you to another story of this content package, so you do not necessarily have to always go back to the **Home Page** first.
     
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/0.png)
+    ![xP&A Workforce Planning](4/0.png)
 
 2. **Filter** section
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/2.png)
+    ![xP&A Workforce Planning](4/2.png)
 
     - This section can be found in all stories apart from the Overview Page (`SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE`) of this content package and can be accessed via the left-side panel. It is indicated by the filter icon.
     - By pressing on the filter button, you can open a filter section which contains input control widgets. These widgets allow you to filter all tables and charts down to specific members of the given dimensions for an eased data entry and reporting.
 
    - By clicking on the little **arrow icon**, you can collapse the side panel in order to create more space for your planning tables or charts. 
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/3.png)
+   ![xP&A Workforce Planning](4/3.png)
 
-    - You can then reopen the side panel by clicking on the **reversed arrow icon**.
+   - You can then reopen the side panel by clicking on the **reversed arrow icon**.
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/4.png)
+   ![xP&A Workforce Planning](4/4.png)
 
-    >INFORMATION:
-    >
-    - Please note that expanding and collapsing the left-side panel is a feature which is not exclusive to the filter section, but works for all of the functions of the panel. 
+   >INFORMATION:
+   >
+   - Please note that expanding and collapsing the left-side panel is a feature which is not exclusive to the filter section, but works for all of the functions of the panel. 
   
 3. **Instructions** section
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/5.png)
+    ![xP&A Workforce Planning](4/5.png)
 
     - This section can be found in all stories apart from the Overview Page (`SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE`) of this content package and can be accessed via the left-side panel. It is indicated by the information icon.
     - The instructions section serves as a rough guideline and describes the intended user workflow within each of the planning and reporting stories.
 
 4.  **Comment** section
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/6.png)
+    ![xP&A Workforce Planning](4/6.png)
 
     - This section can be found in all stories apart from the Overview Page (`SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE`) of this content package and can be accessed via the left-side panel. It is indicated by the comment icon.
     - By clicking on the comment icon, the comment panel is opened where you can leave comments for yourself or the other planners. 
 
 5.  **Help** section
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/7.png)
+    ![xP&A Workforce Planning](4/7.png)
 
     - This section can be found in all stories apart from the Overview Page (`SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE`) of this content package and can be accessed via the left-side panel. It is indicated by the question mark icon.
     - By clicking on the question mark icon, the help section is opened where you can find useful links related to the content package, such as links to the documentation or links which let you get in contact with the developers of this application. 
@@ -186,15 +186,15 @@ As a last preparation step, it is required to understand the navigation concept 
     - These buttons can be found in all stories apart from the Overview Page (`SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE`) and are located at the top-right corner of each available section.
     - The **Expand Section** button (with the arrows pointing to the outside) enlarges a specific section and hides the remaining sections, which is quite useful in case you require more space for the planning tables or reports.
 
-    <!-- border; size:540px -->![xp&A Consensus Net Revenue Planning](4/8.png)
+    ![xp&A Consensus Net Revenue Planning](4/8.png)
 
     - The **Expand Section** button changes to a **Collapse Section** button (with the arrows pointing to the center) after entering full screen mode. By pressing the **Collapse Section** button, you can unhide the remaining sections again and return to the default view mode.
 
-    <!-- border; size:540px -->![xp&A Consensus Net Revenue Planning](4/9.png)
+    ![xp&A Consensus Net Revenue Planning](4/9.png)
 
 7. **Hide Section / Unhide Section** button
 
-    <!-- border; size:540px -->![xp&A Consensus Net Revenue Planning](4/10.png)
+    ![xp&A Consensus Net Revenue Planning](4/10.png)
 
     - In case a story contains multiple sections, you can choose to hide specific parts of the story by using the **Hide Section** button or respectively unhide the section by using the **Unhide Section** button. 
     - Both of these buttons can be found on the top left corner of each section.
@@ -205,11 +205,11 @@ As a last preparation step, it is required to understand the navigation concept 
     - The **Confirm** button can be found in all planning stories is located at the top-right corner above the tables.
     - The **Confirm** button lets you publish your changes into the public version.
 
-    <!-- border; size:540px -->![xp&A Consensus Net Revenue Planning](4/11.png)
+    ![xp&A Consensus Net Revenue Planning](4/11.png)
 
     - Prior to publishing the version you will receive the following pop-up:
 
-    <!-- border; size:200px -->![xp&A Consensus Net Revenue Planning](4/12.png)
+    ![xp&A Consensus Net Revenue Planning](4/12.png)
 
     >INFORMATION:
     >
@@ -220,15 +220,15 @@ As a last preparation step, it is required to understand the navigation concept 
     - The **Reset** button can be found in all planning stories is located at the top-right corner above the tables.
     - The **Reset** button lets you revert all unpublished changes of a specific version.
   
-    <!-- border; size:540px -->![xp&A Consensus Net Revenue Planning](4/13.png)
+    ![xp&A Consensus Net Revenue Planning](4/13.png)
 
     - Prior to reverting the plan version you will receive the following pop-up:
 
-    <!-- border; size:200px -->![xp&A Consensus Net Revenue Planning](4/14.png)
+    ![xp&A Consensus Net Revenue Planning](4/14.png)
 
 10. **Guide Me** button
 
-    <!-- border; size:200px -->![xp&A Consensus Net Revenue Planning](4/15.png)
+    ![xp&A Consensus Net Revenue Planning](4/15.png)
 
     - The **Guide Me** button can be found in the **Application Configuration** story.
     - By pressing on this button, a dialogue is opened which guides you through all the mandatory the configuration steps. 
@@ -236,7 +236,7 @@ As a last preparation step, it is required to understand the navigation concept 
 
 11. **Show adjustment** toggle switch
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/16.png)
+    ![xP&A Workforce Planning](4/16.png)
 
     - This switch can be found in all planning stories located in the **Plan FTE Demands and Costs** section of the `SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE` story and is located next to the cost table
     - By enabling this switch, you can show or hide the additional adjustment column inside the cost table
@@ -250,21 +250,21 @@ As a last preparation step, it is required to understand the navigation concept 
 
 12. **Calculate Costs** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/17.png)
+    ![xP&A Workforce Planning](4/17.png)
 
     - This button can be found in all planning stories which have a cost table and is always located in the header section above the tables.
     - By pressing this button, a recalculation of costs is started. This is necessary when you adjust your headcount or FTE numbers as costs do not automatically refresh after adjusting the headcount or FTE values.
 
 13. **Charts** section
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/18.png)
+    ![xP&A Workforce Planning](4/18.png)
 
     - Some of the stories have a right-side panel which contain a charts button indicated by a chart icon. 
     - By pressing on this button, you can open an additional section which contains reporting charts that provide you with additional information during your planning activities.
 
 14. **Select Action** drop down
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](4/19.png)
+    ![xP&A Workforce Planning](4/19.png)
 
     - This button can exclusively be found in the **WFP - Detailed FTE Plan** story.
     - By pressing on this button, you can select a pre-defined planning activity.
@@ -293,13 +293,13 @@ Currently, you have opened the tab **Define Planning Horizon**. This tab provide
     - Look for the Operational Workforce Planning data model by entering the term `SAP__HR_BPL_IM_WORKFORCE` into the search bar
     - Click on the file to open the data model
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](11/1.png)
+    ![xP&A Workforce Planning](11/1.png)
 
 2. Open the **Version** dimension
 
     - In the data modeler, scroll down to the dimension list and click on the dimension **Version** to modify it
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](11/2.png)
+    ![xP&A Workforce Planning](11/2.png)
 
 3. Adjust your planning horizon by changing the properties
 
@@ -309,7 +309,7 @@ Currently, you have opened the tab **Define Planning Horizon**. This tab provide
     - If you intend to change the span of the planning horizon, please make sure to enter the new period values in a `YYYYMM` format.
     - Please note that the planning horizon must always be a multiple of 12 (for instance ranging over 12,24,36 periods etc.)
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](11/3.png)
+    ![xP&A Workforce Planning](11/3.png)
 
     >INFORMATION:
     >
@@ -337,13 +337,13 @@ Currently, you have opened the tab **Define Reference Period**. This tab provide
     - Look for the Operational Workforce Planning data model by entering the term `SAP__HR_BPL_IM_WORKFORCE` into the search bar
     - Click on the file to open the data model 
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](11/1.png)
+    ![xP&A Workforce Planning](11/1.png)
 
 2. Open the **Version** dimension
 
     - In the data modeler, scroll down to the dimension list and click on the dimension **Version** to modify it
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](11/2.png)
+    ![xP&A Workforce Planning](11/2.png)
 
 3. Adjust your reference period by changing the property
 
@@ -352,7 +352,7 @@ Currently, you have opened the tab **Define Reference Period**. This tab provide
     - If you intend to change the reference period, please make sure to enter the new period value in a `YYYYMM` format.
     - Please note that the reference period must contain actual data.
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](11/4.png)
+    ![xP&A Workforce Planning](11/4.png)
 
     >INFORMATION:
     >
@@ -392,13 +392,13 @@ For more information about the term **Plan Level**, how to create and use new on
     - Look for the Operational Workforce Planning data model by entering the term `SAP__HR_BPL_IM_WORKFORCE` into the search bar
     - Click on the file to open the data model
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](11/1.png)
+    ![xP&A Workforce Planning](11/1.png)
 
 2. Open the **Version** dimension
 
     - In the data modeler, scroll down to the dimension list and click on the dimension **Version** to modify it
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](11/2.png)
+    ![xP&A Workforce Planning](11/2.png)
 
 3. Adjust your Plan Level by changing the property
 
@@ -408,7 +408,7 @@ For more information about the term **Plan Level**, how to create and use new on
     - Please make sure to enter the technical ID of a valid member of the **Plan Level** dimension when changing the Plan Level (e.g. `PL1`, `PL2`, etc.).
 
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](11/5.png)
+    ![xP&A Workforce Planning](11/5.png)
 
     >INFORMATION:
     >
@@ -433,7 +433,7 @@ Currently, you have opened the tab **Other Modifications**. This tab provides in
     - In order to define which version you want to make selectable, enter the **Version** dimension inside the data modeler and modify the property **Is Version Visible?**
     - An `x` indicates that the version will be added to the selection drop down inside the planning stories. A blank cell indicates that the version will not be added to the selection widgets.
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](11/6.png)
+    ![xP&A Workforce Planning](11/6.png)
 
 2. **Planning Direction of Versions**
 
@@ -448,7 +448,7 @@ Currently, you have opened the tab **Other Modifications**. This tab provides in
     - Allowed entries are `Aggregated`, `Detailed` or blank.
     - The property `Aggregated` indicates that the version is used for the aggregated planning scenario, while `Detailed` is used for the detailed planning scenario. A blank cell indicates that this version is not relevant for any of those scenarios, i.e. because it is just a backup version or a temporary version for any kind of activity.
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](11/7.png)
+    ![xP&A Workforce Planning](11/7.png)
 
 3. **Planning Direction of Plan Levels**
 
@@ -462,7 +462,7 @@ Currently, you have opened the tab **Other Modifications**. This tab provides in
     - In order to map the Plan Levels to the aggregated planning scenario or the detailed planning scenario, enter the **Plan Level** dimension inside the data modeler and modify the property **Planning Direction**
     - Make sure to enter either the value `Detailed` or `Aggregated` for each of the members
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](11/8.png)
+    ![xP&A Workforce Planning](11/8.png)
 
 4. **Definition of Plan Levels**
 
@@ -475,7 +475,7 @@ Currently, you have opened the tab **Other Modifications**. This tab provides in
 
     - In order to learn how to maintain this property correctly and how to change or create a new Plan Level, check out the tutorial [xP&A Operational Workforce Planning - Add a new Plan Level](xpa-sac-hxm-add-plan-level)
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](11/9.png)
+    ![xP&A Workforce Planning](11/9.png)
 
 5. **Maintenance of G/L Accounts for Financial Integration**
 
@@ -489,7 +489,7 @@ Currently, you have opened the tab **Other Modifications**. This tab provides in
     - For each leaf member of the dimension, enter a valid G/L account number into the GL account property (`GL_Account`)
     - Make sure that the G/L account number you enter is a valid member of the public G/L account dimension `SAP_FI_IFP_GLACCOUNT`
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](11/10.png)
+    ![xP&A Workforce Planning](11/10.png)
 
 6. **Creation and Usage of own Versions**
 
@@ -523,7 +523,7 @@ Currently, you have opened the tab **Open Application**. This tab provides guida
 
 1. In the **Overview Page** story, click on the **Application Configuration** link
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](5/1.png)
+    ![xP&A Workforce Planning](5/1.png)
 
     >INFORMATION:
     >
@@ -535,14 +535,14 @@ Currently, you have opened the tab **Open Application**. This tab provides guida
 
 2. Get an overview of the story
 
-    <!-- border; size:540px -->![xP&A Workforce Planning Overview](5/2.png)
+    ![xP&A Workforce Planning Overview](5/2.png)
 
     - Make yourself familiar with the story
     - Try to identity the different buttons and elements presented in the previous step
 
 3. Check the **Instructions** section
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](5/3.png)
+    ![xP&A Workforce Planning](5/3.png)
 
     - All planning stories provide a short in-built step by step guide which helps you to use the corresponding story correctly
     - Before using the story, make sure to check the **Steps** description field to understand the intended workflow
@@ -557,7 +557,7 @@ Currently, you have opened the tab **Setup Application**. This tab provides guid
 
 1. Click on the **Guide Me!** button to start with the planning process
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](5/4.png)
+    ![xP&A Workforce Planning](5/4.png)
 
     - As suggested in the **Steps** description field, start the planning process by pressing on the **Guide Me!** button
     - This button opens a pop-up which guides you through the setup process and helps you to decide between different options to maintain your cost parameters
@@ -565,7 +565,7 @@ Currently, you have opened the tab **Setup Application**. This tab provides guid
 
 2. Select the version you want to plan on
 
-    <!-- border; size:350px -->![xP&A Workforce Planning](5/5.png)
+    ![xP&A Workforce Planning](5/5.png)
 
     - In the tab **Step 1: General Settings** of the pop-up, you can decide which version you want to do your planning on
     - Choose either the version `Aggregated_Plan` if you want to plan on an aggregated level or `Detailed_Plan` if you want to plan on an employee level
@@ -583,7 +583,7 @@ Currently, you have opened the tab **Setup Application**. This tab provides guid
 
 4. Decide for a method to load the data in
 
-    <!-- border; size:350px -->![xP&A Workforce Planning](5/8.png)
+    ![xP&A Workforce Planning](5/8.png)
 
     - Switch over to the second tab **Step 2: Data Input** of the pop-up
     - Here you can select between three different modes to load your central assumptions
@@ -601,7 +601,7 @@ Currently, you have opened the tab **Setup Application**. This tab provides guid
 
     - You can now also perform changes on your data inside the planning table
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](5/10.png)
+    ![xP&A Workforce Planning](5/10.png)
 
     >INFORMATION:
     >
@@ -616,7 +616,7 @@ Currently, you have opened the tab **Setup Application**. This tab provides guid
 
     As the input table for external workforce is structured slightly different from the one used for internal workforce, you need to change the input mode inside the story.
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](5/11.png)
+    ![xP&A Workforce Planning](5/11.png)
 
     - Change the toggle in the header section to **External Workforce**
     - The story will now restructure the layout and the planning table accordingly
@@ -627,7 +627,7 @@ Currently, you have opened the tab **Setup Application**. This tab provides guid
     - The only difference is that for external workforce, only one cost parameter is available, which is the monthly average cost rate `Cost Rate For External Workers`. Make sure to enter an absolute value here.
     - Furthermore, the location dimension as mandatory dimension for external workforce is automatically added in addition to the dimensions defined by the Plan Level
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](5/12.png)
+    ![xP&A Workforce Planning](5/12.png)
 
 Now that you have set everything up, you can publish your data and pre-populate your plan version with plan data. You can now switch to the tab **Publish and Populate Version**.
 
@@ -639,7 +639,7 @@ Currently, you have opened the tab **Publish and Populate Version**. This tab pr
 
 1. Press on the **Confirm** button
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](5/13.png)
+    ![xP&A Workforce Planning](5/13.png)
 
     - If you have finished maintaining the cost parameters and would like to publish them, you can do so by pressing on the **Confirm** button.
     - Hitting this button also provides you with the possibility to initialize your plan version and pre-populate the plan periods with headcount and cost data.
@@ -659,7 +659,7 @@ Currently, you have opened the tab **Publish and Populate Version**. This tab pr
 
 3. Enable the toggle switch **Initialize Plan Data After Publish**
 
-    <!-- border; size:300px -->![xP&A Workforce Planning](5/14.png)
+    ![xP&A Workforce Planning](5/14.png)
 
     - By enabling the toggle switch `Initialize Plan Data After Publish`, your plan version will also be pre-populated with headcount and cost data (in case central assumptions for the given plan level are maintained). The headcount and cost data will be visible in the tables of the other planning stories, which will be introduced in the next steps of this tutorial.
     - If you do not enable this toggle switch, only your edits for the central assumptions will be made visible. The headcount and cost planning tables inside the other planning stories will not be filled with data.
@@ -674,7 +674,7 @@ Currently, you have opened the tab **Publish and Populate Version**. This tab pr
 
 4. Enable the toggle switch **Use Predictive**
 
-    <!-- border; size:300px -->![xP&A Workforce Planning](5/16.png)
+    ![xP&A Workforce Planning](5/16.png)
 
     - By turning on this switch, a machine learning algorithm will be executed in addition to the reference period based pre-population algorithm, which will write the results on a pre-defined version called `Smart_Predict`
     - This version can later be displayed in the planning stories and used as a reference when entering your planning assumptions
@@ -690,7 +690,7 @@ Currently, you have opened the tab **Publish and Populate Version**. This tab pr
     - In the pop-up, press on the button `OK`
     - Click on the Multi Action trigger to start the pre-population process
 
-    <!-- border; size:300px -->![xP&A Workforce Planning](5/17.png)
+    ![xP&A Workforce Planning](5/17.png)
 
     >INFORMATION:
     >
@@ -716,7 +716,7 @@ Currently, you have opened the tab **Open Application**. This tab provides guida
 
 2. Click on the link **Aggregated Internal HC Plan** located inside the **Plan FTE Demands and Costs** section
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](6/1.png)
+    ![xP&A Workforce Planning](6/1.png)
 
     >INFORMATION:
     >
@@ -725,7 +725,7 @@ Currently, you have opened the tab **Open Application**. This tab provides guida
 
 3. Get an overview of the story
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](6/2.png)
+    ![xP&A Workforce Planning](6/2.png)
 
     - The story consists three sections. In the top section (header section), you can find a high level reporting area where you can compare your current plan version with other versions.
     - In the middle of the screen, you can see the headcount planning table. Here you can enter headcount values on an aggregated level.
@@ -746,7 +746,7 @@ Currently, you have opened the tab **Enter Plan Data : Total Headcount**. This t
     - According to the **Instructions** section, start your activities by adjusting your headcount values
     - You may adjust the headcount values separately in each cell, or make use of the drag and drop functionality in order to speed up your process
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](6/3.png)
+    ![xP&A Workforce Planning](6/3.png)
 
     >INFORMATION:
     >
@@ -755,7 +755,7 @@ Currently, you have opened the tab **Enter Plan Data : Total Headcount**. This t
 
     - In case Smart Predict capabilities have been activated, enable the toggle switch **Show Smart Predict Reference** to display the machine learning based results. These can be taken as a reference for your planning assumptions.
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](6/4.png)
+    ![xP&A Workforce Planning](6/4.png)
 
 2. Recalculate costs
 
@@ -772,7 +772,7 @@ Currently, you have opened the tab **Enter Plan Data : Total Headcount**. This t
     - Click on the toggle switch **Show Adjustment**
     - Enter additional costs in the `Adjustment` column
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](6/5.png)
+    ![xP&A Workforce Planning](6/5.png)
 
     >INFORMATION:
     >
@@ -799,7 +799,7 @@ Currently, you have opened the tab **Enter Plan Data : Delta Headcount**. This t
 
     - Activate the toggle **Plan New Hires** located on the top-left corner of the story **Aggregated Internal HC Plan**
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](6/6.png)
+    ![xP&A Workforce Planning](6/6.png)
 
     >INFORMATION:
     >
@@ -816,7 +816,7 @@ Currently, you have opened the tab **Enter Plan Data : Delta Headcount**. This t
     - Thus you do not need to maintain the values in each period, but only in the periods in which the hiring or termination occurs
     - Please note that when entering a termination, it does not matter whether the algebraic sign used is positive or negative. That means you can enter a termination as `-1` or as `1`.
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](6/7.png)
+    ![xP&A Workforce Planning](6/7.png)
 
     >INFORMATION:
     >
@@ -825,7 +825,7 @@ Currently, you have opened the tab **Enter Plan Data : Delta Headcount**. This t
 
     - In case Smart Predict capabilities have been activated, enable the toggle switch **Show Smart Predict Reference** to display the machine learning based results. These can be taken as a reference for your planning assumptions.
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](6/8.png)
+    ![xP&A Workforce Planning](6/8.png)
 
 
 
@@ -850,7 +850,7 @@ Currently, you have opened the tab **Enter Plan Data : Delta Headcount**. This t
     - Click on the toggle switch **Show Adjustment**
     - Enter additional costs in the `Adjustment` column
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](6/9.png)
+    ![xP&A Workforce Planning](6/9.png)
 
 5. Click on the **Confirm** or **Reset** button to publish or revert your plan data
 
@@ -874,7 +874,7 @@ Currently, you have opened the tab **Open Application**. This tab provides guida
 
 2. Click on the link **Aggregated External HC Plan** located inside the **Plan FTE Demands and Costs** section
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](7/1.png)
+    ![xP&A Workforce Planning](7/1.png)
 
     >INFORMATION:
     >
@@ -882,7 +882,7 @@ Currently, you have opened the tab **Open Application**. This tab provides guida
 
 3. Get an overview of the story
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](7/2.png)
+    ![xP&A Workforce Planning](7/2.png)
 
     - The story consists of three sections. In the top section (header section), you can find a high level reporting area where you can compare your current plan version with other versions.
     - In the middle of the screen, you can see the headcount planning table. Here you can enter headcount values on an aggregated level.
@@ -902,7 +902,7 @@ Currently, you have opened the tab **Enter Plan Data**. This tab provides guidan
     - According the **Steps** description field, start your activities by adjusting your headcount values
     - You may adjust the headcount values separately in each cell, or make use of the drag and drop functionality in order to speed up your process
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](7/3.png)
+    ![xP&A Workforce Planning](7/3.png)
 
     >INFORMATION:
     >
@@ -911,7 +911,7 @@ Currently, you have opened the tab **Enter Plan Data**. This tab provides guidan
 
     - In case Smart Predict capabilities have been activated, enable the toggle switch **Show Smart Predict Reference** to display the machine learning based results. These can be taken as a reference for your planning assumptions.
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](7/4.png)
+    ![xP&A Workforce Planning](7/4.png)
 
 2. Recalculate the costs
 
@@ -927,7 +927,7 @@ Currently, you have opened the tab **Enter Plan Data**. This tab provides guidan
     - Click on the toggle switch **Show Adjustment**
     - Enter additional costs in the `Adjustment` column
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](7/5.png)
+    ![xP&A Workforce Planning](7/5.png)
 
     >INFORMATION:
     >
@@ -958,7 +958,7 @@ Currently, you have opened the tab **Open Application**. This tab provides guida
 
 2. Click on the **Detailed Internal FTE Plan** located inside the **Plan FTE Demands and Costs** section
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](8/1.png)
+    ![xP&A Workforce Planning](8/1.png)
 
     >INFORMATION:
     >
@@ -966,7 +966,7 @@ Currently, you have opened the tab **Open Application**. This tab provides guida
 
 3. Get an overview of the story
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](8/2.png)
+    ![xP&A Workforce Planning](8/2.png)
 
     - The story consists of three sections. In the top section (header section), you can find a high level reporting area where you can compare your current plan version with other versions.
     - In the middle of the screen, you can see the FTE planning table. Here you can enter FTE values on an employee level.
@@ -987,7 +987,7 @@ Currently, you have opened the tab **Enter Plan Data : Absence & Movement**. Thi
     - Click on any cell in the FTE table to select and focus an employee
     - The currently focused employee will be shown above the planning table
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](8/3.png)
+    ![xP&A Workforce Planning](8/3.png)
 
 
 2. Choose an action from the action menu
@@ -995,14 +995,14 @@ Currently, you have opened the tab **Enter Plan Data : Absence & Movement**. Thi
     - By focusing an employee in the table and then using the dropdown shown in the above screenshot, different planning activities can be performed
     - Click on any action you want to perform. In this example, the employment level (FTE value) will be adjusted
 
-      <!-- border; size:540px -->![xP&A Workforce Planning](8/4.png)
+      ![xP&A Workforce Planning](8/4.png)
 
 3. Fill out the required parameters for the employee action
 
     - After selecting an action from the drop-down window, a pop-up is displayed in which you need to enter all mandatory information
     - In this example ( **Adjust Employment Level** ), the new FTE value as well as the start and the end date must be maintained
 
-    <!-- border; size:300px -->![xP&A Workforce Planning](8/5.png)
+    ![xP&A Workforce Planning](8/5.png)
 
 4. Confirm your selection
 
@@ -1012,7 +1012,7 @@ Currently, you have opened the tab **Enter Plan Data : Absence & Movement**. Thi
     - Costs for the selected employee are being recalculated as well
     - Cost related data actions can be customized accordingly, (e.g. paid leave vs. unpaid leave in case of absence)
 
-      <!-- border; size:540px -->![xP&A Workforce Planning](8/6.png)
+      ![xP&A Workforce Planning](8/6.png)
 
 5. Display absences and terminations
 
@@ -1023,7 +1023,7 @@ Currently, you have opened the tab **Enter Plan Data : Absence & Movement**. Thi
     - This toggle allows you to explore two more detailed measures, **Absence** and **Terminations**
     - These measures are automatically calculated after planning a termination or absence via the action drop-down and serve for exploration purposes only
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](8/7.png)
+    ![xP&A Workforce Planning](8/7.png)
 
 
 
@@ -1039,7 +1039,7 @@ Currently, you have opened the tab **Enter Plan Data : Absence & Movement**. Thi
 
     - Enter additional costs in the `Adjustment` column
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](8/8.png)
+    ![xP&A Workforce Planning](8/8.png)
 
     >INFORMATION:
     >
@@ -1050,7 +1050,7 @@ Currently, you have opened the tab **Enter Plan Data : Absence & Movement**. Thi
     - Click on the **Confirm** button if you want to publish your entries.
     - In case you want to get back to the latest state, hit the **Reset** button and select one of the two options offered
 
-    <!-- border; size:300px -->![xP&A Workforce Planning](8/9.png)
+    ![xP&A Workforce Planning](8/9.png)
 
     >INFORMATION:
     >
@@ -1073,12 +1073,12 @@ Currently, you have opened the tab **Enter Plan Data : New Hires**. This tab pro
 
     - Activate the toggle **New Hires** located on the top-left corner of the planning story
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](8/10.png)
+    ![xP&A Workforce Planning](8/10.png)
 
     - The table changes accordingly and only new positions are displayed
     - Initially both the FTE and the cost table are empty
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](8/11.png)
+    ![xP&A Workforce Planning](8/11.png)
 
 
 2. Open the dialogue to create a new position
@@ -1086,12 +1086,12 @@ Currently, you have opened the tab **Enter Plan Data : New Hires**. This tab pro
     - Click on the button **Select Action** and select the option **Create Position**
     - A Popup will open in which you need to maintain parameters for the new position. All parameters are mandatory.
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](8/12.png)
+    ![xP&A Workforce Planning](8/12.png)
 
 
 3. Fill out the required information
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](8/13.png)
+    ![xP&A Workforce Planning](8/13.png)
 
     - Hit the **Create** button when done
 
@@ -1108,16 +1108,16 @@ Currently, you have opened the tab **Enter Plan Data : New Hires**. This tab pro
     - Select an existing position from the drop down list in order to use this as the template
     - Adjust the position description and if required the remaining specifications
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](8/14.png)
+    ![xP&A Workforce Planning](8/14.png)
 
     - Click on the **Create** button when done. Your new position is now visible in the FTE and the cost table.
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](8/16.png)
+    ![xP&A Workforce Planning](8/16.png)
 
     - Re-open the dialogue in case you want to create another position
     - Enable the toggle switch **Create another position** if you plan to create multiple positions. This will leave the window open after creating the position for quick creation of additional positions.
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](8/15.png)
+    ![xP&A Workforce Planning](8/15.png)
 
 
 5. Enter additional costs for your new position(s)
@@ -1132,7 +1132,7 @@ Currently, you have opened the tab **Enter Plan Data : New Hires**. This tab pro
 
     - Enter additional costs in the `Adjustment` column
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](8/17.png)
+    ![xP&A Workforce Planning](8/17.png)
 
     >INFORMATION:
     >
@@ -1144,11 +1144,11 @@ Currently, you have opened the tab **Enter Plan Data : New Hires**. This tab pro
     - Select a newly planned position in the **Overview FTE** table by clicking on it
     - Click on the button **Delete Position** inside the **Select Action** drop down
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](8/18.png)
+    ![xP&A Workforce Planning](8/18.png)
 
     - Confirm the **Delete Position** dialogue. As a result the planned position and its costs are deleted.
 
-    <!-- border; size:300px -->![xP&A Workforce Planning](8/19.png)
+    ![xP&A Workforce Planning](8/19.png)
 
 7. Confirm or revert your changes
 
@@ -1173,7 +1173,7 @@ Currently, you have opened the tab **Open Application**. This tab provides guida
 
 2. Click on the **Prepare Result For Financial Plan For SAP S/4HANA** link located inside the **Plan FTE Demands & Costs** section
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](9/1.png)
+    ![xP&A Workforce Planning](9/1.png)
 
     >INFORMATION:
     >
@@ -1183,7 +1183,7 @@ Currently, you have opened the tab **Open Application**. This tab provides guida
 
 3. Get an overview of the story
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](9/2.png)
+    ![xP&A Workforce Planning](9/2.png)
 
     - In general the story consists of two sections. In the upper table, you can find your original plan version with all your plan data.
     - In the lower table, you can find the results after having mapped the costs from the cost types to the G/L accounts.
@@ -1202,26 +1202,26 @@ Currently, you have opened the tab **Prepare Data**. This tab provides guidance 
 
     - Click on the **General Settings** button to open the version selection dialogue
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](9/3.png)
+    ![xP&A Workforce Planning](9/3.png)
 
     - Choose the version `Aggregated_Plan` or `Detailed_Plan`, depending on which version contains your final workforce plan you wish to transfer to finance
     - Click on **OK** to save your selection and close the dialogue
 
-    <!-- border; size:300px -->![xP&A Workforce Planning](9/4.png)
+    ![xP&A Workforce Planning](9/4.png)
 
 2. Map your costs maintained on the cost types to their respective G/L accounts
 
     - Click on the button **G/L Mapping**
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](9/5.png)
+    ![xP&A Workforce Planning](9/5.png)
 
     - Confirm your selection by pressing the **OK** button
 
-    <!-- border; size:300px -->![xP&A Workforce Planning](9/6.png)
+    ![xP&A Workforce Planning](9/6.png)
 
     - After hitting the **OK** button, a Data Action will be executed which transfers the cost data from your selected source version to the version `Operational`. Simultaneously, the costs are copied from the cost types to their respective G/L accounts.
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](9/7.png)
+    ![xP&A Workforce Planning](9/7.png)
 
 
 3. Confirm or revert your version
@@ -1239,7 +1239,7 @@ Currently, you have opened the tab **Transfer Costs**. This tab provides guidanc
 
     - In the **Instructions** section, click on the hyperlink **Workforce Panning Integration Story**
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](9/8.png)
+    ![xP&A Workforce Planning](9/8.png)
 
     >INFORMATION:
     >
@@ -1251,7 +1251,7 @@ Currently, you have opened the tab **Transfer Costs**. This tab provides guidanc
 
     - Hit the Data Action trigger **Copy Employee Expenses** to transfer the costs
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](9/9.png)
+    ![xP&A Workforce Planning](9/9.png)
 
     >INFORMATION:
     >
@@ -1275,7 +1275,7 @@ Currently, you have opened the tab **Open Reports**. This tab provides guidance 
 
 2. Click on the one of the links located inside the **Reports** section, for example on the **Progress Overview** link
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](10/1.png)
+    ![xP&A Workforce Planning](10/1.png)
 
     >INFORMATION:
     >
@@ -1294,19 +1294,19 @@ Currently, you have opened the tab **Reporting**. This tab provides information 
     - Basically, all stories provide the same user interface and buttons and thus work the same
     - In the left-side panel, you can find two version selectors which allow you to define which versions you want to compare (e.g. `Detailed_Plan` vs. `Aggregated_Plan`)
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](10/2.png)
+    ![xP&A Workforce Planning](10/2.png)
 
     - You can select the versions by clicking on the selector and choosing between different version from the dropdown
 
-    <!-- border; size:200px -->![xP&A Workforce Planning](10/3.png)
+    ![xP&A Workforce Planning](10/3.png)
 
     - In the filter section, you can furthermore find filter functions in order to drill down or up according to your reporting needs
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](10/5.png)
+    ![xP&A Workforce Planning](10/5.png)
 
     - In order to switch between the different story pages, you can either return to the **Overview Application** or use the **Navigation Menu**
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](10/4.png)
+    ![xP&A Workforce Planning](10/4.png)
 
 
 2. **Progress Overview** story
@@ -1314,28 +1314,28 @@ Currently, you have opened the tab **Reporting**. This tab provides information 
     - By clicking on the **Progress Overview** link inside the **Overview Application** (`SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE`), you will jump to the respective story page
     - The **Progress Overview** story page offers an actuals vs. plan comparison based on different dimensions and also provides you with a high level overview on your workforce composition.
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](10/6.png)
+    ![xP&A Workforce Planning](10/6.png)
 
 3. **Gender Analysis** story
 
     - Navigate to the **Gender Analysis** story by either going back to the **Overview Application** (`SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE`) and clicking on the **Gender Analysis** link or by using the navigation menu
     - The **Gender Analysis** story page offers an in depth analysis on the gender distribution across various dimensions
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](10/7.png)
+    ![xP&A Workforce Planning](10/7.png)
 
 4. **External Workforce** story
 
     - Navigate to the **External Workforce** story by either going back to the **Overview Application** (`SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE`) and clicking on the **External Workforce** link or by using the navigation menu
     - The **External Workforce** story pages offers an overview on the ratio between internal and external workforce across various dimensions
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](10/8.png)
+    ![xP&A Workforce Planning](10/8.png)
 
 5. **Budget Comparison** story
 
     - Navigate to the **Budget Comparison** story by either going back to the **Overview Application** (`SAP_HR_BPL_IM_WFP_OVERVIEW_PAGE`) and clicking on the **Budget Comparison** link or by using the navigation menu
     - The **Budget Comparison** story page offers a comparison between planned and budgeted headcount as well as costs across various dimensions
 
-    <!-- border; size:540px -->![xP&A Workforce Planning](10/9.png)
+    ![xP&A Workforce Planning](10/9.png)
 
 [OPTION END]
 

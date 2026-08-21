@@ -54,11 +54,11 @@ In the first step, it is necessary to add a new member to the `Plan_Level` dimen
 
 2. Search for the `SAP__HR_BPL_IM_WORKFORCE` data model and open it.
 
-    <!-- border; size:540px -->![Data_Model](data-model.png)
+    ![Data_Model](data-model.png)
 
 3. Open the dimension `Plan_Level`.
 
-    <!-- border; size:540px -->![Select_Plan_Level_Dim](plan-level-dim.png)
+    ![Select_Plan_Level_Dim](plan-level-dim.png)
 
 4. Add a new member to the Plan Level dimension.
 
@@ -74,7 +74,7 @@ In the first step, it is necessary to add a new member to the `Plan_Level` dimen
     |  Planning Direction | `Aggregated`                  | Mandatory field. Shows whether this Plan Level is applied to the aggregated or detailed planning scenario¹
     |  Plan Dimensions    | `jobFunction`                 | Mandatory field. Ensure that the spelling of the dimension matches with the spelling maintained in the whitelist²
 
-      <!-- border; size:540px -->![Add_New_Member](add-new-member.png)
+      ![Add_New_Member](add-new-member.png)
 
       ¹Allowed entries for the **Planning Direction** column are only the values `Aggregated` or `Detailed`. Other keywords will not be recognized by the planning applications.
 
@@ -84,7 +84,7 @@ In the first step, it is necessary to add a new member to the `Plan_Level` dimen
 
       - In order to check the whitelist, open any planning story in **edit mode** and enter the `onInitialization` script.
 
-        <!-- border; size:540px -->![Whitelist](whitelist.png)
+        ![Whitelist](whitelist.png)
 
       - The dictionary `cfg_dimensionMapping` contains a mapping between the technical name of all dimensions of the data model and its written name (maintained in camel case naming convention).
 
@@ -106,7 +106,7 @@ By doing this, your planning applications will automatically initialize all plan
 
 2. Change the value of the attribute `Plan Level` for the `public.Aggregated_Plan` version to `PL6` in order for the planning applications to initialize accordingly.
 
-    <!-- border; size:540px -->![Modify_Version_Dim](modify-version-dim.png)
+    ![Modify_Version_Dim](modify-version-dim.png)
 
 3. Save your changes. 
 
@@ -116,44 +116,44 @@ In the next step, all affected Data Actions must be adjusted in order to make ca
 
 1. Navigate to the **Data Action** folder and open the Data Action `SAP__HR_BPL_IM_INITIALIZE_PLAN_WITH_AGGREGATION`.
 
-    <!-- border; size:540px -->![Data_Action_Menu](data-action-menu.png) 
+    ![Data_Action_Menu](data-action-menu.png) 
 
 2. Click on the second Data Action step **Seeding Internal** and complement the code with the following statement by adding these lines at the very end of the Data Action step:
 
-    ```
-    ELSEIF @PlanLevelNumeric = 6 THEN
+   ```
+   ELSEIF @PlanLevelNumeric = 6 THEN
 
-    //Aggregate all data from the specified ReferencePeriod of the Actual Version to CompanyCode/JobFunction (PL6) level and copy these values to the dates of the planning horizon (specified in Memberset)
-    //Hint: Specify all dimensions except for CompanyCode/JobFunction
-    DATA([d/Plan_Level] = "PL6",
-    	 [d/SAP_HR_ISCONTINGENT] = "false",
-    	 [d/Audit] = "INIT",
-    	 [d/SAP_HR_USER_EMPLOYEE] = "#",
-    	 [d/SAP_HR_POSITION] = "#",
-    // [d/SAP_ALL_COMPANY_CODE] = "#",
-       [d/SAP_HR_BUSINESSUNIT] = "#",
-    	 [d/SAP_HR_DIVISION] = "#",
-    	 [d/t.S:SAP_ALL_COSTCENTER] = "#",
-       [d/t.S:SAP_HR_USER_PAYGRADE] = "#",
-    	 [d/t.S:SAP_HR_USER_JOBCLASSIFICATION] = "#",
-    	 [d/SAP_HR_DEPARTMENT] = "#",
-    	 [d/SAP_HR_USER_LOCATION] = "#",
-    	 [d/SAP_HR_USER_EVENT] = "#",
-    	 [d/SAP_HR_USER_EMPLOYMENTTYPE] = "#",
-    	 [d/SAP_HR_USER_JOBLEVEL] = "#",
-    	 [d/SAP_HR_USER_CONTRACTTYPE] = "#",
-    	 [d/SAP_HR_GEOZONE] = "#",
-    	 [d/SAP_HR_USER_PAYRANGE] = "#",
-    // [d/SAP_HR_JOBFUNCTION] = "#",
-    	 [d/SAP_FI_IFP_GLACCOUNT] = "#"
-    	 ) = RESULTLOOKUP([d/Version] = "public.Actual", [d/Date] =  [d/Version].[p/ReferencePeriod])
+   //Aggregate all data from the specified ReferencePeriod of the Actual Version to CompanyCode/JobFunction (PL6) level and copy these values to the dates of the planning horizon (specified in Memberset)
+   //Hint: Specify all dimensions except for CompanyCode/JobFunction
+   DATA([d/Plan_Level] = "PL6",
+   	 [d/SAP_HR_ISCONTINGENT] = "false",
+   	 [d/Audit] = "INIT",
+   	 [d/SAP_HR_USER_EMPLOYEE] = "#",
+   	 [d/SAP_HR_POSITION] = "#",
+   // [d/SAP_ALL_COMPANY_CODE] = "#",
+      [d/SAP_HR_BUSINESSUNIT] = "#",
+   	 [d/SAP_HR_DIVISION] = "#",
+   	 [d/t.S:SAP_ALL_COSTCENTER] = "#",
+      [d/t.S:SAP_HR_USER_PAYGRADE] = "#",
+   	 [d/t.S:SAP_HR_USER_JOBCLASSIFICATION] = "#",
+   	 [d/SAP_HR_DEPARTMENT] = "#",
+   	 [d/SAP_HR_USER_LOCATION] = "#",
+   	 [d/SAP_HR_USER_EVENT] = "#",
+   	 [d/SAP_HR_USER_EMPLOYMENTTYPE] = "#",
+   	 [d/SAP_HR_USER_JOBLEVEL] = "#",
+   	 [d/SAP_HR_USER_CONTRACTTYPE] = "#",
+   	 [d/SAP_HR_GEOZONE] = "#",
+   	 [d/SAP_HR_USER_PAYRANGE] = "#",
+   // [d/SAP_HR_JOBFUNCTION] = "#",
+   	 [d/SAP_FI_IFP_GLACCOUNT] = "#"
+   	 ) = RESULTLOOKUP([d/Version] = "public.Actual", [d/Date] =  [d/Version].[p/ReferencePeriod])
 
-    ENDIF
-    ```
+   ENDIF
+   ```
 
     Your result should look like this:
 
-    <!-- border; size:540px -->![Data_Action_Seeding](seeding-internal.png)
+    ![Data_Action_Seeding](seeding-internal.png)
 
     >EXPLANATION:
     >
@@ -166,38 +166,38 @@ In the next step, all affected Data Actions must be adjusted in order to make ca
 
 3. Repeat the same activity for the third Data Action step **Seeding External**.
 
-    ```
-    ELSEIF @PlanLevelNumeric = 6 THEN
+   ```
+   ELSEIF @PlanLevelNumeric = 6 THEN
 
-    //Aggregate all data from the specified ReferencePeriod of the Actual Version to CompanyCode/JobFunction (PL6) level and copy these values to the dates of the planning horizon (specified in Memberset)
-    //Hint: Specify all dimensions except for CompanyCode/JobFunction
-    DATA([d/Plan_Level] = "PL6",
-      [d/SAP_HR_ISCONTINGENT] = "true",
-      [d/Audit] = "INIT",
-      [d/SAP_HR_USER_EMPLOYEE] = "#",
-      [d/SAP_HR_POSITION] = "#",
-    //[d/SAP_ALL_COMPANY_CODE] = "#",
-      [d/SAP_HR_BUSINESSUNIT] = "#",
-      [d/SAP_HR_DIVISION] = "#",
-      [d/t.S:SAP_ALL_COSTCENTER] = "#",
-      [d/t.S:SAP_HR_USER_PAYGRADE] = "#",
-      [d/t.S:SAP_HR_USER_JOBCLASSIFICATION] = "#",
-      [d/SAP_HR_DEPARTMENT] = "#",
-    //[d/SAP_HR_USER_LOCATION] = "#",
-      [d/SAP_HR_USER_EVENT] = "#",
-      [d/SAP_HR_USER_EMPLOYMENTTYPE] = "#",
-      [d/SAP_HR_USER_JOBLEVEL] = "#",
-      [d/SAP_HR_USER_CONTRACTTYPE] = "#",
-      [d/SAP_HR_GEOZONE] = "#",
-      [d/SAP_HR_USER_PAYRANGE] = "#",
-    //[d/SAP_HR_JOBFUNCTION] = "#",
-      [d/SAP_FI_IFP_GLACCOUNT] = "#"
-    ) = RESULTLOOKUP([d/Version] = "public.Actual", [d/Date] =  [d/Version].[p/ReferencePeriod])
+   //Aggregate all data from the specified ReferencePeriod of the Actual Version to CompanyCode/JobFunction (PL6) level and copy these values to the dates of the planning horizon (specified in Memberset)
+   //Hint: Specify all dimensions except for CompanyCode/JobFunction
+   DATA([d/Plan_Level] = "PL6",
+     [d/SAP_HR_ISCONTINGENT] = "true",
+     [d/Audit] = "INIT",
+     [d/SAP_HR_USER_EMPLOYEE] = "#",
+     [d/SAP_HR_POSITION] = "#",
+   //[d/SAP_ALL_COMPANY_CODE] = "#",
+     [d/SAP_HR_BUSINESSUNIT] = "#",
+     [d/SAP_HR_DIVISION] = "#",
+     [d/t.S:SAP_ALL_COSTCENTER] = "#",
+     [d/t.S:SAP_HR_USER_PAYGRADE] = "#",
+     [d/t.S:SAP_HR_USER_JOBCLASSIFICATION] = "#",
+     [d/SAP_HR_DEPARTMENT] = "#",
+   //[d/SAP_HR_USER_LOCATION] = "#",
+     [d/SAP_HR_USER_EVENT] = "#",
+     [d/SAP_HR_USER_EMPLOYMENTTYPE] = "#",
+     [d/SAP_HR_USER_JOBLEVEL] = "#",
+     [d/SAP_HR_USER_CONTRACTTYPE] = "#",
+     [d/SAP_HR_GEOZONE] = "#",
+     [d/SAP_HR_USER_PAYRANGE] = "#",
+   //[d/SAP_HR_JOBFUNCTION] = "#",
+     [d/SAP_FI_IFP_GLACCOUNT] = "#"
+   ) = RESULTLOOKUP([d/Version] = "public.Actual", [d/Date] =  [d/Version].[p/ReferencePeriod])
 
-    ENDIF
-    ```
+   ENDIF
+   ```
 
-    <!-- border; size:540px -->![Data_Action_Seeding](seeding-external.png)
+    ![Data_Action_Seeding](seeding-external.png)
 
 4. Save your Data Action.
 

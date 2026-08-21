@@ -41,25 +41,25 @@ In the first step, it is necessary to add a new member to the `Version` dimensio
 
 2. Select **Canvas** in order to create a new canvas story.
 
-    <!-- border; size:540px -->![canvas_story](canvas-story.png)
+    ![canvas_story](canvas-story.png)
 
 3. Drag and drop a table object onto the canvas board.
 
-    <!-- border; size:540px -->![canvas_story](table-object.png)
+    ![canvas_story](table-object.png)
 
 4. Select the `SAP__HR_BPL_IM_WORKFORCE` data model as your data source.
 
     A new dialogue pops up. Select the option **Existing Model** and click on **Select other model...**
 
-    <!-- border; size:540px -->![canvas_story](choose-model.png)
+    ![canvas_story](choose-model.png)
 
     You can find the data model by searching for the technical name via the search function.
 
-    <!-- border; size:540px -->![canvas_story](search-model.png)
+    ![canvas_story](search-model.png)
 
 5. Click on the table and open the **Version Management** section.
 
-    <!-- border; size:540px -->![canvas_story](version-management.png)
+    ![canvas_story](version-management.png)
 
 
 ### Create new Version
@@ -70,7 +70,7 @@ After clicking on the **Version Management** icon, a new section on the right-ha
 
     - Choose a version and click on the **copy** icon next to it. In this example, you will create a copy of the version `public.Aggregated_Plan`.
 
-      <!-- border; size:250px -->![copy_version](copy-version.png)
+      ![copy_version](copy-version.png)
 
 2. Define the version properties.
 
@@ -78,7 +78,7 @@ After clicking on the **Version Management** icon, a new section on the right-ha
     - Ensure to choose **Planning** as your version category.
     - Choose one of the options provided for your copy operation. In this example, we will copy all data from the `public.Aggregated_Plan` version to the new version.
 
-      <!-- border; size:540px -->![copy_version](copy-version-2.png)
+      ![copy_version](copy-version-2.png)
 
     - Click on **OK** to create the copy.
 
@@ -88,11 +88,11 @@ Now that you have created the new version, you need to publish it as it is initi
 
 1. Click on the **Publish** icon next to your new version.
 
-    <!-- border; size:250px -->![publish_version](publish-icon.png)
+    ![publish_version](publish-icon.png)
 
 2. Select the option **Publish As**.
 
-    <!-- border; size:250px -->![publish_version](publish-as.png)
+    ![publish_version](publish-as.png)
 
 3. Specify the version properties.
 
@@ -100,7 +100,7 @@ Now that you have created the new version, you need to publish it as it is initi
     - Specify the version category once more. Ensure to select **Planning**.
     - Click on the **Publish** button when done.
 
-      <!-- border; size:250px -->![publish_version](publish.png)
+      ![publish_version](publish.png)
 
 4. Close your story.
 
@@ -115,18 +115,18 @@ Now that you created your new version, you can make a couple of adjustments whic
 
 2. Search for the `SAP__HR_BPL_IM_WORKFORCE` data model and open it.
 
-    <!-- border; size:540px -->![Data_Model](data-model.png)
+    ![Data_Model](data-model.png)
 
 3. Open on the dimension `Version`.
 
-    <!-- border; size:540px -->![Version_Dim](version-dim.png)
+    ![Version_Dim](version-dim.png)
 
 4. Adjust the version properties.
 
     - As your new version `Baseline` was created based on a copy of the version `Aggregated_Plan`, all properties were copied.
     - In case you want to adjust some of the properties, you can do it here.
 
-      <!-- border; size:540px -->![Version_Dim](version-properties.png)
+      ![Version_Dim](version-properties.png)
 
     The below table offers an overview on the different properties and their impact.
 
@@ -184,7 +184,7 @@ This option provides guidance on how to set the new version as the default versi
 
 2. Search for the affected story in which you want the objects to be initialized with new version. In this example, we will look for the `SAP_HR_BPL_IM_WFP_AGGREGATED_INTERNAL` story and open it in **edit mode**.
 
-    <!-- border; size:540px -->![analytic_application](search-application.png)
+    ![analytic_application](search-application.png)
 
     >INFORMATION:
     >
@@ -199,13 +199,13 @@ This option provides guidance on how to set the new version as the default versi
 
 3. In the **Outline** section, scroll down to the **Script Objects** and click on the script `getCustomizing`.
 
-    <!-- border; size:540px -->![analytic_application](get-customizing.png)
+    ![analytic_application](get-customizing.png)
 
 4. Set the variable inside the script to your new version.
 
     Look for a code line which looks something like the one shown in the following image and set the variable to your new version `public.Baseline`
 
-    <!-- border -->![analytic_application](set-variable-script.png)
+    ![analytic_application](set-variable-script.png)
 
     >INFORMATION:
     >
@@ -213,11 +213,11 @@ This option provides guidance on how to set the new version as the default versi
     >
     Please also note that in the application `SAP__HR_BPL_IM_WFP_DETAILED_INTERNAL`, the script does not contain an if-condition as shown in the image above, but rather looks like this:
     >
-    <!-- border -->![analytic_application](detailed-app-variable.png)
+    ![analytic_application](detailed-app-variable.png)
     >
     Please also note that in the application `SAP__HR_BPL_IM_WFP_PREPARE_IFP`, the variable inside the script is called `cfg_planVersionSource` instead of `cfg_planVersion`:
     >
-    <!-- border -->![analytic_application](ifp-app-variable.png)
+    ![analytic_application](ifp-app-variable.png)
 
 
 5. Save your changes.
@@ -243,7 +243,7 @@ Please note that this option does not work for the detailed planning application
 
 2. Search for one of the above mentioned stories. In this example, we will look for the `SAP_HR_BPL_IM_WFP_AGGREGATED_INTERNAL` story and open it in **edit mode**.
 
-    <!-- border; size:540px -->![analytic_application](search-application.png)
+    ![analytic_application](search-application.png)
 
     >INFORMATION:
     >
@@ -251,7 +251,7 @@ Please note that this option does not work for the detailed planning application
 
 3. In the **Outline** section, scroll down to the **Script Variables** section and click on the variable `cfg_planVersion`.
 
-    <!-- border; size:540px -->![analytic_application](cfg-plan-version.png)
+    ![analytic_application](cfg-plan-version.png)
 
     >INFORMATION:
     >
@@ -259,7 +259,7 @@ Please note that this option does not work for the detailed planning application
 
 4. Enter as your default value for the `cfg_planVersion` variable the new version name, which in this example is `public.Baseline`. Click on **Done** afterwards.
 
-    <!-- border; size:250px -->![analytic_application](cfg-plan-version-2.png)
+    ![analytic_application](cfg-plan-version-2.png)
 
 5. Save your changes.
 
@@ -292,13 +292,13 @@ Please note that this option does not work for the detailed planning application
     - Copy the following block and paste it at the end of your link: `?p_cfg_planVersion=public.Baseline`
     - Your link should now look like this: `https://<YourTenant>/<YourAppID>/?p_cfg_planVersion=public.Baseline`
 
-    <!-- border -->![analytic_application](app-link.png)
+    ![analytic_application](app-link.png)
 
     >INFORMATION:
     >
     In case your link already contains a URL parameter, complement it with `&p_cfg_planVersion=public.Baseline` instead of `?p_cfg_planVersion=public.Baseline`, so your result looks like this: `https://<YourTenant>/<YourAppID>/?p_toggleIsPredictiveEnabled=true&p_cfg_planVersion=public.Baseline`
     >
-    <!-- border -->![analytic_application](app-link-2.png)
+    ![analytic_application](app-link-2.png)
 
 3. Open the link.
 
@@ -315,21 +315,21 @@ Lastly, you need to make the new version available for the filter widgets inside
 
     Open the story in edit mode. 
 
-    <!-- border; size:540px -->![analytic_application](story-edit-mode.png)
+    ![analytic_application](story-edit-mode.png)
 
 2. Edit the input controls in the **Progress Overview** story tab.
 
     Right-click on one of the input controls `Progress_Version1` and `Progress_Version2` and click on **Edit Input Control**.
 
-    <!-- border; size:540px -->![analytic_application](edit-input-control.png)
+    ![analytic_application](edit-input-control.png)
 
 3. Click on the **Values** bar to open the version selection menu.
 
-    <!-- border; size:540px -->![analytic_application](input-values-1.png)
+    ![analytic_application](input-values-1.png)
 
 4. Add the version `Baseline` to the selection and click on **OK** when done.
 
-    <!-- border; size:540px -->![analytic_application](input-values-2.png)
+    ![analytic_application](input-values-2.png)
 
 5. Repeat this exercise for both of the widgets.
 

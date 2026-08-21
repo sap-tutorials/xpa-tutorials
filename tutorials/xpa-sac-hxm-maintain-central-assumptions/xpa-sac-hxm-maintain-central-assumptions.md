@@ -93,7 +93,7 @@ In the first step, it is necessary to create a Central Assumptions template with
 
     Your final result should look as indicated in the following snapshot:
 
-    <!-- border; size:540px -->![Central_Assumptions](central-assumption-excel.png)
+    ![Central_Assumptions](central-assumption-excel.png)
 
 
 ### Enter Values into Template
@@ -202,7 +202,7 @@ Per default definition, Plan Level `PL2`represents a `CompanyCode + Business Uni
 
 Your final picture should look as follows:
 
-<!-- border; size:540px -->![Central_Assumptions](central-assumptions-int.png)
+![Central_Assumptions](central-assumptions-int.png)
 
 >Populating other Plan Levels:
 >
@@ -245,7 +245,7 @@ Generally, you can repeat the activities of the sub-steps **1** to **5** of the 
 
 Your final picture should look as follows:
 
-<!-- border; size:540px -->![Central_Assumptions](central-assumptions-ext.png)
+![Central_Assumptions](central-assumptions-ext.png)
 
 
 ### Import External File
@@ -257,15 +257,15 @@ Now that you have created and populated the Central Assumption file, it is neces
 
 3. Click on the import button and select the option **File** to create an import job for your Excel file.
 
-    <!-- border; size:540px -->![SAC_Menu](sac-modeler.png)
+    ![SAC_Menu](sac-modeler.png)
 
 4. In the popup window, click on **Select Source File**, navigate to the path of your Excel file and select the Central Assumptions file. Make sure to enable the **Use first row as column headers** option. Click on **Import** when done with the settings.
 
-    <!-- border; size:300px -->![SAC_Import](import-popup.png)
+    ![SAC_Import](import-popup.png)
 
 5. Click on **Set up Import** in the next step.
 
-    <!-- border; size:540px -->![SAC_Import](set-up-import.png)
+    ![SAC_Import](set-up-import.png)
 
 6. Perform the following changes in the data preparation section:
     - Change data type of `Company_CodeId` to **String**
@@ -274,7 +274,7 @@ Now that you have created and populated the Central Assumption file, it is neces
 
     Your final picture should look as shown in the snapshot below:
 
-    <!-- border; size:200px -->![SAC_Import](data-types.png)
+    ![SAC_Import](data-types.png)
 
 7. Proceed to next step and perform the following activities:
     - In case not all columns have been automatically mapped to the dimensions of the data model, perform the mapping by drag and dropping the columns onto the fitting data model dimensions
@@ -282,7 +282,7 @@ Now that you have created and populated the Central Assumption file, it is neces
 
     Your final result should look like this:
 
-    <!-- border; size:540px -->![SAC_Import](mapping.png)
+    ![SAC_Import](mapping.png)
 
 8. Start the upload process
 
@@ -321,17 +321,17 @@ Now you want to use this period as a reference for your planning year 2021 and c
 
     Your Data Action should now look as follows:
 
-    <!-- border; size:540px -->![Data_Action](copy-step.png)
+    ![Data_Action](copy-step.png)
 
 7. Create a blank story in order to execute the Data Action and publish the version.
     - In the SAP Analytics Cloud Menu, navigate to the **Stories** section
     - Select **Canvas** in order to create a new canvas story
 
-      <!-- border; size:540px -->![canvas_story](canvas-story.png)
+      ![canvas_story](canvas-story.png)
 
     - Add a **Data Action Trigger** to the canvas.
 
-      <!-- border; size:250px -->![canvas_story](planning-trigger.png)
+      ![canvas_story](planning-trigger.png)
 
     - In the menu on the right-hand side of the screen, choose your newly created data action to embed it into the trigger and specify the target version you want the results to be written on. As in this example, Central Assumptions are maintained on the version `public.Aggregated_Plan`, this version must be specified
 
@@ -346,7 +346,7 @@ Now you want to use this period as a reference for your planning year 2021 and c
 - In the Data Modeler, under the version dimension, you can find the properties `Start Period of Planning` and `End Period of Planning`. This is the equivalent to what you have defined in **sub-step 5** in the **To** section of the copy step
 - In the Data Modeler, under the version dimension, you can also find the property `Reference Period for Seeding`. This is the equivalent to what you have defined in **sub-step 5** in the **From** section of the copy step
 >
-<!-- border; size:540px -->![Data_Modeler](version-properties.png)
+![Data_Modeler](version-properties.png)
 >
 - Using this Data Action implies that you adjust your Version property `Reference Period for Seeding` to match the data value you have entered in the `DATEMONTH` of your MS Excel template.
 

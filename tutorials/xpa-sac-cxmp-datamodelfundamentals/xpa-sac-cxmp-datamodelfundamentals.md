@@ -46,7 +46,7 @@ The **Sales Planning** module has its own data model while it consumes some of t
 - The `Version` dimension is a mandatory dimension and is part of each and every SAC planning data model.
 - <p>In the scope of this content package, the <code>Version</code> dimension comes with five pre-defined versions.</p>
     
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/1.png)
+    ![xp&A Commercial Planning](1/1.png)
   
 - The member `public.Actual` stores actual data as the name indicates. It contains actual revenues, costs as well as the list prices and cost rates per product. 
 - The member `public.Financial Target` of category `Budget` serves as a reference version and is not used for planning activities in this content package. This version stores data which mimics a revenue and cost budget that is given from upper management or from the financial department and is thus only used for reporting purposes.
@@ -59,12 +59,12 @@ The **Sales Planning** module has its own data model while it consumes some of t
 
 - The `SAP_FI_XPA_GLAccount` dimension is an account dimension which provides an exemplary General Ledger Account structure in combination with a couple of calculated accounts outside the hierarchy. 
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/2.png)
+    ![xp&A Commercial Planning](1/2.png)
   
 - In the scope of this content package, only a limited number of G/L Accounts is used.
 - <p>Most of the data is located under the <strong>Net Revenue</strong> node <code>FPA1/013</code>.</p>
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/3.png)
+    ![xp&A Commercial Planning](1/3.png)
 
 
 **Date**
@@ -79,7 +79,7 @@ The **Sales Planning** module has its own data model while it consumes some of t
 
 - The dimension `SAP_ALL_SALESORGANISATION` is a shared public dimension and provides IDs for numerous sales organisations which are semantically structured by region.
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/4.png)
+    ![xp&A Commercial Planning](1/4.png)
   
 - The public dimension comes with three pre-defined hierarchies. In this content package, the default hierarchy with the ID `Hierarchy` is used across all stories. 
 - The property `Row_Source` shows where the sample master data comes from. Some products might be imported from a source system like **SAP S/4HANA** while others might be created manually.
@@ -92,7 +92,7 @@ The **Sales Planning** module has its own data model while it consumes some of t
 - The public dimension comes with four pre-defined hierarchies. In this content package, the hierarchy with the ID `Hierarchy4` is used across all stories as the demo data focusses on bike products only. Other products are excluded from this hierarchy. 
 - <p>In addition to that, all Data Actions are restricted to only work on <code>Hierarchy4</code> of this dimension.</p>
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/5.png)
+    ![xp&A Commercial Planning](1/5.png)
   
 - The property `Base Unit of Measure` must be maintained inside the data modeler and shows the base unit of the measure. For the products used in the demo data, all items have the base unit `PC` which translates to `Piece`.
 - The property `PC Std UOM` complements the property `Base Unit of Measure` by telling how many pieces are covered by one `PC` unit. All bike products have a `PC Std UOM` of `1`, which means that one `PC` translates to exactly `1` bike. 
@@ -115,7 +115,7 @@ The **Sales Planning** module has its own data model while it consumes some of t
 - The property `Comment` is also maintained from inside the **Marketing Campaign Planning** story and shows user generated comments related to a specific campaign.
 - <p>The property <code>Deleted</code> shows whether a campaign was deleted and is maintained from inside the <strong>Marketing Campaign Planning</strong> story.</p>
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/6.png)
+    ![xp&A Commercial Planning](1/6.png)
 
 
 **Marketing Activity**
@@ -133,7 +133,7 @@ The **Sales Planning** module has its own data model while it consumes some of t
 - The property `Activity Status` shows the current status of the activity and is also maintained from inside the **Marketing Campaign Planning** story.
 - <p>The property <code>Comment</code> is also maintained from inside the <strong>Marketing Campaign Planning</strong> story and shows user generated comments related to a specific activity.</p>
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/7.png)
+    ![xp&A Commercial Planning](1/7.png)
 
 
 **Spend Type**
@@ -141,7 +141,7 @@ The **Sales Planning** module has its own data model while it consumes some of t
 - The dimension `SpendType` is a private dimension which exists only inside the data model.
 - This dimension is used to store different options of spend types which can be maintained in the property Spend Type< of the `SAP_MKT_MarketingAtivity` dimension.
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/8.png)
+    ![xp&A Commercial Planning](1/8.png)
 
 
 **Quantity Unit**
@@ -150,7 +150,7 @@ The **Sales Planning** module has its own data model while it consumes some of t
 - This list serves as a sort of allowlist for possible units which can be maintained in the property `Base Unit of Measure` of the dimension `SAP_ALLPRODUCT`. 
 - <p>As mentioned earlier, for the demo data only the member ID <code>PC</code> was used.</p>
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/9.png)
+    ![xp&A Commercial Planning](1/9.png)
 
 
 **Driver**
@@ -164,7 +164,7 @@ The **Sales Planning** module has its own data model while it consumes some of t
 - The member `priceImpact` is used to store incremental quantities, revenues and costs which result from price changes. 
 - <p>The sum of all members represents the total planned revenue or respectively the total costs and quantities.</p>
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/10.png)
+    ![xp&A Commercial Planning](1/10.png)
 
 
 **Plant**
@@ -174,7 +174,7 @@ The **Sales Planning** module has its own data model while it consumes some of t
 - The property `Company Code` shows the assignment of the plant to a company code, as a company code may have multiple plants. 
 - <p>Different plants may have different COGS rates, baseline quantities, revenues etc. - but in the scope of this content package, planning does not occur on plant level explicitly as the plant dimension itself is not included in the planning tables. The dimension is rather present in the background and entered planning assumptions are distributed across the respective plant members automatically.</p>
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/11.png)
+    ![xp&A Commercial Planning](1/11.png)
   
     >INFORMATION:
     >
@@ -195,7 +195,7 @@ The **Sales Planning** module has its own data model while it consumes some of t
 - The property `Trading Partner` is used to define the trading partner and must be maintained inside the data model, while the trading partner is specific by using an existing company code member ID.
 - <p>None of these properties apart from the <code>Currency</code> property are important for the scope of this content package.</p>
   
-    <!-- border; size:540px -->![xp&A Commercial Planning](1/12.png)
+    ![xp&A Commercial Planning](1/12.png)
 
 
 That's it for the dimensions! You may jump to the next step to learn about the measures of this data model.
@@ -307,7 +307,7 @@ In this step you will learn how data is stored in the data model.
 As the way data is stored varies depending on the version, we will take a look at it version by version. 
 For simplicity reasons, we will not take a look at the real demo data but instead use the following spreadsheet:
 
-<!-- border; size:540px -->![xp&A Commercial Planning](3/1.png)
+![xp&A Commercial Planning](3/1.png)
 
 
 **Plan**
